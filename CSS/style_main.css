@@ -1,0 +1,192 @@
+
+  html {
+      font-size:100%;
+      margin:0px; 
+      padding:0px; 
+  }
+  body {
+      background: url('../IMG/site_background.jpg') repeat; 
+      background-attachment: fixed;
+  }
+
+
+header{
+    display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
+    flex-direction: row; /* le indico que los elemento del bloque flexible se organinse en fila*/
+}
+
+header .enlace {
+    margin-block-start: 1em;
+    position: absolute;
+    right:80px;
+    width: 40px; /* ajusto el tamaño que tendra esta clase */
+}
+  
+  b {
+      color: #369;
+      font-weight:800;
+  }
+
+  /* Etiqueta a con funcion de enlace */
+  a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  /* this keeps border from bumping under floated objects */
+  #content {
+      background-color: rgba(255,255,255,.95);
+      border: 3px solid #228877;
+      box-shadow: 0px 0px 0px 6px #FFF; 
+      border-radius:20px;
+      box-sizing:border-box;
+      font-family: 'Helvetica', 'Arial', sans-serif;
+      font-size: 1em;
+      height:100%;
+      line-height: 1.5em;
+      margin:35px 50px; /*(arriba y abajo │ derecha y izquierda)*/
+      overflow:hidden; 
+      padding: 20px;
+      z-index:0;
+  }
+
+  /* stop floats from expanding outside of content */
+  h1 {
+      margin-block-start: 0.3em;
+      border-bottom:2px solid #00AA88;
+      color: #093;
+      font-family: 'Fantasy';
+      font-size: 2.5em;
+      letter-spacing: 0.1em;
+      line-height:1em;
+  }
+      h1:before {
+          content: '\00273F';
+          color: #E83;
+      }
+  
+  h2 {
+      border-bottom: 2px solid #09F;
+      color: #09F;
+      font-family: 'Fantasy', sans-serif;
+      font-size: 2em;
+      letter-spacing: 0.1em;
+      line-height: 1em;
+      clear:both;
+  }
+  
+  .right {
+      float:right; 
+      height:auto; 
+      margin:0px 0px 20px 20px;
+      max-width:100%; /* stop floats from expanding outside of content */	
+  }
+      img.right {border-radius:10px;}
+      table.right {padding-right:20px;}
+  
+  .center {
+      display:block;
+      height:auto;
+      margin:0px auto;
+      max-width:100%;
+  }
+  
+      img.center {border-radius:10px;}
+  
+  .screenshot {
+      border: 3px solid #228877;
+      border-radius:15px; 
+      max-width:100%; 	
+      height:auto;
+      aspect-ratio: attr(width) / attr(height);
+  }
+  
+  ul {	
+      list-style:none;
+      line-height: 1.5em;
+      margin-left: -.5em;
+      }
+      ul li:before {
+          content: '\00273F';
+          color: #093;
+          padding-right:8px;
+          font-size:1.2em;
+      }
+      ul li {
+          margin-left: 1.5em;
+          text-indent: -1.5em; /* aligns 2nd line with indent from 1st line due to flower li */
+      }
+
+ 
+  
+table.data { margin:15px auto;}
+table.data tr td, table.data tr th { 
+    padding:5px; 
+    border:1px solid #00AA88;
+}
+table.data tr th { 
+    background-color:#00AA88; 
+    border-top:2px solid #228877; 
+    border-bottom:2px solid #228877;
+    border-left:1px solid #228877; 
+    border-right:1px solid #228877; 
+    color: #FAFAFA
+}
+table.data tr:nth-child(odd) {background-color: #E8E8E8;}
+table.data tr:nth-child(even) {background-color: #FAFAFA;}
+  
+  
+  /* ---------- BREADCRUMBS ------------------------- */
+  
+ol#breadcrumbs {
+      margin:0px; 
+      padding:0px; 
+      list-style-type:none;
+}
+ol#breadcrumbs li {
+    display:inline; 
+    color:#00AA88;
+}
+ol#breadcrumbs li a {
+    border-bottom:none; 
+    padding:0px; 
+    font-size:80%;
+}
+
+/* ---------- MOBILE ------------------------------ */
+
+@media (max-width:600px){
+
+    #content {
+            margin-left: 0px;
+            margin-right:0px;
+    }
+    
+    ul {
+        margin:0px;
+        padding:5px 5px 5px 20px
+    }
+    
+    li:before {  font-size:1em;	}
+
+    h3 {clear:both;}
+    
+} 
+    
+@media print {
+        #content {
+            background-color: white;
+            border: none;
+            box-shadow: none;
+            border-radius: 0px;
+            box-sizing: initial;
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            font-size: 1em;
+            height:100%;
+            line-height: 1.5em;
+            margin: 0px;
+            overflow: display;
+            padding: 0px;
+        }
+}
