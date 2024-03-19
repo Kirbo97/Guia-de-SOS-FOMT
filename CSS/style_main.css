@@ -1,25 +1,29 @@
-html {
+
+  html {
       font-size:100%;
       margin:0px; 
       padding:0px; 
-}
-
-body {
+  }
+  body {
       background: url('../IMG/site_background.jpg') repeat; 
       background-attachment: fixed;
-}
+  }
+
 
 header{
     display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
     flex-direction: row; /* le indico que los elemento del bloque flexible se organinse en fila*/
 }
 
-header .enlace {
+header .inicio, .enlace {
     margin-block-start: 1em;
     position: absolute;
     right:80px;
-    width: 40px; /* ajusto el tamaño que tendra esta clase */
+    width: 46px; /* ajusto el ancho que tendra esta clase */
+    height: 46px; /* ajusto el alto que tendra esta clase */
 }
+
+header .enlace { right:160px; }
   
   b {
       color: #369;
@@ -27,11 +31,19 @@ header .enlace {
   }
 
   /* Etiqueta a con funcion de enlace */
-  a:-webkit-any-link {
+  .link:-webkit-any-link {
     color: -webkit-link;
     cursor: pointer;
     text-decoration: none;
   }
+
+    /* Etiqueta a con funcion de enlace */
+    .hiper:-webkit-any-link {
+        font-size: 1.2em;
+        font-weight: bold;
+        font-family: 'Fantasy', sans-serif;
+        text-decoration: none;
+      }
   
   /* this keeps border from bumping under floated objects */
   #content {
@@ -44,7 +56,7 @@ header .enlace {
       font-size: 1em;
       height:100%;
       line-height: 1.5em;
-      margin:28px 50px; /*(arriba y abajo │ derecha y izquierda)*/
+      margin:20px 50px; /*(arriba y abajo │ derecha y izquierda)*/
       overflow:hidden; 
       padding: 20px;
       z-index:0;
