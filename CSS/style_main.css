@@ -9,7 +9,6 @@
       background-attachment: fixed;
   }
 
-
 header{
     display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
     flex-direction: row; /* le indico que los elemento del bloque flexible se organinse en fila*/
@@ -45,7 +44,7 @@ header .enlace {
       font-size: 1em;
       height:100%;
       line-height: 1.5em;
-      margin:35px 50px; /*(arriba y abajo │ derecha y izquierda)*/
+      margin:30px 50px; /*(arriba y abajo │ derecha y izquierda)*/
       overflow:hidden; 
       padding: 20px;
       z-index:0;
