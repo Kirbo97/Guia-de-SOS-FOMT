@@ -131,9 +131,10 @@ header .enlace { right:160px; }
   
 table.data { margin:15px auto;}
 table.data tr td, table.data tr th { 
-    padding:5px; 
+    padding: 4px 5px 0 5px; /*(arriba, derecha, abajo y izquierda)*/
     border:1px solid #00AA88;
 }
+
 table.data tr th { 
     background-color:#00AA88; 
     border-top:2px solid #228877; 
