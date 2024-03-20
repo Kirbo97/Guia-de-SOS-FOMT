@@ -119,7 +119,7 @@ header .enlace { right:160px; }
       margin-left: -.5em;
       }
       ul li:before {
-          content: '\00273F';
+          content: '\00273F'; /* Le da forma de flor a los puntos de una lista */
           color: #093;
           padding-right:8px;
           font-size:1.2em;
@@ -128,8 +128,6 @@ header .enlace { right:160px; }
           margin-left: 1.5em;
           text-indent: -1.5em; /* aligns 2nd line with indent from 1st line due to flower li */
       }
-
- 
   
 table.data { margin:15px auto;}
 table.data tr td, table.data tr th { 
