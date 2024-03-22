@@ -133,7 +133,7 @@ ul li {
           text-indent: -1.5em; /* aligns 2nd line with indent from 1st line due to flower li */
 }
   
-table.data { margin:15px auto;}
+table.data{ margin:15px auto;}
 
 table.data tr td, table.data tr th { 
     padding: 4px 5px 0 5px; /*(arriba, derecha, abajo y izquierda)*/
@@ -153,6 +153,17 @@ table.data tr:nth-child(odd) {background-color: #E8E8E8;}
 
 table.data tr:nth-child(even) {background-color: #FAFAFA;}
 
+table.cand tr th { 
+    color: #FAFAFA
+}
+
+#boxsort, .boxsort { text-align:center;}
+.box_marriage {max-width:180px; height:auto; display:inline-block; margin:10px;}
+.box_marriage img {max-width:100%; height:auto;}
+a .box_marriage {
+    text-decoration:none; 
+    border-bottom:none;
+}
 /* ---------- BREADCRUMBS ------------------------- */
   
 ol#breadcrumbs {
