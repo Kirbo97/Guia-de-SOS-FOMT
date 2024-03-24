@@ -142,16 +142,6 @@ li:before {
     font-size:1.2em; /* El guion tendra un tamaño*/
 }
 
-/* La clase corazon li con propiedad "before" (Antes) de la etiqueta li tendra un especie de gion */
-.corazon:before {
-    content: '♥'; /* La guion sera una flor */
-    color: rgb(239, 244, 241); /* El guion sera de color verde*/
-    font-size:5em; 
-    text-align: center; 
-    -webkit-text-stroke-width: 2px; 
-    -webkit-text-stroke-color: black;
-}
-
 /* La etiqueta li tendra espacio para abajo */
 li { margin-block-end: 0.5em; }
   
