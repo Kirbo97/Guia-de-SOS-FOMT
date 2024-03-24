@@ -183,3 +183,21 @@ tr:nth-child(even) {background-color: #FAFAFA;}
 
 /* La etiqueta "img" con la clase "box_marriage" para que se ocupe del tamaño de la imagen*/
 .box_marriage img {max-width:100%; height:auto;}
+
+/* ---------- MOBILE ------------------------------ */
+
+@media screen and (max-width:600px){
+    #content {
+        margin-left: 0px;
+        margin-right:0px;
+    }
+    
+    ul {
+        margin:0px;
+        padding:5px 5px 5px 20px;
+    }
+    
+    li:before {  font-size:1em;}
+
+    h3 {clear:both; }
+} 
