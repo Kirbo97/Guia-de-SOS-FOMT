@@ -143,8 +143,8 @@ li:before {
 }
 
 /* La clase corazon li con propiedad "before" (Antes) de la etiqueta li tendra un especie de gion */
-li .corazon:before {
-    content: '\00273F'; /* La guion sera una flor */
+.corazon:before {
+    content: '♥'; /* La guion sera una flor */
     color: rgb(239, 244, 241); /* El guion sera de color verde*/
     font-size:5em; 
     text-align: center; 
