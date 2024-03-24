@@ -142,6 +142,16 @@ li:before {
     font-size:1.2em; /* El guion tendra un tamaño*/
 }
 
+/* La clase corazon li con propiedad "before" (Antes) de la etiqueta li tendra un especie de gion */
+li .corazon:before {
+    content: '\00273F'; /* La guion sera una flor */
+    color: rgb(239, 244, 241); /* El guion sera de color verde*/
+    font-size:5em; 
+    text-align: center; 
+    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: black;
+}
+
 /* La etiqueta li tendra espacio para abajo */
 li { margin-block-end: 0.5em; }
   
@@ -183,10 +193,3 @@ tr:nth-child(even) {background-color: #FAFAFA;}
 
 /* La etiqueta "img" con la clase "box_marriage" para que se ocupe del tamaño de la imagen*/
 .box_marriage img {max-width:100%; height:auto;}
-
-p.corazon{
-    font-size:5em; 
-    text-align: center; 
-    -webkit-text-stroke-width: 2px; 
-    -webkit-text-stroke-color: black;
-}
