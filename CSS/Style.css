@@ -10,12 +10,13 @@ body {
 }
 
 header{
+    border-bottom:2px solid #00AA88;  
+    height: 3.5em;
     display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
     flex-direction: row; /* le indico que los elemento del bloque flexible se organinse en fila*/
 }
 
 header .inicio, .enlace {
-    margin-block-start: 1em;
     position: absolute;
     right:80px;
     width: 46px; /* ajusto el ancho que tendra esta clase */
@@ -29,6 +30,8 @@ b {
     color: #369;
     font-weight:800;
 }
+
+p { text-align: justify; }
 
 /* clase "link" con propiedad de enlace y le quito la aparienci de hiperbinculo */
 .link:-webkit-any-link {
@@ -56,7 +59,7 @@ b {
     font-size: 1em;
     height:100%;
     line-height: 1.5em;
-    margin:20px 50px; /*(arriba y abajo │ derecha y izquierda)*/
+    margin:50px 50px; /*(arriba y abajo │ derecha y izquierda)*/
     overflow:hidden; 
     padding: 20px;
     z-index:0;
@@ -64,13 +67,12 @@ b {
 
 /* evitar que los titulos se expandan fuera del contenido */
 h1 {
-    margin-block-start: 0.3em;
-    border-bottom:2px solid #00AA88;
     color: #093;
-    font-family: 'Fantasy';
+    font-family: 'Ranchers', sans-serif;
     font-size: 2.5em;
     letter-spacing: 0.1em;
     line-height:1em;
+    margin: 0%;
 }
 
 /* La etiqueta h1 con propiedad "before" (Antes) tendra un especie de gion */
@@ -83,7 +85,7 @@ h1:before {
 h2 {
     border-bottom: 2px solid #09F;
     color: #09F;
-    font-family: 'Fantasy', sans-serif;
+    font-family: 'Ranchers', sans-serif;
     font-size: 2em;
     letter-spacing: 0.1em;
     line-height: 1em;
@@ -104,7 +106,7 @@ h3 {
 .right {
     float:right; 
     height:auto; 
-    margin:0px 0px 20px 20px;
+    margin: 15px 0px 15px 20px;
     max-width:100%; /* stop floats from expanding outside of content */	
     border-radius:10px;
 }
