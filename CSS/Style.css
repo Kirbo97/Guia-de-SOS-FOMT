@@ -46,6 +46,7 @@ p { text-align: justify; }
     font-weight: bold;
     font-family: 'Fantasy', sans-serif;
     text-decoration: none;
+    color: #0000EE;
 }
   
 /* esta ID evita que el borde golpee debajo de objetos flotantes */
@@ -145,7 +146,11 @@ li:before {
 }
 
 /* La etiqueta li tendra espacio para abajo */
-li { margin-block-end: 0.5em; }
+li { 
+    margin-block-end: 0.5em; 
+    margin-right: 0.5em;
+    text-align: justify;
+}
   
 /* La etiqueta "data" tendra una caracteristica para desplasar las tablas al centro */
 .data{ margin:15px auto;}
