@@ -60,7 +60,7 @@ p { text-align: justify; }
     font-size: 1em;
     height:100%;
     line-height: 1.5em;
-    margin:50px 50px; /*(arriba y abajo │ derecha y izquierda)*/
+    margin:20px 50px; /*(arriba y abajo │ derecha y izquierda)*/
     overflow:hidden; 
     padding: 20px;
     z-index:0;
@@ -69,7 +69,7 @@ p { text-align: justify; }
 /* evitar que los titulos se expandan fuera del contenido */
 h1 {
     color: #093;
-    font-family: 'Ranchers', sans-serif;
+    font-family: 'Ranchers';
     font-size: 2.5em;
     letter-spacing: 0.1em;
     line-height:1em;
@@ -86,7 +86,7 @@ h1:before {
 h2 {
     border-bottom: 2px solid #09F;
     color: #09F;
-    font-family: 'Ranchers', sans-serif;
+    font-family: 'Ranchers';
     font-size: 2em;
     letter-spacing: 0.1em;
     line-height: 1em;
@@ -107,7 +107,7 @@ h3 {
 .right {
     float:right; 
     height:auto; 
-    margin: 15px 0px 15px 20px;
+    margin: 5px 0 0 20px;
     max-width:100%; /* stop floats from expanding outside of content */	
     border-radius:10px;
 }
@@ -138,7 +138,7 @@ ul {
 }
 
 /* La etiqueta li con propiedad "before" (Antes) tendra un especie de gion */
-li:before {
+ul li:before {
     content: '\00273F'; /* La guion sera una flor */
     color: #093; /* El guion sera de color verde*/
     padding-right:8px; /* El guion tendra un espacio para la derecha*/
