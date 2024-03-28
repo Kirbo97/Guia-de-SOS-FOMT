@@ -1,4 +1,11 @@
-@media screen and (max-width:1010px){
+/* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
+@media screen and (max-width:1010px) {
+    h1 { font-size: 2.29em !important; }
+    header{ height: 3.29em !important; }
+}
+
+/* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
+@media screen and (orientation:landscape){    
     h1 { font-size: 2.29em !important; }
     header{ height: 3.29em !important; }
 }
