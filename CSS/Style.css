@@ -1,6 +1,6 @@
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
 @media screen and (max-width:1010px) {
-    h1 { font-size: 2.29em !important; }
+    h1 { font-size: 2.29em !important; color: rgb(55, 68, 238) !important;}
     header{ height: 3.29em !important; }
 }
 
