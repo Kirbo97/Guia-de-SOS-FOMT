@@ -158,16 +158,16 @@ li {
 /* Las etiquetas "td" (columna simple de la tabla) y "th" (columna de la tabla como encabesado) tendran caracteristicas para el diseño de las lineas de la tabla */
 td, th { 
     padding: 4px 5px 0 5px; /*(arriba, derecha, abajo y izquierda)*/
-    border:1px solid #00AA88;
+    border:2px solid #00aa25;
 }
 
 /* La etiqueta "th" (columna de la tabla como encabesado) tendran caracteristicas para el diseño del encabesado de la tabla */
 th { 
     background-color:#00AA88; 
-    border-top:2px solid #228877; 
-    border-bottom:2px solid #228877;
-    border-left:1px solid #228877; 
-    border-right:1px solid #228877; 
+    border-top:3px solid #228877; 
+    border-bottom:3px solid #228877;
+    border-left:3px solid #228877;
+    border-right:3px solid #228877; 
     color: #FAFAFA
 }
 
