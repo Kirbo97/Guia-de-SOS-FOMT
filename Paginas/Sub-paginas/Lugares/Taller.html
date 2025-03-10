@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">   <!-- Para usar la escritura latina -->
+        <title>Guia del Taller de Gotts de SOS-FOMT</title> 
+        <link rel="stylesheet" href="../../../CSS/Style.css" type="text/css" />
+        <link rel="shortcut icon" href="../../../IMG/Iconos/Kirbo.ico"/>
+    </head>
+    
+    <body>
+        <nav>
+            <div>
+                <a href="../../../Paginas/Actividades.html" style="text-align: center;"><img src="../../../IMG/Iconos/Actividades.png" title="Actividades" style="border:none;" width="40" height="40"></a>
+                <a class="vin_nav" href="../../../Paginas/Actividades.html">Actividades</a>
+            </div>
+
+            <div>
+                <a href="../../../Paginas/Lugares.html" style="text-align: center;"><img src="../../../IMG/Iconos/edificio.png" title="Lugares" style="border:none;" width="40" height="40"></a>
+                <a class="vin_nav" href="../../../Paginas/Lugares.html">Lugares</a>
+            </div>
+
+            <div>
+                <a href="../../../Paginas/Herramientas.html" style="text-align: center;"><img src="../../../IMG/Iconos/herra.png" title="Herramientas" style="border:none;" width="40" height="40"></a>
+                <a class="vin_nav" href="../../../Paginas/Herramientas.html">Herramientas</a>
+            </div>
+
+            <div>
+                <a href="../../../Paginas/Personajes.html" style="text-align: center;"><img src="../../../IMG/Iconos/Personajes.png" title="Personajes" style="border:none;" width="40" height="40"></a>
+                <a class="vin_nav" href="../../../Paginas/Personajes.html">Personajes</a>
+            </div>
+
+            <div>
+                <a href="../../../Paginas/Eventos.html" style="text-align: center;"><img src="../../../IMG/Iconos/calen.png" title="Eventos" style="border:none;" width="40" height="40"></a>
+                <a class="vin_nav" href="../../../Paginas/Eventos.html">Eventos</a>
+            </div>
+
+            <div>
+                <a href="../../../Paginas/Resistencia.html" style="text-align: center;"><img src="../../../IMG/Iconos/resistencia.png" title="Salud y resistencia" style="border:none;" width="40" height="40"></a>
+                <a class="vin_nav" href="../../../Paginas/Eventos.html">Salud</a>
+            </div>
+        </nav>
+
+        <div id="content">
+            <header style="display: flex; justify-content: space-between;">
+                <h1>Taller de Gotts de la ciudad Mineral</h1>
+                <div style="display: flex; column-gap: 3em;">
+                    <a href="../../../Paginas/Lugares.html"><img src="../../../IMG/Iconos/atras.png"  alt="atras" class="icono" style="right:160px;"></img></a>
+                    <a href="../../../index.html"><img src="../../../IMG/Iconos/home.png"  alt="home" class="icono" title="Home" style="right:80px;"></img></a>
+                </div>
+            </header>
+
+            <main>
+
+                <img src="../../../IMG/Lugares/taller.jpg" class="right screenshot" width="350" height="350" style="margin: 4px 0 0 20px; cursor: pointer;"/>
+
+                <p>Gotts es el carpintero local que vive en el bosque al sur de tu granja. Su tienda está abierta de 11:00 a 16:00 horas y cierra los sábados. Sin embargo, no vuelve a su tienda por la mañana hasta las 11:10 horas. Gotts deja su tienda desatendida entre las 13:00 y las 16:00 horas los jueves, viernes y domingos; básicamente, su horario de atención es solo de 11:10 a 13:00 horas esos días, ademas el taller de Gotts está abierto los días de festival.</p>
+
+                <p>Dentro del taller de Gotts puedes hacer dos cosas, la primera es comprar algunos productos y lo segundo es hacer renovaciones para tu granja.</p>
+                
+                <table class="data">
+                    <tr><th>Horas</th><td class="perso">11:00 am - 4:00 pm.</td></tr>
+                    <tr><th>Cerrado</th><td class="perso">Sábados.</td></tr>
+                    <tr><th>Dirigido por</th>
+                        <td><ul class="horario">
+                            <li class="gustos">Gotts.</li>
+                        </ul></td>
+                    </tr>
+                </table>
+
+                <h2>Productos</h2>
+
+                <details> <!-- Productos -->
+                    <summary>Productos</summary>
+
+                    <table class="data">
+                        <tr><th>Objeto</th><th>Disponibilidad</th><th style="width: 90px;">Costo</th></tr>
+    
+                        <tr><td>Madera</td><td>Comienzo del juego.</td><td class="td_dinero">50 <b>G</b></td></tr>
+                        <tr><td>Piedra</td><td>Comienzo del juego.</td><td class="td_dinero">50 <b>G</b></td></tr>
+                        <tr><td>Madera de oro</td><td>Tener 999 maderas en su gabinete.</td><td class="td_dinero">100.000 <b>G</b></td></tr>
+                        <tr><td>Árbol de manzana</td><td>Comienzo del juego.</td><td class="td_dinero">1.000 <b>G</b></td></tr>
+                        <tr><td>Árbol de uva</td><td>Comienzo del juego.</td><td class="td_dinero">1.000 <b>G</b></td></tr>
+                        <tr><td>Árbol de naranja</td><td>Comienzo del juego.</td><td class="td_dinero">1.000 <b>G</b></td></tr>
+                        <tr><td>Reloj</td><td>Comienzo del juego.</td><td class="td_dinero">2.000 <b>G</b></td></tr>
+                        <tr><td>Refrigerador</td><td>Construye la casa mediana.</td><td class="td_dinero">2.500 <b>G</b></td></tr>
+                        <tr><td>Refrigerador Grande</td><td>3 días después de comprar el refrigerador.</td><td class="td_dinero">5.000 <b>G</b></td></tr>
+                        <tr><td>Refrigerador de Lujo</td><td>3 días después de comprar el refrigerador Grande o estás casado.</td><td class="td_dinero">10.000 <b>G</b></td></tr>
+                        <tr><td>Gabinete grande</td><td>Comienzo del juego.</td><td class="td_dinero">5.000 <b>G</b></td></tr>
+                        <tr><td>Gabinete de lujo</td><td>Construye la Casa Grande o 3 días después de comprar el Gabinete Grande.</td><td class="td_dinero">10.000 <b>G</b></td></tr>
+                        <tr>
+                            <td>Alfombra</td>
+                            <td>
+                                <ul class="horario">
+                                    <li>Construye la Casa Grande o hazte con el Reloj.</li>
+                                    <li>Consigue el refrigerador y los 8 utensilios de cocina.</li>
+                                </ul>
+                            </td>
+                            <td class="td_dinero">5.000 <b>G</b></td>
+                        </tr>
+                        <tr><td>Cama grande</td><td>Cuando construyas la casa grande.</td><td class="td_dinero">10.000 <b>G</b></td></tr>
+                        <tr><td>televisión LCD</td><td>Comienzo del juego.</td><td class="td_dinero">5.000 <b>G</b></td></tr>
+                    </table>
+                </details>
+
+                <details> <!-- Remodelacion -->
+                    <summary>Renovaciones</summary>
+
+                    <table class="data" style="margin-bottom: 30px;">
+                        <tr><th>Nombre</th><th>Disponibilidad</th><th>Requerimiento</th><th style="width: 90px;">Costo</th></tr>
+    
+                        <tr>
+                            <td>Casa mediana</td><td>Comienzo del juego.</td>
+                            <td>
+                                <ul class="horario">
+                                    <li>150 Madera.</li>
+                                    <li>50 Piedras.</li>
+                                </ul>
+                            </td>
+                            <td class="td_dinero">3.000 <b>G</b></td>
+                        </tr>
+
+                        <tr>
+                            <td>Casa grande</td><td>Construye la casa mediana.</td>
+                            <td>
+                                <ul class="horario">
+                                    <li>600 Madera.</li>
+                                    <li>250 Piedras.</li>
+                                </ul>
+                            </td>
+                            <td class="td_dinero">10.000 <b>G</b></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Baño</td><td>Construye la casa grande.</td>
+                            <td>
+                                <ul class="horario">
+                                    <li>300 Madera.</li>
+                                    <li>300 Piedras.</li>
+                                </ul>
+                            </td>
+                            <td class="td_dinero">30.000 <b>G</b></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Mejora del tamaño del corral</td><td>Comienzo del juego.</td>
+                            <td>
+                                <ul class="horario">
+                                    <li>350 Madera.</li>
+                                    <li>200 Piedras.</li>
+                                </ul>
+                            </td>
+                            <td class="td_dinero">5.000 <b>G</b></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Mejora el molino</td><td>Despues de mejorar el gallinero.</td>
+                            <td>
+                                <ul class="horario">
+                                    <li>300 Madera.</li>
+                                    <li>150 Piedras.</li>
+                                </ul>
+                            </td>
+                            <td class="td_dinero">5.000 <b>G</b></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Mejora del tamaño del granero</td><td>Comienzo del juego.</td>
+                            <td>
+                                <ul class="horario">
+                                    <li>400 Madera.</li>
+                                    <li>250 Piedras.</li>
+                                </ul>
+                            </td>
+                            <td class="td_dinero">6.800 <b>G</b></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Mejora del tamaño del Silo</td><td>Comienzo del juego.</td>
+                            <td>
+                                <ul class="horario">
+                                    <li>300 Madera.</li>
+                                    <li>200 Piedras.</li>
+                                </ul>
+                            </td>
+                            <td class="td_dinero">6.800 <b>G</b></td>
+                        </tr>
+                        
+                        <tr><td>Mejorar el nivel de campo a 2</td><td>Primavera del año 2.</td><td>No requiere</td><td class="td_dinero">20.000 <b>G</b></td></tr>
+                        
+                        <tr><td>Mejorar el nivel de campo a 3</td><td>Primavera del año 3 y nivel de campo en 2.</td><td>No requiere</td><td class="td_dinero">50.000 <b>G</b></td></tr>
+                        
+                        <tr><td>Mejorar el nivel de campo a 4</td><td>Primavera del año 4 y nivel de campo en 3.</td><td>No requiere</td><td class="td_dinero">100.000 <b>G</b></td></tr>
+                        
+                        <tr><td>Mejorar el nivel de campo a 5</td><td>Primavera del año 5 y nivel de campo en 4.</td><td>No requiere</td><td class="td_dinero">300.000 <b>G</b></td></tr>
+
+                        <tr>
+                            <td>Villa de la ciudad</td><td>Ningún requerimiento especial</td>
+                            <td>
+                                <ul class="horario">
+                                    <li>999 Madera.</li>
+                                    <li>999 Piedras.</li>
+                                </ul>
+                            </td>
+                            <td class="td_dinero">10.000 <b>G</b></td>
+                        </tr>
+
+                        <tr>
+                            <td>Diseños de ventanas</td><td>Construye la casa mediana.</td>
+                            <td>
+                                <ul class="horario">
+                                    <li>200 Madera.</li>
+                                    <li>150 Piedras.</li>
+                                </ul>
+                            </td>
+                            <td class="td_dinero">25.000 <b>G</b></td>
+                        </tr>
+
+                        <tr>
+                            <td>Diseños de Buzónes</td><td>Construye la casa grande.</td>
+                            <td>
+                                <ul class="horario">
+                                    <li>150 Madera.</li>
+                                    <li>50 Piedras.</li>
+                                </ul>
+                            </td>
+                            <td class="td_dinero">10.000 <b>G</b></td>
+                        </tr>
+
+                        <tr><td>Diseños de papel de tapices</td><td>Construye la casa grande.</td><td>No requiere</td><td class="td_dinero">1.000 <b>G</b></td></tr>
+    
+                        <tr><td>Diseños de suelos</td><td>Construye la casa grande.</td><td>No requiere</td><td class="td_dinero">1.000 <b>G</b></td></tr>
+                    </table>
+                </details>
+            </main>
+            
+            <footer>
+                <section class="pie"> <p class="copyright">© Copyright Fabian Daquilema - 2024</p> </section>
+            
+                <section style="display: flex; margin: 14px 0 0 0; justify-content: space-evenly;align-content: center;">
+                    <div>
+                        <a href="https://www.twitch.tv/kirbo1997" target="_blank"><img src="../../../IMG/Cuentas/twitch.png" alt="Twitch" class="enlace"></img></a> <!-- Conecta el archivo jpg para ser usado en la pagina para usarlo como hipervinculo y le doy un nombre a esa imagen-->
+                    </div>
+                    
+                    <div>
+                        <a href="https://www.linkedin.com/in/fabian-daquilema-aguayo-8b4745134" target="_blank"><img src="../../../IMG/Cuentas/linkedin.png" alt="Linkedin" class="enlace"></img></a> <!-- Conecta el archivo jpg para ser usado en la pagina para usarlo como hipervinculo y le doy un nombre a esa imagen-->
+                    </div>
+                
+                    <div>
+                        <a href="https://kirbo97.github.io/Portafolio/"><img src="../../../IMG/Cuentas/Home.png" alt="Menu" class="enlace"></img></a> <!-- Conecta el archivo jpg para ser usado en la pagina para usarlo como hipervinculo y le doy un nombre a esa imagen-->
+                    </div>
+    
+                    <div>
+                        <a href="https://www.youtube.com/@kirbo1997" target="_blank"><img src="../../../IMG/Cuentas/youtube.png"  alt="Youtube" class="enlace"></img></a> <!-- Conecta el archivo jpg para ser usado en la pagina para usarlo como hipervinculo y le doy un nombre a esa imagen-->
+                    </div>
+    
+                    <div>
+                        <a href="https://github.com/Kirbo97?tab=repositories" target="_blank"><img src="../../../IMG/Cuentas/GitHub-v2.png"  alt="Github" class="enlace"></img></a> <!-- Conecta el archivo jpg para ser usado en la pagina para usarlo como hipervinculo y le doy un nombre a esa imagen-->
+                    </div>
+                </section>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">   <!-- Para usar la escritura latina -->
+        <title>Guia de la Tienda general de SOS-FOMT</title> 
+        <link rel="stylesheet" href="../../../CSS/Style.css" type="text/css" />
+        <link rel="shortcut icon" href="../../../IMG/Iconos/Kirbo.ico"/>
+    </head>
+    
+    <body>
+        <nav>
+            <div>
+                <a href="../../../Paginas/Actividades.html" style="text-align: center;"><img src="../../../IMG/Iconos/Actividades.png" title="Actividades" style="border:none;" width="40" height="40"></a>
+                <a class="vin_nav" href="../../../Paginas/Actividades.html">Actividades</a>
+            </div>
+
+            <div>
+                <a href="../../../Paginas/Lugares.html" style="text-align: center;"><img src="../../../IMG/Iconos/edificio.png" title="Lugares" style="border:none;" width="40" height="40"></a>
+                <a class="vin_nav" href="../../../Paginas/Lugares.html">Lugares</a>
+            </div>
+
+            <div>
+                <a href="../../../Paginas/Herramientas.html" style="text-align: center;"><img src="../../../IMG/Iconos/herra.png" title="Herramientas" style="border:none;" width="40" height="40"></a>
+                <a class="vin_nav" href="../../../Paginas/Herramientas.html">Herramientas</a>
+            </div>
+
+            <div>
+                <a href="../../../Paginas/Personajes.html" style="text-align: center;"><img src="../../../IMG/Iconos/Personajes.png" title="Personajes" style="border:none;" width="40" height="40"></a>
+                <a class="vin_nav" href="../../../Paginas/Personajes.html">Personajes</a>
+            </div>
+
+            <div>
+                <a href="../../../Paginas/Eventos.html" style="text-align: center;"><img src="../../../IMG/Iconos/calen.png" title="Eventos" style="border:none;" width="40" height="40"></a>
+                <a class="vin_nav" href="../../../Paginas/Eventos.html">Eventos</a>
+            </div>
+
+            <div>
+                <a href="../../../Paginas/Resistencia.html" style="text-align: center;"><img src="../../../IMG/Iconos/resistencia.png" title="Salud y resistencia" style="border:none;" width="40" height="40"></a>
+                <a class="vin_nav" href="../../../Paginas/Eventos.html">Salud</a>
+            </div>
+        </nav>
+
+        <div id="content">
+            <header style="display: flex; justify-content: space-between;">
+                <h1>Tienda general de la ciudad Mineral</h1>
+                <div style="display: flex; column-gap: 3em;">
+                    <a href="../../../Paginas/Lugares.html"><img src="../../../IMG/Iconos/atras.png"  alt="atras" class="icono" style="right:160px;"></img></a>
+                    <a href="../../../index.html"><img src="../../../IMG/Iconos/home.png"  alt="home" class="icono" title="Home" style="right:80px;"></img></a>
+                </div>
+            </header>
+
+            <main>
+
+                <img src="../../../IMG/Lugares/tienda_general.jpg" class="right screenshot" width="350" height="350" style="margin: 4px 0 0 20px; cursor: pointer;"/>
+
+                <p>La tienda general es el lugar al que irás para comprar semillas, ingredientes para cocinar y diversos suministros que usarás en tu granja. Jeff se encarga de la tienda general desde detrás del mostrador, mientras que Sasha y Karen supervisan desde la trastienda. La tienda está abierta de 9:00 a 17:00 y cierra los martes y domingos.</p>
+
+                <p>El inventario de semillas de Jeff cambiará de una temporada a otra. Venderá las semillas de la temporada actual el primer día de la temporada. No hay semillas a la venta durante el invierno.</p>
+                
+                <table class="data">
+                    <tr><th>Horas</th><td class="perso">9:00 am - 5:00 pm.</td></tr>
+                    <tr><th>Cerrado</th><td class="perso">Domingo, Martes y dias festivos.</td></tr>
+                    <tr><th>Dirigido por</th>
+                        <td><ul class="horario">
+                            <li class="gustos">Jeff.</li>
+                        </ul></td>
+                    </tr>
+                </table>
+
+                <h2>Productos</h2>
+
+                <details> <!-- Semillas de temporada -->
+                    <summary>Semillas de temporada</summary>
+
+                    <table class="data"> <!-- Primavera -->
+                        <tr><th>Temporada</th><th>Nombre</th><th>Requisito</th><th style="width: 80px;">Costo</th></tr>
+                        <tr><td rowspan="5" style="background-color: #84f16e;"><p class="primavera" style="text-align:center"></p></td><td>Semillas de nabo</td><td class="td_neutro">—</td><td class="td_dinero">120 <b>G</b></td>
+        
+                        <tr><td>Semillas de patata</td><td class="td_neutro">—</td><td class="td_dinero">150 <b>G</b></td>
+        
+                        <tr><td>Semillas de pepino</td><td class="td_neutro">—</td><td class="td_dinero">200 <b>G</b></td>
+        
+                        <tr><td>Semillas de fresa</td><td>Haber enviado 100 nabos, patatas y pepinos.</td><td class="td_dinero">150 <b>G</b></td>
+
+                        <tr><td>Semillas de forraje</td><td class="td_neutro">—</td><td class="td_dinero">500 <b>G</b></td>
+                    </table>
+        
+                    <table class="data">  <!-- Verano -->
+                        <tr><th>Temporada</th><th>Nombre</th><th>Requisito</th><th style="width: 80px;">Costo</th></tr>
+        
+                        <tr><td rowspan="5" style="background-color: #f2e88c;"><p class="verano" style="text-align:center"></p></td><td>Semillas de tomate</td><td class="td_neutro">—</td><td class="td_dinero">200 <b>G</b></td>
+        
+                        <tr><td>Semillas de maíz</td><td class="td_neutro">—</td><td class="td_dinero">300 <b>G</b></td>
+        
+                        <tr><td>Semillas de cebolla</td><td class="td_neutro">—</td><td class="td_dinero">150 <b>G</b></td>
+        
+                        <tr><td>Semillas de calabaza</td><td>Haber enviado 100 tomates, maíz y cebollas.</td><td class="td_dinero">500 <b>G</b></td>
+
+                        <tr><td>Semillas de forraje</td><td class="td_neutro">—</td><td class="td_dinero">500 <b>G</b></td>
+        
+                    </table>
+        
+                    <table class="data"> <!-- Otoño -->
+                        <tr><th>Temporada</th><th>Nombre</th><th>Requisito</th><th style="width: 80px;">Costo</th></tr>
+        
+                        <tr><td rowspan="9" style="background-color: #f4a74f;"><p class="otoño" style="text-align:center"></p></td><td>Semillas de berenjena</td><td class="td_neutro">—</td><td class="td_dinero">120 <b>G</b></td>
+        
+                        <tr><td>Semillas de zanahoria</td><td class="td_neutro">—</td><td class="td_dinero">300 <b>G</b></td>
+        
+                        <tr><td>Semillas de boniato</td><td class="td_neutro">—</td><td class="td_dinero">300 <b>G</b></td>
+        
+                        <tr><td>Semillas de espinacas</td><td>Haber enviado 100 berenjena, tomate y boniato.</td><td class="td_dinero">200 <b>G</b></td>
+        
+                        <tr><td>Semillas de flores dulces sol</td><td>Haber visto el evento <a class="hiper" href="../../Personajes.html" style="font-size: 17px;">Flor Preservada</a>.</td><td class="td_dinero">1.000 <b>G</b></td>
+        
+                        <tr><td>Semillas de Judía azuki</td><td class="td_neutro">—</td><td class="td_dinero">300 <b>G</b></td>
+        
+                        <tr><td>Semillas de chile</td><td class="td_neutro">—</td><td class="td_dinero">300 <b>G</b></td>
+        
+                        <tr><td>Flor preservada</td><td>Al menos 3 días después de ver el evento de <a class="hiper" href="../../Personajes.html" style="font-size: 17px;">Flor Preservada</a>.</td><td class="td_dinero">1.000 <b>G</b></td>
+
+                        <tr><td>Semillas de forraje</td><td class="td_neutro">—</td><td class="td_dinero">500 <b>G</b></td>
+        
+                    </table>
+                </details>
+                
+
+                <details> <!-- Ingredientes de cocina -->
+                    <summary>Ingredientes de cocina</summary>
+
+                    <table class="data">
+                        
+                        <tr><th>Temporada</th><th style="width: 120px;">Nombre</th><th style="width: 80px;">Requisitos</th><th style="width: 80px;">Costo</th></tr>
+
+                        <tr>
+                            <td style="padding: 4px;" rowspan="7" >
+                                <div style=" display: flex;">
+                                    <p class="primavera" style="margin: 0; font-size: 0.7em;"></p>
+                                    <p class="verano" style="margin: 0 0 0 6px; font-size: 0.7em;"></p>
+                                </div>
+                                <div style=" display: flex; margin-top: 20px;">
+                                    
+                                    <p class="otoño" style="margin: 0; font-size: 0.7em;"></p>
+                                    <p class="invierno" style="margin: 0 0 0 6px; font-size: 0.7em;"></p>
+                                </div>
+                            </td>
+                            <td>Onigiri</td><td class="td_neutro">—</td><td class="td_dinero">100 <b>G</b></td>
+                        </tr>
+                        <tr><td>Pan</td><td class="td_neutro">—</td><td class="td_dinero">100 <b>G</b></td>
+                        <tr><td>Aceite</td><td class="td_neutro">—</td><td class="td_dinero">50 <b>G</b></td>
+                        <tr><td>Harina de trigo</td><td class="td_neutro">—</td><td class="td_dinero">50 <b>G</b></td>
+                        <tr><td>Polvo de curry</td><td class="td_neutro">—</td><td class="td_dinero">50 <b>G</b></td>
+                        <tr><td>Polvo de dango</td><td class="td_neutro">—</td><td class="td_dinero">100 <b>G</b></td>
+                        <tr><td>Chocolate</td><td class="td_neutro">—</td><td class="td_dinero">100 <b>G</b></td>
+                        
+                    </table>
+                </details>
+
+                <details> <!-- Otros -->
+                    <summary>Otros</summary>
+
+                    <p><b>Nota: </b>los objetos de esta lista solo se podran conseguir una vez, cuando se alla comprado ya no volveran a aparecer a esepcion de la pluma azul ya que para que vuelva salir la pluma azull primero deve divorciarse para poder casarse con otro candidato a matrimonio y cumplir con las condicione de dicho objeto.</p>
+
+                    <table class="data">
+                        <tr><th style="width: 200px;">Nombre</th><th style="width: 518px;">Requisitos</th><th style="width: 80px;">Costo</th></tr>
+
+                        <tr><td>Pluma azul</td><td>Has visto el evento del corazón naranja con un candidato a matrimonio normal o has alcanzado un color de corazón naranja invisible con un candidato a matrimonio especial</td><td class="td_dinero">1.000 <b>G</b></td>
+        
+                        <tr><td>Bolsa básica (16 espacios)</td><td>Comienzo del juego</td><td class="td_dinero">3.000 <b>G</b></td>
+        
+                        <tr><td>Bolsa grande (24 espacios)</td><td>7 días después de comprar la Bolsa Básica</td><td class="td_dinero">5.000 <b>G</b></td>
+        
+                        <tr><td>Condimentos</td><td>Despues de conseguir la casa mediana</td><td class="td_dinero">2.500 <b>G</b></td>
+
+                        <tr><td>Olla</td><td>10 días después de comprar los condimentos</td><td class="td_dinero">1.000 <b>G</b></td>
+        
+                        <tr><td>Sartén</td><td>10 días después de comprar la olla</td><td class="td_dinero">1.200 <b>G</b></td>
+        
+                        <tr><td>Cuchillo</td><td>10 días después de comprar la Sartén</td><td class="td_dinero">1.500 <b>G</b></td>
+        
+                        <tr><td>Horno</td><td>10 días después de comprar el Cuchillo/td><td class="td_dinero">2.500 <b>G</b></td>
+
+                        <tr><td>Rodillo</td><td>10 días después de comprar el horno</td><td class="td_dinero">750 <b>G</b></td>
+        
+                        <tr><td>Batidora</td><td>10 días después de comprar el rodillo</td><td class="td_dinero">1.200 <b>G</b></td>
+
+                        <tr><td>Varilla de batir</td><td>10 días después de comprar la Batidora</td><td class="td_dinero">500 <b>G</b></td>
+
+                        <tr><td>Balla de poder</td><td>Después de comprar la cama grande y la alfombra</td><td class="td_dinero">10.000 <b>G</b></td>
+                    </table>
+                </details>    
+                
+                <h2>Envoltura de regalo</h2>
+
+                <p>Junto al mostrador de Jeff se encuentra la estación de envoltura de regalos. Al examinar esta área, tendrá la opción de envolver un regalo por 100 <b style="color:rgb(225, 192, 4); font-size: 20px;">G</b> cada uno o desenvolver un regalo gratis. También puede desenvolver regalos gratis usted mismo colocando el regalo en el armario o refrigerador de su casa de campo.</p>
+
+                <p>Si envuelves tus regalos para regalo, obtendrás un bono del 25% en los puntos de amistad y los puntos de amor que recibirías al entregar el regalo. Por ejemplo, si le das a un candidato a matrimonio su regalo favorito, normalmente ganarás 800 LP y 9 FP, pero si le das ese mismo regalo envuelto, eso aumentará a 1000 LP y 11 FP.</p>
+                
+                <p>Cuando un artículo ha sido envuelto para regalo, aparecerá un pequeño icono de una caja de regalo en la esquina inferior derecha del icono del artículo en tu mochila. Al sacar el artículo de tu bolso para dárselo a alguien, el artículo se convertirá visualmente en una caja con un bonito lazo rojo.</p>
+                
+                <p>La desventaja es que tienes que envolver cada regalo individualmente y los regalos envueltos solo se pueden guardar en la mochila. Si intentas guardar el artículo envuelto en el refrigerador o en un armario, aparecerá un mensaje que te pedirá que retires el envoltorio antes de guardarlo.</p>
+
+            </main>
+            
+            <footer>
+                <section class="pie"> <p class="copyright">© Copyright Fabian Daquilema - 2024</p> </section>
+            
+                <section style="display: flex; margin: 14px 0 0 0; justify-content: space-evenly;align-content: center;">
+                    <div>
+                        <a href="https://www.twitch.tv/kirbo1997" target="_blank"><img src="../../../IMG/Cuentas/twitch.png" alt="Twitch" class="enlace"></img></a> <!-- Conecta el archivo jpg para ser usado en la pagina para usarlo como hipervinculo y le doy un nombre a esa imagen-->
+                    </div>
+                    
+                    <div>
+                        <a href="https://www.linkedin.com/in/fabian-daquilema-aguayo-8b4745134" target="_blank"><img src="../../../IMG/Cuentas/linkedin.png" alt="Linkedin" class="enlace"></img></a> <!-- Conecta el archivo jpg para ser usado en la pagina para usarlo como hipervinculo y le doy un nombre a esa imagen-->
+                    </div>
+                
+                    <div>
+                        <a href="https://kirbo97.github.io/Portafolio/"><img src="../../../IMG/Cuentas/Home.png" alt="Menu" class="enlace"></img></a> <!-- Conecta el archivo jpg para ser usado en la pagina para usarlo como hipervinculo y le doy un nombre a esa imagen-->
+                    </div>
+    
+                    <div>
+                        <a href="https://www.youtube.com/@kirbo1997" target="_blank"><img src="../../../IMG/Cuentas/youtube.png"  alt="Youtube" class="enlace"></img></a> <!-- Conecta el archivo jpg para ser usado en la pagina para usarlo como hipervinculo y le doy un nombre a esa imagen-->
+                    </div>
+    
+                    <div>
+                        <a href="https://github.com/Kirbo97?tab=repositories" target="_blank"><img src="../../../IMG/Cuentas/GitHub-v2.png"  alt="Github" class="enlace"></img></a> <!-- Conecta el archivo jpg para ser usado en la pagina para usarlo como hipervinculo y le doy un nombre a esa imagen-->
+                    </div>
+                </section>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+/* ********************************* */
+/*  Diseños para Moviles (426 x 790) */
+/* ********************************* */
+
+/*Con la linea para que se adapte a la pantalla en la que se encuentra, el tamaño para el Movil es (max-width:426px), sin es linea el tamaño para Movil es (max-width:980px)*/
+
+/* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
+@media screen and (max-width:980px){
+    h1 { font-size: 2.18em !important; }
+
+    header{ height: 76px !important; }
+
+    li.gustos { 
+        margin: 4px 0 4px 0 !important;
+        text-align: left !important;
+    }
+    
+    ul.sep2 { 
+        padding: 0 0 0 40px !important;
+        margin: 0 !important;
+    }
+    
+    ul.sep3 { 
+        padding: 0 4px 0 40px !important;
+        margin: 0 !important;
+    }
+    
+    header .pos-fin { margin: 0 0 0 2.75em !important; }
+
+    .vin_tel{ font-size: 0.97em !important; }
+
+    .men_tel{ font-size: 0.76em !important; }
+
+    #esp1 { width: 180.8px !important;}
+
+    #esp2 { width: 200.8px !important;}
+
+    #esp3 { width: 235.8px !important;}
+
+    #esp4 { width: 160.8px !important;}
+}
+
+/* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
+@media screen and (max-height:600px) and (orientation:landscape){    
+    h1 { font-size: 2.18em !important; }
+    
+    header{ height: 76px !important;  }
+
+    li.gustos { 
+        margin: 4px 0 4px 0 !important;
+        text-align: left !important;
+    }
+    
+    ul.sep2 { 
+        padding: 0 0 0 40px !important;
+        margin: 0 !important;
+    }
+    
+    ul.sep3 { 
+        padding: 0 4px 0 40px !important;
+        margin: 0 !important;
+    }
+    
+    header .pos-fin { margin: 0 0 0 2.75em !important; }
+
+    .vin_tel{ font-size: 0.97em !important; }
+
+    .men_tel{ font-size: 0.76em !important; }
+
+    #esp1 { width: 180.8px !important;}
+
+    #esp2 { width: 200.8px !important;}
+
+    #esp3 { width: 235.8px !important;}
+
+    #esp4 { width: 160.8px !important;}
+}
