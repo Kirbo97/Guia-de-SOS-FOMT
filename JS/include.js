@@ -5,4 +5,4 @@ async function loadHTML(id, file) {
 }
 
 loadHTML("nav", "/Guia-de-SOS-FOMT/Estructura/nav.html");
-/*loadHTML("footer", "../Estructura/footer.html");*/
+loadHTML("footer", "/Guia-de-SOS-FOMT/Estructura/footer.html");
