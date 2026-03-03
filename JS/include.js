@@ -4,6 +4,5 @@ async function loadHTML(id, file) {
   document.getElementById(id).innerHTML = data;
 }
 
-const base = window.location.pathname.split('/')[1];
-loadHTML("nav", "/${base}/Estructura/nav.html");
+loadHTML("nav", "/Guia-de-SOS-FOMT/Estructura/nav.html");
 /*loadHTML("footer", "../Estructura/footer.html");*/
