@@ -123,10 +123,10 @@
 
 /* se crea la clase "box_otro" para que se ocupe de posisionar el contenido para las mascotas*/
 .box_otro {
-    max-width:600px; 
-    height:auto; 
+    max-width:1100px;
+    height:auto;
     display:inline-block; 
-    margin:10px 17px;
+    margin:1.5em 19px;
 }
 
 /* se crea la clase "box_ganado" para que se ocupe de posisionar el contenido para el ganado*/
