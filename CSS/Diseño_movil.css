@@ -38,6 +38,8 @@
     #esp3 { width: 235.8px !important;}
 
     #esp4 { width: 160.8px !important;}
+
+    .box_otro { max-width:1000px; }
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
