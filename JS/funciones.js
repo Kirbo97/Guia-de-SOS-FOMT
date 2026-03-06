@@ -1,7 +1,7 @@
 
 function Scrollbutton(tip_bot) {
     var anchoVentana = window.innerWidth;
-    var salto_movile=525;
+    var salto_movile=523;
     var salto_comp=520;
         
     if (anchoVentana <= 980) { // desplasamiento para cuando es  el movile
@@ -18,4 +18,5 @@ function Scrollbutton(tip_bot) {
             document.getElementById("boxsort").scrollTop += salto_comp;
         }   
     }
+
 }   
