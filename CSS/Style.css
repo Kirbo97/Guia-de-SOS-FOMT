@@ -169,13 +169,17 @@ details[open] > summary:first-of-type {
 	color: rgb(77, 208, 6);
 }
 
-.scroll-container {
+.scroll-container-aldeanos,.scroll-container-candidatos {
     width: auto;           /* Ancho del contenedor */
     height: 32em;          /* Alto del contenedor */
     overflow: auto;         /* Activa la barra de desplazamiento */
     scroll-behavior: smooth; /* Desplazamiento suave */
     border: 1px solid #ccc; /* Borde opcional para definir el contorno */
 }
+
+.scroll-container-aldeanos { height: 32em;          /* Alto del contenedor */ }
+
+.scroll-container-candidatos { height: 38.5em;          /* Alto del contenedor */ }
 
 /* ********************************* */
 /*  Diseños generales de las listas  */

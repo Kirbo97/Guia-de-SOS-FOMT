@@ -26,7 +26,7 @@
                 <h3>Lista de aldeanos</h3>
 
                 <div style="display: flex;">
-                    <div id="boxsort" style="overflow: hidden;" class="scroll-container">
+                    <div id="villager_box" style="overflow: hidden;" class="scroll-container-aldeanos">
                         <div class="box_aldeanos">
                             <a href="../Paginas/Personajes/Aldeanos/anna.html" style="text-decoration:none; border-bottom:none;"><img src="../IMG/Personajes/Aldeanos/Caras/villager_anna_sm.jpg" class="screenshot" title="ana" alt="retrato de personaje" width="200" height="200"></a>
                         </div>
@@ -94,8 +94,8 @@
                     </div>
 
                     <div style="display: flex; flex-direction: column;">
-                        <button style="height: 50%; padding: 6px; font-weight: bold; font-size: 25px;" onclick="Scrollbutton('arriba');">↑</button>
-                        <button style="height: 50%; padding: 6px; font-weight: bold; font-size: 25px;" onclick="Scrollbutton('abajo');">↓</button>
+                        <button style="height: 50%; padding: 6px; font-weight: bold; font-size: 25px;" onclick="Scroll_button_villager('arriba');">↑</button>
+                        <button style="height: 50%; padding: 6px; font-weight: bold; font-size: 25px;" onclick="Scroll_button_villager('abajo');">↓</button>
                     </div>
                 </div>
 
@@ -141,86 +141,95 @@
                 <p>De vuelta en la tienda, los dos hombres todavía están hablando de la flor cuando se la presentas. Ambos se sorprenden de que hayas localizado la flor de los sentimientos. Jeff planea usar el suyo como tema de un dibujo que hará para Sasha, mientras que Basil estudiará su espécimen. Le pones a la flor el nombre <b>Sunsweet Flower</b>.</p>
     
                 <p>Tres días después de darle a Jeff la flor dulce del sol, sal de tu granja en un día soleado entre las 9:00 a. m. y las 5:00 p. m . Te volverás a encontrar con Jeff. Jeff quiere mostrarte la flor preservada que su amigo hizo usando la flor que le diste. Como muestra de su agradecimiento, Jeff le regala la primera de sus flores preservadas. Puedes comprar más en su tienda general por 1000 G cada uno. Si la sección de herramientas de su bolso está llena, Jeff simplemente colocará su flor preservada en la caja de herramientas de su granja.</p>
+    
+                <h3>Lista de personajes a candidatos de pareja</h3>
 
-                <div id="boxsort">	<!-- cuadro de pretendientes -->
-                    <div class="box_matrimonio">
-                        <a href="../Paginas/Personajes/Candidatos/bonviviant.html"><img src="../IMG/Personajes/Candidatos/Chibi/chibi_von.png" title="Bon Vivant" style="border:none;" width="350" height="180"></a>
-                        <a class="hiper" href="../Paginas/Personajes/Candidatos/bonviviant.html">Bon Viviant</a>
-                    </div>
-
-                    <div class="box_matrimonio">
-                        <a href="../Paginas/Personajes/Candidatos/brandon.html"><img src="../IMG/Personajes/Candidatos/Chibi/chibi_brandon.png" title="Brandon" style="border:none;" width="350" height="180"></a>
-                        <a class="hiper" href="../Paginas/Personajes/Candidatos/brandon.html">Brandon</a>
-                    </div>
-
-                    <div class="box_matrimonio">
-                        <a href="../Paginas/Personajes/Candidatos/cliff.html"><img src="../IMG/Personajes/Candidatos/Chibi/chibi_cliff.png" title="Cliff" style="border:none;" width="350" height="180"></a>
-                        <a class="hiper" href="../Paginas/Personajes/Candidatos/cliff.html">Cliff</a>
-                    </div>
-
-                    <div class="box_matrimonio">
-                        <a href="../Paginas/Personajes/Candidatos/doctor.html"><img src="../IMG/Personajes/Candidatos/Chibi/chibi_doc.png" title="Doc" style="border:none;" width="350" height="180"></a>
-                        <a class="hiper" href="../Paginas/Personajes/Candidatos/doctor.html">Doctor</a>
-                    </div>
-
-                    <div class="box_matrimonio">
-                        <a href="../Paginas/Personajes/Candidatos/elly.html"><img src="../IMG/Personajes/Candidatos/Chibi/chibi_elly.png" title="Elli" style="border:none;" width="350" height="180"></a>
-                        <a class="hiper" href="../Paginas/Personajes/Candidatos/elly.html">Elly</a>
-                    </div>
-
-                    <div class="box_matrimonio">
-                        <a href="../Paginas/Personajes/Candidatos/gray.html"><img src="../IMG/Personajes/Candidatos/Chibi/chibi_gray.png" title="Gray" style="border:none;" width="350" height="180"></a>
-                        <a class="hiper" href="../Paginas/Personajes/Candidatos/gray.html">Gray</a>
-                    </div>
-
-                    <div class="box_matrimonio">
-                        <a href="../Paginas/Personajes/Candidatos/goddess.html"><img src="../IMG/Personajes/Candidatos/Chibi/chibi_goddess.png" title="Mother Nature" style="border:none;" width="350" height="180"></a>
-                        <a class="hiper" href="../Paginas/Personajes/Candidatos/goddess.html">Diosa de la cosecha</a>
-                    </div>
-
-                    <div class="box_matrimonio">
-                        <a href="../Paginas/Personajes/Candidatos/huang.html"><img src="../IMG/Personajes/Candidatos/Chibi/chibi_huang.png" title="Huang" style="border:none;" width="350" height="180"></a>
-                        <a class="hiper" href="../Paginas/Personajes/Candidatos/huang.html">Huang</a>
-                    </div>
-
-                    <div class="box_matrimonio">
-                        <a href="../Paginas/Personajes/Candidatos/jennifer.html"><img src="../IMG/Personajes/Candidatos/Chibi/chibi_jennifer.png" title="Jennifer" style="border:none;" width="350" height="180"></a>
-                        <a class="hiper" href="../Paginas/Personajes/Candidatos/jennifer.html">Jennifer</a>
-                    </div>
-
-                    <div class="box_matrimonio">
-                        <a href="../Paginas/Personajes/Candidatos/kai.html"><img src="../IMG/Personajes/Candidatos/Chibi/chibi_kai.png" title="Kai" style="border:none;" width="350" height="180"></a>
-                        <a class="hiper" href="../Paginas/Personajes/Candidatos/kai.html">Kai</a>
-                    </div>
-
-                    <div class="box_matrimonio">
-                        <a href="../Paginas/Personajes/Candidatos/kappa.html"><img src="../IMG/Personajes/Candidatos/Chibi/chibi_kappa.png" title="Kappa" style="border:none;" width="350" height="180"></a>
-                        <a class="hiper" href="../Paginas/Personajes/Candidatos/kappa.html">Kappa</a>
-                    </div>
-
-                    <div class="box_matrimonio">
-                        <a href="../Paginas/Personajes/Candidatos/karen.html"><img src="../IMG/Personajes/Candidatos/Chibi/chibi_karen.png" title="Karen" style="border:none;" width="350" height="180"></a>
-                        <a class="hiper" href="../Paginas/Personajes/Candidatos/karen.html">Karen</a>
-                    </div>
-
-                    <div class="box_matrimonio">
-                        <a href="../Paginas/Personajes/Candidatos/marie.html"><img src="../IMG/Personajes/Candidatos/Chibi/chibi_marie.png" title="Mary or Marie" style="border:none;" width="350" height="180"></a>
-                        <a class="hiper" href="../Paginas/Personajes/Candidatos/marie.html">Marie</a>
-                    </div>
-
-                    <div class="box_matrimonio">
-                        <a href="../Paginas/Personajes/Candidatos/popuri.html"><img src="../IMG/Personajes/Candidatos/Chibi/chibi_popuri.png" title="Popuri" style="border:none;" width="350" height="180"></a>
-                        <a class="hiper" href="../Paginas/Personajes/Candidatos/popuri.html">Popuri</a>
-                    </div>
-
-                    <div class="box_matrimonio">
-                        <a href="../Paginas/Personajes/Candidatos/ran.html"><img src="../IMG/Personajes/Candidatos/Chibi/chibi_ran.png" title="Ann or Ran" style="border:none;" width="350" height="180"></a>
-                        <a class="hiper" href="../Paginas/Personajes/Candidatos/ran.html">Ran</a>
-                    </div>
+                <div style="display: flex;">
+                    <div id="marriage_box" style="overflow: hidden;" class="scroll-container-candidatos">
+                        <div class="box_matrimonio">
+                            <a href="../Paginas/Personajes/Candidatos/bonviviant.html"><img src="../IMG/Personajes/Candidatos/Chibi/chibi_von.png" title="Bon Vivant" style="border:none;" width="350" height="180"></a>
+                            <a class="hiper" href="../Paginas/Personajes/Candidatos/bonviviant.html">Bon Viviant</a>
+                        </div>
                     
-                    <div class="box_matrimonio">
-                        <a href="../Paginas/Personajes/Candidatos/rick.html"><img src="../IMG/Personajes/Candidatos/Chibi/chibi_rick.png" title="Rick" style="border:none;" width="350" height="180"></a>
-                        <a class="hiper" href="../Paginas/Personajes/Candidatos/rick.html">Rick</a>
+                        <div class="box_matrimonio">
+                            <a href="../Paginas/Personajes/Candidatos/brandon.html"><img src="../IMG/Personajes/Candidatos/Chibi/chibi_brandon.png" title="Brandon" style="border:none;" width="350" height="180"></a>
+                            <a class="hiper" href="../Paginas/Personajes/Candidatos/brandon.html">Brandon</a>
+                        </div>
+
+                        <div class="box_matrimonio">
+                            <a href="../Paginas/Personajes/Candidatos/cliff.html"><img src="../IMG/Personajes/Candidatos/Chibi/chibi_cliff.png" title="Cliff" style="border:none;" width="350" height="180"></a>
+                            <a class="hiper" href="../Paginas/Personajes/Candidatos/cliff.html">Cliff</a>
+                        </div>
+
+                        <div class="box_matrimonio">
+                            <a href="../Paginas/Personajes/Candidatos/doctor.html"><img src="../IMG/Personajes/Candidatos/Chibi/chibi_doc.png" title="Doc" style="border:none;" width="350" height="180"></a>
+                            <a class="hiper" href="../Paginas/Personajes/Candidatos/doctor.html">Doctor</a>
+                        </div>
+
+                        <div class="box_matrimonio">
+                           <a href="../Paginas/Personajes/Candidatos/elly.html"><img src="../IMG/Personajes/Candidatos/Chibi/chibi_elly.png" title="Elli" style="border:none;" width="350" height="180"></a>
+                           <a class="hiper" href="../Paginas/Personajes/Candidatos/elly.html">Elly</a>
+                        </div>
+
+                        <div class="box_matrimonio">
+                            <a href="../Paginas/Personajes/Candidatos/gray.html"><img src="../IMG/Personajes/Candidatos/Chibi/chibi_gray.png" title="Gray" style="border:none;" width="350" height="180"></a>
+                            <a class="hiper" href="../Paginas/Personajes/Candidatos/gray.html">Gray</a>
+                        </div>
+
+                        <div class="box_matrimonio">
+                            <a href="../Paginas/Personajes/Candidatos/goddess.html"><img src="../IMG/Personajes/Candidatos/Chibi/chibi_goddess.png" title="Mother Nature" style="border:none;" width="350" height="180"></a>
+                            <a class="hiper" href="../Paginas/Personajes/Candidatos/goddess.html">Diosa de la cosecha</a>
+                        </div>
+
+                        <div class="box_matrimonio">
+                            <a href="../Paginas/Personajes/Candidatos/huang.html"><img src="../IMG/Personajes/Candidatos/Chibi/chibi_huang.png" title="Huang" style="border:none;" width="350" height="180"></a>
+                            <a class="hiper" href="../Paginas/Personajes/Candidatos/huang.html">Huang</a>
+                        </div>
+
+                        <div class="box_matrimonio">
+                            <a href="../Paginas/Personajes/Candidatos/jennifer.html"><img src="../IMG/Personajes/Candidatos/Chibi/chibi_jennifer.png" title="Jennifer" style="border:none;" width="350" height="180"></a>
+                            <a class="hiper" href="../Paginas/Personajes/Candidatos/jennifer.html">Jennifer</a>
+                        </div>
+
+                        <div class="box_matrimonio">
+                            <a href="../Paginas/Personajes/Candidatos/kai.html"><img src="../IMG/Personajes/Candidatos/Chibi/chibi_kai.png" title="Kai" style="border:none;" width="350" height="180"></a>
+                            <a class="hiper" href="../Paginas/Personajes/Candidatos/kai.html">Kai</a>
+                        </div>
+
+                        <div class="box_matrimonio">
+                            <a href="../Paginas/Personajes/Candidatos/kappa.html"><img src="../IMG/Personajes/Candidatos/Chibi/chibi_kappa.png" title="Kappa" style="border:none;" width="350" height="180"></a>
+                            <a class="hiper" href="../Paginas/Personajes/Candidatos/kappa.html">Kappa</a>
+                        </div>
+
+                        <div class="box_matrimonio">
+                            <a href="../Paginas/Personajes/Candidatos/karen.html"><img src="../IMG/Personajes/Candidatos/Chibi/chibi_karen.png" title="Karen" style="border:none;" width="350" height="180"></a>
+                            <a class="hiper" href="../Paginas/Personajes/Candidatos/karen.html">Karen</a>
+                        </div>
+
+                        <div class="box_matrimonio">
+                            <a href="../Paginas/Personajes/Candidatos/marie.html"><img src="../IMG/Personajes/Candidatos/Chibi/chibi_marie.png" title="Mary or Marie" style="border:none;" width="350" height="180"></a>
+                            <a class="hiper" href="../Paginas/Personajes/Candidatos/marie.html">Marie</a>
+                        </div>
+
+                        <div class="box_matrimonio">
+                            <a href="../Paginas/Personajes/Candidatos/popuri.html"><img src="../IMG/Personajes/Candidatos/Chibi/chibi_popuri.png" title="Popuri" style="border:none;" width="350" height="180"></a>
+                            <a class="hiper" href="../Paginas/Personajes/Candidatos/popuri.html">Popuri</a>
+                        </div>
+
+                        <div class="box_matrimonio">
+                            <a href="../Paginas/Personajes/Candidatos/ran.html"><img src="../IMG/Personajes/Candidatos/Chibi/chibi_ran.png" title="Ann or Ran" style="border:none;" width="350" height="180"></a>
+                            <a class="hiper" href="../Paginas/Personajes/Candidatos/ran.html">Ran</a>
+                        </div>
+                        
+                        <div class="box_matrimonio">
+                            <a href="../Paginas/Personajes/Candidatos/rick.html"><img src="../IMG/Personajes/Candidatos/Chibi/chibi_rick.png" title="Rick" style="border:none;" width="350" height="180"></a>
+                            <a class="hiper" href="../Paginas/Personajes/Candidatos/rick.html">Rick</a>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column;">
+                        <button style="height: 50%; padding: 6px; font-weight: bold; font-size: 25px;" onclick="Scroll_button_marriage('arriba');">↑</button>
+                        <button style="height: 50%; padding: 6px; font-weight: bold; font-size: 25px;" onclick="Scroll_button_marriage('abajo');">↓</button>
                     </div>
                 </div>
                  
@@ -230,7 +239,7 @@
                 
                 <p>En un intento de equilibrar lo antiguo y lo nuevo, la nueva versión de Friends of Mineral Town solo contiene los dos primeros eventos rivales clásicos para las parejas candidatas a casarse. Estos dos eventos podrían desencadenarse en el año 1 en los juegos de GBA. Los dos eventos que faltan, el evento rival verde (año 2) y el evento rival naranja (año 4), quedaron fuera de este juego. Omitir el sistema de matrimonio rival también da como resultado que varios eventos aleatorios queden fuera de SoS:FoMT porque los eventos requerían que la pareja rival estuviera casada.</p>
 
-                <div id="boxsort">	
+                <div id="boxshort">	
                     <div class="box_matrimonio">
                         <a href="../Paginas/Otros/Rivales/Rival1.html"><img src="../IMG/Rivales/event_rival_cliff_img1.png" class="screenshot" width="350" height="180"></a>
                         <a class="hiper" href="../Paginas/Otros/Rivales/Rival1.html">Cliff y Ran</a>
