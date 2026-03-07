@@ -42,11 +42,11 @@
     .box_otro { max-width:400px !important; }
 
     .box_matrimonio { 
-        max-width:189px !important; 
+        max-width:188px !important; 
         margin:1em 0 !important; 
     }
 
-    .scroll-container-candidatos { height: 38.95em !important; }  /* Alto del contenedor */
+    .scroll-container-candidatos { height: 38.98em !important; }  /* Alto del contenedor */
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
