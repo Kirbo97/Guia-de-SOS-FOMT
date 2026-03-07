@@ -35,230 +35,302 @@
 
                     <h2>Temporada de primavera</h2>
 
-                    <table class="data"> <!-- Primavera -->
-                        <tr><th colspan="6" style="font-size: 25px;">Calendario de Primavera</th></tr>
+                    <table class="data" style="margin-top: 1.8em;"> <!-- Primavera -->
+                        <tr>
+                            <th colspan="7" style="font-size: 1.2em; background-color: #84f16e; height: 4em;">
+                                <div style="display: flex; justify-content: space-around; align-items: center;">
+                                    <p class="primavera" style="margin-top: 1.65em;" title="Primavera" ></p>
+                                    <p class="primavera" style="margin-top: 1.65em;" title="Primavera" ></p>
+                                    <p class="primavera" style="margin-top: 1.65em;" title="Primavera" ></p>
+                                    <p class="primavera" style="margin-top: 1.65em;" title="Primavera" ></p>
+                                </div>
+                            </th>
+                        </tr>
         
                         <tr>
-                            <td style="text-align:center; padding: 0; width: 120px;">
-                                <br><b style="color: rgb(232, 22, 22); font-size: 25px;">01</b></br>
-                                <p class="evento" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                            <td class="td_calenda"> <!-- Verbena del Mochi -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b class="FechEv">01</b></br>
+                                    <p class="evento" onclick="window.modal_festival1.showModal();" title="Verbena del Mochi"></p>
+                                </div>
+
+                                <dialog id="modal_festival1" class="modal_calendario">
+                                    
+                                    <button onclick="window.modal_festival1.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <h3 style="text-align: center;">01 de Primavera - Verbena del Mochi</h3>
+
+                                        <p>A partir del año 2, dirígete a Rose Plaza entre las 6:00 pm y la medianoche para celebrar el año nuevo. Los aldeanos se han reunido para machacar y comer Mochi y desear buena suerte en el nuevo año. Hablar con los aldeanos presentes te otorgará +5 FP con cada uno de ellos, luego habla con el alcalde Thomas para comenzar el festival. Comerás un poco de Mochi y luego regresarás a tu granja. <b>También recibirás algunos Mochi</b> si tienes un espacio vacío en tu mochila.</p>
+                                    </div>
+                                </dialog>
                             </td>
-                            <td style="text-align:center; padding: 0;  width: 120px;"><b style="font-size: 25px;">02</b></td>
-                            <td style="text-align:center; padding: 0;  width: 120px;"><b style="font-size: 25px;">03</b></td>
-                            <td style="text-align:center; padding: 0;  width: 120px;">
-                                <br><b style="color: rgb(232, 22, 22); font-size: 25px;">04</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                            <td class="td_calenda"><b style="font-size: 25px;">02</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">03</b></td>
+                            <td class="td_calenda"> <!-- Cumpleaños del duende Ciruela -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b class="FechEv">04</b></br>
+                                    <p class="cumpleaño" title="Cumpleaños del Duende Ciruela"></p>
+                                    <p class="FechCump"><b style="color: #E83;">Duende Ciruela</b></p>
+                                </div>
                             </td>
-                            <td style="text-align:center; padding: 0;  width: 120px;"><b style="font-size: 25px;">05</b></td>
-                            <td style="text-align:center; padding: 0;  width: 120px;"><b style="font-size: 25px;">06</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">05</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">06</b></td>
                         </tr>
     
                         <tr>
-                            
-                            <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">07</b></td>
-                            <td style="text-align:center; padding: 0;">
-                                <br><b style="color: rgb(232, 22, 22); font-size: 25px;">08</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                            <td class="td_calenda"><b style="font-size: 25px;">07</b></td>
+                            <td class="td_calenda"> <!-- Cumpleaños de la Diosa de la cosecha y Kappa -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b class="FechEv">08</b></br>
+                                    <p class="cumpleaño" title="Cumpleaños de la Diosa de la cosecha y Kappa"></p>
+                                    <p class="FechCump"><b style="color: #E83;">Diosa de la cosecha</b><b> y </b><b style="color: rgb(140, 24, 249);">Kappa</b></p>
+                                </div>
                             </td>
-                            <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">09</b></td>
-                            <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">10</b></td>
-                            <td style="text-align:center; padding: 0;">
-                                <br><b style="color: rgb(232, 22, 22); font-size: 25px;">11</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
-                            </td>
-                            <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">12</b></td>
-                        </tr>
-    
-                        <tr>
-                            <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">13</b></td>
-                            <td style="text-align:center; padding: 0;">
-                                <br><b style="color: rgb(232, 22, 22); font-size: 25px;">14</b></br>
-                                <p class="evento" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
-                            </td>
-                            <td style="text-align:center; padding: 0;">
-                                <br><b style="color: rgb(232, 22, 22); font-size: 25px;">15</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
-                            </td>
-                            <td style="text-align:center; padding: 0;">
-                                <br><b style="color: rgb(232, 22, 22); font-size: 25px;">16</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
-                            <td style="text-align:center; padding: 0;">
-                                <br><b style="color: rgb(232, 22, 22); font-size: 25px;">17</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
-                            <td style="text-align:center; padding: 0;">
-                                <br><b style="color: rgb(232, 22, 22); font-size: 25px;">18</b></br>
-                                <p class="evento" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                            <td class="td_calenda"><b style="font-size: 25px;">09</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">10</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">11</b></td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Saibara -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b class="FechEv">12</b></br>
+                                    <p class="cumpleaño" title="Cumpleaños de Saibara"></p>
+                                    <p class="FechCump"><b style="color: #E83;">Saibara</b></p>
+                                </div>
                             </td>
                         </tr>
     
                         <tr>
-                            <td style="text-align:center; padding: 0;">
-                                <br><b style="color: rgb(232, 22, 22); font-size: 25px;">19</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                            <td class="td_calenda"><b style="font-size: 25px;">13</b></td>
+                            <td class="td_calenda"> <!-- Dia blanco -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b class="FechEv">14</b></br>
+                                    <p class="evento" onclick="window.modal_festival2.showModal();" title="Dia blanco"></p>
+                                </div>
+
+                                <dialog id="modal_festival2" class="modal_calendario">
+                                    
+                                    <button onclick="window.modal_festival2.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <h3 style="text-align: center;">14 de Primavera - Dia blanco</h3>
+
+                                        <p>En este día, recibirás obsequios de Galletas o Galletas de Chocolate de parte de los chicos candidatos al matrimonio. Si tienes un color de corazón púrpura (10,000 LP) o más, durante todo el día tendrás visitantes en tu granja, sosteniendo su caja de regalo envuelta con galletas, hasta que llegue el momento de irse.</p>
+
+                                        <p>Si estás casado, tu cónyuge te meterá galletas o galletas de corazon en la mochila al momento de irte a dormir ese dia, pero si aún no estás casado, puedes aprobechar este dia para regalar galletas a las candidatas al matrimonio con el fin de mejorara el afecto hacia ellas.</p>
+                                    </div>
+                                </dialog>
                             </td>
-                            <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">20</b></td>
-                            <td style="text-align:center; padding: 0;">
-                                <br><b style="color: rgb(232, 22, 22); font-size: 25px;">21</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                            <td class="td_calenda"> <!-- Cumpleaños del duende Arandano -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b class="FechEv">15</b></br>
+                                    <p class="cumpleaño" title="Cumpleaños del Duende Arandano"></p>
+                                    <p class="FechCump"><b style="color: #E83;">Duende Arandano</b></p>
+                                </div>
                             </td>
-                            <td style="text-align:center; padding: 0;">
-                                <br><b style="color: rgb(232, 22, 22); font-size: 25px;">22</b></br>
-                                <p class="evento" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                            <td class="td_calenda"> <!-- Cumpleaños de Elly -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b class="FechEv">16</b></br>
+                                    <p class="cumpleaño" title="Cumpleaños de Elly"></p>
+                                    <p class="FechCump"><b style="color: #E83;">Elly</b></p>
+                                </div>
                             </td>
-                            <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">23</b></td>
-                            <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">24</b></td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Mugi -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b class="FechEv">17</b></br>
+                                    <p class="cumpleaño" title="Cumpleaños de Mugi"></p>
+                                    <p class="FechCump"><b style="color: #E83;">Mugi</b></p>
+                                </div>
+                            </td>
+                            <td class="td_calenda"> <!-- Dervi de caballo -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b class="FechEv">18</b></br>
+                                    <p class="evento" onclick="window.modal_festival3.showModal();" title="Dervi de caballo"></p>
+                                </div>
+
+                                <dialog id="modal_festival3" class="modal_calendario">
+                                    
+                                    <button onclick="window.modal_festival3.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <h3 style="text-align: center;">18 de Primavera - Dervi de caballo</h3>
+
+                                        <p>El dia anterior te toparas con Thomas y te preguntara si deseas participar pero solo si tienes un caballo adulto y encaso de no tener uno el se ira, pero si aseptas Thomas llevara tu caballo para registrarlo por ti y al dia siguienteprodas estar en el derbi como uno de los participantes.</p>
+
+                                        <p>El evento se compone de tres carrera y tu participaras en la ultima por lo que puedes aprobechar y apostar en las carrras, cada boleto cuesta 100 G. Puede comprar tantos boletos como fondos tenga disponibles, así como comprar boletos para varios caballos. Una vez finalizada su apuesta, comenzará la carrera. Recibirás medallas, o posiblemente ninguna, según los resultados de la carrera.</p>
+                                    
+                                        <p>Despues de finalizar cada carrera podras gastar tus medallas en varios premios y las medallas que no hayas gastado lo podras usar al próximo festival de carreras de caballos. Los premios por los que puedes canjear medallas son:</p>
+
+                                        <table class="data"> 
+                                            <tr><th style="width: 130px;">premios</th><th>Cantidad de medallas</th><th style="width: 270px;">Precio de venta</th></tr>
+                        
+                                            <tr>
+                                                <td>Joya de la verdad</td>
+                                                <td style="text-align:center;">1000</td>
+                                                <td style="text-align:center;">No se vende</td>
+                                            </tr>
+                        
+                                            <tr>
+                                                <td>Baya de poder</td>
+                                                <td style="text-align:center;">900</td>
+                                                <td style="text-align:center;">No se vende</td>
+                                            </tr>
+                        
+                                            <tr>
+                                                <td>Vestido</td>
+                                                <td style="text-align:center;">250</td>
+                                                <td style="text-align:center;">1.800 G a 12.700 G (a Huang)</td>
+                                            </tr>
+                        
+                                            <tr>
+                                                <td>Perfume</td>
+                                                <td style="text-align:center;">150</td>
+                                                <td style="text-align:center;">5.800 a 6.700 G (a Huang)</td>
+                                            </tr>
+                        
+                                            <tr>
+                                                <td>Mascarilla</td>
+                                                <td style="text-align:center;">42</td>
+                                                <td style="text-align:center;">1.800 G a 2.700 G (a Huang)</td>
+                                            </tr>
+                        
+                                            <tr>
+                                                <td>Loción de piel</td>
+                                                <td style="text-align:center;">35</td>
+                                                <td style="text-align:center;">1.680 G a 1.770 G (a Huang)</td>
+                                            </tr>
+                        
+                                            <tr>
+                                                <td>Bloqueador solar</td>
+                                                <td style="text-align:center;">30</td>
+                                                <td style="text-align:center;">1.480 G a 1.570 G (a Huang)</td>
+                                            </tr>
+                        
+                                            <tr>
+                                                <td>Collar</td>
+                                                <td style="text-align:center;">20</td>
+                                                <td>
+                                                    <ul class="horario">
+                                                        <li class="gustos">1.800 G (a Zack)</li>
+                                                        <li class="gustos">1.780 G a 1.880 G (a Huang)</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                        
+                                            <tr>
+                                                <td>Broche</td>
+                                                <td style="text-align:center;">18</td>
+                                                <td>
+                                                    <ul class="horario">
+                                                        <li class="gustos">1.800 G (a Zack)</li>
+                                                        <li class="gustos">1.780 G a 1.880 G (a Huang)</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                        
+                                            <tr>
+                                                <td>Diamante</td>
+                                                <td style="text-align:center;">14</td>
+                                                <td style="text-align:center;">100 G (a Zack)</td>
+                                            </tr>
+                        
+                                            <tr>
+                                                <td>Hongo pino</td>
+                                                <td style="text-align:center;">10</td>
+                                                <td style="text-align:center;">500 G (a Zack)</td>
+                                            </tr>
+                        
+                                            <tr>
+                                                <td>Adamantita</td>
+                                                <td style="text-align:center;">4</td>
+                                                <td style="text-align:center;">50 G (a Zack)</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </dialog>
+                            </td>
                         </tr>
     
                         <tr>
-                            <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">25</b></td>
-                            <td style="text-align:center; padding: 0;">
-                                <br><b style="color: rgb(232, 22, 22); font-size: 25px;">26</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                            <td class="td_calenda"> <!-- Cumpleaños de Lillia -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b class="FechEv">19</b></br>
+                                    <p class="cumpleaño" title="Cumpleaños de Lillia"></p>
+                                    <p class="FechCump"><b style="color: #E83;">Lillia</b></p>
+                                </div>
                             </td>
-                            <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">27</b></td>
-                            <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">28</b></td>
-                            <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">29</b></td>
-                            <td style="text-align:center; padding: 0;" >
-                                <br><b style="color: rgb(232, 22, 22); font-size: 25px;">30</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                            <td class="td_calenda"><b style="font-size: 25px;">20</b></td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Bon Vivant -->
+                                <div style="display: flex; flex-direction:column; align-items: center;">
+                                    <br><b class="FechEv">21</b></br>
+                                    <p class="cumpleaño" title="Cumpleaños de Bon Vivant"></p>
+                                    <p class="FechCump"><b style="color: #E83;">Bon Vivant</b></p>
+                                </div>
                             </td>
+                            <td class="td_calenda"> <!-- Concurso gastronomico -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b class="FechEv">22</b></br>
+                                    <p class="evento" onclick="window.modal_festival4.showModal();" title="Concurso gastronomico"></p>
+                                </div>
+
+                                <dialog id="modal_festival4" class="modal_calendario">
+                                    
+                                    <button onclick="window.modal_festival4.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <h3 style="text-align: center;">22 de Primavera - Concurso gastronomico</h3>
+
+                                        <p>¡Necesitarás una cocina y utensilios en tu granja para tener un buen desempeño en este concurso!.</p>
+
+                                        <p>En la mañana del día 22, dirígete a la Plaza Rosa entre las 10:00 am y el mediodía para hablar con el gourmet visitante. Bon Viviant, el amante de la gastronomía, os contará la categoría en la que juzgará este año. Los grupos del concurso aparecen en orden secuencial desde el año 1 hasta el año 5. A partir del año 6, los grupos de entrada al concurso se seleccionarán al azar:</p>
+
+                                        <ul class="horario">
+                                            <li class="gustos">Año 1: Jugo</li>
+                                            <li class="gustos">Año 2: Dulces</li>
+                                            <li class="gustos">Año 3: Pan</li>
+                                            <li class="gustos">Año 4: Fideos</li>
+                                            <li class="gustos">Año 5: Arroz</li>
+                                        </ul>
+
+                                        <p>Luego de conocer la categoría, debes salir de la plaza para comenzar la segunda mitad del festival. Te transportarán de regreso a tu granja para cocinar un plato que calificará para la categoría que Bon Viviant está probando. Tendrás que regresar a la plaza con tu entrada al concurso entre el mediodía y las 6:00 pm y luego entregarle el plato a Thomas para que comience a juzgar. Si no tienes una receta para enviar, aún puedes hablar con Thomas para comenzar el concurso sin ti.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"><b style="font-size: 25px;">23</b></td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Kai -->
+                                <div style="display: flex; flex-direction:column; align-items: center;">
+                                    <br><b class="FechEv">24</b></br>
+                                    <p class="cumpleaño" title="Cumpleaños de Kai"></p>
+                                    <p class="FechCump"><b style="color: #E83;">Kai</b></p>
+                                </div>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td class="td_calenda"> <!-- Cumpleaños del duende Ciruela -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b class="FechEv">25</b></br>
+                                    <p class="cumpleaño" title="Cumpleaños del Duende Agua"></p>
+                                    <p class="FechCump"><b style="color: #E83;">Duende Agua</b></p>
+                                </div>
+                            </td>
+                            <td class="td_calenda"><b style="font-size: 25px;">26</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">27</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">28</b></td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Sasha -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b class="FechEv">29</b></br>
+                                    <p class="cumpleaño" title="Cumpleaños de Sasha"></p>
+                                    <p class="FechCump"><b style="color: #E83;">Sasha</b></p>
+                                </div>
+                            </td>
+                            <td class="td_calenda"><b style="font-size: 25px;">30</b></td>
                         </tr>
                     </table>
 
-                    <h3>Cumpleaños de los aldeanos</h3>
-
-                    <ul class="horario">
-                        <li class="gustos"><b>Dia 04</b>: Duende de la cosecha "Ciruela".</li>
-                        <li class="gustos"><b>Dia 08</b>: Diosa de la cosecha y Kappa.</li>
-                        <li class="gustos"><b>Dia 11</b>: Saibara.</li>
-                        <li class="gustos"><b>Dia 15</b>: Duende de la cosecha "Arandano".</li>
-                        <li class="gustos"><b>Dia 16</b>: Elly.</li>
-                        <li class="gustos"><b>Dia 17</b>: Mugi.</li>
-                        <li class="gustos"><b>Dia 19</b>: Lillia.</li>
-                        <li class="gustos"><b>Dia 21</b>: Bon Vivant.</li>
-                        <li class="gustos"><b>Dia 26</b>: Duende de la cosecha "Agua".</li>
-                        <li class="gustos"><b>Dia 30</b>: Sasha.</li>
-                    </ul>
-    
-                    <h3>Evento de Verbena del Mochi - Dia 01</h3>
-                    
-                    <p>A partir del año 2, dirígete a Rose Plaza entre las 6:00 pm y la medianoche para celebrar el año nuevo. Los aldeanos se han reunido para machacar y comer Mochi y desear buena suerte en el nuevo año. Hablar con los aldeanos presentes te otorgará +5 FP con cada uno de ellos, luego habla con el alcalde Thomas para comenzar el festival. Comerás un poco de Mochi y luego regresarás a tu granja. <b>También recibirás algunos Mochi</b> si tienes un espacio vacío en tu mochila.</p>
-
-                    <h3>Evento de Dia Blanco - Dia 14</h3>
-
-                    <p>En este día, recibirás obsequios de Galletas o Galletas de Chocolate de parte de los chicos candidatos al matrimonio. Si tienes un color de corazón púrpura (10,000 LP) o más, durante todo el día tendrás visitantes en tu granja, sosteniendo su caja de regalo envuelta con galletas, hasta que llegue el momento de irse.</p>
-
-                    <p>Si estás casado, tu cónyuge te meterá galletas o galletas de corazon en la mochila al momento de irte a dormir ese dia, pero si aún no estás casado, puedes aprobechar este dia para regalar galletas a las candidatas al matrimonio con el fin de mejorara el afecto hacia ellas.</p>
-
-                    <h3>Evento del Dervi de caballo - Dia 18</h3>
-
-                    <p>El dia anterior te toparas con Thomas y te preguntara si deseas participar pero solo si tienes un caballo adulto y encaso de no tener uno el se ira, pero si aseptas Thomas llevara tu caballo para registrarlo por ti y al dia siguienteprodas estar en el derbi como uno de los participantes.</p>
-
-                    <p>El evento se compone de tres carrera y tu participaras en la ultima por lo que puedes aprobechar y apostar en las carrras, cada boleto cuesta 100 G. Puede comprar tantos boletos como fondos tenga disponibles, así como comprar boletos para varios caballos. Una vez finalizada su apuesta, comenzará la carrera. Recibirás medallas, o posiblemente ninguna, según los resultados de la carrera.</p>
-                
-                    <p>Despues de finalizar cada carrera podras gastar tus medallas en varios premios y las medallas que no hayas gastado lo podras usar al próximo festival de carreras de caballos. Los premios por los que puedes canjear medallas son:</p>
-
-                    <table class="data"> 
-                        <tr><th style="width: 130px;">premios</th><th>Cantidad de medallas</th><th style="width: 270px;">Precio de venta</th></tr>
-    
-                        <tr>
-                            <td>Joya de la verdad</td>
-                            <td style="text-align:center;">1000</td>
-                            <td style="text-align:center;">No se vende</td>
-                        </tr>
-    
-                        <tr>
-                            <td>Baya de poder</td>
-                            <td style="text-align:center;">900</td>
-                            <td style="text-align:center;">No se vende</td>
-                        </tr>
-    
-                        <tr>
-                            <td>Vestido</td>
-                            <td style="text-align:center;">250</td>
-                            <td style="text-align:center;">1.800 G a 12.700 G (a Huang)</td>
-                        </tr>
-    
-                        <tr>
-                            <td>Perfume</td>
-                            <td style="text-align:center;">150</td>
-                            <td style="text-align:center;">5.800 a 6.700 G (a Huang)</td>
-                        </tr>
-    
-                        <tr>
-                            <td>Mascarilla</td>
-                            <td style="text-align:center;">42</td>
-                            <td style="text-align:center;">1.800 G a 2.700 G (a Huang)</td>
-                        </tr>
-    
-                        <tr>
-                            <td>Loción de piel</td>
-                            <td style="text-align:center;">35</td>
-                            <td style="text-align:center;">1.680 G a 1.770 G (a Huang)</td>
-                        </tr>
-    
-                        <tr>
-                            <td>Bloqueador solar</td>
-                            <td style="text-align:center;">30</td>
-                            <td style="text-align:center;">1.480 G a 1.570 G (a Huang)</td>
-                        </tr>
-    
-                        <tr>
-                            <td>Collar</td>
-                            <td style="text-align:center;">20</td>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">1.800 G (a Zack)</li>
-                                    <li class="gustos">1.780 G a 1.880 G (a Huang)</li>
-                                </ul>
-                            </td>
-                        </tr>
-    
-                        <tr>
-                            <td>Broche</td>
-                            <td style="text-align:center;">18</td>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">1.800 G (a Zack)</li>
-                                    <li class="gustos">1.780 G a 1.880 G (a Huang)</li>
-                                </ul>
-                            </td>
-                        </tr>
-    
-                        <tr>
-                            <td>Diamante</td>
-                            <td style="text-align:center;">14</td>
-                            <td style="text-align:center;">100 G (a Zack)</td>
-                        </tr>
-    
-                        <tr>
-                            <td>Hongo pino</td>
-                            <td style="text-align:center;">10</td>
-                            <td style="text-align:center;">500 G (a Zack)</td>
-                        </tr>
-    
-                        <tr>
-                            <td>Adamantita</td>
-                            <td style="text-align:center;">4</td>
-                            <td style="text-align:center;">50 G (a Zack)</td>
-                        </tr>
-                    </table>
-
-                    <h3>Evento del Concurso gastronomico - Dia 22</h3>
-
-                    <p>¡Necesitarás una cocina y utensilios en tu granja para tener un buen desempeño en este concurso!.</p>
-
-                    <p>En la mañana del día 22, dirígete a la Plaza Rosa entre las 10:00 am y el mediodía para hablar con el gourmet visitante. Bon Viviant, el amante de la gastronomía, os contará la categoría en la que juzgará este año. Los grupos del concurso aparecen en orden secuencial desde el año 1 hasta el año 5. A partir del año 6, los grupos de entrada al concurso se seleccionarán al azar:</p>
-
-                    <ul class="horario">
-                        <li class="gustos">Año 1: Jugo</li>
-                        <li class="gustos">Año 2: Dulces</li>
-                        <li class="gustos">Año 3: Pan</li>
-                        <li class="gustos">Año 4: Fideos</li>
-                        <li class="gustos">Año 5: Arroz</li>
-                    </ul>
-
-                    <p>Luego de conocer la categoría, debes salir de la plaza para comenzar la segunda mitad del festival. Te transportarán de regreso a tu granja para cocinar un plato que calificará para la categoría que Bon Viviant está probando. Tendrás que regresar a la plaza con tu entrada al concurso entre el mediodía y las 6:00 pm y luego entregarle el plato a Thomas para que comience a juzgar. Si no tienes una receta para enviar, aún puedes hablar con Thomas para comenzar el concurso sin ti.</p>
                 </section>
 
                 <section> <!-- Verano -->

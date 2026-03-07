@@ -1,0 +1,45 @@
+/* ******************************************* */
+/*  Contenedores de los modales de lo modales  */
+/* ******************************************* */
+div.cont_duen, div.cont_craf, div.cont_hab, div.cont_herra, div.cont_maqui{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2em 0 15px 0; 
+    column-gap: 12em; 
+    row-gap: 2em;
+}
+
+/* *********************** */
+/*  Diseños de lo modales  */
+/* *********************** */
+
+dialog {
+    border: 3px solid #99d714;
+    padding: 0;
+    margin: auto;
+}
+
+.modal_calendario { width: 900px; }
+
+.modal_tit{
+    text-align: center; 
+    margin-right: 25px; 
+}
+
+
+.btn {
+    position: absolute; 
+    z-index: 10;
+    top:0;
+    right:0;
+    color: white; 
+    font-size: 28px;
+    font-weight: bold;  /* ajusto el formato del texto para que tenga negrita*/
+    padding: 8px 12px; 
+    cursor: pointer; 
+    border-radius: 20px; 
+}
+
+.close {background-color: #f44336;} 
+.close:hover {background: #da190b;}

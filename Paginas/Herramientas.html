@@ -32,15 +32,9 @@
 
                 <table class="data"> 
     
-                    <tr><th style="width: 80px;">Mineral</th><th style="width: 80px;">Precio</th><th>Experiencia minima</th></tr>
-    
-                    <tr><td><div style="display: flex;flex-direction: column;align-items: center;"><img src="../IMG/Mina/Cobre.jpg" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Cobre</b></p></div></td><td class="td_dinero">1.000 <b>G</b></td><td style="text-align:center;">10%</td></tr>
-    
-                    <tr><td><div style="display: flex;flex-direction: column;align-items: center;"><img src="../IMG/Mina/Plata.jpg" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Plata</b></p></div></td><td class="td_dinero">2.000 <b>G</b></td><td style="text-align:center;">28%</td></tr>
-
-                    <tr><td><div style="display: flex;flex-direction: column;align-items: center;"><img src="../IMG/Mina/Oro.jpg" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Oro</b></p></div></td><td class="td_dinero">3.000 <b>G</b></td><td style="text-align:center;">55%</td></tr>
-
-                    <tr><td><div style="display: flex;flex-direction: column;align-items: center;"><img src="../IMG/Mina/Mitrilo.jpg" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Mitrilo</b></p></div></td><td class="td_dinero">5.000 <b>G</b></td><td style="text-align:center;">100%</td></tr>
+                    <tr><th>Mineral</th><td><div class="td_objetos"><img src="../IMG/Mina/Cobre.jpg" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Cobre</b></p></div></td><td><div class="td_objetos"><img src="../IMG/Mina/Plata.jpg" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Plata</b></p></div></td><td><div class="td_objetos"><img src="../IMG/Mina/Oro.jpg" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Oro</b></p></div></td><td><div class="td_objetos"><img src="../IMG/Mina/Mitrilo.jpg" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Mitrilo</b></p></div></td></tr>
+                    <tr><th>Precio</th><td class="td_dinero" style="width: 90px;">1.000 <b>G</b></td><td class="td_dinero" style="width: 90px;">2.000 <b>G</b></td><td class="td_dinero" style="width: 90px;">3.000 <b>G</b></td><td class="td_dinero" style="width: 90px;">5.000 <b>G</b></td></tr>
+                    <tr style="text-align:center;"><th style="width: 180px;">Experiencia minima</th><td>10%</td><td>28%</td><td>55%</td><td>100%</td></tr>
     
                 </table>
     
@@ -95,7 +89,7 @@
     
                     <tr><th style="width: 150px;">Mineral</th><th style="width: 80px;">Precio</th><th>Experiencia minima</th></tr>
     
-                    <tr><td><div style="display: flex;flex-direction: column;align-items: center;"><img src="../IMG/Mina/Mineral legendario.jpg" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Mineral legendario</b></p></div></td><td class="td_dinero">50.000 <b>G</b></td><td style="text-align:center;">100%</td></tr>
+                    <tr><td><div class="td_objetos"><img src="../IMG/Mina/Mineral legendario.jpg" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Mineral legendario</b></p></div></td><td class="td_dinero">50.000 <b>G</b></td><td style="text-align:center;">100%</td></tr>
     
                 </table>
 
@@ -105,52 +99,57 @@
 
                 <p>Hay 9 de cada tipo de joya. Una vez que recojas las 9, las joyas se pueden cambiar por una gema que puede usarse como herramienta para ayudarte con tu resistencia y fatiga. Para las joyas de la Diosa y las de Kappa, el intercambio se realizará automáticamente cuando recojas la novena joya. Para las joyas de la Verdad, el alcalde Thomas las cambiará por la Gema de la Verdad. No es necesario que todas las joyas estén en la sección de artículos de tu mochila para que se realice el intercambio, pero SÍ necesitas tener un espacio vacío en la sección de herramientas para recibir el tesoro fina.</p>
 
-                <h3>Joyas de la Diosa</h3>
+                <details> <!-- Joyas de la Diosa -->
+                    <summary>Joyas de la Diosa</summary>
 
-                <img src="../IMG/Mina/jd.jpg" class="right screenshot" width="200" height="200" style="margin: 2px 0 0 20px;"/>
+                    <img src="../IMG/Mina/jd.jpg" class="right screenshot" width="200" height="200" style="margin: 2px 0 0 20px;"/>
 
-                <p>Las 9 Joyas de la Diosa se pueden encontrar escondidas en las rocas en ciertos pisos de la mina de la cascada en los pisos 60, 102, 123, 152, 155, 171, 190, 202 y 222.</p>
+                    <p>Las 9 Joyas de la Diosa se pueden encontrar escondidas en las rocas en ciertos pisos de la mina de la cascada en los pisos 60, 102, 123, 152, 155, 171, 190, 202 y 222.</p>
 
-                <p>La posibilidad de que aparezca una Joya de la Diosa en el suelo se activará en el momento en que entres al suelo. No se garantiza al 100% que la joya aparezca en su suelo; existe la posibilidad de que la joya no salga cuando rompas las rocas en el piso designado para la joya.</p>
+                    <p>La posibilidad de que aparezca una Joya de la Diosa en el suelo se activará en el momento en que entres al suelo. No se garantiza al 100% que la joya aparezca en su suelo; existe la posibilidad de que la joya no salga cuando rompas las rocas en el piso designado para la joya.</p>
 
-                <p>Después de recolectar las 9 Joyas de la Diosa, aparecerá la Diosa de la Cosecha para felicitarte. Ella tomará las 9 Joyas de la Diosa y te dará el Tesoro de la Diosa a cambio. El Tesoro de la Diosa es una piedra de color blanco que recuperará tu resistencia (íconos de bayas de energía) en 1 punto cada 1 minuto en el juego mientras la tengas equipada como herramienta activa y estés afuera (es decir, el Tesoro no funciona en interiores). porque el tiempo sólo pasa cuando el agricultor está al aire libre.</p>
+                    <p>Después de recolectar las 9 Joyas de la Diosa, aparecerá la Diosa de la Cosecha para felicitarte. Ella tomará las 9 Joyas de la Diosa y te dará el Tesoro de la Diosa a cambio. El Tesoro de la Diosa es una piedra de color blanco que recuperará tu resistencia (íconos de bayas de energía) en 1 punto cada 1 minuto en el juego mientras la tengas equipada como herramienta activa y estés afuera (es decir, el Tesoro no funciona en interiores). porque el tiempo sólo pasa cuando el agricultor está al aire libre.</p>
+                </details>
 
-                <h3>Joyas del Kappa</h3>
+                <details> <!-- Joyas de la Kappa -->
+                    <summary>Joyas de la Kappa</summary>
 
-                <img src="../IMG/Mina/jk.jpg" class="right screenshot" width="200" height="200" style="margin: 2px 0 0 20px;"/>
+                    <img src="../IMG/Mina/jk.jpg" class="right screenshot" width="200" height="200" style="margin: 2px 0 0 20px;"/>
 
-                <p>Las 9 joyas Kappa se pueden encontrar en la mina del lago y esta mina está ubicada en una isla en medio del Lago. Puedes llegar a la mina durante la temporada de invierno cuando el agua del lago se congela y puedes cruzar el lago caminando hasta la isla. Si recoges la piedra de viaje del piso 255 de la mina de la cascada una vez que llegues al año 3 del juego, podrás llegar a la mina del lago durante todo el año teletransportándote directamente a la isla.</p>
+                    <p>Las 9 joyas Kappa se pueden encontrar en la mina del lago y esta mina está ubicada en una isla en medio del Lago. Puedes llegar a la mina durante la temporada de invierno cuando el agua del lago se congela y puedes cruzar el lago caminando hasta la isla. Si recoges la piedra de viaje del piso 255 de la mina de la cascada una vez que llegues al año 3 del juego, podrás llegar a la mina del lago durante todo el año teletransportándote directamente a la isla.</p>
 
-                <p>Las 9 Joyas del Kappa se pueden encontrar escondidas en las rocas en ciertos pisos 0 (entrada de la mina), 40, 60, 80, 120, 140, 160, 180 y 255.</p>
+                    <p>Las 9 Joyas del Kappa se pueden encontrar escondidas en las rocas en ciertos pisos 0 (entrada de la mina), 40, 60, 80, 120, 140, 160, 180 y 255.</p>
 
-                <p>Las Joyas Kappa son menos escasas que las Joyas de la Diosa en la mayoría de los pisos de la mina. La joya que se encuentra en las rocas del piso 255 de la mina del lago resalta con bastante facilidad en comparación con los otros pisos. Puedes usar la misma técnica de guardar/recargar que cuando buscas las Joyas de la Diosa en la Mina de la cascada.</p>
+                    <p>Las Joyas Kappa son menos escasas que las Joyas de la Diosa en la mayoría de los pisos de la mina. La joya que se encuentra en las rocas del piso 255 de la mina del lago resalta con bastante facilidad en comparación con los otros pisos. Puedes usar la misma técnica de guardar/recargar que cuando buscas las Joyas de la Diosa en la Mina de la cascada.</p>
 
-                <p>Después de recolectar las 9 joyas Kappa, esta vez aparecerá Kappa para felicitarte. Él tomará las 9 joyas y te dará el Tesoro Kappa a cambio. El Tesoro Kappa de color verde restaurará tu fatiga (ícono de cara) en 1 punto cada 1 minuto en el juego, siempre que esté equipado como herramienta activa y estés afuera.</p>
+                    <p>Después de recolectar las 9 joyas Kappa, esta vez aparecerá Kappa para felicitarte. Él tomará las 9 joyas y te dará el Tesoro Kappa a cambio. El Tesoro Kappa de color verde restaurará tu fatiga (ícono de cara) en 1 punto cada 1 minuto en el juego, siempre que esté equipado como herramienta activa y estés afuera.</p>
+                </details>
 
-                <h3>Joyas y tesoros de la verdad</h3>
+                <details> <!-- Joyas de la verdad -->
+                    <summary>Joyas de la verdad</summary>
 
-                <img src="../IMG/Mina/jv.jpg" class="right screenshot" width="200" height="200" style="margin: 2px 0 0 20px;"/>
+                    <img src="../IMG/Mina/jv.jpg" class="right screenshot" width="200" height="200" style="margin: 2px 0 0 20px;"/>
 
-                <p>Las 9 Joyas de la Verdad están escondidas alrededor de Mineral Town. Ocho de las joyas aparecen al interactuar con objetos, tiendas, etc.</p>
+                    <p>Las 9 Joyas de la Verdad están escondidas alrededor de Mineral Town. Ocho de las joyas aparecen al interactuar con objetos, tiendas, etc.</p>
 
-                <ol>
-                    <li class="gustos">Presiona el botón A cuando estés parado frente al abrevadero dentro del establo de caballos.</li>
-                    <li class="gustos">Presiona el botón A cuando estés parado al lado del poste de luz de la calle a lo largo del camino norte/sur entre la iglesia y Rose Plaza.</li>
-                    <li class="gustos">Presiona el botón A cuando estés frente a la estatua de la Diosa en el patio de la iglesia.</li>
-                    <li class="gustos">Sube al segundo piso de la biblioteca y presiona el botón A cuando estés parado frente a la estantería del extremo derecho en el medio de la habitación.</li>
-                    <li class="gustos">Intercambia 1000 medallas en el puesto de premios de Thomas durante la carrera de caballos de primavera u otoño.</li>
-                    <li class="gustos">Cómpralo en la tienda de Huang por 50.000 G.</li>
-                    <li class="gustos">Reciba como premio por ganar el programa de preguntas de matemáticas de Año Nuevo de Harvest Goddess que se transmite en Town Villa TV desde la primavera 1 hasta la primavera.</li>
-                    <li class="gustos">La casa adicional se puede comprar en Gotts por 10 millones de G, 999 de madera y 999 de material de piedra.</li>
-                    <li class="gustos">Presione el botón A cuando esté frente al calendario que se encuentra dentro de Mountain Cottage, que recibirá como regalo de su cónyuge en su 50 aniversario de bodas.</li>
-                </ol>
+                    <ol>
+                        <li class="gustos">Presiona el botón A cuando estés parado frente al abrevadero dentro del establo de caballos.</li>
+                        <li class="gustos">Presiona el botón A cuando estés parado al lado del poste de luz de la calle a lo largo del camino norte/sur entre la iglesia y Rose Plaza.</li>
+                        <li class="gustos">Presiona el botón A cuando estés frente a la estatua de la Diosa en el patio de la iglesia.</li>
+                        <li class="gustos">Sube al segundo piso de la biblioteca y presiona el botón A cuando estés parado frente a la estantería del extremo derecho en el medio de la habitación.</li>
+                        <li class="gustos">Intercambia 1000 medallas en el puesto de premios de Thomas durante la carrera de caballos de primavera u otoño.</li>
+                        <li class="gustos">Cómpralo en la tienda de Huang por 50.000 G.</li>
+                        <li class="gustos">Reciba como premio por ganar el programa de preguntas de matemáticas de Año Nuevo de Harvest Goddess que se transmite en Town Villa TV desde la primavera 1 hasta la primavera.</li>
+                        <li class="gustos">La casa adicional se puede comprar en Gotts por 10 millones de G, 999 de madera y 999 de material de piedra.</li>
+                        <li class="gustos">Presione el botón A cuando esté frente al calendario que se encuentra dentro de Mountain Cottage, que recibirá como regalo de su cónyuge en su 50 aniversario de bodas.</li>
+                    </ol>
 
-                <p>Después de recolectar las primeras 8 Joyas de la Verdad, vaya a la casa del alcalde Thomas de lunes a viernes y presione el botón A cuando esté frente al refrigerador. Aparecerá la última Joya de la Verdad y Thomas la cambiará por el Tesoro de la Verdad.</p>
+                    <p>Después de recolectar las primeras 8 Joyas de la Verdad, vaya a la casa del alcalde Thomas de lunes a viernes y presione el botón A cuando esté frente al refrigerador. Aparecerá la última Joya de la Verdad y Thomas la cambiará por el Tesoro de la Verdad.</p>
 
-                <p>Cuando se selecciona como herramienta activa, Truth Treasure mostrará los valores de puntos actuales de resistencia y fatiga en la pantalla. Tus puntos de fatiga actuales aparecen debajo del ícono de la cara, pero esta versión actualizada del juego GBA ya muestra tus puntos de resistencia, por lo que este elemento no es tan beneficioso como lo era originalmente.</p>
+                    <p>Cuando se selecciona como herramienta activa, Truth Treasure mostrará los valores de puntos actuales de resistencia y fatiga en la pantalla. Tus puntos de fatiga actuales aparecen debajo del ícono de la cara, pero esta versión actualizada del juego GBA ya muestra tus puntos de resistencia, por lo que este elemento no es tan beneficioso como lo era originalmente.</p>
 
-                <p>En el juego de GBA, una de las Joyas de la Verdad se podía encontrar en el techo de la casa del perro. Dado que en la nueva versión de GBA las mascotas viven dentro de la casa de la granja, la ubicación de la joya se cambió a la estatua de la Diosa al lado de la iglesia.</p>
-
+                    <p>En el juego de GBA, una de las Joyas de la Verdad se podía encontrar en el techo de la casa del perro. Dado que en la nueva versión de GBA las mascotas viven dentro de la casa de la granja, la ubicación de la joya se cambió a la estatua de la Diosa al lado de la iglesia.</p>
+                </details>
             </main>
 
             <div id="footer"></div>

@@ -1,21 +1,8 @@
 @import url('Diseño_movil.css');
 @import url('Footer_y_Nav.css');
 @import url('Imagenes.css');
-
-/* ******************* */
-/*  Diseños del menu  */
-/* ******************* */
-
-#esp1{ 
-    padding-left: 20px; 
-    width: 320.8px; 
-}
-
-#esp2 { width: 320.8px; }
-#esp3 { width: 340.8px; } 
-#esp4 { width: 260.8px; }
-
-.men_tel{ color: white; } 
+@import url('Modales.css');
+@import url('Iconos.css');
 
 /* ******************* */
 /*  Diseños generales  */
@@ -43,27 +30,36 @@ header{
     flex-direction: row; /* le indico que los elemento del bloque flexible se organinse en fila*/
 }
 
-/* creo la clase "icono" en la etiqueta HEADER para que tendra cierta carasteristica */
-header .icono {
-    width: 38px; /* ajusto el ancho que tendra esta clase */
-    height: 38px; /* ajusto el alto que tendra esta clase */
-    cursor: pointer;
-}
-
 /* se crea caracteristicas para la etiqueta "b" para que sirva como negrilla*/
 b {
     color: #369;
     font-weight:800;
 }
 
-/* se crea una clase para la etiqueta "b" para que sirva como negrilla amarilla para la letra G para referirse al dinero */
-b.dinero{
+/* La etiqueta "b" tendra un color para referirse a la cantidad de un objeto */
+b.FechEv{ 
+    color: rgb(232, 22, 22);
+    font-size: 25px;
+}
+
+/* se indica que la clase "dinero" de la etiqueta "span" tendra un tipo de letra */
+span.dinero{ font-weight: bold; }
+
+/* se indica que la etiqueta "b" que esta dentro de la etiqueta "span" que tiene la clase "dinero" para que tenga negrilla amarilla para la letra G para referirse al dinero */
+span.dinero b{
     color:rgb(225, 192, 4);
     font-size: 20px;
 }
 
 /* La etiqueta "p" tendra cierta carasteristica */
 p { text-align: justify; }
+
+p.FechCump{
+    margin: 0;
+    margin-bottom: 6px;
+    width: 110px; 
+    text-align: center;
+}
 
 /* clase "link" con propiedad de enlace y le quito la aparienci de hiperbinculo */
 .link:-webkit-any-link {
@@ -114,26 +110,7 @@ h1 {
     line-height:1em;
     margin: 0%;
 } 
-/* controlar los pasos intermedios en una secuencia de animación */
-@keyframes anim{
-  0% {color: #E83;} 
-  16.66666667% {color: #87b34d;} 
-  33.33333334% {color: rgb(138, 251, 32);} 
-  50.00000001% {color: rgb(72, 184, 20);}
-  66.66666668% {color: rgb(138, 251, 32);} 
-  83.33333335% {color: #87b34d;} 
-  100% {color: #E83;} 
-}
 
-/* La etiqueta h1 con propiedad "before" (Antes) tendra un especie de gion */
-h1:before {
-    animation-name: anim; /* llamo a la animacion */
-    animation-duration: 8s; /* le doy un intervalo de animacion*/
-    animation-iteration-count: infinite; /* le indico que se repita cuando finalise la animacion */
-    content: '\00273F'; /*(La guion sera una flor)*/
-    color: #E83; /*el guion sera de color naranja*/
-    margin: 0 8px 0 0;
-}
 
 /* evitar que los titulos se expandan fuera del contenido */
 h2 {
@@ -177,9 +154,9 @@ details[open] > summary:first-of-type {
     border: 1px solid #ccc; /* Borde opcional para definir el contorno */
 }
 
-.scroll-container-aldeanos { height: 32em;          /* Alto del contenedor */ }
+.scroll-container-aldeanos { height: 32em; /* Alto del contenedor */ }
 
-.scroll-container-candidatos { height: 38.5em;          /* Alto del contenedor */ }
+.scroll-container-candidatos { height: 38.5em; /* Alto del contenedor */ }
 
 /* ********************************* */
 /*  Diseños generales de las listas  */
@@ -214,14 +191,6 @@ ul.sep3 {
 ul.horario { 
     padding: 0 4px;
     margin: 0;
-}
-
-/* La etiqueta li con propiedad "before" (Antes) tendra un especie de gion pero solo los que estan dentro de la etiqueta ul*/
-ul li:before {
-    content: '\1F340'; /* La guion sera un trevol */
-    color: #093; /* El guion sera de color verde*/
-    padding-right:8px; /* El guion tendra un espacio para la derecha*/
-    font-size:1.2em; /* El guion tendra un tamaño*/
 }
 
 /* La etiqueta li tendra espacio para abajo */
@@ -280,125 +249,22 @@ th {
     font-size: 25px;
 }
 
+/* Esta clase es para cuando la celda tiene una imagen de un objeto con nombre */
+td div.td_objetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Usados en el calendario */
+.td_calenda {
+    text-align:center;
+    padding: 0;
+    width: 120px;
+}
+
 /* La etiqueta "tr" (fila de la tabla) con propiedad "nth-child(odd)" (filas impares) tendra un color en la tabla */
 tr:nth-child(odd) {background-color: #E8E8E8;}
 
 /* La etiqueta "tr" (fila de la tabla) con propiedad "nth-child(even)" (filas pares) tendra un color en la tabla */
 tr:nth-child(even) {background-color: #FAFAFA;}
-
-/* ******************* */
-/*  Diseños de iconos  */
-/* ******************* */
-
-/* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de emociones */
-.fasina:before  {
-    content: '\1F60D'; /*(La guion sera una cara con corazon)*/
-    font-size: 2.8em;
-}
-
-.encanta:before  {
-    content: '\1F604'; /*(La guion sera una alegre)*/
-    font-size: 2.8em;
-}
-
-.gusta:before  {
-    content: '\1F642'; /*(La guion sera una feliz)*/
-    font-size: 3em;
-}
-
-.desagrado:before  {
-    content: '\1F620'; /*(La guion sera una desagrado)*/
-    font-size: 3em;
-}
-
-
-/* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de estaciones */
-.primavera:before  {
-    content: '\1F338'; /*(La guion sera una flor de sakura)*/
-    font-size: 3em;
-}
-
-.verano:before  {
-    content: '\1F31E'; /*(La guion sera un sol)*/
-    font-size: 3em;
-}
-
-.otoño:before  {
-    content: '\1F342'; /*(La guion sera una hoja de otoño)*/
-    font-size: 3em;
-}
-
-.invierno:before  {
-    content: '\26C4'; /*(La guion sera un muñeco de nieve)*/
-    font-size: 2.8em;
-}
-
-
-/* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de estaciones */
-.cueva:before  {
-    content: '\1F5FB'; /*(La guion sera un muñeco de nieve)*/
-    font-size: 2.8em;
-}
-
-/* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de eventos */
-.cumpleaño:before  {
-    content: '\1F382'; /*(La guion sera un regalo)*/
-    font-size: 3em;
-}
-
-.evento:before  {
-    content: '\1F388'; /*(La guion sera un globo)*/
-    font-size: 3em;
-}
-
-/* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de corazon con color */
-.cna:before  {
-    content: '\1F9E1'; /*(La guion sera un corazon naranja)*/
-    font-size: 3em;
-}
-
-.cam:before  {
-    content: '\1F49B'; /*(La guion sera un corazon amarillo)*/
-    font-size: 3em;
-}
-
-.caz:before  {
-    content: '\1F499'; /*(La guion sera un corazon azul)*/
-    font-size: 3em;
-}
-
-.cmo:before  {
-    content: '\1F49C'; /*(La guion sera un corazon morado)*/
-    font-size: 3em;
-}
-
-.cne:before  {
-    content: '\1F5A4'; /*(La guion sera un corazon negro)*/
-    font-size: 3em;
-}
-
-.cbla:before  {
-    content: '\1F90D'; /*(La guion sera un corazon blanco)*/
-    font-size: 3em;
-}
-
-/**/
-.pri:before  {
-    content: '\1F338'; /*(La guion sera un cereso)*/
-    font-size: 1.5em;
-}
-
-.ve:before  {
-    content: '\1F31E'; /*(La guion sera un sol)*/
-    font-size: 1.5em;
-}
-
-.ot:before  {
-    content: '\1F342'; /*(La guion sera una hoja)*/
-    font-size: 1.5em;
-}
-
-.in:before  { 
-    font-size: 1.5em; 
-    content: '\26C4'; /*(La guion sera una muñeco de nieve)*/
-}

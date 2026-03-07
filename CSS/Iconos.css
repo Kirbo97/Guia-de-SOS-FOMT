@@ -1,0 +1,152 @@
+/* ******************* */
+/*  Diseños de iconos  */
+/* ******************* */
+
+/* creo la clase "icono" en la etiqueta HEADER para que tendra cierta carasteristica */
+header .icono {
+    width: 38px; /* ajusto el ancho que tendra esta clase */
+    height: 38px; /* ajusto el alto que tendra esta clase */
+    cursor: pointer;
+}
+
+/* controlar los pasos intermedios en una secuencia de animación */
+@keyframes anim{
+  0% {color: #E83;} 
+  16.66666667% {color: #87b34d;} 
+  33.33333334% {color: rgb(138, 251, 32);} 
+  50.00000001% {color: rgb(72, 184, 20);}
+  66.66666668% {color: rgb(138, 251, 32);} 
+  83.33333335% {color: #87b34d;} 
+  100% {color: #E83;} 
+}
+
+/* La etiqueta h1 con propiedad "before" (Antes) tendra un especie de gion */
+h1:before {
+    animation-name: anim; /* llamo a la animacion */
+    animation-duration: 8s; /* le doy un intervalo de animacion*/
+    animation-iteration-count: infinite; /* le indico que se repita cuando finalise la animacion */
+    content: '\00273F'; /*(La guion sera una flor)*/
+    color: #E83; /*el guion sera de color naranja*/
+    margin: 0 8px 0 0;
+}
+
+/* La etiqueta li con propiedad "before" (Antes) tendra un especie de gion pero solo los que estan dentro de la etiqueta ul*/
+ul li:before {
+    content: '\1F340'; /* La guion sera un trevol */
+    color: #093; /* El guion sera de color verde*/
+    padding-right:8px; /* El guion tendra un espacio para la derecha*/
+    font-size:1.2em; /* El guion tendra un tamaño*/
+}
+
+/* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de emociones */
+.fasina:before  {
+    content: '\1F60D'; /*(La guion sera una cara con corazon)*/
+    font-size: 2.8em;
+}
+
+.encanta:before  {
+    content: '\1F604'; /*(La guion sera una alegre)*/
+    font-size: 2.8em;
+}
+
+.gusta:before  {
+    content: '\1F642'; /*(La guion sera una feliz)*/
+    font-size: 3em;
+}
+
+.desagrado:before  {
+    content: '\1F620'; /*(La guion sera una desagrado)*/
+    font-size: 3em;
+}
+
+/* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de estaciones */
+.primavera:before  {
+    content: '\1F338'; /*(La guion sera una flor de sakura)*/
+    font-size: 3em;
+}
+
+.verano:before  {
+    content: '\1F31E'; /*(La guion sera un sol)*/
+    font-size: 3em;
+}
+
+.otoño:before  {
+    content: '\1F342'; /*(La guion sera una hoja de otoño)*/
+    font-size: 3em;
+}
+
+.invierno:before  {
+    content: '\26C4'; /*(La guion sera un muñeco de nieve)*/
+    font-size: 2.8em;
+}
+
+/* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de estaciones */
+.cueva:before  {
+    content: '\1F5FB'; /*(La guion sera un muñeco de nieve)*/
+    font-size: 2.8em;
+}
+
+/* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de eventos */
+.cumpleaño:before  {
+    cursor: pointer;
+    content: '\1F382'; /*(La guion sera un regalo)*/
+    font-size: 3em;
+}
+
+.evento:before  {
+    cursor: pointer;
+    content: '\1F388'; /*(La guion sera un globo)*/
+    font-size: 3em;
+}
+
+/* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de corazon con color */
+.cna:before  {
+    content: '\1F9E1'; /*(La guion sera un corazon naranja)*/
+    font-size: 3em;
+}
+
+.cam:before  {
+    content: '\1F49B'; /*(La guion sera un corazon amarillo)*/
+    font-size: 3em;
+}
+
+.caz:before  {
+    content: '\1F499'; /*(La guion sera un corazon azul)*/
+    font-size: 3em;
+}
+
+.cmo:before  {
+    content: '\1F49C'; /*(La guion sera un corazon morado)*/
+    font-size: 3em;
+}
+
+.cne:before  {
+    content: '\1F5A4'; /*(La guion sera un corazon negro)*/
+    font-size: 3em;
+}
+
+.cbla:before  {
+    content: '\1F90D'; /*(La guion sera un corazon blanco)*/
+    font-size: 3em;
+}
+
+/**/
+.pri:before  {
+    content: '\1F338'; /*(La guion sera un cereso)*/
+    font-size: 1.5em;
+}
+
+.ve:before  {
+    content: '\1F31E'; /*(La guion sera un sol)*/
+    font-size: 1.5em;
+}
+
+.ot:before  {
+    content: '\1F342'; /*(La guion sera una hoja)*/
+    font-size: 1.5em;
+}
+
+.in:before  { 
+    font-size: 1.5em; 
+    content: '\26C4'; /*(La guion sera una muñeco de nieve)*/
+}
