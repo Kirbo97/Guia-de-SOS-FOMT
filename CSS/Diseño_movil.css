@@ -40,6 +40,8 @@
     #esp4 { width: 160.8px !important;}
 
     .box_otro { max-width:400px !important; }
+
+    .box_matrimonio { margin:1em 7.29px !important; }
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
