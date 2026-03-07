@@ -1,0 +1,404 @@
+@import url('Diseño_movil.css');
+@import url('Footer_y_Nav.css');
+@import url('Imagenes.css');
+
+/* ******************* */
+/*  Diseños del menu  */
+/* ******************* */
+
+#esp1{ 
+    padding-left: 20px; 
+    width: 320.8px; 
+}
+
+#esp2 { width: 320.8px; }
+#esp3 { width: 340.8px; } 
+#esp4 { width: 260.8px; }
+
+.men_tel{ color: white; } 
+
+/* ******************* */
+/*  Diseños generales  */
+/* ******************* */
+
+/* La etiqueta "html" tendra cierta carasteristica */
+html {
+    font-size:100%;
+    margin:0px; 
+    padding:0px; 
+}
+
+/* La etiqueta "body" tendra cierta carasteristica */
+body {
+    background: url('../IMG/fondo.jpg') repeat; 
+    background-attachment: fixed;
+    margin: 0;
+}
+
+/* La etiqueta "header" tendra cierta carasteristica */
+header{
+    border-bottom:2px solid #00AA88;  
+    height: 3.5em;
+    display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
+    flex-direction: row; /* le indico que los elemento del bloque flexible se organinse en fila*/
+}
+
+/* creo la clase "icono" en la etiqueta HEADER para que tendra cierta carasteristica */
+header .icono {
+    width: 38px; /* ajusto el ancho que tendra esta clase */
+    height: 38px; /* ajusto el alto que tendra esta clase */
+    cursor: pointer;
+}
+
+/* se crea caracteristicas para la etiqueta "b" para que sirva como negrilla*/
+b {
+    color: #369;
+    font-weight:800;
+}
+
+/* se crea una clase para la etiqueta "b" para que sirva como negrilla amarilla para la letra G para referirse al dinero */
+b.dinero{
+    color:rgb(225, 192, 4);
+    font-size: 20px;
+}
+
+/* La etiqueta "p" tendra cierta carasteristica */
+p { text-align: justify; }
+
+/* clase "link" con propiedad de enlace y le quito la aparienci de hiperbinculo */
+.link:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* clase "hiper" con propiedad de enlace y le modifico la apariencia de hipervinculo*/
+.hiper:-webkit-any-link {
+    font-size: 1.2em;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Fantasy', sans-serif;
+    text-decoration: none;
+    color: #0000EE;
+}
+
+.sub_titulo {
+    color: #09F;
+    font-weight: bold;
+    text-decoration: none;
+}
+  
+/* esta ID evita que el borde golpee debajo de objetos flotantes */
+#content {
+    background-color: rgba(255,255,255,.95);
+    border: 3px solid #228877;
+    box-shadow: 0px 0px 0px 6px #FFF; 
+    border-radius:20px;
+    box-sizing:border-box;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 1em;
+    height:100%;
+    line-height: 1.5em;
+    margin:50px 50px; /*(arriba y abajo │ derecha y izquierda)*/
+    overflow:hidden; 
+    padding: 20px;
+    z-index:0;
+}
+
+/* evitar que los titulos se expandan fuera del contenido */
+h1 {
+    color: #093;
+    font-family: 'Ranchers';
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+    line-height:1em;
+    margin: 0%;
+} 
+/* controlar los pasos intermedios en una secuencia de animación */
+@keyframes anim{
+  0% {color: #E83;} 
+  16.66666667% {color: #87b34d;} 
+  33.33333334% {color: rgb(138, 251, 32);} 
+  50.00000001% {color: rgb(72, 184, 20);}
+  66.66666668% {color: rgb(138, 251, 32);} 
+  83.33333335% {color: #87b34d;} 
+  100% {color: #E83;} 
+}
+
+/* La etiqueta h1 con propiedad "before" (Antes) tendra un especie de gion */
+h1:before {
+    animation-name: anim; /* llamo a la animacion */
+    animation-duration: 8s; /* le doy un intervalo de animacion*/
+    animation-iteration-count: infinite; /* le indico que se repita cuando finalise la animacion */
+    content: '\00273F'; /*(La guion sera una flor)*/
+    color: #E83; /*el guion sera de color naranja*/
+    margin: 0 8px 0 0;
+}
+
+/* evitar que los titulos se expandan fuera del contenido */
+h2 {
+    border-bottom: 2px solid #09F;
+    color: #09F;
+    font-family: 'Ranchers';
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    line-height: 1.4em;
+    margin: 26.56px 0 0 0;
+}
+
+/* evitar que los titulos se expandan fuera del contenido */
+h3 , summary {
+	border-bottom:none;
+    font-weight: bold;
+	color: #E83;
+	font-family: 'Ranchers', sans-serif;
+	font-size: 1.5em;
+	letter-spacing: 0.1em;
+	line-height: 1em;
+    margin: 24px 0;
+}
+
+.pirn{ color: rgb(217, 0, 255); }
+
+summary { cursor: pointer; }
+
+summary:focus-visible { outline:none; }
+
+details[open] > summary:first-of-type {
+    list-style-type: disclosure-open;
+	color: rgb(77, 208, 6);
+}
+
+.scroll-container-aldeanos,.scroll-container-candidatos {
+    width: auto;           /* Ancho del contenedor */
+    height: 32em;          /* Alto del contenedor */
+    overflow: auto;         /* Activa la barra de desplazamiento */
+    scroll-behavior: smooth; /* Desplazamiento suave */
+    border: 1px solid #ccc; /* Borde opcional para definir el contorno */
+}
+
+.scroll-container-aldeanos { height: 32em;          /* Alto del contenedor */ }
+
+.scroll-container-candidatos { height: 38.5em;          /* Alto del contenedor */ }
+
+/* ********************************* */
+/*  Diseños generales de las listas  */
+/* ********************************* */
+
+/* se crea caracteristicas para la etiqueta "ul" para controlar la lista*/
+ul {	
+    list-style:none;
+    line-height: 1.5em;
+    margin-left: -.5em;
+}
+
+/* se crea la clase "sep1" en la etiqueta "ul" para que se ocupe de posisionar el contenido de una lista */
+ul.sep1 { 
+    padding: 0 0 0 10px;
+    margin: 0;
+}
+
+/* se crea la clase "sep2" en la etiqueta "ul" para que se ocupe de posisionar el contenido de una lista */
+ul.sep2 { 
+    padding: 0 0 0 100px;
+    margin: 0;
+}
+
+/* se crea la clase "sep3" en la etiqueta "ul" para que se ocupe de posisionar el contenido de una lista */
+ul.sep3 { 
+    padding: 0 4px 0 100px;
+    margin: 0;
+}
+
+/* se crea la clase "horario" en la etiqueta "ul" para que se ocupe de posisionar el contenido de una lista */
+ul.horario { 
+    padding: 0 4px;
+    margin: 0;
+}
+
+/* La etiqueta li con propiedad "before" (Antes) tendra un especie de gion pero solo los que estan dentro de la etiqueta ul*/
+ul li:before {
+    content: '\1F340'; /* La guion sera un trevol */
+    color: #093; /* El guion sera de color verde*/
+    padding-right:8px; /* El guion tendra un espacio para la derecha*/
+    font-size:1.2em; /* El guion tendra un tamaño*/
+}
+
+/* La etiqueta li tendra espacio para abajo */
+li { 
+    margin-block-end: 0.5em; 
+    margin-right: 0.5em;
+    text-align: justify;
+    margin: 8px 0 8px 8px;
+}
+
+li.gustos { 
+    margin: 4px 0 4px 0;
+    text-align: left;
+}
+
+/* ********************************* */
+/*  Diseños generales de las tablas  */
+/* ********************************* */
+
+/* La etiqueta "data" tendra una caracteristica para desplasar las tablas al centro */
+.data{
+    margin:15px auto;
+    border-spacing: 0px;
+    border:2px solid green;
+}
+
+/* Las etiquetas "td" (columna simple de la tabla) y "th" (columna de la tabla como encabesado) tendran caracteristicas para el diseño de las lineas de la tabla */
+td, th { 
+    padding: 4px 5px; /*(arriba, derecha, abajo y izquierda)*/
+    border:2px solid green;
+}
+
+td.perso{ padding: 8px 4px 8px 18px; }
+
+/* La etiqueta "th" (columna de la tabla como encabesado) tendran caracteristicas para el diseño del encabesado de la tabla */
+th { 
+    background-color:#00AA88; 
+    color: #FAFAFA
+}
+
+/* Estas clases es para cuando la celda es de solo dinero */
+.td_dinero {
+    text-align:center; 
+    font-weight: bold;
+}
+
+.td_dinero b{
+    color:rgb(225, 192, 4); 
+    font-size: 20px;
+}
+
+/* Esta clase es para cuando la celda es de solo "-" */
+.td_neutro{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* La etiqueta "tr" (fila de la tabla) con propiedad "nth-child(odd)" (filas impares) tendra un color en la tabla */
+tr:nth-child(odd) {background-color: #E8E8E8;}
+
+/* La etiqueta "tr" (fila de la tabla) con propiedad "nth-child(even)" (filas pares) tendra un color en la tabla */
+tr:nth-child(even) {background-color: #FAFAFA;}
+
+/* ******************* */
+/*  Diseños de iconos  */
+/* ******************* */
+
+/* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de emociones */
+.fasina:before  {
+    content: '\1F60D'; /*(La guion sera una cara con corazon)*/
+    font-size: 2.8em;
+}
+
+.encanta:before  {
+    content: '\1F604'; /*(La guion sera una alegre)*/
+    font-size: 2.8em;
+}
+
+.gusta:before  {
+    content: '\1F642'; /*(La guion sera una feliz)*/
+    font-size: 3em;
+}
+
+.desagrado:before  {
+    content: '\1F620'; /*(La guion sera una desagrado)*/
+    font-size: 3em;
+}
+
+
+/* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de estaciones */
+.primavera:before  {
+    content: '\1F338'; /*(La guion sera una flor de sakura)*/
+    font-size: 3em;
+}
+
+.verano:before  {
+    content: '\1F31E'; /*(La guion sera un sol)*/
+    font-size: 3em;
+}
+
+.otoño:before  {
+    content: '\1F342'; /*(La guion sera una hoja de otoño)*/
+    font-size: 3em;
+}
+
+.invierno:before  {
+    content: '\26C4'; /*(La guion sera un muñeco de nieve)*/
+    font-size: 2.8em;
+}
+
+
+/* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de estaciones */
+.cueva:before  {
+    content: '\1F5FB'; /*(La guion sera un muñeco de nieve)*/
+    font-size: 2.8em;
+}
+
+/* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de eventos */
+.cumpleaño:before  {
+    content: '\1F382'; /*(La guion sera un regalo)*/
+    font-size: 3em;
+}
+
+.evento:before  {
+    content: '\1F388'; /*(La guion sera un globo)*/
+    font-size: 3em;
+}
+
+/* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de corazon con color */
+.cna:before  {
+    content: '\1F9E1'; /*(La guion sera un corazon naranja)*/
+    font-size: 3em;
+}
+
+.cam:before  {
+    content: '\1F49B'; /*(La guion sera un corazon amarillo)*/
+    font-size: 3em;
+}
+
+.caz:before  {
+    content: '\1F499'; /*(La guion sera un corazon azul)*/
+    font-size: 3em;
+}
+
+.cmo:before  {
+    content: '\1F49C'; /*(La guion sera un corazon morado)*/
+    font-size: 3em;
+}
+
+.cne:before  {
+    content: '\1F5A4'; /*(La guion sera un corazon negro)*/
+    font-size: 3em;
+}
+
+.cbla:before  {
+    content: '\1F90D'; /*(La guion sera un corazon blanco)*/
+    font-size: 3em;
+}
+
+/**/
+.pri:before  {
+    content: '\1F338'; /*(La guion sera un cereso)*/
+    font-size: 1.5em;
+}
+
+.ve:before  {
+    content: '\1F31E'; /*(La guion sera un sol)*/
+    font-size: 1.5em;
+}
+
+.ot:before  {
+    content: '\1F342'; /*(La guion sera una hoja)*/
+    font-size: 1.5em;
+}
+
+.in:before  { 
+    font-size: 1.5em; 
+    content: '\26C4'; /*(La guion sera una muñeco de nieve)*/
+}
