@@ -22,7 +22,7 @@ function Scroll_button_villager(tip_bot_1) {
 
 function Scroll_button_marriage(tip_bot_2) {
     var anchoVentana = window.innerWidth;
-    var salto_movile2=635;
+    var salto_movile2=638;
     var salto_comp2=520;
         
     if (anchoVentana <= 980) { // desplasamiento para cuando es  el movile
