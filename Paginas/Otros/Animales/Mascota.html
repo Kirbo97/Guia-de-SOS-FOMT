@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="../../../CSS/Style.css" type="text/css" />
         <link rel="shortcut icon" href="../../../IMG/Iconos/Kirbo.ico"/>
         <script type="text/javascript" src="../../../JS/include.js"></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene la funcion de insertar el nav y footer a la pagina-->
+        <script type="text/javascript" src="../../../JS/funciones.js"></script> <!-- Conecta el archivo js para ser usado en la pagina y Este sj contiene la funcion de insertar el nav y footer a la pagina-->
     </head>
     
     <body>
@@ -42,104 +43,125 @@
 
                 <p><b>Las opciones de mascotas de Van se basan en la temporada actual</b>. Venderá gatos durante la temporada de primavera, pingüinos durante la temporada de verano, perros durante la temporada de otoño y carpinchos durante la temporada de invierno. Si está intentando comprar una mascota específica, es posible que tenga que esperar varias temporadas hasta que la mascota que desea aparezca en su tienda.</p>
 
+                <i>Nota: Seleccione una estación.</i>
+
                 <table class="data" style="margin-bottom: 1.5em; margin-top: 1.8em;">
                     <tr>
-                        <td style="font-size: 1.2em; background-color: #84f16e; height: 4em;">
+                        <th colspan="2" id="estacion" style="font-size: 1.2em; background-color: #757a74; height: 4em; width: 28em;">
                             <div style="display:flex;justify-content:space-around;align-items:center;">
-                                <p class="primavera" title="Primavera"></p>
+                                <p class="primavera" onclick="cambiarTemporada_mascota(1)" title="Primavera" style="cursor: pointer;"></p>
+                                <p class="verano" onclick="cambiarTemporada_mascota(2)" title="Verano" style="cursor: pointer;"></p>
+                                <p class="otoño" onclick="cambiarTemporada_mascota(3)" title="Otoño" style="cursor: pointer;"></p>
+                                <p class="invierno" onclick="cambiarTemporada_mascota(4)" title="Invierno" style="cursor: pointer;"></p>
                             </div>
-                        </td>
-                        <td>
-                            <div id="boxshort">	 <!-- Caja de los gatos -->
-                                <div class="box_mascota">
-                                    <img src="../../../IMG/Animales/Mascota/g1.jpg" class="screenshot" width="270" height="210">
-                                    <br><b>American Shorthair</b></br>
-                                    <font style="vertical-align: inherit;"><span class="dinero"> 20.000 <b>G</b> </span>
-                                </div>
-                                <div class="box_mascota">
-                                    <img src="../../../IMG/Animales/Mascota/g2.jpg" class="screenshot" width="270" height="210">
-                                    <br><b>Bengala</b></br>
-                                    <font style="vertical-align: inherit;"><span class="dinero"> 20.000 <b>G</b> </span>
-                                </div>
-                                <div class="box_mascota">
-                                    <img src="../../../IMG/Animales/Mascota/g3.jpg" class="screenshot" width="270" height="210">
-                                    <br><b>Calico</b></br>
-                                    <font style="vertical-align: inherit;"><span class="dinero"> 20.000 <b>G</b> </span>
-                                </div>
-                            </div>
-                        </td>
+                        </th>
                     </tr>
-                    
-                    <tr>
-                        <td style="font-size: 1.2em; background-color: #f2e88c; height: 4em;">
-                            <div style="display:flex;justify-content:space-around;align-items:center;">
-                                <p class="verano" title="Verano"></p>
-                            </div>
-                        </td>
-                        <td>
-                            <div id="boxshort">	 <!-- Caja de los pinguinos -->
-                                <div class="box_mascota">
-                                    <img src="../../../IMG/Animales/Mascota/p1.jpg" class="screenshot" width="270" height="210">
-                                    <br><b>Pingüino</b></br>
-                                    <font style="vertical-align: inherit;"><span class="dinero"> 30.000 <b>G</b> </span>
+
+                    <tbody id="calendario1" style="display: none;"> <!-- Primavera -->
+                        <tr>
+                            <td style="font-size: 1.2em; background-color: #84f16e; height: 4em;">
+                                <div style="display:flex;justify-content:space-around;align-items:center;">
+                                    <p class="primavera" title="Primavera"></p>
                                 </div>
-                                <div class="box_mascota">
-                                    <img src="../../../IMG/Animales/Mascota/p2.jpg" class="screenshot" width="270" height="210">
-                                    <br><b>Pingüino Marino</b></br>
-                                    <font style="vertical-align: inherit;"><span class="dinero"> 30.000 <b>G</b> </span>
+                            </td>
+                            <td>
+                                <div id="boxshort">	 <!-- Caja de los gatos -->
+                                    <div class="box_mascota">
+                                        <img src="../../../IMG/Animales/Mascota/g1.jpg" class="screenshot" width="270" height="210">
+                                        <br><b>American Shorthair</b></br>
+                                        <font style="vertical-align: inherit;"><span class="dinero"> 20.000 <b>G</b> </span>
+                                    </div>
+                                    <div class="box_mascota">
+                                        <img src="../../../IMG/Animales/Mascota/g2.jpg" class="screenshot" width="270" height="210">
+                                        <br><b>Bengala</b></br>
+                                        <font style="vertical-align: inherit;"><span class="dinero"> 20.000 <b>G</b> </span>
+                                    </div>
+                                    <div class="box_mascota">
+                                        <img src="../../../IMG/Animales/Mascota/g3.jpg" class="screenshot" width="270" height="210">
+                                        <br><b>Calico</b></br>
+                                        <font style="vertical-align: inherit;"><span class="dinero"> 20.000 <b>G</b> </span>
+                                    </div>
                                 </div>
-                            </div>
-                        </d>
-                    </tr>
-                    
-                    <tr>
-                        <td style="font-size: 1.2em; background-color: #f7b05f; height: 4em;">
-                            <div style="display:flex;justify-content:space-around;align-items:center;">
-                                <p class="otoño" title="Otoño"></p>
-                            </div>
-                        </td>
-                        <td>            
-                            <div id="boxshort">	 <!-- Caja de los perros -->
-                                <div class="box_mascota">
-                                    <img src="../../../IMG/Animales/Mascota/pe1.jpg" class="screenshot" width="270" height="210">
-                                    <br><b>Perro clasico</b></br>
-                                    <font style="vertical-align: inherit;"><span class="dinero"> 10.000 <b>G</b> </span>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <tbody id="calendario2" style="display: none;"> <!-- Verano -->
+                        <tr>
+                            <td style="font-size: 1.2em; background-color: #f2e88c; height: 4em;">
+                                <div style="display:flex;justify-content:space-around;align-items:center;">
+                                    <p class="verano" title="Verano"></p>
                                 </div>
-                                <div class="box_mascota">
-                                    <img src="../../../IMG/Animales/Mascota/pe2.jpg" class="screenshot" width="270" height="210">
-                                    <br><b>Shibu Negro</b></br>
-                                    <font style="vertical-align: inherit;"><span class="dinero"> 20.000 <b>G</b> </span>
+                            </td>
+                            <td>
+                                <div id="boxshort">	 <!-- Caja de los pinguinos -->
+                                    <div class="box_mascota">
+                                        <img src="../../../IMG/Animales/Mascota/p1.jpg" class="screenshot" width="270" height="210">
+                                        <br><b>Pingüino</b></br>
+                                        <font style="vertical-align: inherit;"><span class="dinero"> 30.000 <b>G</b> </span>
+                                    </div>
+                                    <div class="box_mascota">
+                                        <img src="../../../IMG/Animales/Mascota/p2.jpg" class="screenshot" width="270" height="210">
+                                        <br><b>Pingüino Marino</b></br>
+                                        <font style="vertical-align: inherit;"><span class="dinero"> 30.000 <b>G</b> </span>
+                                    </div>
                                 </div>
-                                <div class="box_mascota">
-                                    <img src="../../../IMG/Animales/Mascota/pe3.jpg" class="screenshot" width="270" height="210">
-                                    <br><b>Papillon</b></br>
-                                    <font style="vertical-align: inherit;"><span class="dinero"> 20.000 <b>G</b> </span>
+                            </d>
+                        </tr>
+                    </tbody>
+
+                    <tbody id="calendario3" style="display: none;"> <!-- Otoño -->
+                        <tr>
+                            <td style="font-size: 1.2em; background-color: #f7b05f; height: 4em;">
+                                <div style="display:flex;justify-content:space-around;align-items:center;">
+                                    <p class="otoño" title="Otoño"></p>
                                 </div>
-                            </div>
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td style="font-size: 1.2em; background-color: #7ed1f5; height: 4em;">
-                            <div style="display:flex;justify-content:space-around;align-items:center;">
-                                <p class="invierno" title="Invierno"></p>
-                            </div>
-                        </td>
-                        <td>
-                            <div id="boxshort">	 <!-- Caja de los capibaras -->
-                                <div class="box_mascota">
-                                    <img src="../../../IMG/Animales/Mascota/ca1.jpg" class="screenshot" width="270" height="210">
-                                    <br><b>Carpincho</b></br>
-                                    <font style="vertical-align: inherit;"><span class="dinero"> 30.000 <b>G</b> </span>
+                            </td>
+                            <td>            
+                                <div id="boxshort">	 <!-- Caja de los perros -->
+                                    <div class="box_mascota">
+                                        <img src="../../../IMG/Animales/Mascota/pe1.jpg" class="screenshot" width="270" height="210">
+                                        <br><b>Perro clasico</b></br>
+                                        <font style="vertical-align: inherit;"><span class="dinero"> 10.000 <b>G</b> </span>
+                                    </div>
+                                    <div class="box_mascota">
+                                        <img src="../../../IMG/Animales/Mascota/pe2.jpg" class="screenshot" width="270" height="210">
+                                        <br><b>Shibu Negro</b></br>
+                                        <font style="vertical-align: inherit;"><span class="dinero"> 20.000 <b>G</b> </span>
+                                    </div>
+                                    <div class="box_mascota">
+                                        <img src="../../../IMG/Animales/Mascota/pe3.jpg" class="screenshot" width="270" height="210">
+                                        <br><b>Papillon</b></br>
+                                        <font style="vertical-align: inherit;"><span class="dinero"> 20.000 <b>G</b> </span>
+                                    </div>
                                 </div>
-                                <div class="box_mascota">
-                                    <img src="../../../IMG/Animales/Mascota/ca2.jpg" class="screenshot" width="270" height="210">
-                                    <br><b>Carpincho Blanco</b></br>
-                                    <font style="vertical-align: inherit;"><span class="dinero"> 30.000 <b>G</b> </span>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <tbody id="calendario4" style="display: none;"> <!-- Invierno -->
+                        <tr>
+                            <td style="font-size: 1.2em; background-color: #7ed1f5; height: 4em;">
+                                <div style="display:flex;justify-content:space-around;align-items:center;">
+                                    <p class="invierno" title="Invierno"></p>
                                 </div>
-                            </div>
-                        </td>
-                    </tr>
+                            </td>
+                            <td>
+                                <div id="boxshort">	 <!-- Caja de los capibaras -->
+                                    <div class="box_mascota">
+                                        <img src="../../../IMG/Animales/Mascota/ca1.jpg" class="screenshot" width="270" height="210">
+                                        <br><b>Carpincho</b></br>
+                                        <font style="vertical-align: inherit;"><span class="dinero"> 30.000 <b>G</b> </span>
+                                    </div>
+                                    <div class="box_mascota">
+                                        <img src="../../../IMG/Animales/Mascota/ca2.jpg" class="screenshot" width="270" height="210">
+                                        <br><b>Carpincho Blanco</b></br>
+                                        <font style="vertical-align: inherit;"><span class="dinero"> 30.000 <b>G</b> </span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
 
                 <p>Todas las mascotas serán bebés al momento de la compra. La mascota crecerá por completo después de 60 días.</p>
@@ -174,7 +196,7 @@
 
                 <p>El frisbee sólo se puede jugar con mascotas adultas. Huang vende un Pet Frisbee en su tienda por <span class="dinero"> 5.000 <b>G</b> </span> a partir del otoño del año 1. Mantén el disco en la sección de artículos de tu mochila y dirígete al letrero al lado del banco en Mineral Beach. Presione A cuando esté junto al letrero para iniciar el juego del disco volador con la mascota que seleccione en el menú del letrero. Todas las mascotas pueden jugar con el disco volador durante las temporadas de primavera, verano y otoño.</p>
 
-                <p>NO es necesario traer físicamente a la mascota a la playa para jugar al lanzamiento de discos.</p>
+                <p>No es necesario traer físicamente a la mascota a la playa para jugar al lanzamiento de discos.</p>
 
                 <p>En el lado izquierdo de la pantalla hay una barra de energía. El área verde representa qué tan lejos puedes lanzar tu Frisbee y hacer que tu mascota lo atrape. También habrá un indicador de potencia en forma de flecha que se desplaza hacia arriba en la barra de potencia. Si presionas el botón A cuando el indicador de potencia está dentro del área verde, lanzarás tu Frisbee y tu mascota lo perseguirá. Puedes lanzar el Frisbee más lejos presionando A cuando el indicador de potencia esté fuera de la barra verde, pero tu mascota no siempre podrá atraparlo. Mientras permanezca dentro del área verde, su mascota tiene muchas posibilidades de atrapar el disco. Las capturas exitosas ayudarán a aumentar la barra verde de búsqueda y las capturas fallidas no mejorarán el entrenamiento de búsqueda.</p>
 

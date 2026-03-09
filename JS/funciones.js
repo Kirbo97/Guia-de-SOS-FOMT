@@ -1,52 +1,43 @@
+/* ************************************************************** */
+/*  Funciones para desplasar el contenido de la caja por botones  */
+/* ************************************************************** */
 
-function Scroll_button_villager(tip_bot_1) {
+function Scroll_button_villager(tip_bot){ desplasar(tip_bot,525,520); }
+
+function Scroll_button_marriage(tip_bot){ desplasar(tip_bot,638,520); }
+
+function desplasar(tip_bot,salto_movile,salto_comp) {
     var anchoVentana = window.innerWidth;
-    var salto_movile1=525;
-    var salto_comp1=520;
         
     if (anchoVentana <= 980) { // desplasamiento para cuando es  el movile
-        if (tip_bot_1 === 'arriba') {
-            document.getElementById("villager_box").scrollTop -= salto_movile1;
-        } else if (tip_bot_1 === 'abajo') {
-            document.getElementById("villager_box").scrollTop += salto_movile1;
+        if (tip_bot === 'arriba') {
+            document.getElementById("villager_box").scrollTop -= salto_movile;
+        } else if (tip_bot === 'abajo') {
+            document.getElementById("villager_box").scrollTop += salto_movile;
         }
             
     } else if (anchoVentana > 980) { // desplasamiento para cuando es la computadora
-        if (tip_bot_1 === 'arriba') {
-            document.getElementById("villager_box").scrollTop -= (salto_comp1);
-        } else if (tip_bot_1 === 'abajo') {
-            document.getElementById("villager_box").scrollTop += salto_comp1;
+        if (tip_bot === 'arriba') {
+            document.getElementById("villager_box").scrollTop -= (salto_comp);
+        } else if (tip_bot === 'abajo') {
+            document.getElementById("villager_box").scrollTop += salto_comp;
         }   
     }
 }   
 
-function Scroll_button_marriage(tip_bot_2) {
-    var anchoVentana = window.innerWidth;
-    var salto_movile2=638;
-    var salto_comp2=520;
-        
-    if (anchoVentana <= 980) { // desplasamiento para cuando es  el movile
-        if (tip_bot_2 === 'arriba') {
-            document.getElementById("marriage_box").scrollTop -= salto_movile2;
-        } else if (tip_bot_2 === 'abajo') {
-            document.getElementById("marriage_box").scrollTop += salto_movile2;
-        }
-            
-    } else if (anchoVentana > 980) { // desplasamiento para cuando es la computadora
-        if (tip_bot_2 === 'arriba') {
-            document.getElementById("marriage_box").scrollTop -= (salto_comp2);
-        } else if (tip_bot_2 === 'abajo') {
-            document.getElementById("marriage_box").scrollTop += salto_comp2;
-        }   
-    }
-}   
+/* ****************************************************** */
+/*  Funciones para editar la tabla acorde de la estacion  */
+/* ****************************************************** */
 
-function cambiarTemporada(num){
-    let total = 4;
+function cambiarTemporada(num){ cambiar(num,0); }
+
+function cambiarTemporada_mascota(num){ cambiar(num,1); }
+
+function cambiar(num,i){
     let encabezado = document.getElementById("estacion");
     let titulo = document.getElementById("tituloEstacion");
 
-    for(let i=0;i<=total;i++){ document.getElementById("calendario"+i).style.display="none"; }
+    for(i;i<=4;i++){ document.getElementById("calendario"+i).style.display="none"; }
     document.getElementById("calendario"+num).style.display="block";
 
     if(num==1){ // primavera 
