@@ -59,6 +59,7 @@ p.FechCump{
     margin-bottom: 6px;
     width: 95px; 
     text-align: center;
+    font-size: 15px;
 }
 
 /* clase "link" con propiedad de enlace y le quito la aparienci de hiperbinculo */
@@ -261,6 +262,13 @@ td div.td_objetos{
     text-align:center;
     padding: 0;
     width: 120px;
+}
+
+.td_calenda_simple { 
+    text-align:center;
+    padding: 0;
+    height: 100px; 
+    width: 100px;
 }
 
 /* La etiqueta "tr" (fila de la tabla) con propiedad "nth-child(odd)" (filas impares) tendra un color en la tabla */

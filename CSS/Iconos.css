@@ -62,17 +62,17 @@ ul li:before {
 /* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de estaciones */
 .primavera:before  {
     content: '\1F338'; /*(La guion sera una flor de sakura)*/
-    font-size: 3em;
+    font-size: 2.8em;
 }
 
 .verano:before  {
     content: '\1F31E'; /*(La guion sera un sol)*/
-    font-size: 3em;
+    font-size: 2.8em;
 }
 
 .otoño:before  {
     content: '\1F342'; /*(La guion sera una hoja de otoño)*/
-    font-size: 3em;
+    font-size: 2.8em;
 }
 
 .invierno:before  {
@@ -90,13 +90,13 @@ ul li:before {
 .cumpleaño:before  {
     cursor: pointer;
     content: '\1F382'; /*(La guion sera un regalo)*/
-    font-size: 3em;
+    font-size: 2.7em;
 }
 
 .evento:before  {
     cursor: pointer;
     content: '\1F388'; /*(La guion sera un globo)*/
-    font-size: 3em;
+    font-size: 2.7em;
 }
 
 /* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de corazon con color */
