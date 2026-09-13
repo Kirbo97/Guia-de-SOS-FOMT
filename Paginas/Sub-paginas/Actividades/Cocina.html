@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="../../../CSS/Style.css" type="text/css" />
         <link rel="shortcut icon" href="../../../IMG/Iconos/Kirbo.ico"/>
         <script type="text/javascript" src="../../../JS/include.js"></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene la funcion de insertar el nav y footer a la pagina-->
+        <script type="text/javascript" src="../../../JS/funciones.js"></script> <!-- Conecta el archivo js para ser usado en la pagina y Este sj contiene la funcion de insertar el nav y footer a la pagina-->
     </head>
     
     <body>
@@ -68,82 +69,100 @@
                 <h2>Ingredientes silvestres</h2>
     
                 <p>Cuando te mudas por primera vez a la granja, el alcalde Thomas te aconseja buscar en el bosque artículos que puedas vender para ganar un poco de dinero. Buscar objetos salvajes en el suelo es una forma rápida de complementar los ingresos de tu granja al principio del juego. La variedad de artículos cambiará cada temporada y los artículos aparecerán diariamente, ya sea que hayas recogido los artículos del día anterior o los hayas dejado en el suelo. En algún momento, un artículo volverá a aparecer en el mismo lugar al día siguiente, pero eso no es una garantía.</p>
-    
-                <table class="data" style="margin-bottom: 20px;"> <!-- Primavera -->
-                    <tr><th>Temporada</th><th>Nombre</th><th>Ubicación</th></tr>
-                    <tr><td rowspan="6" style="background-color: #84f16e;"><p class="primavera" style="text-align:center"></p></td><td>Flor de luna</td><td>Camino De La Colina, Pradera, Bosque Secreto, Bosque Del Sur.</td></tr>
-    
-                    <tr><td>Flor de juguete</td><td>Camino De La Colina, Pradera, Bosque Secreto</td></tr>
-    
-                    <tr><td>Brote de bambú</td><td>Matorral de bambú</td></tr>
-    
-                    <tr><td>Hierba azul</td><td>Sendero de la colina, aguas termales, bosque secreto, bosque del sur</td></tr>
-    
-                    <tr><td>Hierba amarilla</td><td>Playa</td></tr>
-    
-                    <tr><td>Hierba naranja</td><td>Playa</td></tr>
-                </table>
-    
-                <table class="data" style="margin-bottom: 20px;">  <!-- Verano -->
-    
-                    <tr><th>Temporada</th><th>Nombre</th><th>Ubicación</th></tr>
-    
-                    <tr><td rowspan="5" style="background-color: #f2e88c;"><p class="verano" style="text-align:center"></p></td><td>Flor de gato rosa</td><td>Pradera, Aguas Termales, Camino De La Colina, Bosque Secreto</td></tr>
-    
-                    <tr><td>Uvas silvestres</td><td>Matorral de Bambú, Camino de la Colina, Bosque Secreto, Bosque del Sur</td></tr>
-    
-                    <tr><td>Hierba azul marino</td><td>Aguas Termales, Bosque Sur</td></tr>
-    
-                    <tr><td>Hierba verde</td><td>Matorral de bambú, sendero de colina, aguas termales, pradera, bosque secreto</td></tr>
-    
-                    <tr><td>Hierba roja</td><td>Matorral de bambú, aguas termales, sendero de colinas, bosque secreto, bosque del sur</td></tr>
-    
-                </table>
-    
-                <table class="data" style="margin-bottom: 20px;"> <!-- Otoño -->
-    
-                    <tr><th>Temporada</th><th>Nombre</th><th>Ubicación</th></tr>
-    
-                    <tr><td rowspan="11" style="background-color: #f4a74f;"><p class="otoño" style="text-align:center"></p></td><td>Flor mágica azul</td><td>Pradera, Aguas Termales, Camino De La Colina, Bosque Secreto</td></tr>
-    
-                    <tr><td>Flor mágica roja</td><td>Granja (pocas posibilidades de tenerlo al plantar Flor mágica azul)</td></tr>
-    
-                    <tr><td>Flor dulcesol</td><td>Bosque secreto</td></tr>
-    
-                    <tr><td>Naranja</td><td>Bosque secreto, Granja (en unos de los arboles frutales que compras a Ghotts)</td></tr>
-    
-                    <tr><td>Castaña</td><td>Camino De La Colina, Pradera</td></tr>
-    
-                    <tr><td>Champiñón</td><td>Bosque de la Iglesia, Camino de la Colina, Pradera, Bosque Secreto, Bosque del Sur</td></tr>
-    
-                    <tr><td>Hongo Venenoso</td><td>Bosque de la Iglesia, Camino de la Colina, Bosque Secreto, Bosque del Sur</td></tr>
-    
-                    <tr><td>Hongo pino</td><td>Matorral de bambú*, Bosque de la Iglesia</td></tr>
-    
-                    <tr><td>Hierba verde</td><td>Matorral de bambú, aguas termales</td></tr>
-    
-                    <tr><td>Hierba roja</td><td>Matorral de bambú, sendero de colinas, aguas termales, bosque secreto, bosque del sur</td></tr>
-    
-                    <tr><td>Hierba morado</td><td>Playa</td></tr>
-    
-                </table>
-    
-                <table class="data" style="margin-bottom: 20px;"> <!--Invierno -->
-    
-                    <tr><th>Temporada</th><th>Nombre</th><th>Ubicación</th></tr>
-    
-                    <tr><td rowspan="2" style="background-color: #7ed1f5; padding: 0;"><p class="invierno" style="text-align:center; margin: 0; padding-top: 10px;"></p></td><td>Naranja</td><td>bosque secreto</td></tr>
-    
-                    <tr><td>Hierba blanca</td><td>Bosque de la Iglesia, Bosque del Sur</td></tr>
-    
-                </table>
 
-                <table class="data" style="margin-bottom: 20px;"> <!--Minas -->
-    
-                    <tr><th style="width: 70px;">Lugar</th><th>Descripcion</th></tr>
+                <i>Nota: Seleccione una estación.</i>
 
-                    <tr><td style="background-color: #88adbc; padding: 0;"><p class="cueva" style="text-align:center; margin: 0; padding-top: 20px; height: 50px;"></p></td><td>Se puede conseguir la <b>hierba negra</b> usando la azada en la mina de la cascada y en la mina del lago.</td></tr>
-    
+                <table class="data" style="margin-bottom: 1.5em; margin-top: 1.8em;">
+                    <tbody>
+                        <tr>
+                            <th colspan="3" id="estacion" style="font-size: 1.2em; background-color: #757a74; height: 4em; width: 28em;">
+                                <div style="display:flex; justify-content:space-around; align-items:center;">
+                                    <p class="primavera" onclick="cambiarTemporada_recursos(1)" title="Primavera" style="cursor: pointer;"> </p>
+                                    <p class="verano" onclick="cambiarTemporada_recursos(2)" title="Verano" style="cursor: pointer;"> </p>
+                                    <p class="otoño" onclick="cambiarTemporada_recursos(3)" title="Otoño" style="cursor: pointer;"> </p>
+                                    <p class="invierno" onclick="cambiarTemporada_recursos(4)" title="Invierno" style="cursor: pointer;"> </p>
+                                </div>
+                            </th>
+                        </tr>
+                    </tbody>
+
+                    <tbody id="calendario1" style="display: none;"> <!-- Primavera -->
+
+                        <tr>
+                            <td rowspan="16" style="font-size: 1.2em; background-color: #84f16e; height: 4em;">
+                                <div style="display:flex; justify-content:space-around; align-items:center;">
+                                    <p class="primavera" title="Primavera"></p>
+                                </div>
+                            </td>
+                            <th style="width: 9em;">Nombre</th><th>Ubicación</th>
+                        </tr>
+
+                        <tr><td><b>Flor de luna</b></td><td>Camino De La Colina, Pradera, Bosque Secreto, Bosque Del Sur</td></tr>
+                        <tr><td><b>Flor de juguete</b></td><td>Camino De La Colina, Pradera, Bosque Secreto</td></tr>
+                        <tr><td><b>Brote de bambú</b></td><td>Matorral de bambú</td></tr>
+                        <tr><td><b>Hierba azul</b></td><td>Sendero de la colina, aguas termales, bosque secreto, bosque del sur</td></tr>
+                        <tr><td><b>Hierba amarilla</b></td><td>Playa</td></tr>
+                        <tr><td><b>Hierba naranja</b></td><td>Playa</td></tr>
+                        <tr><td><b>Hierba negra</b></td><td>Se puede conseguir usando la azada en las minas de la cascada y el del lago.</td></tr>
+
+                    </tbody>
+                    
+                    <tbody id="calendario2" style="display: none;"> <!-- Verano -->
+                        <tr>
+                            <td rowspan="7" style="font-size: 1.2em; background-color: #f2e88c; height: 4em;">
+                                <div style="display:flex; justify-content:space-around; align-items:center;">
+                                    <p class="verano" title="Verano"></p>
+                                </div>
+                            </td>
+                            <th style="width: 10em;">Nombre</th><th >Ubicación</th>
+                        </tr>
+
+                        <tr><td><b>Flor de gato rosa</b></td><td>Pradera, Aguas Termales, Camino De La Colina, Bosque Secreto</td></tr>
+                        <tr><td><b>Uvas silvestres</b></td><td>Matorral de Bambú, Camino de la Colina, Bosque Secreto, Bosque del Sur</td></tr>
+                        <tr><td><b>Hierba azul marino</b></td><td>Aguas Termales, Bosque Sur</td></tr>
+                        <tr><td><b>Hierba verde</b></td><td>Matorral de bambú, sendero de colina, aguas termales, pradera, bosque secreto</td></tr>
+                        <tr><td><b>Hierba roja</b></td><td>Matorral de bambú, aguas termales, sendero de colinas, bosque secreto, bosque del sur</td></tr>
+                        <tr><td><b>Hierba negra</b></td><td>Se puede conseguir usando la azada en las minas de la cascada y el del lago.</td></tr>
+                    </tbody>
+
+                    <tbody id="calendario3" style="display: none;"> <!-- Otoño -->
+                        <tr>
+                            <td rowspan="13" style="font-size: 1.2em; background-color: #f7b05f; height: 4em;">
+                                <div style="display:flex; justify-content:space-around; align-items:center;">
+                                    <p class="otoño" title="Otoño"></p>
+                                </div>
+                            </td>
+                            <th style="width: 10em;">Nombre</th><th>Ubicación</th>
+                        </tr>
+
+                        <tr><td><b>Flor mágica azul</b></td><td>Pradera, Aguas Termales, Camino De La Colina, Bosque Secreto</td></tr>
+                        <tr><td><b>Flor mágica roja</b></td><td>Granja (pocas posibilidades de tenerlo al plantar Flor mágica azul)</td></tr>
+                        <tr><td><b>Flor dulcesol</b></td><td>Bosque secreto</td></tr>
+                        <tr><td><b>Naranja</b></td><td>Bosque secreto, Granja (en uno de los árboles frutales que compras a Ghotts)</td></tr>
+                        <tr><td><b>Castaña</b></td><td>Camino De La Colina, Pradera</td></tr>
+                        <tr><td><b>Champiñón</b></td><td>Bosque de la Iglesia, Camino de la Colina, Pradera, Bosque Secreto, Bosque del Sur</td></tr>
+                        <tr><td><b>Hongo Venenoso</b></td><td>Bosque de la Iglesia, Camino de la Colina, Bosque Secreto, Bosque del Sur</td></tr>
+                        <tr><td><b>Hongo pino</b></td><td>Matorral de bambú*, Bosque de la Iglesia</td></tr>
+                        <tr><td><b>Hierba verde</b></td><td>Matorral de bambú, aguas termales</td></tr>
+                        <tr><td><b>Hierba roja</b></td><td>Matorral de bambú, sendero de colinas, aguas termales, bosque secreto, bosque del sur</td></tr>
+                        <tr><td><b>Hierba morado</b></td><td>Playa</td></tr>
+                        <tr><td><b>Hierba negra</b></td><td>Se puede conseguir usando la azada en las minas de la cascada y el del lago.</td></tr>
+
+                    </tbody>
+                    
+                    <tbody id="calendario4" style="display: none;"> <!-- Invierno -->
+                        <tr>
+                            <td rowspan="4" style="font-size: 1.2em; background-color: #7ed1f5; height: 4em;">
+                                <div style="display:flex; justify-content:space-around; align-items:center;">
+                                    <p class="invierno" title="Invierno"></p>
+                                </div>
+                            </td>
+                            <th style="width: 8em;">Nombre</th><th>Ubicación</th>
+                        </tr>
+                        <tr><td><b>Naranja</b></td><td>Bosque secreto</td></tr>
+                        <tr><td><b>Hierba blanca</b></td><td>Bosque de la Iglesia, Bosque del Sur</td></tr>
+                        <tr><td><b>Hierba negra</b></td><td>Se puede conseguir usando la azada en las minas de la cascada y el del lago.</td></tr>
+                    </tbody>
                 </table>
         
             </main>
