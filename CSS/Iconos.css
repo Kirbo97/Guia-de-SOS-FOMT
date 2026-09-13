@@ -82,7 +82,7 @@ ul li:before {
 
 /* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de estaciones */
 .cueva:before  {
-    content: '\1F5FB'; /*(La guion sera un muñeco de nieve)*/
+    content: '\26CF'; /*(La guion sera una cueva)*/
     font-size: 2.8em;
 }
 

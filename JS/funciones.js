@@ -33,6 +33,8 @@ function cambiarTemporada(num){ cambiar(num,0); }
 
 function cambiarTemporada_mascota(num){ cambiar(num,1); }
 
+function cambiarTemporada_recursos(num){ cambiar(num,1); }
+
 function cambiar(num,i){
     let encabezado = document.getElementById("estacion");
     let titulo = document.getElementById("tituloEstacion");
