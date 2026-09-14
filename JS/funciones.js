@@ -29,13 +29,15 @@ function desplasar(tip_bot,salto_movile,salto_comp) {
 /*  Funciones para editar la tabla acorde de la estacion  */
 /* ****************************************************** */
 
-function cambiarTemporada(num){ cambiar(num,0); }
+function cambiarTemporada(num){ cambiar_estacion(num,0); }
 
-function cambiarTemporada_mascota(num){ cambiar(num,1); }
+function cambiarTemporada_mascota(num){ cambiar_estacion(num,1); }
 
-function cambiarTemporada_recursos(num){ cambiar(num,1); }
+function cambiarTemporada_recursos(num){ cambiar_estacion(num,1); }
 
-function cambiar(num,i){
+function cambiar_lista(num){ cambiar_peces(num,1); }
+
+function cambiar_estacion(num,i){
     let encabezado = document.getElementById("estacion");
     let titulo = document.getElementById("tituloEstacion");
 
@@ -61,4 +63,13 @@ function cambiar(num,i){
         encabezado.style.backgroundColor="#7ed1f5"; 
         titulo.textContent="Calendario de Invierno"; 
     }
+}
+
+function cambiar_peces(num,i){
+    let titulo = document.getElementById("tituloEstacion");
+
+    for(i;i<=3;i++){ document.getElementById("lista"+i).style.display="none"; }
+    document.getElementById("lista"+num).style.display="block";
+
+
 }
