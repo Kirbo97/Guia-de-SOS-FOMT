@@ -37,6 +37,8 @@ function cambiarTemporada_recursos(num){ cambiar_estacion(num,1); }
 
 function cambiar_lista(num){ cambiar_peces(num,1); }
 
+function cambiar_receta(num){ cambiar_pagina(num,1); }
+
 function cambiar_estacion(num,i){
     let encabezado = document.getElementById("estacion");
     let titulo = document.getElementById("tituloEstacion");
@@ -66,10 +68,11 @@ function cambiar_estacion(num,i){
 }
 
 function cambiar_peces(num,i){
-    let titulo = document.getElementById("tituloEstacion");
-
     for(i;i<=3;i++){ document.getElementById("lista"+i).style.display="none"; }
     document.getElementById("lista"+num).style.display="block";
+}
 
-
+function cambiar_pagina(num,i){
+    for(i;i<=5;i++){ document.getElementById("lista_receta"+i).style.display="none"; }
+    document.getElementById("lista_receta"+num).style.display="block";
 }

@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="../../CSS/Style.css" type="text/css" />
         <link rel="shortcut icon" href="../../IMG/Iconos/Kirbo.ico"/>
         <script type="text/javascript" src="../../JS/include.js"></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene la funcion de insertar el nav y footer a la pagina-->
+        <script type="text/javascript" src="../../JS/funciones.js"></script> <!-- Conecta el archivo js para ser usado en la pagina y Este sj contiene la funcion de insertar el nav y footer a la pagina-->
     </head>
     
     <body>
@@ -29,18 +30,28 @@
 
                 <p>Las recetas tambien usa otros platos como ingredientes, estos son representados como <b>(Re)</b>.</p>
 
-                <details> <!-- pagina 1 -->
-                    <summary>Pagina 1 (001 - 024)</summary>
+                <table class="data" style="margin-bottom: 1.5em; margin-top: 1.8em; width: 100%">
+                    <tr>
+                        <th style="font-size: 1.2em; background-color:#00AA88; height: 4em;">
+                            <div style="display:flex;justify-content:space-around;align-items:center;">
+                                <p onclick="cambiar_receta(1)" style="cursor: pointer;">Lista 1</p>
+                                <p onclick="cambiar_receta(2)" style="cursor: pointer;">Lista 2</p>
+                                <p onclick="cambiar_receta(3)" style="cursor: pointer;">Lista 3</p>
+                                <p onclick="cambiar_receta(4)" style="cursor: pointer;">Lista 4</p>
+                                <p onclick="cambiar_receta(5)" style="cursor: pointer;">Lista 5</p>
+                            </div>
+                        </th>
+                    </tr>
 
-                    <p>El <b>Mochi</b> es un ingrediente poco comun y se lo puede conseguir en el <b class="sub_titulo">Evento de Verbena del Mochi</b> en primavera, lo puedes consultar en <a class="hiper" onclick="copiar('rec')" href="../../Paginas/Eventos.html">eventos</a>.</p>
-    
-                    <p>Los <b>Huevo X</b> y <b>Huevo platino</b> son ingredientes poco comun y se lo puede conseguir de las gallinas, pero para conseguirlo las gallinas deben de haber ganado el concurso de gallina y haber pasado mucho tiempo afuera, tienes pocas posibilidades de encontrar un huevo X porque mayormente salen platino.</p>
-    
-                    <p>El <b>Huevo Dorado</b> es un ingrediente poco comun y se lo puede conseguir de las gallinas, pero para conseguirlo las gallinas deben de haber ganado el concurso de gallina.</p>
+                    <tbody id="lista_receta1" style="display: none;"> <!-- pagina 1 -->
+                        <tr><td colspan="5"><div>
+                            <p>El <b>Mochi</b> es un ingrediente poco comun y se lo puede conseguir en el <b class="sub_titulo">Evento de Verbena del Mochi</b> en primavera, lo puedes consultar en <a class="hiper" onclick="copiar('rec')" href="../../Paginas/Eventos.html">eventos</a>.</p>
+                            <p>Los <b>Huevo X</b> y <b>Huevo platino</b> son ingredientes poco comun y se lo puede conseguir de las gallinas, pero para conseguirlo las gallinas deben de haber ganado el concurso de gallina y haber pasado mucho tiempo afuera, tienes pocas posibilidades de encontrar un huevo X porque mayormente salen platino.</p>
+                            <p>El <b>Huevo Dorado</b> es un ingrediente poco comun y se lo puede conseguir de las gallinas, pero para conseguirlo las gallinas deben de haber ganado el concurso de gallina.</p>
+                        </div></td></tr>
 
-                    <table class="data">
                         <tr><th style="width: 35px;">Nº</th><th style="width: 155px;">Plato</th><th>Requisitos</th><th style="width: 11.5em;">Ingredientes</th><th style="width: 9.5em;">Utencilios</th></tr>
-        
+
                         <tr>
                             <td style="text-align: center;">001</td>
                             <td style="text-align:center;"><img src="../../IMG/Platos/Pagina 1/p001.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Mayonesa (S)</b></p></td>
@@ -361,17 +372,16 @@
                                 <li class="gustos">Sartén</li>
                             </ul></td>
                         </tr>
-                    </table>
-                </details>
-    
-                <details> <!-- pagina 2 -->
-                    <summary>Pagina 2 (025 - 048)</summary>
 
-                    <p>El <b>Hongo pino</b> es un ingrediente poco comun y se lo puede conseguir en el <b class="sub_titulo">Evento del Dervi de caballo</b> en primavera y otoño, lo puedes consultar en <a class="hiper" href="../../Paginas/Eventos.html">eventos</a>.</p>
+                    </tbody>
 
-                    <table class="data">
+                    <tbody id="lista_receta2" style="display: none;"> <!-- pagina 2 -->
+                        <tr><td colspan="5"><div>
+                            <p>El <b>Hongo pino</b> es un ingrediente poco comun y se lo puede conseguir en el <b class="sub_titulo">Evento del Dervi de caballo</b> en primavera y otoño, lo puedes consultar en <a class="hiper" href="../../Paginas/Eventos.html">eventos</a>.</p>
+                        </div></td></tr>
+
                         <tr><th style="width: 35px;">Nº</th><th style="width: 155px;">Plato</th><th>Requisitos</th><th style="width: 11.5em;">Ingredientes</th><th style="width: 9.5em;">Utencilios</th></tr>
-        
+
                         <tr>
                             <td style="text-align: center;">025</td>
                             <td style="text-align:center;"><img src="../../IMG/Platos/Pagina 2/p025.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Leche de fresas</b></p></td>
@@ -647,9 +657,30 @@
                             </ul></td>
                             <td><ul class="horario"><li class="gustos">Cuchillo</li></ul></td>
                         </tr>
-                    </table>
-                </details>
-    
+                    </tbody>
+
+ 
+
+<tbody id="lista_receta3" style="display: none;">
+    <tr>
+        <td>PRUEBA DEL TBODY 3</td>
+    </tr>
+</tbody>
+
+<tbody id="lista_receta4" style="display: none;">
+    <tr>
+        <td>PRUEBA DEL TBODY 4</td>
+    </tr>
+</tbody>
+
+<tbody id="lista_receta5" style="display: none;">
+    <tr>
+        <td>PRUEBA DEL TBODY 5</td>
+    </tr>
+</tbody>
+                </table>
+
+ 
                 <details> <!-- pagina 3 -->
                     <summary>Pagina 3 (049 - 072)</summary>
 
