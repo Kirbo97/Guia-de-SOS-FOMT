@@ -1,0 +1,143 @@
+/* ********************************** */
+/*  Diseños relacionado con imagenes  */
+/* ********************************** */
+
+/* *********************** */
+/*  Diseños de lo modales  */
+/* *********************** */
+
+.img_festival {
+    width: 320px;
+     height: 320px; 
+}
+
+.img_cumpleaños {
+    width: 190px;
+    height: 190px;
+}
+
+/* ******************* */
+/*  Diseños generales  */
+/* ******************* */
+
+/* se crea la clase "right" para que se ocupe de posisionar la imagen a la derecha*/
+.right {
+    float:right; 
+    height:auto; 
+    margin: 5px 20px 0 0;
+    max-width:100%;
+    border-radius:10px;
+}
+
+/* se crea la clase "left" para que se ocupe de posisionar la imagen a la izquierda*/
+.left {
+    float:left; 
+    height:auto; 
+    margin: 5px 0 0 20px;
+    max-width:100%;
+    border-radius:10px;
+}
+
+/* se crea la clase "center" para que se ocupe de posisionar la imagen al centro*/
+.center {
+    display:block;
+    height:auto;
+    margin:0px auto;
+    max-width:100%;
+    border-radius:10px;
+}
+
+/* se crea la clase "screenshot" para que se ocupe de crear un marco cverde para la imagen*/
+.screenshot {
+    border: 3px solid #228877;
+    border-radius:15px; 
+    max-width:100%; 	
+    height:auto;
+    aspect-ratio: attr(width) / attr(height);
+}
+
+/* se crea la ID "boxshort,marriage_box,villager_box" para que se ocupe de posisionar la imagen dentro de la caja*/
+#boxshort,#marriage_box,#villager_box{ text-align:center;}
+
+/* se crea la clase "box_aldeano" para que se ocupe de posisionar el contenido para las mascotas*/
+.box_aldeanos {
+    max-width:200px; 
+    height:auto; 
+    display:inline-block; 
+    margin:1.5em 19px;
+}
+
+/* se crea la clase "box_matrimonio,box_otros_matrimonio" para que se ocupe de posisionar el contenido para los perfiles*/
+.box_matrimonio,.box_otros_matrimonio {
+    max-width:183.55px; 
+    height:auto; 
+    display:inline-block; 
+    margin:1em 17.5px;
+}
+
+.box_animales {
+    max-width:290px; 
+    height:auto; 
+    display:inline-block; 
+    margin:10px 20px;
+}
+
+/* se crea la clase "box_gallinero" para que se ocupe de posisionar el contenido de las gallinas*/
+.box_gallinero {
+    max-width:200px; 
+    height:auto; 
+    display:inline-block; 
+    margin:10px;
+}
+
+/* se crea la clase "box_menu" para que se ocupe de posisionar el contenido de las opciones*/
+.box_menu {
+    max-width:160px;
+    height:auto; 
+    display:inline-block; 
+    margin:12px 17px;
+}
+
+.cont_box_menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    column-gap: 60px; 
+}
+
+/* se crea la clase "box_menu" para que se ocupe de posisionar el contenido de las opciones*/
+.box_menu_lugares {
+    max-width:210px;
+    height:auto; 
+    display:inline-block; 
+    margin:12px 25px;
+}
+
+/* se crea la clase "box_mascota" para que se ocupe de posisionar el contenido para las mascotas*/
+.box_mascota {
+    max-width:200px; 
+    height:auto; 
+    display:inline-block; 
+    margin:10px 17px;
+}
+
+/* se crea la clase "box_otro" para que se ocupe de posisionar el contenido para las mascotas*/
+.box_otro {
+    max-width:1100px;
+    height:auto;
+    display:inline-block; 
+    margin:1.5em 19px;
+}
+
+/* se crea la clase "box_ganado" para que se ocupe de posisionar el contenido para el ganado*/
+.box_ganado {
+    max-width: 270px; 
+    height:auto; 
+    display:inline-block; 
+    margin:10px;
+}
+
+/* La etiqueta "img" con las clases es para que se ocupe del tamaño de la imagen*/
+.box_aldeanos img, .box_matrimonio img,.box_animales img, .box_menu img{ max-width:100%; height:auto; }
+
+.box_gallinero img, .box_ganado img, .box_otro img, .box_mascota img, .box_menu_lugares img  { max-width:100%; height:auto; }
