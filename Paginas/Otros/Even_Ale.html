@@ -25,721 +25,913 @@
 
                 <p>Dentro del juego te toparas con eventos que no son parte de la trama del juego pero te ayudara a conocer mejor a los aldeanos del pueblo y algunos de esos eventos son simplemento de relleno.</p>
 
-                <details> <!-- Propio -->
-                    <summary class="pirn">Eventos del jugador</summary>
 
-                    <details>
-                        <summary>Escuela de cocina</summary>
-    
-                        <p>En este evento es recomendable tener todas las recetas porque los pretendientes masculinos o femeninos pedira que cocines algo para ellos.</p>
-    
-                        <table class="data">
-                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-        
-                            <tr>
-                                <td>
-                                    <ul class="horario">
-                                        <li class="gustos">Entra en tu casa de campo.</li>
-                                        <li class="gustos">8:00 am a 9:00 pm.</li>
-                                        <li class="gustos">Cualquier día de la semana.</li>
-                                        <li class="gustos">Debe ser Verano.</li>
-                                        <li class="gustos">Clima soleado (siempre está bien) o lluvioso (con límites).</li>
-                                        <li class="gustos">Pretendientes femeninos tienes 4 notas de amistad o más.</li>
-                                        <li class="gustos">Pretendientes masculinos tienes 4 notas de amistad o más.</li>
-                                        <li class="gustos">Tienes una cocina y de todos los utensilios de cocina.</li>
-                                        <li class="gustos">No tiene mascotas o tus mascotas están afuera.</li>
-                                        <li class="gustos">Si está casado con una persona del sexo opuesto, su cónyuge no debe estár en la casa, pero si es del mismo sexo puede estar en casa.</li>
-                                        <li class="gustos">Tu casa es de gran tamaño.</li>
-                                    </ul>
-                                </td>
-                                <td style=" padding: 0 10px">No hay opciones.</td>
-                            </tr>
-                        </table>
-                    </details>   
-                    
-                    <details>
-                        <summary>Corte de energía</summary>
-    
-                        <table class="data">
-                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-        
-                            <tr>
-                                <td>
-                                    <ul class="horario">
-                                        <li class="gustos">Dentro de tu casa de campo.</li>
-                                        <li class="gustos">6:00 am</li>
-                                        <li class="gustos">Debe ser verano o invierno</li>
-                                        <li class="gustos">Clima tormentoso.</li>
-                                    </ul>
-                                </td>
-                                <td style=" padding: 0 10px">No hay opciones.</td>
-                            </tr>
-                        </table>
-                    </details>
 
-                </details>
+                <div style="display: flex;">
+                    <div id="villager_box" style="overflow: hidden;" class="scroll-container-eventos-aldeanos">
+                        <div class="box_evento_aldeanos"> <!-- Basil -->
+                            <a onclick="window.modal_even1.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="../../IMG/Personajes/Eventos/Basil.png" class="screenshot" title="Basil"></a>
+                            <a class="hiper_click" onclick="window.modal_even1.showModal();">Basil</a>
 
-                <details> <!-- Duende de las cosecha -->
-                    <summary class="pirn">Eventos de los Duende de las cosecha</summary>
-                    <h3>Fiesta del té de los duende de la cosecha</h3>
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Entra a la cabaña de los duendes de la cosecha.</li>
-                                    <li class="gustos">10:00 am a 5:00 pm.</li>
-                                    <li class="gustos">Cualquier día de la semana.</li>
-                                    <li class="gustos">Cualquier clima.</li>
-                                    <li class="gustos">Debe ser Primavera.</li>
-                                    <li class="gustos">Todos los duendes tienen 2 notas de amistad o más.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
-                </details>
+                            <dialog id="modal_even1" class="modal_calendario">
+                                    
+                                <button onclick="window.modal_even1.close();" class="btn close">X</button>
 
-                <details> <!-- Basil -->
-                    <summary class="pirn">Eventos de Basil</summary>
-                    <h3>El orgullo de un botánico</h3>
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Sube al segundo piso de la casa de Anna y Basil.</li>
-                                    <li class="gustos">13:00 a 16:00</li>
-                                    <li class="gustos">No debe ser Lunes.</li>
-                                    <li class="gustos">Debe ser lluvioso.</li>
-                                    <li class="gustos">Debe ser Primavera.</li>
-                                    <li class="gustos">Basil tiene 8 notas de amistad o mas.</li>
-                                    <li class="gustos">No estás casado con María.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px"><b>Opción 1:</b> Explique su error.</td>
-                        </tr>
-                    </table>
-                </details>
+                                <div style="padding: 0 45px 30px 40px; margin: 0;">
 
-                <details> <!-- Lillia -->
-                    <summary class="pirn">Eventos de Lillia</summary>
-                    <h3>El amor de un niño</h3>
+                                    <h2 style="text-align: center;">Eventos de Basil</h2>
 
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Entra en la tienda de Popuri.</li>
-                                    <li class="gustos">11:20 am a 1:00 pm (clima soleado).</li>
-                                    <li class="gustos">10:00 am a 1:00 pm (clima lluvioso/nevado).</li>
-                                    <li class="gustos">Cualquier día de la semana.</li>
-                                    <li class="gustos">Debe ser Verano.</li>
-                                    <li class="gustos">Cualquier clima.</li>
-                                    <li class="gustos">No estás casada con Rick.</li>
-                                    <li class="gustos">Lillia tiene 4 notas de amistad o más.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
-                </details>
- 
-                <details> <!-- Carter -->
-                    <summary class="pirn">Eventos de Carter</summary>
+                                    <h3>El orgullo de un botánico</h3>
+                                    <table class="data">
+                                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="horario">
+                                                    <li class="gustos">Sube al segundo piso de la casa de Anna y Basil.</li>
+                                                    <li class="gustos">13:00 a 16:00</li>
+                                                    <li class="gustos">No debe ser Lunes.</li>
+                                                    <li class="gustos">Debe ser lluvioso.</li>
+                                                    <li class="gustos">Debe ser Primavera.</li>
+                                                    <li class="gustos">Basil tiene 8 notas de amistad o mas.</li>
+                                                    <li class="gustos">No estás casado con María.</li>
+                                                </ul>
+                                            </td>
+                                            <td style=" padding: 0 10px"><b>Opción 1:</b> Explique su error.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </dialog>
+                        </div>
 
-                    <details>
-                        <summary>Un sueño divino</summary>
-    
-                        <table class="data">
-                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-        
-                            <tr>
-                                <td>
-                                    <ul class="horario">
-                                        <li class="gustos">Entra a la iglesia.</li>
-                                        <li class="gustos">16:00 a 22:00.</li>
-                                        <li class="gustos">Debe ser Miercoles.</li>
-                                        <li class="gustos">Cualquier clima.</li>
-                                        <li class="gustos">Carter tiene 4 notas de amistad o más.</li>
-                                    </ul>
-                                </td>
-                                <td style=" padding: 0 10px">No hay opciones.</td>
-                            </tr>
-                        </table>
-                    </details>
+                        <div class="box_evento_aldeanos"> <!-- Lillia -->
+                            <a onclick="window.modal_even2.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="../../IMG/Personajes/Eventos/Lillia.png" class="screenshot" title="Lillia"></a>
+                            <a class="hiper_click" onclick="window.modal_even2.showModal();">Lillia</a>
 
-                    <details>
-                        <summary>El secreto de Carter</summary>
-                        <table class="data">
-                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-        
-                            <tr>
-                                <td>
-                                    <ul class="horario">
-                                        <li class="gustos">Entra a la iglesia.</li>
-                                        <li class="gustos">16:00 a 22:00.</li>
-                                        <li class="gustos">Debe ser Lunes o Miercoles.</li>
-                                        <li class="gustos">Debe ser soleado.</li>
-                                        <li class="gustos">Debe ser Otoño.</li>
-                                        <li class="gustos">Carter tiene 8 notas de amistad o mas.</li>
-                                    </ul>
-                                </td>
-                                <td style=" padding: 0 10px"><b>Opción 1:</b> Sí.</td>
-                            </tr>
-                        </table>
-                    </details>
+                            <dialog id="modal_even2" class="modal_calendario">
+                                
+                                <button onclick="window.modal_even2.close();" class="btn close">X</button>
 
-                </details>
+                                <div style="padding: 0 45px 30px 40px; margin: 0;">
 
-                <details> <!-- Anna -->
-                    <summary class="pirn">Eventos de Anna</summary>
-                    <h3>Clase de postres de Anna</h3>
+                                    <h2 style="text-align: center;">Eventos de Lillia</h2>
 
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Entra en la casa de Anna y Basil.</li>
-                                    <li class="gustos">10:30 a 13:00.</li>
-                                    <li class="gustos">Debe ser Sabado.</li>
-                                    <li class="gustos">Debe ser soleado.</li>
-                                    <li class="gustos">Anna tiene 8 notas de amistad o más.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
-                </details>
-                
-                <details> <!-- Brandon -->
-                    <summary class="pirn">Eventos de Brandon</summary>
-                    <h3>El paseo de Brandon</h3>
+                                    <h3>El amor de un niño</h3>
+                                    <table class="data">
+                                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="horario">
+                                                    <li class="gustos">Entra en la tienda de Popuri.</li>
+                                                    <li class="gustos">11:20 am a 1:00 pm (clima soleado).</li>
+                                                    <li class="gustos">10:00 am a 1:00 pm (clima lluvioso/nevado).</li>
+                                                    <li class="gustos">Cualquier día de la semana.</li>
+                                                    <li class="gustos">Debe ser Verano.</li>
+                                                    <li class="gustos">Cualquier clima.</li>
+                                                    <li class="gustos">No estás casada con Rick.</li>
+                                                    <li class="gustos">Lillia tiene 4 notas de amistad o más.</li>
+                                                </ul>
+                                            </td>
+                                            <td style=" padding: 0 10px">No hay opciones.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </dialog>
+                        </div>
 
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Camine desde el sur de la Ciudad Mineral hasta la Plaza Rosa.</li>
-                                    <li class="gustos">13:00 a 16:00.</li>
-                                    <li class="gustos">No debe ser Martes ni Sábado.</li>
-                                    <li class="gustos">Debe ser soleado.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
-                </details>
+                        <div class="box_evento_aldeanos"> <!-- Carter -->
+                            <a onclick="window.modal_even3.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="../../IMG/Personajes/Eventos/Carter.png" class="screenshot" title="Lillia"></a>
+                            <a class="hiper_click" onclick="window.modal_even3.showModal();">Carter</a>
 
-                <details> <!-- Manna -->
-                    <summary class="pirn">Eventos de Manna</summary>
+                            <dialog id="modal_even3" class="modal_calendario">
+                                
+                                <button onclick="window.modal_even3.close();" class="btn close">X</button>
 
-                    <details>
-                        <summary>El argumento de Duke y Manna</summary>
-    
-                        <table class="data">
-                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-        
-                            <tr>
-                                <td>
-                                    <ul class="horario">
-                                        <li class="gustos">Entra en la bodega Adge.</li>
-                                        <li class="gustos">20:10 a 22:00.</li>
-                                        <li class="gustos">Debe ser Sabado.</li>
-                                        <li class="gustos">Cualquier clima.</li>
-                                        <li class="gustos">Debe ser Otoño 16 del año 1 o posterior.</li>
-                                        <li class="gustos">Duke tiene 4 notas de amistad o más.</li>
-                                        <li class="gustos">Manna tiene 8 notas de amistad o más.</li>
-                                        <li class="gustos">Cliff está trabajando en la bodega.</li>
-                                    </ul>
-                                </td>
-                                <td style=" padding: 0 10px">No hay opciones.</td>
-                            </tr>
-                        </table>
-    
-                    </details>
+                                <div style="padding: 0 45px 30px 40px; margin: 0;">
 
-                    <details>
-                        <summary>Las habilidades de compra de Manna</summary>
-    
-                        <table class="data">
-                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-        
-                            <tr>
-                                <td>
-                                    <ul class="horario">
-                                        <li class="gustos">Entra en la tienda general de Jeff.</li>
-                                        <li class="gustos">13:50 a 16:00</li>
-                                        <li class="gustos">Debe ser Jueves o viernes.</li>
-                                        <li class="gustos">Debe ser lluvioso o nevado.</li>
-                                        <li class="gustos">Manna tiene 4 notas de amistad o más.</li>
-                                        <li class="gustos">Ya has visto el evento <b>Cosecha de Bodega de Otoño</b> y a Cliff NO le ofrecieron el trabajo.</li>
-                                    </ul>
-                                </td>
-                                <td style=" padding: 0 10px">No hay opciones.</td>
-                            </tr>
-                        </table>      
-                        <p><b>Cosecha de Bodega de Otoño: </b>lo puedes consultar en la seccion de <b class="sub_titulo">Eventos disponibles solo en el año 1</b>.</p>              
-                    </details>
+                                    <h2 style="text-align: center;">Eventos de Carter</h2>
 
-                    <details>
-                        <summary>Consulta de vida de Sasha</summary>
-    
-                        <table class="data">
-                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-        
-                            <tr>
-                                <td>
-                                    <ul class="horario">
-                                        <li class="gustos">Camine hasta la plaza Rosa.</li>
-                                        <li class="gustos">13:00 a 16:00</li>
-                                        <li class="gustos">No debe ser Lunes ni Martes.</li>
-                                        <li class="gustos">Debe ser soleado.</li>
-                                        <li class="gustos">Sasha tiene 4 notas de amistad o más.</li>
-                                        <li class="gustos">El evento <b>Cosecha de Bodega de Otoño</b> NO ha ocurrido todavía, o si ocurrio a Cliff NO se le ofreció el trabajo.</li>
-                                    </ul>
-                                </td>
-                                <td style=" padding: 0 10px">No hay opciones.</td>
-                            </tr>
-                        </table>       
-                        <p><b>Cosecha de Bodega de Otoño: </b>lo puedes consultar en la seccion de <b class="sub_titulo">Eventos disponibles solo en el año 1</b>.</p>  
-                    </details>
-                </details>
+                                    <h3>Un sueño divino</h3>
+                                    <table class="data">
+                                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="horario">
+                                                    <li class="gustos">Entra a la iglesia.</li>
+                                                    <li class="gustos">16:00 a 22:00.</li>
+                                                    <li class="gustos">Debe ser Miercoles.</li>
+                                                    <li class="gustos">Cualquier clima.</li>
+                                                    <li class="gustos">Carter tiene 4 notas de amistad o más.</li>
+                                                </ul>
+                                            </td>
+                                            <td style=" padding: 0 10px">No hay opciones.</td>
+                                        </tr>
+                                    </table>
 
-                <details> <!-- Elly -->
-                    <summary class="pirn">Eventos de Elly</summary>
+                                    <h3>El secreto de Carter</h3>
+                                    <table class="data">
+                                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="horario">
+                                                    <li class="gustos">Entra a la iglesia.</li>
+                                                    <li class="gustos">16:00 a 22:00.</li>
+                                                    <li class="gustos">Debe ser Lunes o Miercoles.</li>
+                                                    <li class="gustos">Debe ser soleado.</li>
+                                                    <li class="gustos">Debe ser Otoño.</li>
+                                                    <li class="gustos">Carter tiene 8 notas de amistad o mas.</li>
+                                                </ul>
+                                            </td>
+                                            <td style=" padding: 0 10px"><b>Opción 1:</b> Sí.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </dialog>
+                        </div>
 
-                    <h3>Estudios médicos de Elly</h3>
-    
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Entra a la clínica.</li>
-                                    <li class="gustos">12:00 pm a 7:00 pm.</li>
-                                    <li class="gustos">No debe ser Miercoles.</li>
-                                    <li class="gustos">Cualquier clima.</li>
-                                    <li class="gustos">Elly tiene un color de corazón violeta o superior.</li>
-                                    <li class="gustos">El doctor tiene un corazón de color púrpura o superior.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px"><b>Opción 1:</b> Estoy seguro de que lo harás.</td>
-                        </tr>
-                    </table>
-                </details>
-                
-                <details> <!-- Doctor -->
-                    <summary class="pirn">Eventos de Doctor</summary>
+                        <div class="box_evento_aldeanos"> <!-- Anna -->
+                            <a onclick="window.modal_even4.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="../../IMG/Personajes/Eventos/Anna.png" class="screenshot" title="Anna"></a>
+                            <a class="hiper_click" onclick="window.modal_even4.showModal();">Anna</a>
 
-                    <details>
-                        <summary>El diagnóstico erróneo del médico</summary>
-                        <table class="data">
-                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-                            <tr>
-                                <td>
-                                    <ul class="horario">
-                                        <li class="gustos">Entra a la clínica.</li>
-                                        <li class="gustos">13:30 a 16:00.</li>
-                                        <li class="gustos">Debe ser Martes.</li>
-                                        <li class="gustos">Cualquier clima.</li>
-                                        <li class="gustos">El doctor tiene 6 notas de amistad o más.</li>
-                                    </ul>
-                                </td>
-                                <td style=" padding: 0 10px">No hay opciones.</td>
-                            </tr>
-                        </table>
-    
-                    </details>  
+                            <dialog id="modal_even4" class="modal_calendario">
+                                
+                                <button onclick="window.modal_even4.close();" class="btn close">X</button>
 
-                    <details>
-                        <summary>Recuerdos familiares</summary>
-    
-                        <table class="data">
-                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-        
-                            <tr>
-                                <td>
-                                    <ul class="horario">
-                                        <li class="gustos">Camina desde el bosque hacia la colina de la Madre.</li>
-                                        <li class="gustos">8:00 am a 10:00 am.</li>
-                                        <li class="gustos">Debe ser Miercoles.</li>
-                                        <li class="gustos">Debe ser soleado.</li>
-                                        <li class="gustos">El doctor tiene 4 notas de amistad o más.</li>
-                                    </ul>
-                                </td>
-                                <td style=" padding: 0 10px">No hay opciones.</td>
-                            </tr>
-                        </table>
-                    </details>
-                </details>
-                     
-                <details> <!-- Duke -->
-                    <summary class="pirn">Eventos de Duke</summary>
+                                <div style="padding: 0 45px 30px 40px; margin: 0;">
 
-                    <details>
-                        <summary>Batalla de bebida</summary>
-                        <table class="data">
-                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-        
-                            <tr>
-                                <td>
-                                    <ul class="horario">
-                                        <li class="gustos">Entra en la posada.</li>
-                                        <li class="gustos">19:30 a 22:00.</li>
-                                        <li class="gustos">Debe ser Domingo.</li>
-                                        <li class="gustos">Cualquier clima.</li>
-                                        <li class="gustos">Karen tiene 8 notas de amistad o más.</li>
-                                        <li class="gustos">No estás casado con Karen.</li>
-                                    </ul>
-                                </td>
-                                <td style=" padding: 0 10px"><b>Opción 2:</b> Claro.</td>
-                            </tr>
-                        </table>
-                    </details>
+                                    <h2 style="text-align: center;">Eventos de Anna</h2>
 
-                    <details>
-                        <summary>Dudley y Duke discuten</summary>
-    
-                        <table class="data">
-                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-        
-                            <tr>
-                                <td>
-                                    <ul class="horario">
-                                        <li class="gustos">Entra en la posada.</li>
-                                        <li class="gustos">14:00 a 16:00.</li>
-                                        <li class="gustos">Debe ser Sabado.</li>
-                                        <li class="gustos">Debe ser lluvioso o nevado.</li>
-                                        <li class="gustos">Ran tiene 4 notas de amistad o más.</li>
-                                        <li class="gustos">No estás casado con Ran.</li>
-                                    </ul>
-                                </td>
-                                <td style=" padding: 0 10px"><b>Opción 1:</b> Intervenir.</td>
-                            </tr>
-                        </table>
-    
-                    </details>
-                </details>
-                
-                <details> <!-- Dudley -->
-                    <summary class="pirn">Eventos de Dudley</summary>
-                
-                    <h3>Regalo del padre</h3>
-    
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Entra en la trastienda de la posada.</li>
-                                    <li class="gustos">19:00 a 21:00.</li>
-                                    <li class="gustos">Debe ser invierno 11.</li>
-                                    <li class="gustos">Ran tiene 8 notas de amistad o más.</li>
-                                    <li class="gustos">No estás casado con Ran.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
-                </details>
-                
-                <details> <!-- Ellen -->
-                    <summary class="pirn">Eventos de Ellen</summary>
-                
-                    <h3>La carta del abuelo</h3>
-    
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Entra en la casa de Ellen.</li>
-                                    <li class="gustos">9:00 am a 1:00 pm</li>
-                                    <li class="gustos">Debe ser Miercoles.</li>
-                                    <li class="gustos">Debe ser soleado.</li>
-                                    <li class="gustos">Debe ser Verano.</li>
-                                    <li class="gustos">Ellen tiene 4 notas de amistad o más.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
-                </details>
-                
-                <details> <!-- Gray -->
-                    <summary class="pirn">Eventos de Gray</summary>
-                
-                    <h3>La amistad de Gray y Kai</h3>
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Entra al Café de la playa.</li>
-                                    <li class="gustos">11:00 am a 1:00 pm</li>
-                                    <li class="gustos">Cualquier día de la semana.</li>
-                                    <li class="gustos">Cualquier clima.</li>
-                                    <li class="gustos">Debe ser Verano.</li>
-                                    <li class="gustos">Gray tiene 4 notas de amistad o más.</li>
-                                    <li class="gustos">Kai tiene 4 notas de amistad o más.</li>
-                                    <li class="gustos">No has hablado con Gray ni con Kai ese día.</li>
-                                    <li class="gustos">No estás casada con Gray o Kai.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
-                </details>
-                
-                <details> <!-- Huang -->
-                    <summary class="pirn">Eventos de Huang</summary>
-                
-                    <h3>Servicio de Huang</h3>
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Entra en la casa de Zack.</li>
-                                    <li class="gustos">11:00 am a 4:00 pm.</li>
-                                    <li class="gustos">No debe ser Domingo ni Martes.</li>
-                                    <li class="gustos">Debe ser soleado.</li>
-                                    <li class="gustos">Zack tiene 8 notas de amistad o más.</li>
-                                    <li class="gustos">No estás casado con Huang.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>  
-                </details>
-                
-                <details> <!-- Jeff -->
-                    <summary class="pirn">Eventos de Jeff</summary>
-                
-                    <details>
-                        <summary>La determinación de Jeff</summary>
-                        <table class="data">
-                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-                            <tr>
-                                <td>
-                                    <ul class="horario">
-                                        <li class="gustos">Entra a la tienda general.</li>
-                                        <li class="gustos">13:00 a 16:00.</li>
-                                        <li class="gustos">Debe ser Miercoles.</li>
-                                        <li class="gustos">Debe ser lluvioso.</li>
-                                        <li class="gustos">Jeff tiene 10 notas de amistad.</li>
-                                        <li class="gustos">Sasha tiene 10 notas de amistad.</li>
-                                    </ul>
-                                </td>
-                                <td style=" padding: 0 10px">No hay opciones.</td>
-                            </tr>
-                        </table>
-                    </details>
-    
-                    <details>
-                        <summary>Venta de arte de Jeff</summary>
-                        <table class="data">
-                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-                            <tr>
-                                <td>
-                                    <ul class="horario">
-                                        <li class="gustos">Entra en la tienda de comestibles de Jeff.</li>
-                                        <li class="gustos">8:00 am a 10:00 am.</li>
-                                        <li class="gustos">Debe ser Lunes.</li>
-                                        <li class="gustos">Cualquier Temporada.</li>
-                                        <li class="gustos">Cualquier clima.</li>
-                                        <li class="gustos">Jeff tiene 8 notas de amistad o más.</li>
-                                        <li class="gustos">Sasha tiene 8 notas de amistad o más.</li>
-                                    </ul>
-                                </td>
-                                <td style=" padding: 0 10px">No hay opciones.</td>
-                            </tr>
-                        </table>
-                    </details>
+                                    <h3>Clase de postres de Anna</h3>
+                                    <table class="data">
+                                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="horario">
+                                                    <li class="gustos">Entra en la casa de Anna y Basil.</li>
+                                                    <li class="gustos">10:30 a 13:00.</li>
+                                                    <li class="gustos">Debe ser Sabado.</li>
+                                                    <li class="gustos">Debe ser soleado.</li>
+                                                    <li class="gustos">Anna tiene 8 notas de amistad o más.</li>
+                                                </ul>
+                                            </td>
+                                            <td style=" padding: 0 10px">No hay opciones.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </dialog>
+                        </div>
 
-                    <details>
-                        <summary>recuerdos de jeff</summary>
-                        <table class="data">
-                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-                            <tr>
-                                <td>
-                                    <ul class="horario">
-                                        <li class="gustos">Entra en la tienda de aves de corral.</li>
-                                        <li class="gustos">11:00 am a 1:00 pm</li>
-                                        <li class="gustos">Debe ser Martes.</li>
-                                        <li class="gustos">Debe ser soleado.</li>
-                                        <li class="gustos">Sasha tiene 7 notas de amistad o más.</li>
-                                    </ul>
-                                </td>
-                                <td style=" padding: 0 10px">No hay opciones.</td>
-                            </tr>
-                        </table>
-                    </details>
-                </details>
-                
-                <details> <!-- Jennifer -->
-                    <summary class="pirn">Eventos de Jennifer</summary>
-                
-                    <h3>El presente de Jennifer</h3>
-    
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Camina desde el bosque hacia la colina de la madre.</li>
-                                    <li class="gustos">10:00 am a 1:00 pm</li>
-                                    <li class="gustos">Cualquier dia de la semana.</li>
-                                    <li class="gustos">Debe ser soleado.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>  
-                </details>
-                
-                <details> <!-- Rick -->
-                    <summary class="pirn">Eventos de Rick</summary>
-                    <h3>Kai y Rick discuten</h3>
-    
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Camine desde la plaza Rosa hasta la playa.</li>
-                                    <li class="gustos">13:00 a 17:00</li>
-                                    <li class="gustos">No debe ser Domingo.</li>
-                                    <li class="gustos">Cualquier clima.</li>
-                                    <li class="gustos">Debe ser Verano.</li>
-                                    <li class="gustos">No estás casado con Popuri.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>   
-                </details>
-                
-                <details> <!-- Kai -->
-                    <summary class="pirn">Eventos de Kai</summary>
-                        <h3>El ocupado negocio de Kai</h3>
-                        <table class="data">
-                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-                            <tr>
-                                <td>
-                                    <ul class="horario">
-                                        <li class="gustos">Entra al Café de la playa.</li>
-                                        <li class="gustos">17:00 a 19:00</li>
-                                        <li class="gustos">Cualquier dia de la semana.</li>
-                                        <li class="gustos">Debe ser soleado.</li>
-                                        <li class="gustos">Debe ser Verano.</li>
-                                        <li class="gustos">Kai tiene 4 notas de amistad o más.</li>
-                                    </ul>
-                                </td>
-                                <td style=" padding: 0 10px">No hay opciones.</td>
-                            </tr>
-                        </table>   
-                </details>
+                        <div class="box_evento_aldeanos"> <!-- Brandon -->
+                            <a onclick="window.modal_even5.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="../../IMG/Personajes/Eventos/Brandon.png" class="screenshot" title="Brandon"></a>
+                            <a class="hiper_click" onclick="window.modal_even5.showModal();">Brandon</a>
 
-                <details> <!-- Harris -->
-                    <summary class="pirn">Eventos de Harris</summary>
-                    <h3>Patrulla de montaña</h3>
-    
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Entra en la casa de Gotts.</li>
-                                    <li class="gustos">10:00 am a 1:00 pm</li>
-                                    <li class="gustos">Debe ser Domingo.</li>
-                                    <li class="gustos">Cualquier clima.</li>
-                                    <li class="gustos">Gotts tiene 8 notas de amistad o más.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
-                </details>
+                            <dialog id="modal_even5" class="modal_calendario">
+                                
+                                <button onclick="window.modal_even5.close();" class="btn close">X</button>
 
-                <details> <!-- Popuri -->
-                    <summary class="pirn">Eventos de Popuri</summary>
-                    <h3>Pedido por correo de Popuri</h3>
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Entra en la casa de Zack.</li>
-                                    <li class="gustos">11:10 am a 3:00 pm</li>
-                                    <li class="gustos">Cualquier día de la semana.</li>
-                                    <li class="gustos">Cualquier clima.</li>
-                                    <li class="gustos">debe ser Primavera 10 a Primavera 17.</li>
-                                    <li class="gustos">No estás casado con Popuri.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px"><b>Opción 1:</b> Mis labios están sellados.</td>
-                        </tr>
-                    </table>
-                </details>
+                                <div style="padding: 0 45px 30px 40px; margin: 0;">
 
-                <details> <!-- Yu -->
-                    <summary class="pirn">Eventos de Yu</summary>
-                    <details>
-                        <summary>La fiebre de Yu</summary>
-    
-                        <table class="data">
-                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-        
-                            <tr>
-                                <td>
-                                    <ul class="horario">
-                                        <li class="gustos">Entra en la casa de Ellen.</li>
-                                        <li class="gustos">9:00 am a 1:00 pm</li>
-                                        <li class="gustos">Debe ser Miercoles.</li>
-                                        <li class="gustos">Cualquier clima.</li>
-                                        <li class="gustos">No estás casado con Elly.</li>
-                                    </ul>
-                                </td>
-                                <td style=" padding: 0 10px">No hay opciones.</td>
-                            </tr>
-                        </table>
-                    </details>
-    
-                    <details>
-                        <summary>El tiempo de juego de Yuu</summary>
-    
-                        <table class="data">
-                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-        
-                            <tr>
-                                <td>
-                                    <ul class="horario">
-                                        <li class="gustos">Entra en la casa de Ellen.</li>
-                                        <li class="gustos">10:00 am a 5:00 pm</li>
-                                        <li class="gustos">Debe ser Miercoles.</li>
-                                        <li class="gustos">Cualquier clima.</li>
-                                        <li class="gustos">No estás casado con Elly.</li>
-                                    </ul>
-                                </td>
-                                <td style=" padding: 0 10px"><b>Opción 1:</b> Estoy de acuerdo.</td>
-                            </tr>
-                        </table>
-                    </details>
-                </details>
+                                    <h2 style="text-align: center;">Eventos de Brandon</h2>
 
-                <h2>Eventos disponibles solo en el año 1</h2>
+                                    <h3>El paseo de Brandon</h3>
+                                    <table class="data">
+                                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="horario">
+                                                    <li class="gustos">Camine desde el sur de la Ciudad Mineral hasta la Plaza Rosa.</li>
+                                                    <li class="gustos">13:00 a 16:00.</li>
+                                                    <li class="gustos">No debe ser Martes ni Sábado.</li>
+                                                    <li class="gustos">Debe ser soleado.</li>
+                                                </ul>
+                                            </td>
+                                            <td style=" padding: 0 10px">No hay opciones.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </dialog>
+                        </div>
+
+                        <div class="box_evento_aldeanos"> <!-- Manna -->
+                            <a onclick="window.modal_even6.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="../../IMG/Personajes/Eventos/Manna.png" class="screenshot" title="Manna"></a>
+                            <a class="hiper_click" onclick="window.modal_even6.showModal();">Manna</a>
+
+                            <dialog id="modal_even6" class="modal_calendario">
+                                
+                                <button onclick="window.modal_even6.close();" class="btn close">X</button>
+
+                                <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                    <h2 style="text-align: center;">Eventos de Manna</h2>
+
+                                    <h3>El argumento de Duke y Manna</h3>
+                                    <table class="data">
+                                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="horario">
+                                                    <li class="gustos">Entra en la bodega Adge.</li>
+                                                    <li class="gustos">20:10 a 22:00.</li>
+                                                    <li class="gustos">Debe ser Sabado.</li>
+                                                    <li class="gustos">Cualquier clima.</li>
+                                                    <li class="gustos">Debe ser Otoño 16 del año 1 o posterior.</li>
+                                                    <li class="gustos">Duke tiene 4 notas de amistad o más.</li>
+                                                    <li class="gustos">Manna tiene 8 notas de amistad o más.</li>
+                                                    <li class="gustos">Cliff está trabajando en la bodega.</li>
+                                                </ul>
+                                            </td>
+                                            <td style=" padding: 0 10px">No hay opciones.</td>
+                                        </tr>
+                                    </table>
+
+                                    <h3>Las habilidades de compra de Manna</h3>
+                                    <table class="data">
+                                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="horario">
+                                                    <li class="gustos">Entra en la tienda general de Jeff.</li>
+                                                    <li class="gustos">13:50 a 16:00</li>
+                                                    <li class="gustos">Debe ser Jueves o viernes.</li>
+                                                    <li class="gustos">Debe ser lluvioso o nevado.</li>
+                                                    <li class="gustos">Manna tiene 4 notas de amistad o más.</li>
+                                                    <li class="gustos">Ya has visto el evento <b>Cosecha de Bodega de Otoño</b> y a Cliff NO le ofrecieron el trabajo.</li>
+                                                </ul>
+                                            </td>
+                                            <td style=" padding: 0 10px">No hay opciones.</td>
+                                        </tr>
+                                    </table>    
+                                    <p><b>Cosecha de Bodega de Otoño: </b>lo puedes consultar en la seccion de <b class="sub_titulo">Eventos disponibles solo en el primer año</b>.</p>              
+
+                                    <h3>Consulta de vida de Sasha</h3>
+                                    <table class="data">
+                                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="horario">
+                                                    <li class="gustos">Camine hasta la plaza Rosa.</li>
+                                                    <li class="gustos">13:00 a 16:00</li>
+                                                    <li class="gustos">No debe ser Lunes ni Martes.</li>
+                                                    <li class="gustos">Debe ser soleado.</li>
+                                                    <li class="gustos">Sasha tiene 4 notas de amistad o más.</li>
+                                                    <li class="gustos">El evento <b>Cosecha de Bodega de Otoño</b> NO ha ocurrido todavía, o si ocurrio a Cliff NO se le ofreció el trabajo.</li>
+                                                </ul>
+                                            </td>
+                                            <td style=" padding: 0 10px">No hay opciones.</td>
+                                        </tr>
+                                    </table>       
+                                    <p><b>Cosecha de Bodega de Otoño: </b>lo puedes consultar en la seccion de <b class="sub_titulo">Eventos disponibles solo en el primer año</b>.</p>  
+                                </div>
+                            </dialog>
+                        </div>
+
+                        <div class="box_evento_aldeanos"> <!-- Elly -->
+                            <a onclick="window.modal_even7.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="../../IMG/Personajes/Eventos/Elly.png" class="screenshot" title="Elly"></a>
+                            <a class="hiper_click" onclick="window.modal_even7.showModal();">Elly</a>
+
+                            <dialog id="modal_even7" class="modal_calendario">
+                                
+                                <button onclick="window.modal_even7.close();" class="btn close">X</button>
+
+                                <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                    <h2 style="text-align: center;">Eventos de Elly</h2>
+
+                                    <h3>Estudios médicos de Elly</h3>
+                                    <table class="data">
+                                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="horario">
+                                                    <li class="gustos">Entra a la clínica.</li>
+                                                    <li class="gustos">12:00 pm a 7:00 pm.</li>
+                                                    <li class="gustos">No debe ser Miercoles.</li>
+                                                    <li class="gustos">Cualquier clima.</li>
+                                                    <li class="gustos">Elly tiene un color de corazón violeta o superior.</li>
+                                                    <li class="gustos">El doctor tiene un corazón de color púrpura o superior.</li>
+                                                </ul>
+                                            </td>
+                                            <td style=" padding: 0 10px"><b>Opción 1:</b> Estoy seguro de que lo harás.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </dialog>
+                        </div>
+
+                        <div class="box_evento_aldeanos"> <!-- Doctor -->
+                            <a onclick="window.modal_even8.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="../../IMG/Personajes/Eventos/Doctor.png" class="screenshot" title="Doctor"></a>
+                            <a class="hiper_click" onclick="window.modal_even8.showModal();">Doctor</a>
+
+                            <dialog id="modal_even8" class="modal_calendario">
+                                
+                                <button onclick="window.modal_even8.close();" class="btn close">X</button>
+
+                                <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                    <h2 style="text-align: center;">Eventos del Doctor</h2>
+
+                                    <h3>El diagnóstico erróneo del médico</h3>
+                                    <table class="data">
+                                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="horario">
+                                                    <li class="gustos">Entra a la clínica.</li>
+                                                    <li class="gustos">13:30 a 16:00.</li>
+                                                    <li class="gustos">Debe ser Martes.</li>
+                                                    <li class="gustos">Cualquier clima.</li>
+                                                    <li class="gustos">El doctor tiene 6 notas de amistad o más.</li>
+                                                </ul>
+                                            </td>
+                                            <td style=" padding: 0 10px">No hay opciones.</td>
+                                        </tr>
+                                    </table>
+
+                                    <h3>Recuerdos familiares</h3>
+                                    <table class="data">
+                                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="horario">
+                                                    <li class="gustos">Camina desde el bosque hacia la colina de la Madre.</li>
+                                                    <li class="gustos">8:00 am a 10:00 am.</li>
+                                                    <li class="gustos">Debe ser Miercoles.</li>
+                                                    <li class="gustos">Debe ser soleado.</li>
+                                                    <li class="gustos">El doctor tiene 4 notas de amistad o más.</li>
+                                                </ul>
+                                            </td>
+                                            <td style=" padding: 0 10px">No hay opciones.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </dialog>
+                        </div>
+
+                        <div class="box_evento_aldeanos"> <!-- Duke -->
+                            <a onclick="window.modal_even9.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="../../IMG/Personajes/Eventos/Duke.png" class="screenshot" title="Duke"></a>
+                            <a class="hiper_click" onclick="window.modal_even9.showModal();">Duke</a>
+
+                            <dialog id="modal_even9" class="modal_calendario">
+                                
+                                <button onclick="window.modal_even9.close();" class="btn close">X</button>
+
+                                <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                    <h2 style="text-align: center;">Eventos de Duke</h2>
+
+                                    <h3>Batalla de bebida</h3>
+                                    <table class="data">
+                                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="horario">
+                                                    <li class="gustos">Entra en la posada.</li>
+                                                    <li class="gustos">19:30 a 22:00.</li>
+                                                    <li class="gustos">Debe ser Domingo.</li>
+                                                    <li class="gustos">Cualquier clima.</li>
+                                                    <li class="gustos">Karen tiene 8 notas de amistad o más.</li>
+                                                    <li class="gustos">No estás casado con Karen.</li>
+                                                </ul>
+                                            </td>
+                                            <td style=" padding: 0 10px"><b>Opción 2:</b> Claro.</td>
+                                        </tr>
+                                    </table>
+
+                                    <h3>Dudley y Duke discuten</h3>
+                                    <table class="data">
+                                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="horario">
+                                                    <li class="gustos">Entra en la posada.</li>
+                                                    <li class="gustos">14:00 a 16:00.</li>
+                                                    <li class="gustos">Debe ser Sabado.</li>
+                                                    <li class="gustos">Debe ser lluvioso o nevado.</li>
+                                                    <li class="gustos">Ran tiene 4 notas de amistad o más.</li>
+                                                    <li class="gustos">No estás casado con Ran.</li>
+                                                </ul>
+                                            </td>
+                                            <td style=" padding: 0 10px"><b>Opción 1:</b> Intervenir.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </dialog>
+                        </div>
+
+                        <div class="box_evento_aldeanos"> <!-- Dudley -->
+                            <a onclick="window.modal_even10.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="../../IMG/Personajes/Eventos/Dudley.png" class="screenshot" title="Dudley"></a>
+                            <a class="hiper_click" onclick="window.modal_even10.showModal();">Dudley</a>
+
+                            <dialog id="modal_even10" class="modal_calendario">
+                            
+                                <button onclick="window.modal_even10.close();" class="btn close">X</button>
+
+                                <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                    <h2 style="text-align: center;">Eventos de Dudley</h2>
+
+                                    <h3>Regalo del padre</h3>
+                                    <table class="data">
+                                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="horario">
+                                                    <li class="gustos">Entra en la trastienda de la posada.</li>
+                                                    <li class="gustos">19:00 a 21:00.</li>
+                                                    <li class="gustos">Debe ser invierno 11.</li>
+                                                    <li class="gustos">Ran tiene 8 notas de amistad o más.</li>
+                                                    <li class="gustos">No estás casado con Ran.</li>
+                                                </ul>
+                                            </td>
+                                            <td style=" padding: 0 10px">No hay opciones.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </dialog>
+                        </div>
+
+                        <div class="box_evento_aldeanos"> <!-- Ellen -->
+                            <a onclick="window.modal_even11.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="../../IMG/Personajes/Eventos/Ellen.png" class="screenshot" title="Ellen"></a>
+                            <a class="hiper_click" onclick="window.modal_even11.showModal();">Ellen</a>
+
+                            <dialog id="modal_even11" class="modal_calendario">
+                                
+                                <button onclick="window.modal_even11.close();" class="btn close">X</button>
+
+                                <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                    <h2 style="text-align: center;">Eventos de Ellen</h2>
+
+                                    <h3>La carta del abuelo</h3>
+                                    <table class="data">
+                                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="horario">
+                                                    <li class="gustos">Entra en la casa de Ellen.</li>
+                                                    <li class="gustos">9:00 am a 1:00 pm</li>
+                                                    <li class="gustos">Debe ser Miercoles.</li>
+                                                    <li class="gustos">Debe ser soleado.</li>
+                                                    <li class="gustos">Debe ser Verano.</li>
+                                                    <li class="gustos">Ellen tiene 4 notas de amistad o más.</li>
+                                                </ul>
+                                            </td>
+                                            <td style=" padding: 0 10px">No hay opciones.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </dialog>
+                        </div>
+
+                        <div class="box_evento_aldeanos"> <!-- Gray -->
+                            <a onclick="window.modal_even12.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="../../IMG/Personajes/Eventos/Gray.png" class="screenshot" title="Gray"></a>
+                            <a class="hiper_click" onclick="window.modal_even12.showModal();">Gray</a>
+
+                            <dialog id="modal_even12" class="modal_calendario">
+                                
+                                <button onclick="window.modal_even12.close();" class="btn close">X</button>
+
+                                <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                    <h2 style="text-align: center;">Eventos de Gray</h2>
+
+                                    <h3>La amistad de Gray y Kai</h3>
+                                    <table class="data">
+                                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="horario">
+                                                    <li class="gustos">Entra al Café de la playa.</li>
+                                                    <li class="gustos">11:00 am a 1:00 pm</li>
+                                                    <li class="gustos">Cualquier día de la semana.</li>
+                                                    <li class="gustos">Cualquier clima.</li>
+                                                    <li class="gustos">Debe ser Verano.</li>
+                                                    <li class="gustos">Gray tiene 4 notas de amistad o más.</li>
+                                                    <li class="gustos">Kai tiene 4 notas de amistad o más.</li>
+                                                    <li class="gustos">No has hablado con Gray ni con Kai ese día.</li>
+                                                    <li class="gustos">No estás casada con Gray o Kai.</li>
+                                                </ul>
+                                            </td>
+                                            <td style=" padding: 0 10px">No hay opciones.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </dialog>
+                        </div>
+
+                        <div class="box_evento_aldeanos"> <!-- Huang -->
+                            <a onclick="window.modal_even13.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="../../IMG/Personajes/Eventos/Huang.png" class="screenshot" title="Huang"></a>
+                            <a class="hiper_click" onclick="window.modal_even13.showModal();">Huang</a>
+
+                            <dialog id="modal_even13" class="modal_calendario">
+                                
+                                <button onclick="window.modal_even13.close();" class="btn close">X</button>
+
+                                <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                    <h2 style="text-align: center;">Eventos de Gray</h2>
+
+                                    <h3>Servicio de Huang</h3>      
+                                    <table class="data">
+                                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="horario">
+                                                    <li class="gustos">Entra en la casa de Zack.</li>
+                                                    <li class="gustos">11:00 am a 4:00 pm.</li>
+                                                    <li class="gustos">No debe ser Domingo ni Martes.</li>
+                                                    <li class="gustos">Debe ser soleado.</li>
+                                                    <li class="gustos">Zack tiene 8 notas de amistad o más.</li>
+                                                    <li class="gustos">No estás casado con Huang.</li>
+                                                </ul>
+                                            </td>
+                                            <td style=" padding: 0 10px">No hay opciones.</td>
+                                        </tr>
+                                    </table>  
+                                </div>
+                            </dialog>
+                        </div>
+
+                        <div class="box_evento_aldeanos"> <!-- Jeff -->
+                            <a onclick="window.modal_even14.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="../../IMG/Personajes/Eventos/Jeff.png" class="screenshot" title="Jeff"></a>
+                            <a class="hiper_click" onclick="window.modal_even14.showModal();">Jeff</a>
+
+                            <dialog id="modal_even14" class="modal_calendario">
+                                
+                                <button onclick="window.modal_even14.close();" class="btn close">X</button>
+
+                                <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                    <h2 style="text-align: center;">Eventos de Gray</h2>
+
+                                    <h3>La determinación de Jeff</h3>      
+                                    <table class="data">
+                                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="horario">
+                                                    <li class="gustos">Entra a la tienda general.</li>
+                                                    <li class="gustos">13:00 a 16:00.</li>
+                                                    <li class="gustos">Debe ser Miercoles.</li>
+                                                    <li class="gustos">Debe ser lluvioso.</li>
+                                                    <li class="gustos">Jeff tiene 10 notas de amistad.</li>
+                                                    <li class="gustos">Sasha tiene 10 notas de amistad.</li>
+                                                </ul>
+                                            </td>
+                                            <td style=" padding: 0 10px">No hay opciones.</td>
+                                        </tr>
+                                    </table>
+
+                                    <h3>Venta de arte de Jeff</h3>  
+                                    <table class="data">
+                                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="horario">
+                                                    <li class="gustos">Entra en la tienda de comestibles de Jeff.</li>
+                                                    <li class="gustos">8:00 am a 10:00 am.</li>
+                                                    <li class="gustos">Debe ser Lunes.</li>
+                                                    <li class="gustos">Cualquier Temporada.</li>
+                                                    <li class="gustos">Cualquier clima.</li>
+                                                    <li class="gustos">Jeff tiene 8 notas de amistad o más.</li>
+                                                    <li class="gustos">Sasha tiene 8 notas de amistad o más.</li>
+                                                </ul>
+                                            </td>
+                                            <td style=" padding: 0 10px">No hay opciones.</td>
+                                        </tr>
+                                    </table> 
+
+                                    <h3>Recuerdos de jeff</h3>  
+                                    <table class="data">
+                                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="horario">
+                                                    <li class="gustos">Entra en la tienda de aves de corral.</li>
+                                                    <li class="gustos">11:00 am a 1:00 pm</li>
+                                                    <li class="gustos">Debe ser Martes.</li>
+                                                    <li class="gustos">Debe ser soleado.</li>
+                                                    <li class="gustos">Sasha tiene 7 notas de amistad o más.</li>
+                                                </ul>
+                                            </td>
+                                            <td style=" padding: 0 10px">No hay opciones.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </dialog>
+                        </div>
+
+                        <div class="box_evento_aldeanos"> <!-- Jennifer -->
+                            <a onclick="window.modal_even15.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="../../IMG/Personajes/Eventos/Jennifer.png" class="screenshot" title="Jennifer"></a>
+                            <a class="hiper_click" onclick="window.modal_even15.showModal();">Jennifer</a>
+
+                            <dialog id="modal_even15" class="modal_calendario">
+                                
+                                <button onclick="window.modal_even15.close();" class="btn close">X</button>
+
+                                <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                    <h2 style="text-align: center;">Eventos de Jennifer</h2>
+
+                                    <h3>El presente de Jennifer</h3>      
+                                    <table class="data">
+                                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="horario">
+                                                    <li class="gustos">Entra en la casa de Zack.</li>
+                                                    <li class="gustos">11:00 am a 4:00 pm.</li>
+                                                    <li class="gustos">No debe ser Domingo ni Martes.</li>
+                                                    <li class="gustos">Debe ser soleado.</li>
+                                                    <li class="gustos">Zack tiene 8 notas de amistad o más.</li>
+                                                    <li class="gustos">No estás casado con Huang.</li>
+                                                </ul>
+                                            </td>
+                                            <td style=" padding: 0 10px">No hay opciones.</td>
+                                        </tr>
+                                    </table>  
+                                </div>
+                            </dialog>
+                        </div>
+
+                        <div class="box_evento_aldeanos"> <!-- Rick  -->
+                            <a onclick="window.modal_even16.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="../../IMG/Personajes/Eventos/Rick.png" class="screenshot" title="Rick"></a>
+                            <a class="hiper_click" onclick="window.modal_even16.showModal();">Rick</a>
+
+                            <dialog id="modal_even16" class="modal_calendario">
+                                
+                                <button onclick="window.modal_even16.close();" class="btn close">X</button>
+
+                                <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                    <h2 style="text-align: center;">Eventos de Rick</h2>
+
+                                    <h3>Kai y Rick discuten</h3>      
+                                    <table class="data">
+                                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="horario">
+                                                    <li class="gustos">Camine desde la plaza Rosa hasta la playa.</li>
+                                                    <li class="gustos">13:00 a 17:00</li>
+                                                    <li class="gustos">No debe ser Domingo.</li>
+                                                    <li class="gustos">Cualquier clima.</li>
+                                                    <li class="gustos">Debe ser Verano.</li>
+                                                    <li class="gustos">No estás casado con Popuri.</li>
+                                                </ul>
+                                            </td>
+                                            <td style=" padding: 0 10px">No hay opciones.</td>
+                                        </tr>
+                                    </table>   
+                                </div>
+                            </dialog>
+                        </div>
+
+                        <div class="box_evento_aldeanos"> <!-- Kai  -->
+                            <a onclick="window.modal_even17.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="../../IMG/Personajes/Eventos/Kai.png" class="screenshot" title="Kai"></a>
+                            <a class="hiper_click" onclick="window.modal_even17.showModal();">Kai</a>
+
+                            <dialog id="modal_even17" class="modal_calendario">
+                                
+                                <button onclick="window.modal_even17.close();" class="btn close">X</button>
+
+                                <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                    <h2 style="text-align: center;">Eventos de Kai</h2>
+
+                                    <h3>El ocupado negocio de Kai</h3>      
+                                    <table class="data">
+                                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="horario">
+                                                    <li class="gustos">Entra al Café de la playa.</li>
+                                                    <li class="gustos">17:00 a 19:00</li>
+                                                    <li class="gustos">Cualquier dia de la semana.</li>
+                                                    <li class="gustos">Debe ser soleado.</li>
+                                                    <li class="gustos">Debe ser Verano.</li>
+                                                    <li class="gustos">Kai tiene 4 notas de amistad o más.</li>
+                                                </ul>
+                                            </td>
+                                            <td style=" padding: 0 10px">No hay opciones.</td>
+                                        </tr>
+                                    </table>   
+                                </div>
+                            </dialog>
+                        </div>
+
+                        <div class="box_evento_aldeanos"> <!-- Harris  -->
+                            <a onclick="window.modal_even18.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="../../IMG/Personajes/Eventos/Harris.png" class="screenshot" title="Harris"></a>
+                            <a class="hiper_click" onclick="window.modal_even18.showModal();">Harris</a>
+
+                            <dialog id="modal_even18" class="modal_calendario">
+                                
+                                <button onclick="window.modal_even18.close();" class="btn close">X</button>
+
+                                <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                    <h2 style="text-align: center;">Eventos de Harris</h2>
+
+                                    <h3>Patrulla de montaña</h3>      
+                                    <table class="data">
+                                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="horario">
+                                                    <li class="gustos">Entra en la casa de Gotts.</li>
+                                                    <li class="gustos">10:00 am a 1:00 pm</li>
+                                                    <li class="gustos">Debe ser Domingo.</li>
+                                                    <li class="gustos">Cualquier clima.</li>
+                                                    <li class="gustos">Gotts tiene 8 notas de amistad o más.</li>
+                                                </ul>
+                                            </td>
+                                            <td style=" padding: 0 10px">No hay opciones.</td>
+                                        </tr>
+                                    </table>   
+                                </div>
+                            </dialog>
+                        </div>
+
+                        <div class="box_evento_aldeanos"> <!-- Popuri -->
+                            <a onclick="window.modal_even19.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="../../IMG/Personajes/Eventos/Popuri.png" class="screenshot" title="Popuri"></a>
+                            <a class="hiper_click" onclick="window.modal_even19.showModal();">Popuri</a>
+
+                            <dialog id="modal_even19" class="modal_calendario">
+                                
+                                <button onclick="window.modal_even19.close();" class="btn close">X</button>
+
+                                <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                    <h2 style="text-align: center;">Eventos de Popuri</h2>
+
+                                    <h3>Pedido por correo de Popuri</h3>      
+                                    <table class="data">
+                                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="horario">
+                                                    <li class="gustos">Entra en la casa de Zack.</li>
+                                                    <li class="gustos">11:10 am a 3:00 pm</li>
+                                                    <li class="gustos">Cualquier día de la semana.</li>
+                                                    <li class="gustos">Cualquier clima.</li>
+                                                    <li class="gustos">debe ser Primavera 10 a Primavera 17.</li>
+                                                    <li class="gustos">No estás casado con Popuri.</li>
+                                                </ul>
+                                            </td>
+                                            <td style=" padding: 0 10px"><b>Opción 1:</b> Mis labios están sellados.</td>
+                                        </tr>
+                                    </table>  
+                                </div>
+                            </dialog>
+                        </div>
+
+                        <div class="box_evento_aldeanos"> <!-- Yu -->
+                            <a onclick="window.modal_even20.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="../../IMG/Personajes/Eventos/Yu.png" class="screenshot" title="Yu"></a>
+                            <a class="hiper_click" onclick="window.modal_even20.showModal();">Yu</a>
+
+                            <dialog id="modal_even20" class="modal_calendario">
+                                
+                                <button onclick="window.modal_even20.close();" class="btn close">X</button>
+
+                                <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                    <h2 style="text-align: center;">Eventos de Yu</h2>
+
+                                    <h3>La fiebre de Yu</h3>      
+                                    <table class="data">
+                                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="horario">
+                                                    <li class="gustos">Entra en la casa de Ellen.</li>
+                                                    <li class="gustos">9:00 am a 1:00 pm</li>
+                                                    <li class="gustos">Debe ser Miercoles.</li>
+                                                    <li class="gustos">Cualquier clima.</li>
+                                                    <li class="gustos">No estás casado con Elly.</li>
+                                                </ul>
+                                            </td>
+                                            <td style=" padding: 0 10px">No hay opciones.</td>
+                                        </tr>
+                                    </table>
+
+                                    <h3>El tiempo de juego de Yuu</h3>    
+                                    <table class="data">
+                                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="horario">
+                                                    <li class="gustos">Entra en la casa de Ellen.</li>
+                                                    <li class="gustos">10:00 am a 5:00 pm</li>
+                                                    <li class="gustos">Debe ser Miercoles.</li>
+                                                    <li class="gustos">Cualquier clima.</li>
+                                                    <li class="gustos">No estás casado con Elly.</li>
+                                                </ul>
+                                            </td>
+                                            <td style=" padding: 0 10px"><b>Opción 1:</b> Estoy de acuerdo.</td>
+                                        </tr>
+                                    </table>  
+                                </div>
+                            </dialog>
+                        </div>
+
+                        <div class="box_evento_otro"><!-- Duende de las cosecha -->
+                            <a onclick="window.modal_even21.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="../../IMG/Personajes/Eventos/Duendes.png" class="screenshot" title="Duendes de la cosecha"></a>
+                            <a class="hiper_click" onclick="window.modal_even21.showModal();">Duendes de la cosecha</a>
+
+                            <dialog id="modal_even21" class="modal_calendario">
+                                
+                                <button onclick="window.modal_even21.close();" class="btn close">X</button>
+
+                                <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                    <h2 style="text-align: center;">Eventos de los Duende de las cosecha</h2>
+
+                                    <h3>Fiesta del té de los duende de la cosecha</h3>
+                                
+                                    <table class="data">
+                                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="horario">
+                                                    <li class="gustos">Entra a la cabaña de los duendes de la cosecha.</li>
+                                                    <li class="gustos">10:00 am a 5:00 pm.</li>
+                                                    <li class="gustos">Cualquier día de la semana.</li>
+                                                    <li class="gustos">Cualquier clima.</li>
+                                                    <li class="gustos">Debe ser Primavera.</li>
+                                                    <li class="gustos">Todos los duendes tienen 2 notas de amistad o más.</li>
+                                                </ul>
+                                            </td>
+                                            <td style=" padding: 0 10px">No hay opciones.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </dialog>
+                        </div>
+
+                        <div class="box_evento_otro"> <!-- Jugador -->
+                            <a onclick="window.modal_even22.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="../../IMG/Personajes/Eventos/Avatar.png" class="screenshot" title="Jugador"></a>
+                            <a class="hiper_click" onclick="window.modal_even22.showModal();">Jugador</a>
+
+                            <dialog id="modal_even22" class="modal_calendario">
+                                
+                                <button onclick="window.modal_even22.close();" class="btn close">X</button>
+
+                                <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                    <h2 style="text-align: center;">Eventos del jugador</h2>
+
+                                    <h3>Escuela de cocina</h3>
+                                    <p>En este evento es recomendable tener todas las recetas porque los pretendientes masculinos o femeninos pedira que cocines algo para ellos.</p>
+                                
+                                    <table class="data">
+                                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="horario">
+                                                    <li class="gustos">Entra en tu casa de campo.</li>
+                                                    <li class="gustos">8:00 am a 9:00 pm.</li>
+                                                    <li class="gustos">Cualquier día de la semana.</li>
+                                                    <li class="gustos">Debe ser Verano.</li>
+                                                    <li class="gustos">Clima soleado (siempre está bien) o lluvioso (con límites).</li>
+                                                    <li class="gustos">Pretendientes femeninos tienes 4 notas de amistad o más.</li>
+                                                    <li class="gustos">Pretendientes masculinos tienes 4 notas de amistad o más.</li>
+                                                    <li class="gustos">Tienes una cocina y de todos los utensilios de cocina.</li>
+                                                    <li class="gustos">No tiene mascotas o tus mascotas están afuera.</li>
+                                                    <li class="gustos">Si está casado con una persona del sexo opuesto, su cónyuge no debe estár en la casa, pero si es del mismo sexo puede estar en casa.</li>
+                                                    <li class="gustos">Tu casa es de gran tamaño.</li>
+                                                </ul>
+                                            </td>
+                                            <td style=" padding: 0 10px">No hay opciones.</td>
+                                        </tr>
+                                    </table>
+
+                                    <h3>Corte de energía</h3>
+    
+                                    <table class="data">
+                                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="horario">
+                                                    <li class="gustos">Dentro de tu casa de campo.</li>
+                                                    <li class="gustos">6:00 am</li>
+                                                    <li class="gustos">Debe ser verano o invierno</li>
+                                                    <li class="gustos">Clima tormentoso.</li>
+                                                </ul>
+                                            </td>
+                                            <td style=" padding: 0 10px">No hay opciones.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </dialog>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column;">
+                        <button style="height: 50%; padding: 6px; font-weight: bold; font-size: 25px;" onclick="Scroll_button_evento_villager('arriba');">↑</button>
+                        <button style="height: 50%; padding: 6px; font-weight: bold; font-size: 25px;" onclick="Scroll_button_evento_villager('abajo');">↓</button>
+                    </div>
+                </div>
+
+                <h2>Eventos disponibles solo en el primer año</h2>
 
                 <details>
                     <summary>Aparece Kai</summary>
@@ -840,7 +1032,7 @@
                     <p>El evento <b>Cosecha de Bodega de Otoño </b>lo puedes consultar en esta seccion.</p>  
                 </details>
 
-                <h2>Eventos disponibles solo en el año 2</h2>
+                <h2>Eventos disponibles solo en el segundo año</h2>
 
                 <details>
                     <summary id="retor-cliff" ez-toc-data-id="#retor-cliff">El regreso de Cliff</summary>
