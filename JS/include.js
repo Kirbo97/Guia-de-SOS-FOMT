@@ -6,6 +6,8 @@ async function loadHTML(id, file) {
 
 
 async function cargarPagina() {
+    document.body.style.overflow = "hidden";
+
     await loadHTML("loading", "/Guia-de-SOS-FOMT/Estructura/carga.html");
 
     await Promise.all([
@@ -28,7 +30,7 @@ async function cargarPagina() {
     );
 
     document.getElementById("loading").style.display = "none";
+    document.body.style.overflow = "";
 }
-
 
 cargarPagina();
