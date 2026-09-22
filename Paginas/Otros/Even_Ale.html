@@ -25,7 +25,7 @@
 
                 <p>Dentro del juego te toparas con eventos que no son parte de la trama del juego pero te ayudara a conocer mejor a los aldeanos del pueblo y algunos de esos eventos son simplemento de relleno.</p>
 
-                <div style="display: flex;">
+                <div style="display: flex;"> <!-- Cuadro de eventos aleatorio -->
                     <div id="villager_box" style="overflow: hidden;" class="scroll-container-eventos-aldeanos">
                         <div class="box_evento_aldeanos"> <!-- Basil -->
                             <a onclick="window.modal_even1.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="../../IMG/Personajes/Eventos/Basil.png" class="screenshot" title="Basil"></a>
@@ -924,485 +924,499 @@
                     </div>
 
                     <div style="display: flex; flex-direction: column;">
-                        <button style="height: 50%; padding: 6px; font-weight: bold; font-size: 25px;" onclick="Scroll_button_evento_villager('arriba');">↑</button>
-                        <button style="height: 50%; padding: 6px; font-weight: bold; font-size: 25px;" onclick="Scroll_button_evento_villager('abajo');">↓</button>
+                        <button style="height: 50%; padding: 10px; font-weight: bold; font-size: 25px;" onclick="Scroll_button_evento_villager('arriba');">↑</button>
+                        <button style="height: 50%; padding: 10px; font-weight: bold; font-size: 25px;" onclick="Scroll_button_evento_villager('abajo');">↓</button>
                     </div>
                 </div>
 
-                <h2>Eventos disponibles solo en el primer año</h2>
+                <details> <!-- pagina 1 -->
+                    <summary class="summary_h2">Eventos disponibles solo en el primer año</summary>
 
-                <details>
-                    <summary>Aparece Kai</summary>
+                    <details>
+                        <summary>Aparece Kai</summary>
 
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
     
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Sal de tu granja hacia el sur de la ciudad Mineral.</li>
-                                    <li class="gustos">9:00 am a 7:00 pm</li>
-                                    <li class="gustos">Debe ser Lunes y Primavera 30 del Año 1</li>
-                                    <li class="gustos">Debe ser soleado.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Sal de tu granja hacia el sur de la ciudad Mineral.</li>
+                                        <li class="gustos">9:00 am a 7:00 pm</li>
+                                        <li class="gustos">Debe ser Lunes y Primavera 30 del Año 1</li>
+                                        <li class="gustos">Debe ser soleado.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px">No hay opciones.</td>
+                            </tr>
+                        </table>
+                    </details>
+
+                    <details>
+                        <summary>Cosecha de Bodega de Otoño</summary>
+
+                        <p>En este evento ocurre en otoño y te preguntaran si conoces a alguien para que ayude con el trabajo en la bodega y tienes dos opciones:</p>
+
+                        <ul class="horario">
+                            <li class="gustos"><b>Decirle a Cliff:</b> si le dices el se quedara en la ciudad trabajando en la bodega permanentemente.</li>
+                            <li class="gustos"><b>No decirle a Cliff:</b> si no le dices Cliff se ira de la ciudad al final del año pero podras hacer que el regrese si activas el evento de <b>El regreso de Cliff</b>.</li>
+                        </ul>
+
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+    
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Sal de tu granja.</li>
+                                        <li class="gustos">6:00 am a 12:00 pm</li>
+                                        <li class="gustos">Debe ser Miércoles 14 de otoño del año 1.</li>
+                                        <li class="gustos">Cualquier clima.</li>
+                                        <li class="gustos">Has visto el evento de introducción de <a class="hiper" href="../../Paginas/Personajes/Candidatos/cliff.html">Cliff</a>.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px">No hay opciones.</td>
+                            </tr>
+                        </table>
+                        <p><b>El regreso de Cliff: </b>lo puedes consultar en la seccion de <b class="sub_titulo">Eventos disponibles solo en el año 2</b>.</p>  
+                    </details>
+
+                    <details>
+                        <summary>Cliff se desmaya</summary>
+
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+    
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Camine desde el camino sur (junto al rancho de Mugi) hasta la plaza Rosa.</li>
+                                        <li class="gustos">10:00 am a 3:00 pm</li>
+                                        <li class="gustos">Cualquier día de la semana.</li>
+                                        <li class="gustos">Debe estar nevando.</li>
+                                        <li class="gustos">Solo en el primer año.</li>
+                                        <li class="gustos">Debe ser invierno.</li>
+                                        <li class="gustos">Cliff tiene 1 nota de amistad o más.</li>
+                                        <li class="gustos">No estás casada con Cliff.</li>
+                                        <li class="gustos">No estás casado con Ran.</li>
+                                        <li class="gustos">Hay un espacio vacío en la sección de artículos de tu mochila.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px">No hay opciones.</td>
+                            </tr>
+                        </table>
+                    </details>
+
+                    <details>
+                        <summary>La despedida de Cliff</summary>
+
+                        <p>Este evento solo ocurre y lo podras ver cuando no le contastes a Cliff sobre el trqabajo de la bodega en el evento <b>Cosecha de Bodega de Otoño</b>, aun si no ves este ecento Cliff ya no estara.</p>
+
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+    
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Camine desde la plaza Rosa hasta la playa.</li>
+                                        <li class="gustos">6:00 am a 12:00 pm</li>
+                                        <li class="gustos">Debe ser el 29 de Invierno.</li>
+                                        <li class="gustos">Cualquier clima.</li>
+                                        <li class="gustos">A Cliff NO se le asignó el trabajo en la bodega durante el evento <b>Cosecha de Bodega de Otoño</b>.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px"><b>Opción 1:</b> Estoy de acuerdo.</td>
+                            </tr>
+                        </table>
+                        <p>El evento <b>Cosecha de Bodega de Otoño </b>lo puedes consultar en esta seccion.</p>  
+                    </details>
                 </details>
 
-                <details>
-                    <summary>Cosecha de Bodega de Otoño</summary>
+                <details> <!-- pagina 2 -->
+                    <summary class="summary_h2">Eventos disponibles solo en el segundo año</summary>
 
-                    <p>En este evento ocurre en otoño y te preguntaran si conoces a alguien para que ayude con el trabajo en la bodega y tienes dos opciones:</p>
+                    <details>
+                        <summary id="retor-cliff" ez-toc-data-id="#retor-cliff">El regreso de Cliff</summary>
 
-                    <ul class="horario">
-                        <li class="gustos"><b>Decirle a Cliff:</b> si le dices el se quedara en la ciudad trabajando en la bodega permanentemente.</li>
-                        <li class="gustos"><b>No decirle a Cliff:</b> si no le dices Cliff se ira de la ciudad al final del año pero podras hacer que el regrese si activas el evento de <b>El regreso de Cliff</b>.</li>
-                    </ul>
-
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
     
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Sal de tu granja.</li>
-                                    <li class="gustos">6:00 am a 12:00 pm</li>
-                                    <li class="gustos">Debe ser Miércoles 14 de otoño del año 1.</li>
-                                    <li class="gustos">Cualquier clima.</li>
-                                    <li class="gustos">Has visto el evento de introducción de <a class="hiper" href="../../Paginas/Personajes/Candidatos/cliff.html">Cliff</a>.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
-                    <p><b>El regreso de Cliff: </b>lo puedes consultar en la seccion de <b class="sub_titulo">Eventos disponibles solo en el año 2</b>.</p>  
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Camine por el sendero desde su granja hacia el área norte de la ciudad Mineral (junto a la bodega).</li>
+                                        <li class="gustos">6:00 pm a 10:00 pm</li>
+                                        <li class="gustos">Cualquier día de la semana.</li>
+                                        <li class="gustos">Debe ser segundo año o posterior.</li>
+                                        <li class="gustos">Puede ser Primavera 29, Verano 29, Otoño 29 o Invierno 29.</li>
+                                        <li class="gustos">A Cliff NO se le asignó el trabajo durante el evento <b>Cosecha de Bodega de Otoño</b>.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px">No hay opciones.</td>
+                            </tr>
+                        </table>
+                        <p><b>Cosecha de Bodega de Otoño: </b>lo puedes consultar en la seccion de <b class="sub_titulo">Eventos disponibles solo en el año 1</b>.</p>  
+                    </details>
+
+                    <details>
+                        <summary>El visitante de Ellen</summary>
+
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+    
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Entra en la casa de Ellen.</li>
+                                        <li class="gustos">8:00 am a 5:00 pm</li>
+                                        <li class="gustos">Debe ser Viernes.</li>
+                                        <li class="gustos">Debe ser lluvioso.</li>
+                                        <li class="gustos">Debe ser segundo año o posterior.</li>
+                                        <li class="gustos">Ellen tiene 4 notas de amistad o más</li>
+                                        <li class="gustos">Saibara tiene 4 notas de amistad o más</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px">No hay opciones.</td>
+                            </tr>
+                        </table>
+                    </details>
+
+                    <details>
+                        <summary>Joanna es egoísta</summary>
+
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+    
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Entra en la posada de Dudley.</li>
+                                        <li class="gustos">16:00 a 19:00.</li>
+                                        <li class="gustos">Debe ser Viernes.</li>
+                                        <li class="gustos">Tiempo soleado.</li>
+                                        <li class="gustos">Debe ser segundo año o posterior.</li>
+                                        <li class="gustos">Mugi tiene 4 notas de amistad o más</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px">No hay opciones.</td>
+                            </tr>
+                        </table>
+                    </details>
                 </details>
 
-                <details>
-                    <summary>Cliff se desmaya</summary>
+                <details> <!-- pagina 3 -->
+                    <summary class="summary_h2">Eventos disponibles solo en el tercer año</summary>
 
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                    <details>
+                        <summary>Una carta de papá</summary>
+
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
     
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Camine desde el camino sur (junto al rancho de Mugi) hasta la plaza Rosa.</li>
-                                    <li class="gustos">10:00 am a 3:00 pm</li>
-                                    <li class="gustos">Cualquier día de la semana.</li>
-                                    <li class="gustos">Debe estar nevando.</li>
-                                    <li class="gustos">Solo en el primer año.</li>
-                                    <li class="gustos">Debe ser invierno.</li>
-                                    <li class="gustos">Cliff tiene 1 nota de amistad o más.</li>
-                                    <li class="gustos">No estás casada con Cliff.</li>
-                                    <li class="gustos">No estás casado con Ran.</li>
-                                    <li class="gustos">Hay un espacio vacío en la sección de artículos de tu mochila.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Entra en la tienda de Popuri.</li>
+                                        <li class="gustos">11:30 a 13:00</li>
+                                        <li class="gustos">No debe ser Martes.</li>
+                                        <li class="gustos">Cualquier clima.</li>
+                                        <li class="gustos">Debe ser verano.</li>
+                                        <li class="gustos">Debe ser tercer año o posterior.</li>
+                                        <li class="gustos">No estás casada con Rick.</li>
+                                        <li class="gustos">Lillia tiene 8 notas de amistad o más.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px">No hay opciones.</td>
+                            </tr>
+                        </table>
+                    </details>
+
+                    <details>
+                        <summary>El decaimiento de Gotts</summary>
+
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+    
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Entra en la casa de Gotts.</li>
+                                        <li class="gustos">13:00 a 22:00</li>
+                                        <li class="gustos">Cualquier día de la semana.</li>
+                                        <li class="gustos">Debe ser soleado.</li>
+                                        <li class="gustos">Debe ser segundo año o posterior.</li>
+                                        <li class="gustos">Debe ser Verano.</li>
+                                        <li class="gustos">Gotts tiene 3  notas de amistad o menos.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px">No hay opciones.</td>
+                            </tr>
+                        </table>
+
+                        <p>Si quieres que Gotts se regrese a trabajar solo debes alcanzar al menos 6 notas de amistad, regresa a la casa de Gotts entre la 1:00 p. m. y las 10:00 p. m. en un día soleado de otoño SOLAMENTE. Gotts te dirá que finalmente recuperó el ánimo y se disculpa por preocuparte. A continuación, podrá volver a encargar proyectos de carpintería en su tienda.</p>
+                    </details>
+
+                    <details>
+                        <summary>La llamada telefónica de Joanna</summary>
+
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+    
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Entra en la posada de Dudley.</li>
+                                        <li class="gustos">16:00 a 19:00.</li>
+                                        <li class="gustos">Debe ser Miercoles.</li>
+                                        <li class="gustos">Tiempo soleado.</li>
+                                        <li class="gustos">Debe ser tercer año o posterior.</li>
+                                        <li class="gustos">Mei tiene 4 notas de amistad o más</li>
+                                        <li class="gustos">Has visto el evento <b>Joanna es egoísta</b>.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px">No hay opciones.</td>
+                            </tr>
+                        </table>
+                        <p><b>Joanna es egoísta: </b>lo puedes consultar en la seccion de <b class="sub_titulo">Eventos disponibles solo en el año 2</b>.</p>  
+                    </details>
                 </details>
 
-                <details>
-                    <summary>La despedida de Cliff</summary>
+                <details> <!-- pagina 4 -->
+                    <summary class="summary_h2">Eventos disponibles solo en el cuarto año</summary>
 
-                    <p>Este evento solo ocurre y lo podras ver cuando no le contastes a Cliff sobre el trqabajo de la bodega en el evento <b>Cosecha de Bodega de Otoño</b>, aun si no ves este ecento Cliff ya no estara.</p>
+                    <details>
+                        <summary>Un pasado con Ellen</summary>
 
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
     
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Camine desde la plaza Rosa hasta la playa.</li>
-                                    <li class="gustos">6:00 am a 12:00 pm</li>
-                                    <li class="gustos">Debe ser el 29 de Invierno.</li>
-                                    <li class="gustos">Cualquier clima.</li>
-                                    <li class="gustos">A Cliff NO se le asignó el trabajo en la bodega durante el evento <b>Cosecha de Bodega de Otoño</b>.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px"><b>Opción 1:</b> Estoy de acuerdo.</td>
-                        </tr>
-                    </table>
-                    <p>El evento <b>Cosecha de Bodega de Otoño </b>lo puedes consultar en esta seccion.</p>  
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Entra en la casa de Ellen.</li>
+                                        <li class="gustos">8:00 am a 5:00 pm</li>
+                                        <li class="gustos">Debe ser Lunes</li>
+                                        <li class="gustos">Yu está dentro de la casa de Ellen.</li>
+                                        <li class="gustos">Debe ser cuarto año o posterior.</li>
+                                        <li class="gustos">Ellen tiene 4 notas de amistad o más</li>
+                                        <li class="gustos">Saibara tiene 4 notas de amistad o más</li>
+                                        <li class="gustos">Has visto el evento <b>El visitante de Ellen</b>.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px">No hay opciones.</td>
+                            </tr>
+                        </table>
+                        <p><b>El visitante de Ellen: </b>lo puedes consultar en la seccion de <b class="sub_titulo">Eventos disponibles solo en el año 2</b>.</p>  
+                    </details>
+
+                    <details>
+                        <summary>El enamoramiento secreto de Zack</summary>
+
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+    
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Entra en la casa de Lillia.</li>
+                                        <li class="gustos">11:10 a 13:00</li>
+                                        <li class="gustos">Debe ser Domingo.</li>
+                                        <li class="gustos">Debe ser soleado.</li>
+                                        <li class="gustos">Debe ser cuarto año o posterior.</li>
+                                        <li class="gustos">Debe ser Verano</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px">No hay opciones.</td>
+                            </tr>
+                        </table>
+                    </details>
                 </details>
 
-                <h2>Eventos disponibles solo en el segundo año</h2>
+                <details> <!-- pagina 5 -->
+                    <summary class="summary_h2">Eventos disponibles solo en el quinto año</summary>
 
-                <details>
-                    <summary id="retor-cliff" ez-toc-data-id="#retor-cliff">El regreso de Cliff</summary>
+                    <details>
+                        <summary>La flor de la felicidad</summary>
 
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
     
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Camine por el sendero desde su granja hacia el área norte de la ciudad Mineral (junto a la bodega).</li>
-                                    <li class="gustos">6:00 pm a 10:00 pm</li>
-                                    <li class="gustos">Cualquier día de la semana.</li>
-                                    <li class="gustos">Debe ser segundo año o posterior.</li>
-                                    <li class="gustos">Puede ser Primavera 29, Verano 29, Otoño 29 o Invierno 29.</li>
-                                    <li class="gustos">A Cliff NO se le asignó el trabajo durante el evento <b>Cosecha de Bodega de Otoño</b>.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
-                    <p><b>Cosecha de Bodega de Otoño: </b>lo puedes consultar en la seccion de <b class="sub_titulo">Eventos disponibles solo en el año 1</b>.</p>  
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Entra en la casa de Ellen.</li>
+                                        <li class="gustos">13:00 a 16:00</li>
+                                        <li class="gustos">Puede ser Jueves, viernes o sábado.</li>
+                                        <li class="gustos">Debe ser soleado</li>
+                                        <li class="gustos">Debe ser quinto año o posterior.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px">No hay opciones.</td>
+                            </tr>
+                        </table>
+                    </details>
+
+                    <details>
+                        <summary>La estrella fugaz</summary>
+
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+    
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Camina hasta la cima de la colina de la madre.</li>
+                                        <li class="gustos">6:00 pm a 6:00 am</li>
+                                        <li class="gustos">Caen 10 de cada 5 años.</li>
+                                        <li class="gustos">Debe ser soleado.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px">No hay opciones.</td>
+                            </tr>
+                        </table>
+                    </details>
                 </details>
 
-                <details>
-                    <summary>El visitante de Ellen</summary>
+                <details> <!-- pagina 6 -->
+                    <summary class="summary_h2">Eventos solo para el personaje femenino</summary>
 
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                    <details>
+                        <summary>Pijamada</summary>
+
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
     
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Entra en la casa de Ellen.</li>
-                                    <li class="gustos">8:00 am a 5:00 pm</li>
-                                    <li class="gustos">Debe ser Viernes.</li>
-                                    <li class="gustos">Debe ser lluvioso.</li>
-                                    <li class="gustos">Debe ser segundo año o posterior.</li>
-                                    <li class="gustos">Ellen tiene 4 notas de amistad o más</li>
-                                    <li class="gustos">Saibara tiene 4 notas de amistad o más</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Presione el botón A cuando esté parado al lado de su cama.</li>
+                                        <li class="gustos">8:00 pm a 00:00 am</li>
+                                        <li class="gustos">Cualquier día de la semana</li>
+                                        <li class="gustos">No hay tiempo tormentoso.</li>
+                                        <li class="gustos">Tienes la cama grande.</li>
+                                        <li class="gustos">Tu personaje es femenino.</li>
+                                        <li class="gustos">No estás casado.</li>
+                                        <li class="gustos">Las pretendientes femeninos tienen 4 notas de amistad o más.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px">No hay opciones.</td>
+                            </tr>
+                        </table>
+                    </details>
                 </details>
 
-                <details>
-                    <summary>Joanna es egoísta</summary>
+                <details> <!-- pagina 7 -->
+                    <summary class="summary_h2 summary_h2_fin">Eventos disponibles después del matrimonio</summary>
 
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                    <details>
+                        <summary>Consejos para Harris</summary>
+
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
     
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Entra en la posada de Dudley.</li>
-                                    <li class="gustos">16:00 a 19:00.</li>
-                                    <li class="gustos">Debe ser Viernes.</li>
-                                    <li class="gustos">Tiempo soleado.</li>
-                                    <li class="gustos">Debe ser segundo año o posterior.</li>
-                                    <li class="gustos">Mugi tiene 4 notas de amistad o más</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
-                </details>
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Sal de tu granja.</li>
+                                        <li class="gustos">19:00 a 21:00</li>
+                                        <li class="gustos">Cualquier día de la semana.</li>
+                                        <li class="gustos">Debe ser soleado.</li>
+                                        <li class="gustos">Debes estar casado.</li>
+                                        <li class="gustos">Debe ser Verano</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px"><b>Opción 1:</b> Dile cómo te sientes</td>
+                            </tr>
+                        </table>
+                    </details>
 
-                <h2>Eventos disponibles solo en el tercer año</h2>
+                    <details>
+                        <summary>Ayudando a Basil</summary>
 
-                <details>
-                    <summary>Una carta de papá</summary>
-
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
     
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Entra en la tienda de Popuri.</li>
-                                    <li class="gustos">11:30 a 13:00</li>
-                                    <li class="gustos">No debe ser Martes.</li>
-                                    <li class="gustos">Cualquier clima.</li>
-                                    <li class="gustos">Debe ser verano.</li>
-                                    <li class="gustos">Debe ser tercer año o posterior.</li>
-                                    <li class="gustos">No estás casada con Rick.</li>
-                                    <li class="gustos">Lillia tiene 8 notas de amistad o más.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
-                </details>
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Camine desde el sendero de Yodel Ranch hacia el bosque.</li>
+                                        <li class="gustos">10:00 am a 6:00 pm</li>
+                                        <li class="gustos">Debe ser Lunes.</li>
+                                        <li class="gustos">Debe ser soleado.</li>
+                                        <li class="gustos">No debes ser invierno.</li>
+                                        <li class="gustos">Estás casado, pero no con Marie.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px"><b>Opción 1:</b> ¡Qué reflexivo!</td>
+                            </tr>
+                        </table>
+                    </details>
 
-                <details>
-                    <summary>El decaimiento de Gotts</summary>
+                    <details>
+                        <summary>Celebración de los duendes de la cosecha</summary>
 
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                        <p>Este evento se desarrolla en tres partes. Cada uno es más o menos lo mismo.</p>
+
+                        <table class="data">
+                            <tr><th>Parte</th><th>Requisitos</th><th>Mejor respuesta</th></tr>
     
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Entra en la casa de Gotts.</li>
-                                    <li class="gustos">13:00 a 22:00</li>
-                                    <li class="gustos">Cualquier día de la semana.</li>
-                                    <li class="gustos">Debe ser soleado.</li>
-                                    <li class="gustos">Debe ser segundo año o posterior.</li>
-                                    <li class="gustos">Debe ser Verano.</li>
-                                    <li class="gustos">Gotts tiene 3  notas de amistad o menos.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
+                            <tr>
+                                <td style=" text-align: center;"><b>1</b></td>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Sal de tu granja.</li>
+                                        <li class="gustos">Estás casado.</li>
+                                        <li class="gustos">Pase la noche en su casa de campo.</li>
+                                        <li class="gustos">Has hablado con tu cónyuge al menos 5 veces.</li>
+                                        <li class="gustos">Le has dado a tu cónyuge al menos 2 regalo.</li>
+                                        <li class="gustos">Hay espacio vacío en tu mochila o refrigerador.</li>
+                                        <li class="gustos">Llevas casado entre 35 y 69 días.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px">No hay opciones.</td>
+                            </tr>
+                        </table>
 
-                    <p>Si quieres que Gotts se regrese a trabajar solo debes alcanzar al menos 6 notas de amistad, regresa a la casa de Gotts entre la 1:00 p. m. y las 10:00 p. m. en un día soleado de otoño SOLAMENTE. Gotts te dirá que finalmente recuperó el ánimo y se disculpa por preocuparte. A continuación, podrá volver a encargar proyectos de carpintería en su tienda.</p>
-                </details>
-
-                <details>
-                    <summary>La llamada telefónica de Joanna</summary>
-
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                        <table class="data">
+                            <tr><th>Parte</th><th>Requisitos</th><th>Mejor respuesta</th></tr>
     
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Entra en la posada de Dudley.</li>
-                                    <li class="gustos">16:00 a 19:00.</li>
-                                    <li class="gustos">Debe ser Miercoles.</li>
-                                    <li class="gustos">Tiempo soleado.</li>
-                                    <li class="gustos">Debe ser tercer año o posterior.</li>
-                                    <li class="gustos">Mei tiene 4 notas de amistad o más</li>
-                                    <li class="gustos">Has visto el evento <b>Joanna es egoísta</b>.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
-                    <p><b>Joanna es egoísta: </b>lo puedes consultar en la seccion de <b class="sub_titulo">Eventos disponibles solo en el año 2</b>.</p>  
-                </details>
+                            <tr>
+                                <td style=" text-align: center;"><b>2</b></td>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Sal de tu granja.</li>
+                                        <li class="gustos">Llevas casado entre 35 días.</li>
+                                        <li class="gustos">Has hablado con tu cónyuge al menos 5 veces.</li>
+                                        <li class="gustos">Le has dado a tu cónyuge al menos 2 regalo.</li>
+                                        <li class="gustos">Hay espacio vacío en tu mochila o refrigerador.</li>
+                                        <li class="gustos">Llevas casado entre 70 y 104 días.</li>
+                                        <li class="gustos">Has visto la Parte 1 de este evento.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px">No hay opciones.</td>
+                            </tr>
+                        </table>
 
-                <h2>Eventos disponibles solo en el cuarto año</h2>
-
-                <details>
-                    <summary>Un pasado con Ellen</summary>
-
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                        <table class="data" style="margin-bottom: 30px;">
+                            <tr><th>Parte</th><th>Requisitos</th><th>Mejor respuesta</th></tr>
     
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Entra en la casa de Ellen.</li>
-                                    <li class="gustos">8:00 am a 5:00 pm</li>
-                                    <li class="gustos">Debe ser Lunes</li>
-                                    <li class="gustos">Yu está dentro de la casa de Ellen.</li>
-                                    <li class="gustos">Debe ser cuarto año o posterior.</li>
-                                    <li class="gustos">Ellen tiene 4 notas de amistad o más</li>
-                                    <li class="gustos">Saibara tiene 4 notas de amistad o más</li>
-                                    <li class="gustos">Has visto el evento <b>El visitante de Ellen</b>.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
-                    <p><b>El visitante de Ellen: </b>lo puedes consultar en la seccion de <b class="sub_titulo">Eventos disponibles solo en el año 2</b>.</p>  
-                </details>
-
-                <details>
-                    <summary>El enamoramiento secreto de Zack</summary>
-
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Entra en la casa de Lillia.</li>
-                                    <li class="gustos">11:10 a 13:00</li>
-                                    <li class="gustos">Debe ser Domingo.</li>
-                                    <li class="gustos">Debe ser soleado.</li>
-                                    <li class="gustos">Debe ser cuarto año o posterior.</li>
-                                    <li class="gustos">Debe ser Verano</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
-                </details>
-
-                <h2>Eventos disponibles solo en el quinto año</h2>
-
-                <details>
-                    <summary>La flor de la felicidad</summary>
-
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Entra en la casa de Ellen.</li>
-                                    <li class="gustos">13:00 a 16:00</li>
-                                    <li class="gustos">Puede ser Jueves, viernes o sábado.</li>
-                                    <li class="gustos">Debe ser soleado</li>
-                                    <li class="gustos">Debe ser quinto año o posterior.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
-                </details>
-
-                <details>
-                    <summary>La estrella fugaz</summary>
-
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Camina hasta la cima de la colina de la madre.</li>
-                                    <li class="gustos">6:00 pm a 6:00 am</li>
-                                    <li class="gustos">Caen 10 de cada 5 años.</li>
-                                    <li class="gustos">Debe ser soleado.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
-                </details>
-
-                <h2>Eventos solo para el personaje femenino</h2>
-
-                <details>
-                    <summary>Pijamada</summary>
-
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Presione el botón A cuando esté parado al lado de su cama.</li>
-                                    <li class="gustos">8:00 pm a 00:00 am</li>
-                                    <li class="gustos">Cualquier día de la semana</li>
-                                    <li class="gustos">No hay tiempo tormentoso.</li>
-                                    <li class="gustos">Tienes la cama grande.</li>
-                                    <li class="gustos">Tu personaje es femenino.</li>
-                                    <li class="gustos">No estás casado.</li>
-                                    <li class="gustos">Las pretendientes femeninos tienen 4 notas de amistad o más.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
-                </details>
-
-                <h2>Eventos disponibles después del matrimonio</h2>
-
-                <details>
-                    <summary>Consejos para Harris</summary>
-
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Sal de tu granja.</li>
-                                    <li class="gustos">19:00 a 21:00</li>
-                                    <li class="gustos">Cualquier día de la semana.</li>
-                                    <li class="gustos">Debe ser soleado.</li>
-                                    <li class="gustos">Debes estar casado.</li>
-                                    <li class="gustos">Debe ser Verano</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px"><b>Opción 1:</b> Dile cómo te sientes</td>
-                        </tr>
-                    </table>
-                </details>
-
-                <details>
-                    <summary>Ayudando a Basil</summary>
-
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Camine desde el sendero de Yodel Ranch hacia el bosque.</li>
-                                    <li class="gustos">10:00 am a 6:00 pm</li>
-                                    <li class="gustos">Debe ser Lunes.</li>
-                                    <li class="gustos">Debe ser soleado.</li>
-                                    <li class="gustos">No debes ser invierno.</li>
-                                    <li class="gustos">Estás casado, pero no con Marie.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px"><b>Opción 1:</b> ¡Qué reflexivo!</td>
-                        </tr>
-                    </table>
-                </details>
-
-                <details style="margin-bottom: 30px;">
-                    <summary>Celebración de los duendes de la cosecha</summary>
-
-                    <p>Este evento se desarrolla en tres partes. Cada uno es más o menos lo mismo.</p>
-
-                    <table class="data">
-                        <tr><th>Parte</th><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
-                        <tr>
-                            <td style=" text-align: center;"><b>1</b></td>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Sal de tu granja.</li>
-                                    <li class="gustos">Estás casado.</li>
-                                    <li class="gustos">Pase la noche en su casa de campo.</li>
-                                    <li class="gustos">Has hablado con tu cónyuge al menos 5 veces.</li>
-                                    <li class="gustos">Le has dado a tu cónyuge al menos 2 regalo.</li>
-                                    <li class="gustos">Hay espacio vacío en tu mochila o refrigerador.</li>
-                                    <li class="gustos">Llevas casado entre 35 y 69 días.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
-
-                    <table class="data">
-                        <tr><th>Parte</th><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
-                        <tr>
-                            <td style=" text-align: center;"><b>2</b></td>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Sal de tu granja.</li>
-                                    <li class="gustos">Llevas casado entre 35 días.</li>
-                                    <li class="gustos">Has hablado con tu cónyuge al menos 5 veces.</li>
-                                    <li class="gustos">Le has dado a tu cónyuge al menos 2 regalo.</li>
-                                    <li class="gustos">Hay espacio vacío en tu mochila o refrigerador.</li>
-                                    <li class="gustos">Llevas casado entre 70 y 104 días.</li>
-                                    <li class="gustos">Has visto la Parte 1 de este evento.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
-
-                    <table class="data">
-                        <tr><th>Parte</th><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
-                        <tr>
-                            <td style=" text-align: center;"><b>3</b></td>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Sal de tu granja.</li>
-                                    <li class="gustos">Llevas casado entre 70 días.</li>
-                                    <li class="gustos">Has hablado con tu cónyuge al menos 5 veces.</li>
-                                    <li class="gustos">Le has dado a tu cónyuge al menos 2 regalo.</li>
-                                    <li class="gustos">Hay espacio vacío en tu mochila o refrigerador.</li>
-                                    <li class="gustos">Llevas casado por más de 105 días.</li>
-                                    <li class="gustos">Has visto la Parte 2 de este evento.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
+                            <tr>
+                                <td style=" text-align: center;"><b>3</b></td>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Sal de tu granja.</li>
+                                        <li class="gustos">Llevas casado entre 70 días.</li>
+                                        <li class="gustos">Has hablado con tu cónyuge al menos 5 veces.</li>
+                                        <li class="gustos">Le has dado a tu cónyuge al menos 2 regalo.</li>
+                                        <li class="gustos">Hay espacio vacío en tu mochila o refrigerador.</li>
+                                        <li class="gustos">Llevas casado por más de 105 días.</li>
+                                        <li class="gustos">Has visto la Parte 2 de este evento.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px">No hay opciones.</td>
+                            </tr>
+                        </table>
+                    </details>
                 </details>
             </main>
 
