@@ -10,6 +10,12 @@
     </head>
     
     <body>
+        <!-- Pantalla de carga -->
+        <div id="loading-screen">
+            <div class="loader"></div>
+            <p>Cargando...</p>
+        </div>
+
         <div id="nav"></div>
 
         <div id="content">
@@ -24,12 +30,21 @@
     
                 <h2>Caracteristicas</h2>
     
-                <p>Si bien el juego se mantiene fiel a su forma GBA original, ha habido algunas actualizaciones para alinearlo más con los juegos Story of Seasons de hoy en día . Por ejemplo, los jugadores pueden elegir entre jugar en modo Normal o en modo Simple (más fácil) durante la creación del personaje.</p>
+                <p>Si bien el juego se mantiene fiel a su forma GBA original, ha habido algunas actualizaciones para alinearlo más con los juegos Story of Seasons de hoy en día. Por ejemplo, los jugadores pueden elegir entre jugar en modo Normal o en modo Simple (más fácil) durante la creación del personaje.</p>
     
-                <p><b>Story of Seasons: Friends of Mineral Town</b> incluye los mismos personajes que el juego de principios de la década de 2000, aunque su apariencia se ha actualizado. Igusa Matsuyama, el artista principal de la serie Bokujou Monogatari , diseñó tanto los estilos clásicos como los diseños actualizados. Otro cambio es el cambio de usar los nombres de caracteres originales adaptados al inglés a usar los nombres de caracteres originales japoneses.</p>
+                <p><b>Story of Seasons: Friends of Mineral Town</b> incluye los mismos personajes que el juego de principios de la década de 2000, aunque su apariencia se ha actualizado. Igusa Matsuyama, el artista principal de la serie Bokujou Monogatari, diseñó tanto los estilos clásicos como los diseños actualizados. Otro cambio es el cambio de usar los nombres de caracteres originales adaptados al inglés a usar los nombres de caracteres originales japoneses.</p>
             </main>
 
             <div id="footer"></div>
-        </div>  
+        </div>
+
+        <!-- Ocultar la pantalla de carga cuando termine de cargar la página -->
+        <script>
+            window.addEventListener("load", function () {
+                document.getElementById("loading-screen").style.display = "none";
+            });
+        </script>
+
     </body>
 </html>
+```

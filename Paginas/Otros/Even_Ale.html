@@ -7,9 +7,16 @@
         <link rel="stylesheet" href="../../CSS/Style.css" type="text/css" />
         <link rel="shortcut icon" href="../../IMG/Iconos/Kirbo.ico"/>
         <script type="text/javascript" src="../../JS/include.js"></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene la funcion de insertar el nav y footer a la pagina-->
+        <script type="text/javascript" src="../JS/funciones.js"></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene la funcion que se ejecutara en la pagina-->
     </head>
     
     <body>
+        <!-- Pantalla de carga -->
+        <div id="loading-screen">
+            <div class="loader"></div>
+            <p>Cargando...</p>
+        </div>
+        
         <div id="nav"></div>
 
         <div id="content">
@@ -1422,6 +1429,12 @@
 
             <div id="footer"></div>
         </div>
-        <script type="text/javascript" src="../../JS/funciones.js"></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene las funciones de encriptar y desencriptar de la pagina-->
+
+        <!-- Ocultar la pantalla de carga cuando termine de cargar la página -->
+        <script>
+            window.addEventListener("load", function () {
+                document.getElementById("loading-screen").style.display = "none";
+            });
+        </script>
     </body>
 </html>
