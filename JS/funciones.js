@@ -2,27 +2,27 @@
 /*  Funciones para desplasar el contenido de la caja por botones  */
 /* ************************************************************** */
 
-function Scroll_button_evento_villager(tip_bot){ desplasar(tip_bot,345.5,350); }
+function Scroll_button_evento_villager(tip_bot,tip_cuad){ desplasar(tip_bot,tip_cuad,345.5,350); }
 
-function Scroll_button_villager(tip_bot){ desplasar(tip_bot,525,520); }
+function Scroll_button_villager(tip_bot,tip_cuad){ desplasar(tip_bot,tip_cuad,525,520); }
 
-function Scroll_button_marriage(tip_bot){ desplasar(tip_bot,638,520); }
+function Scroll_button_marriage(tip_bot,tip_cuad){ desplasar(tip_bot,tip_cuad,638,520); }
 
-function desplasar(tip_bot,salto_movile,salto_comp) {
+function desplasar(tip_bot,tip_cuad,salto_movile,salto_comp) {
     var anchoVentana = window.innerWidth;
         
     if (anchoVentana <= 980) { // desplasamiento para cuando es  el movile
         if (tip_bot === 'arriba') {
-            document.getElementById("villager_box").scrollTop -= salto_movile;
+            document.getElementById(tip_cuad).scrollTop -= salto_movile;
         } else if (tip_bot === 'abajo') {
-            document.getElementById("villager_box").scrollTop += salto_movile;
+            document.getElementById(tip_cuad).scrollTop += salto_movile;
         }
             
     } else if (anchoVentana > 980) { // desplasamiento para cuando es la computadora
         if (tip_bot === 'arriba') {
-            document.getElementById("villager_box").scrollTop -= (salto_comp);
+            document.getElementById(tip_cuad).scrollTop -= (salto_comp);
         } else if (tip_bot === 'abajo') {
-            document.getElementById("villager_box").scrollTop += salto_comp;
+            document.getElementById(tip_cuad).scrollTop += salto_comp;
         }   
     }
 }   

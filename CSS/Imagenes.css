@@ -56,8 +56,8 @@
     aspect-ratio: attr(width) / attr(height);
 }
 
-/* se crea la ID "boxshort,marriage_box,villager_box" para que se ocupe de posisionar la imagen dentro de la caja*/
-#boxshort,#marriage_box,#villager_box{ text-align:center;}
+/* se crea la ID "boxshort,marriage_box,villager_box,event_perso_box" para que se ocupe de posisionar la imagen dentro de la caja*/
+#boxshort,#marriage_box,#villager_box,#event_perso_box{ text-align:center;}
 
 /* se crea la clase "box_aldeano" para que se ocupe de posisionar el contenido para las mascotas*/
 .box_aldeanos, .box_evento_aldeanos {

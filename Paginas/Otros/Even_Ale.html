@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="../../CSS/Style.css" type="text/css" />
         <link rel="shortcut icon" href="../../IMG/Iconos/Kirbo.ico"/>
         <script type="text/javascript" src="../../JS/include.js"></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene la funcion de insertar el nav y footer a la pagina-->
-        <script type="text/javascript" src="../JS/funciones.js"></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene la funcion que se ejecutara en la pagina-->
+        <script type="text/javascript" src="../../JS/funciones.js"></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene la funcion que se ejecutara en la pagina-->
     </head>
     
     <body>
@@ -16,7 +16,7 @@
             <div class="loader"></div>
             <p>Cargando...</p>
         </div>
-        
+
         <div id="nav"></div>
 
         <div id="content">
@@ -33,7 +33,7 @@
                 <p>Dentro del juego te toparas con eventos que no son parte de la trama del juego pero te ayudara a conocer mejor a los aldeanos del pueblo y algunos de esos eventos son simplemento de relleno.</p>
 
                 <div style="display: flex;"> <!-- Cuadro de eventos aleatorio -->
-                    <div id="villager_box" style="overflow: hidden;" class="scroll-container-eventos-aldeanos">
+                    <div id="event_perso_box" style="overflow: hidden;" class="scroll-container-eventos-aldeanos">
                         <div class="box_evento_aldeanos"> <!-- Basil -->
                             <a onclick="window.modal_even1.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="../../IMG/Personajes/Eventos/Basil.png" class="screenshot" title="Basil"></a>
                             <a class="hiper_click" onclick="window.modal_even1.showModal();">Basil</a>
@@ -931,8 +931,8 @@
                     </div>
 
                     <div style="display: flex; flex-direction: column;">
-                        <button style="height: 50%; padding: 10px; font-weight: bold; font-size: 25px;" onclick="Scroll_button_evento_villager('arriba');">↑</button>
-                        <button style="height: 50%; padding: 10px; font-weight: bold; font-size: 25px;" onclick="Scroll_button_evento_villager('abajo');">↓</button>
+                            <button style="height: 50%; padding: 10px; font-weight: bold; font-size: 25px;" onclick="Scroll_button_evento_villager('arriba','event_perso_box');">↑</button>
+                            <button style="height: 50%; padding: 10px; font-weight: bold; font-size: 25px;" onclick="Scroll_button_evento_villager('abajo','event_perso_box');">↓</button>
                     </div>
                 </div>
 
