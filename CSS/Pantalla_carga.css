@@ -1,0 +1,34 @@
+/* ******************* */
+/*  Diseños generales  */
+/* ******************* */
+
+/* Pantalla de carga */ 
+#loading-screen { 
+    position: fixed; inset: 0; 
+    background-color: white; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    z-index: 99999; 
+}
+
+/* Círculo de carga */ 
+#loading-screen .loader { 
+    width: 45px; 
+    height: 45px; 
+    border: 5px solid #ddd; 
+    border-top-color: #333; 
+    border-radius: 50%; 
+    animation: girar 0.8s linear infinite; 
+}
+
+/* Texto */ 
+#loading-screen p { 
+    margin-top: 15px; 
+    font-family: Arial, sans-serif; 
+} 
+
+@keyframes girar { 
+    to { transform: rotate(360deg); } 
+}
