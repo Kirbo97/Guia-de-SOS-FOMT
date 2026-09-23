@@ -137,8 +137,6 @@ h3 , summary {
     margin: 24px 0;
 }
 
-.pirn{ color: rgb(217, 0, 255); }
-
 summary { cursor: pointer; }
 
 summary:focus-visible { outline:none; }
@@ -149,8 +147,18 @@ details[open] > summary:first-of-type {
 }
 
 details[open] > .summary_h2_fin:first-of-type { margin-bottom: 0; }
+details[open] > .summary_general:first-of-type { margin-bottom: 0; }
+
+.summary_general { 
+    margin-top: 26px;
+    margin-bottom: 0; 
+}
 
 details > .summary_h2_fin:first-of-type { margin-bottom: 20px; }
+
+/* *************************************** */
+/*  Diseños de la barra de desplasamiento  */
+/* *************************************** */
 
 .scroll-container-aldeanos,.scroll-container-eventos-aldeanos,.scroll-container-candidatos {
     width: auto;           /* Ancho del contenedor */
