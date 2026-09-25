@@ -16,7 +16,7 @@
     z-index: 9999; 
 }
 
-/* Pantalla de carga */
+/* Contenedor de la pantalla de carga */
 #loading-screen {
     width: 100%;
     height: 100%;
@@ -36,10 +36,22 @@
     animation: cargar 1s linear infinite;
 }
 
-/* Animación */
-@keyframes cargar { 
+/* Animación del circulo de carga*/
+@keyframes cargar{ 
     from { transform: rotate(0deg); } to { transform: rotate(360deg); } 
 } 
+
+/* imagen de carga */
+.loading-image {
+    width: 250px;
+    height: auto;
+    animation: girar-trompo 2s linear infinite;
+}
+
+@keyframes girar-trompo {
+    from { transform: perspective(500px) rotateY(0deg); }
+    to { transform: perspective(500px) rotateY(360deg); }
+}
 
 /* Texto */ 
 #loading-screen p { margin-top: 15px; font-size: 18px; }

@@ -18,7 +18,7 @@ html {
 
 /* La etiqueta "body" tendra cierta carasteristica */
 body {
-    background: url('../IMG/fondo.jpg') repeat; 
+    background: url('/Guia-de-SOS-FOMT/IMG/fondo.jpg') repeat; 
     background-attachment: fixed;
     margin: 0;
 }
