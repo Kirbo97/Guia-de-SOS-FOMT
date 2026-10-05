@@ -41,6 +41,8 @@ function cambiar_lista(num){ cambiar_peces(num,1); }
 
 function cambiar_receta(num){ cambiar_pagina(num,1); }
 
+function cambiar_mineral(num){ cambiar_pagina_mineral(num,1); }
+
 function cambiar_estacion(num,i){
     let encabezado = document.getElementById("estacion");
     let titulo = document.getElementById("tituloEstacion");
@@ -77,4 +79,9 @@ function cambiar_peces(num,i){
 function cambiar_pagina(num,i){
     for(i;i<=5;i++){ document.getElementById("lista_receta"+i).style.display="none"; }
     document.getElementById("lista_receta"+num).style.display="block";
+}
+
+function cambiar_pagina_mineral(num,i){
+    for(i;i<=4;i++){ document.getElementById("lista_"+i).style.display="none"; }
+    document.getElementById("lista_"+num).style.display="block";
 }

@@ -25,13 +25,13 @@ async function cargarAnimacion() {
 async function cargarPagina() {
     document.body.style.overflow = "hidden";
 
-    await loadHTML("loading", "/Guia-de-SOS-FOMT/Estructura/carga.html");
+    await loadHTML("loading","/Guia-de-SOS-FOMT/Estructura/carga.html");
 
     await cargarAnimacion();
 
     await Promise.all([
-        loadHTML("nav", "/Guia-de-SOS-FOMT/Estructura/nav.html"),
-        loadHTML("footer", "/Guia-de-SOS-FOMT/Estructura/footer.html")
+        loadHTML("nav","/Guia-de-SOS-FOMT/Estructura/nav.html"),
+        loadHTML("footer","/Guia-de-SOS-FOMT/Estructura/footer.html")
     ]);
 
     const imagenes = document.images;
@@ -53,3 +53,16 @@ async function cargarPagina() {
 }
 
 cargarPagina();
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+            

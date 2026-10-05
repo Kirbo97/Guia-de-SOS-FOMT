@@ -1,0 +1,57 @@
+/* ******************* */
+/*  Diseños generales  */
+/* ******************* */
+
+/* Pantalla de carga */ 
+#loading {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: #c3c3c3;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    z-index: 9999; 
+}
+
+/* Contenedor de la pantalla de carga */
+#loading-screen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Círculo de carga */
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 6px solid #ddd;
+    border-top: 6px solid #555;
+    border-radius: 50%;
+    animation: cargar 1s linear infinite;
+}
+
+/* Animación del circulo de carga*/
+@keyframes cargar{ 
+    from { transform: rotate(0deg); } to { transform: rotate(360deg); } 
+} 
+
+/* imagen de carga */
+.loading-image {
+    width: 250px;
+    height: auto;
+    animation: girar-trompo 2s linear infinite;
+}
+
+@keyframes girar-trompo {
+    from { transform: perspective(500px) rotateY(0deg); }
+    to { transform: perspective(500px) rotateY(360deg); }
+}
+
+/* Texto */ 
+#loading-screen p { margin-top: 15px; font-size: 18px; }
