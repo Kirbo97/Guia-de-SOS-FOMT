@@ -51,6 +51,8 @@ function cambiar_estacion(num,i){
     // Si ya está visible, ocultarla
     if (lista_estacion.style.display === "block") {
         lista_estacion.style.display = "none";
+        encabezado.style.backgroundColor = "#757a74";
+        document.getElementById("calendario"+"0").style.display="block";
         return;
     }
 
