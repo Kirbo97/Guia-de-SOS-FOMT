@@ -53,16 +53,3 @@ async function cargarPagina() {
 }
 
 cargarPagina();
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-            

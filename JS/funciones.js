@@ -46,8 +46,18 @@ function cambiar_mineral(num){ cambiar_pagina_mineral(num,1); }
 function cambiar_estacion(num,i){
     let encabezado = document.getElementById("estacion");
     let titulo = document.getElementById("tituloEstacion");
+    let lista_estacion = document.getElementById("calendario" + num);
 
+    // Si ya está visible, ocultarla
+    if (lista_estacion.style.display === "block") {
+        lista_estacion.style.display = "none";
+        return;
+    }
+
+    // Ocultar todas las listas
     for(i;i<=4;i++){ document.getElementById("calendario"+i).style.display="none"; }
+    
+    // Mostrar la seleccionada
     document.getElementById("calendario"+num).style.display="block";
 
     if(num==1){ // primavera 
@@ -72,16 +82,48 @@ function cambiar_estacion(num,i){
 }
 
 function cambiar_peces(num,i){
+    let lista_peces = document.getElementById("lista" + num);
+
+    // Si ya está visible, ocultarla
+    if (lista_peces.style.display === "block") {
+        lista_peces.style.display = "none";
+        return;
+    }
+
+    // Ocultar todas las listas
     for(i;i<=3;i++){ document.getElementById("lista"+i).style.display="none"; }
-    document.getElementById("lista"+num).style.display="block";
+
+    // Mostrar la seleccionada
+    lista_peces.style.display = "block";
 }
 
 function cambiar_pagina(num,i){
+    let lista_recetas = document.getElementById("lista_receta" + num);
+
+    // Si ya está visible, ocultarla
+    if (lista_recetas.style.display === "block") {
+        lista_recetas.style.display = "none";
+        return;
+    }
+    // Ocultar todas las listas
     for(i;i<=5;i++){ document.getElementById("lista_receta"+i).style.display="none"; }
-    document.getElementById("lista_receta"+num).style.display="block";
+
+    // Mostrar la seleccionada
+    lista_recetas.style.display = "block";
 }
 
 function cambiar_pagina_mineral(num,i){
+    let lista_Mineral = document.getElementById("lista_" + num);
+
+    // Si ya está visible, ocultarla
+    if (lista_Mineral.style.display === "block") {
+        lista_Mineral.style.display = "none";
+        return;
+    }
+
+    // Ocultar todas las listas
     for(i;i<=4;i++){ document.getElementById("lista_"+i).style.display="none"; }
-    document.getElementById("lista_"+num).style.display="block";
+
+    // Mostrar la seleccionada
+    lista_Mineral.style.display = "block";
 }
