@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="/Guia-de-SOS-FOMT/CSS/Style.css" type="text/css"/> <!-- Este CSS contiene los diseños de toda las paginas -->
         <link rel="shortcut icon" href="/Guia-de-SOS-FOMT/IMG/Iconos/Kirbo.ico"/> <!-- Esta seccion es para colocar un icono que representa a toda la pagina en general -->
         <script type="text/javascript" src="/Guia-de-SOS-FOMT/JS/include.js" defer></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene la funcion de insertar el nav y footer a la pagina-->
+        <script type="text/javascript" src="/Guia-de-SOS-FOMT/JS/funciones.js"></script> <!-- Conecta el archivo js para ser usado en la pagina y Este sj contiene la funcion de insertar el nav y footer a la pagina-->
     </head>
     
     <body>
@@ -44,66 +45,124 @@
                 <h2>Productos</h2>
 
                 <details> <!-- Semillas de temporada -->
-                    <summary>Semillas de temporada</summary>
+                    <summary class=" summary_general">Semillas de temporada</summary>
 
-                    <table class="data"> <!-- Primavera -->
-                        <tr><th>Temporada</th><th>Nombre</th><th>Requisito</th><th style="width: 80px;">Costo</th></tr>
-                        <tr><td rowspan="5" style="background-color: #84f16e;"><p class="primavera" style="text-align:center"></p></td><td>Semillas de nabo</td><td class="td_neutro">—</td><td class="td_dinero">120 <b>G</b></td>
-        
-                        <tr><td>Semillas de patata</td><td class="td_neutro">—</td><td class="td_dinero">150 <b>G</b></td>
-        
-                        <tr><td>Semillas de pepino</td><td class="td_neutro">—</td><td class="td_dinero">200 <b>G</b></td>
-        
-                        <tr><td>Semillas de fresa</td><td>Haber enviado 100 nabos, patatas y pepinos.</td><td class="td_dinero">150 <b>G</b></td>
+                    <i>Nota: Seleccione una estación.</i>
 
-                        <tr><td>Semillas de forraje</td><td class="td_neutro">—</td><td class="td_dinero">500 <b>G</b></td>
-                    </table>
-        
-                    <table class="data">  <!-- Verano -->
-                        <tr><th>Temporada</th><th>Nombre</th><th>Requisito</th><th style="width: 80px;">Costo</th></tr>
-        
-                        <tr><td rowspan="5" style="background-color: #f2e88c;"><p class="verano" style="text-align:center"></p></td><td>Semillas de tomate</td><td class="td_neutro">—</td><td class="td_dinero">200 <b>G</b></td>
-        
-                        <tr><td>Semillas de maíz</td><td class="td_neutro">—</td><td class="td_dinero">300 <b>G</b></td>
-        
-                        <tr><td>Semillas de cebolla</td><td class="td_neutro">—</td><td class="td_dinero">150 <b>G</b></td>
-        
-                        <tr><td>Semillas de calabaza</td><td>Haber enviado 100 tomates, maíz y cebollas.</td><td class="td_dinero">500 <b>G</b></td>
+                    <table class="data" style="margin-bottom: 1.5em; margin-top: 1.8em;">
+                        <tr>
+                            <th colspan="2" id="estacion" style="font-size: 1.2em; background-color: #757a74; height: 4em; width: 28em;">
+                                <div style="display:flex;justify-content:space-around;align-items:center;">
+                                    <p class="primavera" onclick="cambiarTemporada_tienda(1)" title="Primavera" style="cursor: pointer;"></p>
+                                    <p class="verano" onclick="cambiarTemporada_tienda(2)" title="Verano" style="cursor: pointer;"></p>
+                                    <p class="otoño" onclick="cambiarTemporada_tienda(3)" title="Otoño" style="cursor: pointer;"></p>
+                                </div>
+                            </th>
+                        </tr>
 
-                        <tr><td>Semillas de forraje</td><td class="td_neutro">—</td><td class="td_dinero">500 <b>G</b></td>
-        
-                    </table>
-        
-                    <table class="data"> <!-- Otoño -->
-                        <tr><th>Temporada</th><th>Nombre</th><th>Requisito</th><th style="width: 80px;">Costo</th></tr>
-        
-                        <tr><td rowspan="9" style="background-color: #f4a74f;"><p class="otoño" style="text-align:center"></p></td><td>Semillas de berenjena</td><td class="td_neutro">—</td><td class="td_dinero">120 <b>G</b></td>
-        
-                        <tr><td>Semillas de zanahoria</td><td class="td_neutro">—</td><td class="td_dinero">300 <b>G</b></td>
-        
-                        <tr><td>Semillas de boniato</td><td class="td_neutro">—</td><td class="td_dinero">300 <b>G</b></td>
-        
-                        <tr><td>Semillas de espinacas</td><td>Haber enviado 100 berenjena, tomate y boniato.</td><td class="td_dinero">200 <b>G</b></td>
-        
-                        <tr><td>Semillas de flores dulces sol</td><td>Haber visto el evento <a class="hiper" href="/Guia-de-SOS-FOMT/Personajes.html" style="font-size: 17px;">Flor Preservada</a>.</td><td class="td_dinero">1.000 <b>G</b></td>
-        
-                        <tr><td>Semillas de Judía azuki</td><td class="td_neutro">—</td><td class="td_dinero">300 <b>G</b></td>
-        
-                        <tr><td>Semillas de chile</td><td class="td_neutro">—</td><td class="td_dinero">300 <b>G</b></td>
-        
-                        <tr><td>Flor preservada</td><td>Al menos 3 días después de ver el evento de <a class="hiper" href="/Guia-de-SOS-FOMT/Personajes.html" style="font-size: 17px;">Flor Preservada</a>.</td><td class="td_dinero">1.000 <b>G</b></td>
+                        <tbody id="calendario1" style="display: none;"> <!-- Primavera -->
+                            <tr><th>Temporada</th><th>Productos</th><th>Requisito</th><th style="width: 80px;">Costo</th></tr>
+                            <tr>
+                                <td style="font-size: 1.2em; background-color: #84f16e; height: 4em;" rowspan="5">
+                                    <div style="display:flex;justify-content:space-around;align-items:center;"><p class="primavera" title="Primavera"></p></div>
+                                </td>
+                                <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Semilla de nabo.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Semilla de nabo</b></p></div></td>
+                                <td class="td_neutro">—</td><td class="td_dinero">120 <b>G</b></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Semilla de papa.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Semillas de patata</b></p></div></td>
+                                <td class="td_neutro">—</td><td class="td_dinero">150 <b>G</b></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Semilla de pepino.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Semillas de pepino</b></p></div></td>
+                                <td class="td_neutro">—</td><td class="td_dinero">200 <b>G</b></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Semilla de fresa.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Semillas de fresa</b></p></div></td>
+                                <td>Haber enviado 100 nabos, patatas y pepinos.</td><td class="td_dinero">150 <b>G</b></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Pasto.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Semillas de forraje</b></p></div></td>
+                                <td class="td_neutro">—</td><td class="td_dinero">500 <b>G</b></td>
+                            </tr>
+                        </tbody>
 
-                        <tr><td>Semillas de forraje</td><td class="td_neutro">—</td><td class="td_dinero">500 <b>G</b></td>
-        
+                        <tbody id="calendario2" style="display: none;"> <!-- Verano -->
+                            <tr><th>Temporada</th><th>Productos</th><th>Requisito</th><th style="width: 80px;">Costo</th></tr>
+                            <tr>
+                                <td style="font-size: 1.2em; background-color: #f2e88c; height: 4em;" rowspan="5">
+                                    <div style="display:flex;justify-content:space-around;align-items:center;"><p class="verano" title="Verano"></p></div>
+                                </td>
+                                <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Semilla de tomate.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Semilla de tomate</b></p></div></td>
+                                <td class="td_neutro">—</td><td class="td_dinero">200 <b>G</b></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Semilla de maiz.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Semillas de maíz</b></p></div></td>
+                                <td class="td_neutro">—</td><td class="td_dinero">300 <b>G</b></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Semilla de cebolla.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Semillas de cebolla</b></p></div></td>
+                                <td class="td_neutro">—</td><td class="td_dinero">150 <b>G</b></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Semilla de calabaza.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Semillas de calabaza</b></p></div></td>
+                                <td>Haber enviado 100 tomates, maíz y cebollas.</td><td class="td_dinero">500 <b>G</b></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Pasto.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Semillas de forraje</b></p></div></td>
+                                <td class="td_neutro">—</td><td class="td_dinero">500 <b>G</b></td>
+                            </tr>
+                    </tbody>
+
+                    <tbody id="calendario3" style="display: none;"> <!-- Otoño -->
+                            <tr><th>Temporada</th><th>Productos</th><th>Requisito</th><th style="width: 80px;">Costo</th></tr>
+                            <tr>
+                                <td style="font-size: 1.2em; background-color: #f4a74f; height: 4em;" rowspan="9">
+                                    <div style="display:flex;justify-content:space-around;align-items:center;"><p class="otoño" title="Otoño"></p></div>
+                                </td>
+                                <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Semilla de berenjena.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Semillas de berenjena</b></p></div></td>
+                                <td class="td_neutro">—</td><td class="td_dinero">120 <b>G</b></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Semilla de zanahoria.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Semillas de zanahoria</b></p></div></td>
+                                <td class="td_neutro">—</td><td class="td_dinero">300 <b>G</b></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Semilla de boniato.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Semillas de boniato</b></p></div></td>
+                                <td class="td_neutro">—</td><td class="td_dinero">300 <b>G</b></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Semilla de espinaca.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Semillas de espinaca</b></p></div></td>
+                                <td>Haber enviado 100 berenjena, tomate y boniato.</td><td class="td_dinero">200 <b>G</b></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Semilla de dulce flor.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Semillas de flores dulces sol</b></p></div></td>
+                                <td>Haber visto el evento <a class="hiper" href="/Guia-de-SOS-FOMT/Personajes.html" style="font-size: 17px;">Flor Preservada</a>.</td><td class="td_dinero">1.000 <b>G</b></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/semilla de Frijol adzuki.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Semillas de Judía azuki</b></p></div></td>
+                                <td class="td_neutro">—</td><td class="td_dinero">300 <b>G</b></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Semilla de chile.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Semillas de chile</b></p></div></td>
+                                <td class="td_neutro">—</td><td class="td_dinero">300 <b>G</b></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Flor persevada.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Flor preservada</b></p></div></td>
+                                <td>Al menos 3 días después de ver el evento de <a class="hiper" href="/Guia-de-SOS-FOMT/Personajes.html" style="font-size: 17px;">Flor Preservada</a>.</td><td class="td_dinero">1.000 <b>G</b></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Pasto.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Semillas de forraje</b></p></div></td>
+                                <td class="td_neutro">—</td><td class="td_dinero">500 <b>G</b></td>
+                            </tr>
+                        </tbody>
                     </table>
                 </details>
                 
-
                 <details> <!-- Ingredientes de cocina -->
-                    <summary>Ingredientes de cocina</summary>
+                    <summary class=" summary_general">Ingredientes de cocina</summary>
 
                     <table class="data">
-                        
                         <tr><th>Temporada</th><th style="width: 120px;">Nombre</th><th style="width: 80px;">Requisitos</th><th style="width: 80px;">Costo</th></tr>
 
                         <tr>
@@ -113,54 +172,88 @@
                                     <p class="verano" style="margin: 0 0 0 6px; font-size: 0.7em;"></p>
                                 </div>
                                 <div style=" display: flex; margin-top: 20px;">
-                                    
                                     <p class="otoño" style="margin: 0; font-size: 0.7em;"></p>
                                     <p class="invierno" style="margin: 0 0 0 6px; font-size: 0.7em;"></p>
                                 </div>
                             </td>
-                            <td>Onigiri</td><td class="td_neutro">—</td><td class="td_dinero">100 <b>G</b></td>
                         </tr>
-                        <tr><td>Pan</td><td class="td_neutro">—</td><td class="td_dinero">100 <b>G</b></td>
-                        <tr><td>Aceite</td><td class="td_neutro">—</td><td class="td_dinero">50 <b>G</b></td>
-                        <tr><td>Harina de trigo</td><td class="td_neutro">—</td><td class="td_dinero">50 <b>G</b></td>
-                        <tr><td>Polvo de curry</td><td class="td_neutro">—</td><td class="td_dinero">50 <b>G</b></td>
-                        <tr><td>Polvo de dango</td><td class="td_neutro">—</td><td class="td_dinero">100 <b>G</b></td>
-                        <tr><td>Chocolate</td><td class="td_neutro">—</td><td class="td_dinero">100 <b>G</b></td>
+                        <tr><td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Onigiri.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px; line-height: 1.1;"><b style="font-size: 13.5px;">Onigiri</b></p></div></td><td class="td_neutro">—</td><td class="td_dinero">100 <b>G</b></td></tr>
+                        <tr><td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Aceite.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px; line-height: 1.1;"><b style="font-size: 13.5px;">Aceite</b></p></div></td><td class="td_neutro">—</td><td class="td_dinero">50 <b>G</b></td></tr>
+                        <tr><td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Arina.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px; line-height: 1.1;"><b style="font-size: 13.5px;">Harina de trigo</b></p></div></td><td class="td_neutro">—</td><td class="td_dinero">50 <b>G</b></td></tr>
+                        <tr><td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Curry.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px; line-height: 1.1;"><b style="font-size: 13.5px;">Polvo de curry</b></p></div></td><td class="td_neutro">—</td><td class="td_dinero">50 <b>G</b></td></tr>
+                        <tr><td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Arina de dango.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px; line-height: 1.1;"><b style="font-size: 13.5px;">Harina de dango</b></p></div></td><td class="td_neutro">—</td><td class="td_dinero">100 <b>G</b></td></tr>
+                        <tr><td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Chocolate.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px; line-height: 1.1;"><b style="font-size: 13.5px;">Chocolate</b></p></div></td><td class="td_neutro">—</td><td class="td_dinero">100 <b>G</b></td></tr>
                         
                     </table>
                 </details>
 
                 <details> <!-- Otros -->
-                    <summary>Otros</summary>
+                    <summary class=" summary_general">Otros</summary>
 
                     <p><b>Nota: </b>los objetos de esta lista solo se podran conseguir una vez, cuando se alla comprado ya no volveran a aparecer a esepcion de la pluma azul ya que para que vuelva salir la pluma azull primero deve divorciarse para poder casarse con otro candidato a matrimonio y cumplir con las condicione de dicho objeto.</p>
 
                     <table class="data">
-                        <tr><th style="width: 200px;">Nombre</th><th style="width: 518px;">Requisitos</th><th style="width: 80px;">Costo</th></tr>
+                        <tr><th style="width: 120px;">Nombre</th><th style="width: 518px;">Requisitos</th><th style="width: 80px;">Costo</th></tr>
 
-                        <tr><td>Pluma azul</td><td>Has visto el evento del corazón naranja con un candidato a matrimonio normal o has alcanzado un color de corazón naranja invisible con un candidato a matrimonio especial</td><td class="td_dinero">1.000 <b>G</b></td>
+                        <tr>
+                            <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Pluma azul.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Pluma azul</b></p></div></td>
+                            <td>Has visto el evento del corazón naranja con un candidato a matrimonio normal o has alcanzado un color de corazón naranja invisible con un candidato a matrimonio especial</td><td class="td_dinero">1.000 <b>G</b></td>
+                        </tr>
         
-                        <tr><td>Bolsa básica (16 espacios)</td><td>Comienzo del juego</td><td class="td_dinero">3.000 <b>G</b></td>
+                        <tr>
+                            <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Mochila median.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;   line-height: 1.1;"><b style="font-size: 13.5px;">Bolsa básica (16 espacios)</b></p></div></td>
+                            <td>Comienzo del juego</td><td class="td_dinero">3.000 <b>G</b></td>
+                        </tr>
         
-                        <tr><td>Bolsa grande (24 espacios)</td><td>7 días después de comprar la Bolsa Básica</td><td class="td_dinero">5.000 <b>G</b></td>
+                        <tr>
+                            <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Mochila grande.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px; line-height: 1.1;"><b style="font-size: 13.5px;">Bolsa grande (24 espacios)</b></p></div></td>
+                            <td>7 días después de comprar la Bolsa Básica</td><td class="td_dinero">5.000 <b>G</b></td>
+                        </tr>
         
-                        <tr><td>Condimentos</td><td>Despues de conseguir la casa mediana</td><td class="td_dinero">2.500 <b>G</b></td>
+                        <tr>
+                            <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Especias.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px; line-height: 1.1;"><b style="font-size: 13.5px;">Condimentos</b></p></div></td>
+                            <td>Despues de conseguir la casa mediana</td><td class="td_dinero">2.500 <b>G</b></td>
+                        </tr>
 
-                        <tr><td>Olla</td><td>10 días después de comprar los condimentos</td><td class="td_dinero">1.000 <b>G</b></td>
+                        <tr>
+                            <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Olla.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px; line-height: 1.1;"><b style="font-size: 13.5px;">Olla</b></p></div></td>
+                            <td>10 días después de comprar los condimentos</td><td class="td_dinero">1.000 <b>G</b></td>
+                        </tr>
         
-                        <tr><td>Sartén</td><td>10 días después de comprar la olla</td><td class="td_dinero">1.200 <b>G</b></td>
+                        <tr>
+                            <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Sarten.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px; line-height: 1.1;"><b style="font-size: 13.5px;">Sartén</b></p></div></td>
+                            <td>10 días después de comprar la olla</td><td class="td_dinero">1.200 <b>G</b></td>
+                        </tr>
         
-                        <tr><td>Cuchillo</td><td>10 días después de comprar la Sartén</td><td class="td_dinero">1.500 <b>G</b></td>
+                        <tr>
+                            <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Cuchillo.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px; line-height: 1.1;"><b style="font-size: 13.5px;">Cuchillo</b></p></div></td>
+                            <td>10 días después de comprar la Sartén</td><td class="td_dinero">1.500 <b>G</b></td>
+                        </tr>
         
-                        <tr><td>Horno</td><td>10 días después de comprar el Cuchillo/td><td class="td_dinero">2.500 <b>G</b></td>
+                        <tr>
+                            <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Horno.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px; line-height: 1.1;"><b style="font-size: 13.5px;">Horno</b></p></div></td>
+                            <td>10 días después de comprar el Cuchillo/td><td class="td_dinero">2.500 <b>G</b></td>
+                        </tr>
 
-                        <tr><td>Rodillo</td><td>10 días después de comprar el horno</td><td class="td_dinero">750 <b>G</b></td>
+                        <tr>
+                            <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Rodillo.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px; line-height: 1.1;"><b style="font-size: 13.5px;">Rodillo</b></p></div></td>
+                            <td>10 días después de comprar el horno</td><td class="td_dinero">750 <b>G</b></td>
+                        </tr>
         
-                        <tr><td>Batidora</td><td>10 días después de comprar el rodillo</td><td class="td_dinero">1.200 <b>G</b></td>
+                        <tr>
+                            <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Liquadora.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px; line-height: 1.1;"><b style="font-size: 13.5px;">Batidora</b></p></div></td>
+                            <td>10 días después de comprar el rodillo</td><td class="td_dinero">1.200 <b>G</b></td>
+                        </tr>
 
-                        <tr><td>Varilla de batir</td><td>10 días después de comprar la Batidora</td><td class="td_dinero">500 <b>G</b></td>
+                        <tr>
+                            <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Batidora.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px; line-height: 1.1;"><b style="font-size: 13.5px;">Varilla de batir</b></p></div></td>
+                            <td>10 días después de comprar la Batidora</td><td class="td_dinero">500 <b>G</b></td>
+                        </tr>
 
-                        <tr><td>Balla de poder</td><td>Después de comprar la cama grande y la alfombra</td><td class="td_dinero">10.000 <b>G</b></td>
+                        <tr>
+                            <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Balla de poder.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px; line-height: 1.1;"><b style="font-size: 13.5px;">Balla de poder</b></p></div></td>
+                            <td>Después de comprar la cama grande y la alfombra</td><td class="td_dinero">10.000 <b>G</b></td>
+                        </tr>
                     </table>
                 </details>    
                 
