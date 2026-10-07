@@ -15,16 +15,6 @@
         text-align: left !important;
     }
     
-    ul.sep2 { 
-        padding: 0 0 0 40px !important;
-        margin: 0 !important;
-    }
-    
-    ul.sep3 { 
-        padding: 0 4px 0 40px !important;
-        margin: 0 !important;
-    }
-    
     header .pos-fin { margin: 0 0 0 2.75em !important; }
 
     .vin_tel{ font-size: 0.97em !important; }
@@ -58,16 +48,6 @@
     li.gustos { 
         margin: 4px 0 4px 0 !important;
         text-align: left !important;
-    }
-    
-    ul.sep2 { 
-        padding: 0 0 0 40px !important;
-        margin: 0 !important;
-    }
-    
-    ul.sep3 { 
-        padding: 0 4px 0 40px !important;
-        margin: 0 !important;
     }
     
     header .pos-fin { margin: 0 0 0 2.75em !important; }
