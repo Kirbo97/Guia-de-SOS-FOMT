@@ -188,24 +188,6 @@ ul {
     margin-left: -.5em;
 }
 
-/* se crea la clase "sep1" en la etiqueta "ul" para que se ocupe de posisionar el contenido de una lista */
-ul.sep1 { 
-    padding: 0 0 0 10px;
-    margin: 0;
-}
-
-/* se crea la clase "sep2" en la etiqueta "ul" para que se ocupe de posisionar el contenido de una lista */
-ul.sep2 { 
-    padding: 0 0 0 100px;
-    margin: 0;
-}
-
-/* se crea la clase "sep3" en la etiqueta "ul" para que se ocupe de posisionar el contenido de una lista */
-ul.sep3 { 
-    padding: 0 4px 0 100px;
-    margin: 0;
-}
-
 /* se crea la clase "horario" en la etiqueta "ul" para que se ocupe de posisionar el contenido de una lista */
 ul.horario { 
     padding: 0 4px;

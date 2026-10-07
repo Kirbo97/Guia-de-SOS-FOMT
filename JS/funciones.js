@@ -31,11 +31,13 @@ function desplasar(tip_bot,tip_cuad,salto_movile,salto_comp) {
 /*  Funciones para editar la tabla acorde de la estacion  */
 /* ****************************************************** */
 
-function cambiarTemporada(num){ cambiar_estacion(num,0); }
+function cambiarTemporada(num){ cambiar_estacion(num,0,4); }
 
-function cambiarTemporada_mascota(num){ cambiar_estacion(num,1); }
+function cambiarTemporada_mascota(num){ cambiar_estacion(num,1,4); }
 
-function cambiarTemporada_recursos(num){ cambiar_estacion(num,1); }
+function cambiarTemporada_tienda(num){ cambiar_estacion(num,1,3); }
+
+function cambiarTemporada_recursos(num){ cambiar_estacion(num,1,4); }
 
 function cambiar_lista(num){ cambiar_peces(num,1); }
 
@@ -43,7 +45,7 @@ function cambiar_receta(num){ cambiar_pagina(num,1); }
 
 function cambiar_mineral(num){ cambiar_pagina_mineral(num,1); }
 
-function cambiar_estacion(num,i){
+function cambiar_estacion(num,i,cant){
     let encabezado = document.getElementById("estacion");
     let titulo = document.getElementById("tituloEstacion");
     let lista_estacion = document.getElementById("calendario" + num);
@@ -57,7 +59,7 @@ function cambiar_estacion(num,i){
     }
 
     // Ocultar todas las listas
-    for(i;i<=4;i++){ document.getElementById("calendario"+i).style.display="none"; }
+    for(i;i<=cant;i++){ document.getElementById("calendario"+i).style.display="none"; }
     
     // Mostrar la seleccionada
     document.getElementById("calendario"+num).style.display="block";
