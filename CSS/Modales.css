@@ -8,7 +8,7 @@ dialog {
     margin: auto;
 }
 
-.modal_calendario { width: 900px; }
+.modal_calendario,.modal_recetas { width: 900px; }
 
 .btn {
     position: absolute; 
