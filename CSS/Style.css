@@ -234,6 +234,8 @@ th {
     color: #FAFAFA
 }
 
+tr.rec th{ background-color:#34d389;  }
+
 /* Estas clases es para cuando la celda es de solo dinero */
 .td_dinero {
     text-align:center; 
