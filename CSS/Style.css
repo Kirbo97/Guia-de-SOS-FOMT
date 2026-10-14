@@ -171,7 +171,7 @@ details > .summary_h2_fin:first-of-type { margin-bottom: 20px; }
     border: 1px solid #ccc; /* Borde opcional para definir el contorno */
 }
 
-.scroll-container-eventos-aldeanos { height: 21em; /* Alto del contenedor */ }
+.scroll-container-eventos-aldeanos { height: 21.5em; /* Alto del contenedor */ }
 
 .scroll-container-aldeanos { height: 32em; /* Alto del contenedor */ }
 
