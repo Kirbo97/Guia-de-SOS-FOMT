@@ -3930,7 +3930,7 @@
 
                     <tbody id="lista_receta5" style="display: none;"> <!-- pagina 5 -->
                         <tr><th colspan="4" style="height: 2em;">Ingredientes especiales de la lista 5</th></tr>
-                        <tr><td colspan="4">
+                        <tr><td colspan="4"><div></div>
                             <ul class="horario">
                                 <li class="gustos">El <b>Mochi</b> es un ingrediente poco comun y se lo puede conseguir en el <b class="sub_titulo">Evento de Verbena del Mochi</b> en primavera, lo puedes consultar en <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Eventos.html">eventos</a>.</li>
                             
@@ -3944,44 +3944,92 @@
                             <th style="width: 245px;">Platos</th><th style="width: 245px;">Platos</th>
                         </tr>
 
-                        <tr>
+                        <tr> <!-- Fila 01 -->
                             <td style="text-align:center; height: 7em;"> <!-- Plato 097 -->
                                 <div style="display: flex; flex-direction: column;">
                                     <a class="hiper_click" style="margin: 5px 0 10px; line-height:0.8;" onclick="window.modal_rec097.showModal();"><b style="font-size: 16px;">097</b></a>
-                                    <a onclick="window.modal_rec038.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="/Guia-de-SOS-FOMT/IMG/Platos/Pagina 5/p097.png" width="60px" height="60px"/></a>
+                                    <a onclick="window.modal_rec097.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="/Guia-de-SOS-FOMT/IMG/Platos/Pagina 5/p097.png" width="60px" height="60px"/></a>
                                     <a class="hiper_click" style="margin: 5px 0 10px; line-height:0.8;" onclick="window.modal_rec097.showModal();"><b style="font-size: 13.5px;">Pizza margarita</b></a>
                                 </div>
-                            <td>Esta receta se obtiene después de cocinar 15 recetas con harina de trigo y 15 recetas con queso <b>(C/T)</b>.</td>
-                            <td><ul class="horario">
-                                <li class="gustos">Harina de trigo</li>
-                                <li class="gustos">Mantequilla <b>(Re)</b></li>
-                                <li class="gustos">Tomate</li>
-                                <li class="gustos">Queso <b>(C/T)</b></li>
-                            </ul></td>
-                            <td style="text-align:center;">
-                                <div style="margin-top: 5px; max-height: 92.16px; overflow-y: auto;">
-                                    <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Rodillo.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px; line-height:1.1;"><b style="font-size: 13.5px;">Rodillo</b></p></div>
-                                    <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Horno.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Horno</b></p></div>
-                                </div>
+
+                                <dialog id="modal_rec097" class="modal_recetas">
+                                    <button onclick="window.modal_rec097.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+                                        <h2 style="text-align: center;">Receta 097 - Pizza margarita</h2>
+                                        <p>Esta receta se obtiene después de cocinar 15 recetas con harina de trigo y 15 recetas con queso <b>(C/T)</b>.</p>
+                                        <p>En esta receta el queso debe puede ser de cualquier tamaño.</p>
+
+                                        <table class="data">
+                                            <tr><th style="width: 155px;">Plato</th><th>Ingredientes</th><th>Utencilios</th></tr>
+                                            <tr>
+                                                <td style="text-align:center;"><img src="/Guia-de-SOS-FOMT/IMG/Platos/Pagina 5/p097.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px; line-height:1.1;"><b style="font-size: 13.5px;">Pizza margarita</b></p></td>
+
+                                                <td style="text-align:center;"><div style="margin: 5px 15px 0; display: flex; justify-content: space-between; flex-direction: column; align-items: center;">
+                                                    <div style="display: flex; justify-content: space-evenly;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Arina.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Harina de trigo</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Platos/Plat ingre/Mantequilla.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Mantequilla </b><b style="color:rgb(194, 165, 4)">(Re)</b></p></div>
+                                                    </div>
+                                                    <div style="display: flex; justify-content: space-evenly; margin-top: 5px;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Cultivos/Tomate.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Tomate</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/Leche/Queso (S).png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Queso </b><b style="color:rgb(194, 165, 4)">(C/T)</b></p></div>
+                                                    </div>
+                                                </div></td>
+
+                                                <td style="text-align:center;"><div style="margin: 5px 15px 0; display: flex; justify-content: space-between; flex-direction: column; align-items: center;">
+                                                    <div style="display: flex; justify-content: space-evenly;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Rodillo.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Rodillo</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Horno.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Horno</b></p></div>
+                                                    </div>
+                                                </div></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </dialog>
                             </td>
-                        </tr>
-        
-                        <tr>
+                            
                             <td style="text-align:center; height: 7em;"> <!-- Plato 098 -->
                                 <div style="display: flex; flex-direction: column;">
                                     <a class="hiper_click" style="margin: 5px 0 10px; line-height:0.8;" onclick="window.modal_rec098.showModal();"><b style="font-size: 16px;">098</b></a>
                                     <a onclick="window.modal_rec098.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="/Guia-de-SOS-FOMT/IMG/Platos/Pagina 5/p098.png" width="60px" height="60px"/></a>
                                     <a class="hiper_click" style="margin: 5px 0 10px; line-height:0.8;" onclick="window.modal_rec098.showModal();"><b style="font-size: 13.5px;">Risotto de queso</b></a>
                                 </div>
-                            <td>Esta receta se obtiene después de cocinar 20 recetas con Onigiri y 20 recetas con queso <b>(C/T)</b>.</td>
-                            <td><ul class="horario">
-                                <li class="gustos">Onigiri</li>
-                                <li class="gustos">Cebolla</li>
-                                <li class="gustos">Zanahoria</li>
-                                <li class="gustos">Queso <b>(C/T)</b></li>
-                                <li class="gustos">Leche <b>(C/T)</b></li>
-                                <li class="gustos">Aceite</li>
-                            </ul></td>
+
+                                <dialog id="modal_rec098" class="modal_recetas">
+                                    <button onclick="window.modal_rec098.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+                                        <h2 style="text-align: center;">Receta 098 - Risotto de queso</h2>
+                                        <p>Esta receta se obtiene después de cocinar 20 recetas con Onigiri y 20 recetas con queso <b>(C/T)</b>.</p>
+                                        <p>En esta receta la leche debe ser de una vaca normal y puede ser de cualquier tamaño.</p>
+                                        <p>En esta receta el queso debe puede ser de cualquier tamaño.</p>
+
+                                        <table class="data">
+                                            <tr><th style="width: 155px;">Plato</th><th>Ingredientes</th><th>Utencilios</th></tr>
+                                            <tr>
+                                                <td style="text-align:center;"><img src="/Guia-de-SOS-FOMT/IMG/Platos/Pagina 5/p098.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px; line-height:1.1;"><b style="font-size: 13.5px;">Risotto de queso</b></p></td>
+
+                                                <td style="text-align:center;"><div style="margin: 5px 15px 0; display: flex; justify-content: space-between; flex-direction: column; align-items: center;">
+                                                    <div style="display: flex; justify-content: space-evenly;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Onigiri.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Onigiri</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Cultivos/Cebolla.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Cebolla</b></p></div>
+                                                    </div>
+                                                    <div style="display: flex; justify-content: space-evenly; margin-top: 5px;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/Leche/Leche (S).png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Leche </b><b style="color:rgb(194, 165, 4)">(C/T)</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/Leche/Queso (S).png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Queso </b><b style="color:rgb(194, 165, 4)">(C/T)</b></p></div>
+                                                    </div>
+                                                    <div style="display: flex; justify-content: space-evenly; margin-top: 5px;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Aceite.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Aceite</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Cultivos/Zanahoria.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Zanahoria</b></p></div>
+                                                    </div>
+                                                </div></td>
+
                                                 <td style="text-align:center;"><div style="margin: 5px 15px 0; display: flex; justify-content: space-between; flex-direction: column; align-items: center;">
                                                     <div style="display: flex; justify-content: space-evenly;">
                                                         <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Especias.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Condimentos</b></p></div>
@@ -3989,9 +4037,12 @@
                                                         <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Sarten.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Sartén</b></p></div>
                                                     </div>
                                                 </div></td>
-                        </tr>
-        
-                        <tr>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </dialog>
+                            </td>
+                            
                             <td style="text-align:center; height: 7em;"> <!-- Plato 099 -->
                                 <div style="display: flex; flex-direction: column;">
                                     <a class="hiper_click" style="margin: 5px 0 10px; line-height:0.8;" onclick="window.modal_rec099.showModal();"><b style="font-size: 16px;">099</b></a>
@@ -4037,22 +4088,39 @@
                                     </div>
                                 </dialog>
                             </td>
-                        </tr>
-        
-                        <tr>
+                            
                             <td style="text-align:center; height: 7em;"> <!-- Plato 100-->
                                 <div style="display: flex; flex-direction: column;">
                                     <a class="hiper_click" style="margin: 5px 0 10px; line-height:0.8;" onclick="window.modal_rec100.showModal();"><b style="font-size: 16px;">100</b></a>
                                     <a onclick="window.modal_rec100.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="/Guia-de-SOS-FOMT/IMG/Platos/Pagina 5/p100.png" width="60px" height="60px"/></a>
                                     <a class="hiper_click" style="margin: 5px 0 10px; line-height:0.8;" onclick="window.modal_rec100.showModal();"><b style="font-size: 13.5px;">Nasi goreng</b></a>
                                 </div>
-                            <td>Esta receta se obtiene después de cocinar 8 recetas con cebolla, 8 recetas con pimiento verde y 8 recetas con onigiri.</td>
-                            <td><ul class="horario">
-                                <li class="gustos">Cebolla</li>
-                                <li class="gustos">Pimiento verde</li>
-                                <li class="gustos">Onigiri</li>
-                                <li class="gustos">Kétchup <b>(Re)</b></li>
-                            </ul></td>
+
+                                <dialog id="modal_rec100" class="modal_recetas">
+                                    <button onclick="window.modal_rec100.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+                                        <h2 style="text-align: center;">Receta 100 - Nasi goreng</h2>
+                                        <p>Esta receta se obtiene después de cocinar 8 recetas con cebolla, 8 recetas con pimiento verde y 8 recetas con onigiri.</p>
+
+                                        <table class="data">
+                                            <tr><th style="width: 155px;">Plato</th><th>Ingredientes</th><th>Utencilios</th></tr>
+                                            <tr>
+                                                <td style="text-align:center;"><img src="/Guia-de-SOS-FOMT/IMG/Platos/Pagina 5/p099.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px; line-height:1.1;"><b style="font-size: 13.5px;">Buñuelo de pescado</b></p></td>
+
+                                                <td style="text-align:center;"><div style="margin: 5px 15px 0; display: flex; justify-content: space-between; flex-direction: column; align-items: center;">
+                                                    <div style="display: flex; justify-content: space-evenly;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Cultivos/Cebolla.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Cebolla</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Cultivos/Pimiento verde.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Pimiento verde</b></p></div>
+                                                    </div>
+                                                    <div style="display: flex; justify-content: space-evenly; margin-top: 5px;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Onigiri.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Onigiri</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Platos/Plat ingre/Ketchup.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Kétchup </b><b style="color:rgb(194, 165, 4)">(Re)</b></p></div>
+                                                    </div>
+                                                </div></td>
+                                                
                                                 <td style="text-align:center;"><div style="margin: 5px 15px 0; display: flex; justify-content: space-between; flex-direction: column; align-items: center;">
                                                     <div style="display: flex; justify-content: space-evenly;">
                                                         <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Especias.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Condimentos</b></p></div>
@@ -4060,73 +4128,146 @@
                                                         <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Sarten.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Sartén</b></p></div>
                                                     </div>
                                                 </div></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </dialog>
+                            </td>
                         </tr>
         
-                        <tr>
+                        <tr> <!-- Fila 02 -->
                             <td style="text-align:center; height: 7em;"> <!-- Plato 101-->
                                 <div style="display: flex; flex-direction: column;">
                                     <a class="hiper_click" style="margin: 5px 0 10px; line-height:0.8;" onclick="window.modal_rec101.showModal();"><b style="font-size: 16px;">101</b></a>
                                     <a onclick="window.modal_rec101.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="/Guia-de-SOS-FOMT/IMG/Platos/Pagina 5/p101.png" width="60px" height="60px"/></a>
                                     <a class="hiper_click" style="margin: 5px 0 10px; line-height:0.8;" onclick="window.modal_rec101.showModal();"><b style="font-size: 13.5px;">Madalenas</b></a>
                                 </div>
-                            <td>Esta receta se obtiene después de cocinar 5 recetas con Huevo <b>(C/T)</b> y 5 recetas con harina de trigo.</td>
-                            <td><ul class="horario">
-                                <li class="gustos">Huevo <b>(C/T)</b></li>
-                                <li class="gustos">Harina de trigo</li>
-                                <li class="gustos">Miel</li>
-                                <li class="gustos">Mantequilla <b>(Re)</b></li>
-                            </ul></td>
-                            <td style="text-align:center;">
-                                <div style="margin-top: 5px; max-height: 92.16px; overflow-y: auto;">
-                                    <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Especias.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Condimentos</b></p></div>
-                                    <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Batidora.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px; line-height:1.1;"><b style="font-size: 13.5px;">Batidora</b></p></div>
-                                    <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Horno.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Horno</b></p></div>
-                                </div>
+
+                                <dialog id="modal_rec101" class="modal_recetas">
+                                    <button onclick="window.modal_rec101.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+                                        <h2 style="text-align: center;">Receta 101 - Madalenas</h2>
+                                        <p>Esta receta se obtiene después de cocinar 5 recetas con Huevo <b>(C/T)</b> y 5 recetas con harina de trigo.</p>
+                                        <p>En esta receta el huevo puede ser de cualquier gallina y puede ser de cualquier tamaño.</p>
+
+                                        <table class="data">
+                                            <tr><th style="width: 155px;">Plato</th><th>Ingredientes</th><th>Utencilios</th></tr>
+                                            <tr>
+                                                <td style="text-align:center;"><img src="/Guia-de-SOS-FOMT/IMG/Platos/Pagina 5/p101.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px; line-height:1.1;"><b style="font-size: 13.5px;">Madalenas</b></p></td>
+
+                                                <td style="text-align:center;"><div style="margin: 5px 15px 0; display: flex; justify-content: space-between; flex-direction: column; align-items: center;">
+                                                    <div style="display: flex; justify-content: space-evenly;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/Huevos/Huevo normal.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Huevo </b><b style="color:rgb(194, 165, 4)">(C/T)</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Arina.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Harina de trigo</b></p></div>
+                                                    </div>
+                                                    <div style="display: flex; justify-content: space-evenly; margin-top: 5px;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Miel.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Miel</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Platos/Plat ingre/Mantequilla.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Mantequilla </b><b style="color:rgb(194, 165, 4)">(Re)</b></p></div>
+                                                    </div>
+                                                </div></td>
+
+                                                <td style="text-align:center;"><div style="margin: 5px 15px 0; display: flex; justify-content: space-between; flex-direction: column; align-items: center;">
+                                                    <div style="display: flex; justify-content: space-evenly;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Especias.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Condimentos</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Batidora.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Batidora</b></p></div>
+                                                    </div>
+
+                                                    <div style="margin: 5px 10px 0; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Horno.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Horno</b></p></div>
+                                                </div></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </dialog>
                             </td>
-                        </tr>
-        
-                        <tr>
+                            
                             <td style="text-align:center; height: 7em;"> <!-- Plato 102-->
                                 <div style="display: flex; flex-direction: column;">
                                     <a class="hiper_click" style="margin: 5px 0 10px; line-height:0.8;" onclick="window.modal_rec102.showModal();"><b style="font-size: 16px;">102</b></a>
                                     <a onclick="window.modal_rec102.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="/Guia-de-SOS-FOMT/IMG/Platos/Pagina 5/p102.png" width="60px" height="60px"/></a>
                                     <a class="hiper_click" style="margin: 5px 0 10px; line-height:0.8;" onclick="window.modal_rec102.showModal();"><b style="font-size: 13.5px;">Torta de fresa</b></a>
                                 </div>
-                            <td>Esta receta se obtiene después de cocinar 5 recetas con fresa, 14 recetas con Huevo <b>(C/T)</b>, 14 recetas que usaron Leche <b>(C/T)</b> y 14 recetas que usaron mantequilla <b>(Re)</b>.</td>
-                            <td><ul class="horario">
-                                <li class="gustos">Fresas</li>
-                                <li class="gustos">Huevo <b>(C/T)</b></li>
-                                <li class="gustos">Leche <b>(C/T)</b></li>
-                                <li class="gustos">Mantequilla <b>(Re)</b></li>
-                            </ul></td>
-                            <td style="text-align:center;"><div style="margin: 5px 15px 0; display: flex; justify-content: space-between; flex-direction: column;">
-                                                    <div style="display: flex; justify-content: space-evenly;">
-                                                        <div style="margin-right: 10px;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Olla.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px; line-height:1.1;"><b style="font-size: 13.5px;">Olla</b></p></div>
 
-                                                        <div style="margin-left: 10px;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Batidora.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px; line-height:1.1;"><b style="font-size: 13.5px;">Batidora</b></p></div>
+                                <dialog id="modal_rec102" class="modal_recetas">
+                                    <button onclick="window.modal_rec102.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+                                        <h2 style="text-align: center;">Receta 102 - Torta de fresa</h2>
+                                        <p>Esta receta se obtiene después de cocinar 5 recetas con fresa, 14 recetas con Huevo <b>(C/T)</b>, 14 recetas que usaron Leche <b>(C/T)</b> y 14 recetas que usaron mantequilla <b>(Re)</b>.</p>
+                                        <p>En esta receta el huevo puede ser de cualquier gallina y puede ser de cualquier tamaño.</p>
+                                        <p>En esta receta la leche debe ser de una vaca normal y puede ser de cualquier tamaño.</p>
+
+                                        <table class="data">
+                                            <tr><th style="width: 155px;">Plato</th><th>Ingredientes</th><th>Utencilios</th></tr>
+                                            <tr>
+                                                <td style="text-align:center;"><img src="/Guia-de-SOS-FOMT/IMG/Platos/Pagina 5/p102.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px; line-height:1.1;"><b style="font-size: 13.5px;">Torta de fresa</b></p></td>
+
+                                                <td style="text-align:center;"><div style="margin: 5px 15px 0; display: flex; justify-content: space-between; flex-direction: column; align-items: center;">
+                                                    <div style="display: flex; justify-content: space-evenly;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Cultivos/Fresas.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Fresas</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/Huevos/Huevo normal.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Huevo </b><b style="color:rgb(194, 165, 4)">(C/T)</b></p></div>
                                                     </div>
                                                     <div style="display: flex; justify-content: space-evenly; margin-top: 5px;">
-                                                        <div style="margin-right: 10px;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Horno.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px; line-height:1.1;"><b style="font-size: 13.5px;">Horno</b></p></div>
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/Leche/Leche (S).png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Leche </b><b style="color:rgb(194, 165, 4)">(C/T)</b></p></div>
 
-                                                        <div style="margin-left: 10px;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Especias.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px; line-height:1.1;"><b style="font-size: 13.5px;">Condimentos</b></p></div>
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Platos/Plat ingre/Mantequilla.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Mantequilla </b><b style="color:rgb(194, 165, 4)">(Re)</b></p></div>
                                                     </div>
                                                 </div></td>
-                        </tr>
-        
-                        <tr>
+                                                
+                                                <td style="text-align:center;"><div style="margin: 5px 15px 0; display: flex; justify-content: space-between; flex-direction: column; align-items: center;">
+                                                    <div style="display: flex; justify-content: space-evenly;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Olla.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px; line-height:1.1;"><b style="font-size: 13.5px;">Olla</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Batidora.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px; line-height:1.1;"><b style="font-size: 13.5px;">Batidora</b></p></div>
+                                                    </div>
+                                                    <div style="display: flex; justify-content: space-evenly; margin-top: 5px;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Horno.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px; line-height:1.1;"><b style="font-size: 13.5px;">Horno</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Especias.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px; line-height:1.1;"><b style="font-size: 13.5px;">Condimentos</b></p></div>
+                                                    </div>
+                                                </div></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </dialog>
+                            </td>
+                            
                             <td style="text-align:center; height: 7em;"> <!-- Plato 103-->
                                 <div style="display: flex; flex-direction: column;">
                                     <a class="hiper_click" style="margin: 5px 0 10px; line-height:0.8;" onclick="window.modal_rec103.showModal();"><b style="font-size: 16px;">103</b></a>
                                     <a onclick="window.modal_rec103.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="/Guia-de-SOS-FOMT/IMG/Platos/Pagina 5/p103.png" width="60px" height="60px"/></a>
                                     <a class="hiper_click" style="margin: 5px 0 10px; line-height:0.8;" onclick="window.modal_rec103.showModal();"><b style="font-size: 13.5px;">Bibimbap</b></a>
                                 </div>
-                            <td>Esta receta se obtiene después de cocinar 5 recetas con Onigiri y 10 recetas con Huevo <b>(C/T)</b>.</td>
-                            <td><ul class="horario">
-                                <li class="gustos">Onigiri</li>
-                                <li class="gustos">Huevo de las termas</li>
-                                <li class="gustos">Zanahoria</li>
-                                <li class="gustos">Aceite</li>
-                            </ul></td>
+
+                                <dialog id="modal_rec103" class="modal_recetas">
+                                    <button onclick="window.modal_rec103.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+                                        <h2 style="text-align: center;">Receta 103 - Bibimbap</h2>
+                                        <p>Esta receta se obtiene después de cocinar 5 recetas con Onigiri y 10 recetas con Huevo <b>(C/T)</b>.</p>
+
+                                        <table class="data">
+                                            <tr><th style="width: 155px;">Plato</th><th>Ingredientes</th><th>Utencilios</th></tr>
+                                            <tr>
+                                                <td style="text-align:center;"><img src="/Guia-de-SOS-FOMT/IMG/Platos/Pagina 5/p103.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px; line-height:1.1;"><b style="font-size: 13.5px;">Bibimbap</b></p></td>
+
+                                                <td style="text-align:center;"><div style="margin: 5px 15px 0; display: flex; justify-content: space-between; flex-direction: column; align-items: center;">
+                                                    <div style="display: flex; justify-content: space-evenly;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Onigiri.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Onigiri</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Platos/Plat ingre/Huevo de las termas.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Huevo de las termas</b></p></div>
+                                                    </div>
+                                                    <div style="display: flex; justify-content: space-evenly; margin-top: 5px;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Cultivos/Zanahoria.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Zanahoria</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Aceite.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Aceite</b></p></div>
+                                                    </div>
+                                                </div></td>
+                                                
                                                 <td style="text-align:center;"><div style="margin: 5px 15px 0; display: flex; justify-content: space-between; flex-direction: column; align-items: center;">
                                                     <div style="display: flex; justify-content: space-evenly;">
                                                         <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Especias.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Condimentos</b></p></div>
@@ -4134,124 +4275,268 @@
                                                         <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Cuchillo.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Cuchillo</b></p></div>
                                                     </div>
                                                 </div></td>
-                        </tr>
-        
-                        <tr>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </dialog>
+                            </td>
+                            
                             <td style="text-align:center; height: 7em;"> <!-- Plato 104-->
                                 <div style="display: flex; flex-direction: column;">
                                     <a class="hiper_click" style="margin: 5px 0 10px; line-height:0.8;" onclick="window.modal_rec104.showModal();"><b style="font-size: 16px;">104</b></a>
                                     <a onclick="window.modal_rec104.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="/Guia-de-SOS-FOMT/IMG/Platos/Pagina 5/p104.png" width="60px" height="60px"/></a>
                                     <a class="hiper_click" style="margin: 5px 0 10px; line-height:0.8;" onclick="window.modal_rec104.showModal();"><b style="font-size: 13.5px;">Pizza de verduras</b></a>
                                 </div>
-                            <td>Esta receta se obtiene después de cocinar 15 recetas con harina de trigo, 10 recetas con tomate, 20 recetas con queso (C/T) y 5 recetas con champiñón.</td>
-                            <td><ul class="horario">
-                                <li class="gustos">Harina de trigo</li>
-                                <li class="gustos">Tomate</li>
-                                <li class="gustos">Boniato</li>
-                                <li class="gustos">Patata</li>
-                                <li class="gustos">Champiñón</li>
-                                <li class="gustos">Huevo <b>(C/T)</b></li>
-                                <li class="gustos">Queso <b>(C/T)</b></li>
-                            </ul></td>
-                            <td style="text-align:center;">
-                                <div style="margin-top: 5px; max-height: 92.16px; overflow-y: auto;">
-                                    <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Rodillo.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px; line-height:1.1;"><b style="font-size: 13.5px;">Rodillo</b></p></div>
-                                    <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Horno.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Horno</b></p></div>
-                                </div>
+
+                                <dialog id="modal_rec104" class="modal_recetas">
+                                    <button onclick="window.modal_rec104.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+                                        
+                                        <h2 style="text-align: center;">Receta 104 - Pizza de verduras</h2>
+                                        <p>Esta receta se obtiene después de cocinar 15 recetas con harina de trigo, 10 recetas con tomate, 20 recetas con queso (C/T) y 5 recetas con champiñón.</p>
+                                        <p>En esta receta el huevo puede ser de cualquier gallina y puede ser de cualquier tamaño.</p>
+                                        <p>En esta receta el queso debe puede ser de cualquier tamaño.</p>
+
+                                        <table class="data">
+                                            <tr><th style="width: 155px;">Plato</th><th>Ingredientes</th><th>Utencilios</th></tr>
+                                            <tr>
+                                                <td style="text-align:center;"><img src="/Guia-de-SOS-FOMT/IMG/Platos/Pagina 5/p104.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px; line-height:1.1;"><b style="font-size: 13.5px;">Pizza de verduras</b></p></td>
+
+                                                <td style="text-align:center;"><div style="margin: 5px 15px 0; display: flex; justify-content: space-between; flex-direction: column; align-items: center;">
+                                                    <div style="display: flex; justify-content: space-evenly;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Arina.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Harina de trigo</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Cultivos/Tomate.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Tomate</b></p></div>
+                                                    </div>
+
+                                                    <div style="display: flex; justify-content: space-evenly; margin-top: 5px;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Cultivos/Boniato.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Boniato</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Cultivos/Patata.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Patata</b></p></div>
+                                                    </div>
+
+                                                    <div style="display: flex; justify-content: space-evenly; margin-top: 5px;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Champiñón.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Champiñón</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/Huevos/Huevo normal.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Huevo </b><b style="color:rgb(194, 165, 4)">(C/T)</b></p></div>
+                                                    </div>
+
+                                                    <div style="margin: 5px 10px 0; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/Leche/Queso (S).png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Queso </b><b style="color:rgb(194, 165, 4)">(C/T)</b></p></div>
+                                                </div></td>
+                                                
+                                                <td style="text-align:center;"><div style="margin: 5px 15px 0; display: flex; justify-content: space-between; flex-direction: column; align-items: center;">
+                                                    <div style="display: flex; justify-content: space-evenly;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Rodillo.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Rodillo</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Horno.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Horno</b></p></div>
+                                                    </div>
+                                                </div></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </dialog>
                             </td>
                         </tr>
-        
-                        <tr>
+
+                        <tr> <!-- Fila 03 -->
                             <td style="text-align:center; height: 7em;"> <!-- Plato 105 -->
                                 <div style="display: flex; flex-direction: column;">
                                     <a class="hiper_click" style="margin: 5px 0 10px; line-height:0.8;" onclick="window.modal_rec105.showModal();"><b style="font-size: 16px;">105</b></a>
                                     <a onclick="window.modal_rec105.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="/Guia-de-SOS-FOMT/IMG/Platos/Pagina 5/p105.png" width="60px" height="60px"/></a>
                                     <a class="hiper_click" style="margin: 5px 0 10px; line-height:0.8;" onclick="window.modal_rec105.showModal();"><b style="font-size: 13.5px;">Gratinado de setas</b></a>
                                 </div>
-                            <td>Esta receta se obtiene después de cocinar 12 recetas con Leche <b>(C/T)</b>, 12 recetas con queso (C/T) y 5 recetas con champiñón.</td>
-                            <td><ul class="horario">
-                                <li class="gustos">Leche <b>(C/T)</b></li>
-                                <li class="gustos">Queso <b>(C/T)</b></li>
-                                <li class="gustos">Mantequilla <b>(Re)</b></li>
-                                <li class="gustos">Champiñón</li>
-                                <li class="gustos">Hongo pino</li>
-                            </ul></td>
-                            <td style="text-align:center;">
-                                <div style="margin-top: 5px; max-height: 92.16px; overflow-y: auto;">
-                                    <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Especias.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Condimentos</b></p></div>
-                                    <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Horno.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Horno</b></p></div>
-                                </div>
+
+                                <dialog id="modal_rec105" class="modal_recetas">
+                                    <button onclick="window.modal_rec105.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+                                        
+                                        <h2 style="text-align: center;">Receta 105 - Gratinado de setas</h2>
+                                        <p>Esta receta se obtiene después de cocinar 12 recetas con Leche <b>(C/T)</b>, 12 recetas con queso (C/T) y 5 recetas con champiñón.</p>
+                                        <p>En esta receta la leche debe ser de una vaca normal y puede ser de cualquier tamaño.</p>
+                                        <p>En esta receta el queso debe puede ser de cualquier tamaño.</p>
+
+                                        <table class="data">
+                                            <tr><th style="width: 155px;">Plato</th><th>Ingredientes</th><th>Utencilios</th></tr>
+                                            <tr>
+                                                <td style="text-align:center;"><img src="/Guia-de-SOS-FOMT/IMG/Platos/Pagina 5/p105.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px; line-height:1.1;"><b style="font-size: 13.5px;">Gratinado de setas</b></p></td>
+
+                                                <td style="text-align:center;"><div style="margin: 5px 15px 0; display: flex; justify-content: space-between; flex-direction: column; align-items: center;">
+                                                    <div style="display: flex; justify-content: space-evenly;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/Leche/Leche (S).png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Leche </b><b style="color:rgb(194, 165, 4)">(C/T)</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/Leche/Queso (S).png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Queso </b><b style="color:rgb(194, 165, 4)">(C/T)</b></p></div>
+                                                    </div>
+
+                                                    <div style="display: flex; justify-content: space-evenly; margin-top: 5px;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Platos/Plat ingre/Mantequilla.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Mantequilla </b><b style="color:rgb(194, 165, 4)">(Re)</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Champiñón.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Champiñón</b></p></div>
+                                                    </div>
+
+                                                    <div style="margin: 5px 10px 0; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Hongo pino.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Hongo pino</b></p></div>
+                                                </div></td>
+                                                
+                                                <td style="text-align:center;"><div style="margin: 5px 15px 0; display: flex; justify-content: space-between; flex-direction: column; align-items: center;">
+                                                    <div style="display: flex; justify-content: space-evenly;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Especias.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Condimentos</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Horno.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Horno</b></p></div>
+                                                    </div>
+                                                </div></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </dialog>
                             </td>
-                        </tr>
-        
-                        <tr>
+                            
                             <td style="text-align:center; height: 7em;"> <!-- Plato 106 -->
                                 <div style="display: flex; flex-direction: column;">
                                     <a class="hiper_click" style="margin: 5px 0 10px; line-height:0.8;" onclick="window.modal_rec106.showModal();"><b style="font-size: 16px;">106</b></a>
                                     <a onclick="window.modal_rec106.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="/Guia-de-SOS-FOMT/IMG/Platos/Pagina 5/p106.png" width="60px" height="60px"/></a>
                                     <a class="hiper_click" style="margin: 5px 0 10px; line-height:0.8;" onclick="window.modal_rec106.showModal();"><b style="font-size: 13.5px;">Ramen</b></a>
                                 </div>
-                            <td>Esta receta se obtiene después de cocinar 20 recetas con harina de trigo, 25 recetas con Huevo <b>(C/T)</b> y 20 recetas con pescado pequeño.</td>
-                            <td><ul class="horario">
-                                <li class="gustos">Harina de trigo</li>
-                                <li class="gustos">Huevo <b>(C/T)</b></li>
-                                <li class="gustos">Brote de bambú</li>
-                                <li class="gustos">Pescado pequeño</li>
-                            </ul></td>
-                            <td style="text-align:center;">
-                                <div style="margin-top: 5px; max-height: 92.16px; overflow-y: auto;">
-                                    <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Olla.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Olla</b></p></div>
-                                    <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Especias.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Condimentos</b></p></div>
-                                    <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Cuchillo.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Cuchillo</b></p></div>
-                                </div>
+
+                                <dialog id="modal_rec106" class="modal_recetas">
+                                    <button onclick="window.modal_rec106.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+                                        
+                                        <h2 style="text-align: center;">Receta 106 - Ramen</h2>
+                                        <p>Esta receta se obtiene después de cocinar 20 recetas con harina de trigo, 25 recetas con Huevo <b>(C/T)</b> y 20 recetas con pescado pequeño.</p>
+                                        <p>En esta receta el huevo puede ser de cualquier gallina y puede ser de cualquier tamaño.</p>
+
+                                        <table class="data">
+                                            <tr><th style="width: 155px;">Plato</th><th>Ingredientes</th><th>Utencilios</th></tr>
+                                            <tr>
+                                                <td style="text-align:center;"><img src="/Guia-de-SOS-FOMT/IMG/Platos/Pagina 5/p106.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px; line-height:1.1;"><b style="font-size: 13.5px;">Ramen</b></p></td>
+
+                                                <td style="text-align:center;"><div style="margin: 5px 15px 0; display: flex; justify-content: space-between; flex-direction: column; align-items: center;">
+                                                    <div style="display: flex; justify-content: space-evenly;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Arina.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Harina de trigo</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/Huevos/Huevo normal.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Huevo </b><b style="color:rgb(194, 165, 4)">(C/T)</b></p></div>
+                                                    </div>
+
+                                                    <div style="display: flex; justify-content: space-evenly; margin-top: 5px;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Brote de bambú.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Brote de bambú</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Otros/Pescado pequeño.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Pescado pequeño</b></p></div>
+                                                    </div>
+                                                </div></td>
+                                                
+                                                <td style="text-align:center;"><div style="margin: 5px 15px 0; display: flex; justify-content: space-between; flex-direction: column; align-items: center;">
+                                                    <div style="display: flex; justify-content: space-evenly;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Olla.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Olla</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Especias.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Condimentos</b></p></div>
+                                                    </div>
+
+                                                    <div style="margin: 5px 10px 0; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Cuchillo.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Cuchillo</b></p></div>
+                                                </div></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </dialog>
                             </td>
-                        </tr>
-        
-                        <tr>
+                            
                             <td style="text-align:center; height: 7em;"> <!-- Plato 107 -->
                                 <div style="display: flex; flex-direction: column;">
                                     <a class="hiper_click" style="margin: 5px 0 10px; line-height:0.8;" onclick="window.modal_rec107.showModal();"><b style="font-size: 16px;">107</b></a>
                                     <a onclick="window.modal_rec107.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="/Guia-de-SOS-FOMT/IMG/Platos/Pagina 5/p107.png" width="60px" height="60px"/></a>
                                     <a class="hiper_click" style="margin: 5px 0 10px; line-height:0.8;" onclick="window.modal_rec107.showModal();"><b style="font-size: 13.5px;">Daifuku</b></a>
                                 </div>
-                            <td>Esta receta se obtiene después de cocinar 5 recetas con Onigiri y 10 recetas con Huevo <b>(C/T)</b>.</td>
-                            <td><ul class="horario">
-                                <li class="gustos">Mochi</li>
-                                <li class="gustos">Judía azuki</li>
-                            </ul></td>
-                            <td style="text-align:center;">
-                                <div style="margin-top: 5px; max-height: 92.16px; overflow-y: auto;">
-                                    <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Olla.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Olla</b></p></div>
-                                    <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Especias.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Condimentos</b></p></div>
-                                </div>
+
+                                <dialog id="modal_rec107" class="modal_recetas">
+                                    <button onclick="window.modal_rec107.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+                                        
+                                        <h2 style="text-align: center;">Receta 107 - Daifuku</h2>
+                                        <p>Esta receta se obtiene después de cocinar 5 recetas con Onigiri y 10 recetas con Huevo <b>(C/T)</b>.</p>
+
+                                        <table class="data">
+                                            <tr><th style="width: 155px;">Plato</th><th>Ingredientes</th><th>Utencilios</th></tr>
+                                            <tr>
+                                                <td style="text-align:center;"><img src="/Guia-de-SOS-FOMT/IMG/Platos/Pagina 5/p107.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px; line-height:1.1;"><b style="font-size: 13.5px;">Daifuku</b></p></td>
+
+                                                <td style="text-align:center;"><div style="margin: 5px 15px 0; display: flex; justify-content: space-between; flex-direction: column; align-items: center;">
+                                                    <div style="display: flex; justify-content: space-evenly;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Platos/Plat ingre/Mochi.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Mochi</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Cultivos/Judía azuki.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Judía azuki</b></p></div>
+                                                    </div>
+                                                </div></td>
+                                                
+                                                <td style="text-align:center;"><div style="margin: 5px 15px 0; display: flex; justify-content: space-between; flex-direction: column; align-items: center;">
+                                                    <div style="display: flex; justify-content: space-evenly;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Olla.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Olla</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Especias.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Condimentos</b></p></div>
+                                                    </div>
+                                                </div></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </dialog>
                             </td>
-                        </tr>
-        
-                        <tr>
+                            
                             <td style="text-align:center; height: 7em;"> <!-- Plato 108 -->
                                 <div style="display: flex; flex-direction: column;">
                                     <a class="hiper_click" style="margin: 5px 0 10px; line-height:0.8;" onclick="window.modal_rec108.showModal();"><b style="font-size: 16px;">108</b></a>
                                     <a onclick="window.modal_rec108.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="/Guia-de-SOS-FOMT/IMG/Platos/Pagina 5/p108.png" width="60px" height="60px"/></a>
                                     <a class="hiper_click" style="margin: 5px 0 10px; line-height:0.8;" onclick="window.modal_rec108.showModal();"><b style="font-size: 13.5px;">Dorayaki</b></a>
                                 </div>
-                            <td>Esta receta se obtiene después de cocinar 3 recetas con Judía azuki.</td>
-                            <td><ul class="horario">
-                                <li class="gustos">Harina de trigo</li>
-                                <li class="gustos">Judía azuki</li>
-                                <li class="gustos">Huevo <b>(C/T)</b></li>
-                                <li class="gustos">Huevo <b>(C/T)</b></li>
-                                <li class="gustos">Miel</li>
-                            </ul></td>
-                            <td style="text-align:center;">
-                                <div style="margin-top: 5px; max-height: 92.16px; overflow-y: auto;">
-                                    <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Olla.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Olla</b></p></div>
-                                    <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Especias.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Condimentos</b></p></div>
-                                    <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Sarten.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Sartén</b></p></div>
-                                </div>
+
+                                <dialog id="modal_rec108" class="modal_recetas">
+                                    <button onclick="window.modal_rec108.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+                                        
+                                        <h2 style="text-align: center;">Receta 108 - Dorayaki</h2>
+                                        <p>Esta receta se obtiene después de cocinar 3 recetas con Judía azuki.</p>
+                                        <p>En esta receta el huevo puede ser de cualquier gallina y puede ser de cualquier tamaño.</p>
+                                        <p>En esta receta la leche debe ser de una vaca normal y puede ser de cualquier tamaño.</p>
+
+                                        <table class="data">
+                                            <tr><th style="width: 155px;">Plato</th><th>Ingredientes</th><th>Utencilios</th></tr>
+                                            <tr>
+                                                <td style="text-align:center;"><img src="/Guia-de-SOS-FOMT/IMG/Platos/Pagina 5/p108.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px; line-height:1.1;"><b style="font-size: 13.5px;">Dorayaki</b></p></td>
+
+                                                <td style="text-align:center;"><div style="margin: 5px 15px 0; display: flex; justify-content: space-between; flex-direction: column; align-items: center;">
+                                                    <div style="display: flex; justify-content: space-evenly;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Arina.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Harina de trigo</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Cultivos/Judía azuki.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Judía azuki</b></p></div>
+                                                    </div>
+
+                                                    <div style="display: flex; justify-content: space-evenly; margin-top: 5px;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/Leche/Leche (S).png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Leche </b><b style="color:rgb(194, 165, 4)">(C/T)</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/Huevos/Huevo normal.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Huevo </b><b style="color:rgb(194, 165, 4)">(C/T)</b></p></div>
+                                                    </div>
+
+                                                    <div style="margin: 5px 10px 0; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Miel.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Miel</b></p></div>
+                                                </div></td>
+                                                
+                                                <td style="text-align:center;"><div style="margin: 5px 15px 0; display: flex; justify-content: space-between; flex-direction: column; align-items: center;">
+                                                    <div style="display: flex; justify-content: space-evenly;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Olla.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Olla</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Especias.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Condimentos</b></p></div>
+                                                    </div>
+
+                                                    <div style="margin: 5px 10px 0; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Sarten.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Sartén</b></p></div>
+                                                </div></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </dialog>
                             </td>
                         </tr>
         
-                        <tr>
+                        <tr> <!-- Fila 04 -->
                             <td style="text-align:center; height: 7em;"> <!-- Plato 109 -->
                                 <div style="display: flex; flex-direction: column;">
                                     <a class="hiper_click" style="margin: 5px 0 10px; line-height:0.8;" onclick="window.modal_rec109.showModal();"><b style="font-size: 16px;">109</b></a>
@@ -4263,12 +4548,13 @@
                                 <li class="gustos">Chocolate</li>
                                 <li class="gustos">Naranja</td>
                             </ul></td>
-                            <td style="text-align:center;">
-                                <div style="margin-top: 5px; max-height: 92.16px; overflow-y: auto;">
-                                    <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Olla.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Olla</b></p></div>
-                                    <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Especias.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Condimentos</b></p></div>
-                                </div>
-                            </td>
+                                                <td style="text-align:center;"><div style="margin: 5px 15px 0; display: flex; justify-content: space-between; flex-direction: column; align-items: center;">
+                                                    <div style="display: flex; justify-content: space-evenly;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Olla.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Olla</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Especias.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Condimentos</b></p></div>
+                                                    </div>
+                                                </div></td>
                         </tr>
         
                         <tr>
@@ -4359,16 +4645,16 @@
                                 <li class="gustos">Huevo <b>(C/T)</b></li>
                                 <li class="gustos">Castaña</li>
                             </ul></td>
-                                                <td style="text-align:center;"><div style="margin: 5px 15px 0; display: flex; justify-content: space-between; flex-direction: column;">
+                                                <td style="text-align:center;"><div style="margin: 5px 15px 0; display: flex; justify-content: space-between; flex-direction: column; align-items: center;">
                                                     <div style="display: flex; justify-content: space-evenly;">
-                                                        <div style="margin-right: 10px;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Olla.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px; line-height:1.1;"><b style="font-size: 13.5px;">Olla</b></p></div>
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Olla.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px; line-height:1.1;"><b style="font-size: 13.5px;">Olla</b></p></div>
 
-                                                        <div style="margin-left: 10px;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Batidora.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px; line-height:1.1;"><b style="font-size: 13.5px;">Batidora</b></p></div>
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Batidora.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px; line-height:1.1;"><b style="font-size: 13.5px;">Batidora</b></p></div>
                                                     </div>
                                                     <div style="display: flex; justify-content: space-evenly; margin-top: 5px;">
-                                                        <div style="margin-right: 10px;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Horno.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px; line-height:1.1;"><b style="font-size: 13.5px;">Horno</b></p></div>
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Horno.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px; line-height:1.1;"><b style="font-size: 13.5px;">Horno</b></p></div>
 
-                                                        <div style="margin-left: 10px;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Especias.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px; line-height:1.1;"><b style="font-size: 13.5px;">Condimentos</b></p></div>
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Especias.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px; line-height:1.1;"><b style="font-size: 13.5px;">Condimentos</b></p></div>
                                                     </div>
                                                 </div></td>
                         </tr>
@@ -4397,7 +4683,7 @@
                                                 </div></td>
                         </tr>
         
-                        <tr>
+                        <tr> <!-- Fila 06 -->
                             <td style="text-align:center; height: 7em;"> <!-- Plato 117 -->
                                 <div style="display: flex; flex-direction: column;">
                                     <a class="hiper_click" style="margin: 5px 0 10px; line-height:0.8;" onclick="window.modal_rec117.showModal();"><b style="font-size: 16px;">117</b></a>
@@ -4468,19 +4754,47 @@
                                     <a onclick="window.modal_rec120.showModal();" style="cursor: pointer; text-decoration:none; border-bottom:none;"><img src="/Guia-de-SOS-FOMT/IMG/Platos/Pagina 5/p120.png" width="60px" height="60px"/></a>
                                     <a class="hiper_click" style="margin: 5px 0 10px; line-height:0.8;" onclick="window.modal_rec120.showModal();"><b style="font-size: 13.5px;">Pizza Margarita picante</b></a>
                                 </div>
-                            <td>Esta receta se obtiene después de cocinar 20 recetas con harina de trigo y 20 recetas con queso <b>(C/T)</b>.</td>
-                            <td><ul class="horario">
-                                <li class="gustos">Harina de trigo</li>
-                                <li class="gustos">Mantequilla <b>(Re)</b></li>
-                                <li class="gustos">Tomate</li>
-                                <li class="gustos">Queso <b>(C/T)</b></li>
-                                <li class="gustos">Chile</li>
-                            </ul></td>
-                            <td style="text-align:center;">
-                                <div style="margin-top: 5px; max-height: 92.16px; overflow-y: auto;">
-                                    <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Rodillo.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px; line-height:1.1;"><b style="font-size: 13.5px;">Rodillo</b></p></div>
-                                    <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Horno.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Horno</b></p></div>
-                                </div>
+
+                                <dialog id="modal_rec120" class="modal_recetas">
+                                    <button onclick="window.modal_rec120.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+                                        
+                                        <h2 style="text-align: center;">Receta 120 - Pizza Margarita picante</h2>
+                                        <p>Esta receta se obtiene después de cocinar 20 recetas con harina de trigo y 20 recetas con queso <b>(C/T)</b>.</p>
+                                        <p>En esta receta el queso debe puede ser de cualquier tamaño.</p>
+
+                                        <table class="data">
+                                            <tr><th style="width: 155px;">Plato</th><th>Ingredientes</th><th>Utencilios</th></tr>
+                                            <tr>
+                                                <td style="text-align:center;"><img src="/Guia-de-SOS-FOMT/IMG/Platos/Pagina 5/p120.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px; line-height:1.1;"><b style="font-size: 13.5px;">Pizza Margarita picante</b></p></td>
+
+                                                <td style="text-align:center;"><div style="margin: 5px 15px 0; display: flex; justify-content: space-between; flex-direction: column; align-items: center;">
+                                                    <div style="display: flex; justify-content: space-evenly;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Arina.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Harina de trigo</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Platos/Plat ingre/Mantequilla.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Mantequilla </b><b style="color:rgb(194, 165, 4)">(Re)</b></p></div>
+                                                    </div>
+                                                    <div style="display: flex; justify-content: space-evenly; margin-top: 5px;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Cultivos/Tomate.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Tomate</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/Leche/Queso (S).png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Queso </b><b style="color:rgb(194, 165, 4)">(C/T)</b></p></div>
+                                                    </div>
+
+                                                    <div style="margin: 5px 10px 0; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Cultivos/Chile.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Chile</b></p></div>
+                                                </div></td>
+
+                                                <td style="text-align:center;"><div style="margin: 5px 15px 0; display: flex; justify-content: space-between; flex-direction: column; align-items: center;">
+                                                    <div style="display: flex; justify-content: space-evenly;">
+                                                        <div style="margin-right: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Rodillo.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Rodillo</b></p></div>
+
+                                                        <div style="margin-left: 10px; width: 7.07em;"><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Utencilios/Horno.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 0 8px; line-height:1.1;"><b style="font-size: 13.5px;">Horno</b></p></div>
+                                                    </div>
+                                                </div></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </dialog>
                             </td>
                         </tr>
                     </tbody>
