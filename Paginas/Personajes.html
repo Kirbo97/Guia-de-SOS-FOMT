@@ -164,12 +164,7 @@
                     <summary class="summary_general">Lista de candidatos de matrimonio</summary>
 
                     <div style="display: flex; margin-top: 20px;">
-                        <div id="marriage_box" style="overflow: hidden;" class="scroll-container-candidatos">
-                            <div class="box_matrimonio">
-                                <a href="/Guia-de-SOS-FOMT/Paginas/Personajes/Candidatos/bonviviant.html"><img src="/Guia-de-SOS-FOMT/IMG/Personajes/Candidatos/Chibi/chibi_von.png" title="Bon Vivant" style="border:none;" width="350" height="180"></a>
-                                <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Personajes/Candidatos/bonviviant.html">Bon Viviant</a>
-                            </div>
-                        
+                        <div id="marriage_box" style="overflow: hidden; border: none" class="scroll-container-candidatos">
                             <div class="box_matrimonio">
                                 <a href="/Guia-de-SOS-FOMT/Paginas/Personajes/Candidatos/brandon.html"><img src="/Guia-de-SOS-FOMT/IMG/Personajes/Candidatos/Chibi/chibi_brandon.png" title="Brandon" style="border:none;" width="350" height="180"></a>
                                 <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Personajes/Candidatos/brandon.html">Brandon</a>
@@ -196,16 +191,6 @@
                             </div>
 
                             <div class="box_matrimonio">
-                                <a href="/Guia-de-SOS-FOMT/Paginas/Personajes/Candidatos/goddess.html"><img src="/Guia-de-SOS-FOMT/IMG/Personajes/Candidatos/Chibi/chibi_goddess.png" title="Mother Nature" style="border:none;" width="350" height="180"></a>
-                                <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Personajes/Candidatos/goddess.html">Diosa de la cosecha</a>
-                            </div>
-
-                            <div class="box_matrimonio">
-                                <a href="/Guia-de-SOS-FOMT/Paginas/Personajes/Candidatos/huang.html"><img src="/Guia-de-SOS-FOMT/IMG/Personajes/Candidatos/Chibi/chibi_huang.png" title="Huang" style="border:none;" width="350" height="180"></a>
-                                <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Personajes/Candidatos/huang.html">Huang</a>
-                            </div>
-
-                            <div class="box_matrimonio">
                                 <a href="/Guia-de-SOS-FOMT/Paginas/Personajes/Candidatos/jennifer.html"><img src="/Guia-de-SOS-FOMT/IMG/Personajes/Candidatos/Chibi/chibi_jennifer.png" title="Jennifer" style="border:none;" width="350" height="180"></a>
                                 <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Personajes/Candidatos/jennifer.html">Jennifer</a>
                             </div>
@@ -213,11 +198,6 @@
                             <div class="box_matrimonio">
                                 <a href="/Guia-de-SOS-FOMT/Paginas/Personajes/Candidatos/kai.html"><img src="/Guia-de-SOS-FOMT/IMG/Personajes/Candidatos/Chibi/chibi_kai.png" title="Kai" style="border:none;" width="350" height="180"></a>
                                 <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Personajes/Candidatos/kai.html">Kai</a>
-                            </div>
-
-                            <div class="box_matrimonio">
-                                <a href="/Guia-de-SOS-FOMT/Paginas/Personajes/Candidatos/kappa.html"><img src="/Guia-de-SOS-FOMT/IMG/Personajes/Candidatos/Chibi/chibi_kappa.png" title="Kappa" style="border:none;" width="350" height="180"></a>
-                                <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Personajes/Candidatos/kappa.html">Kappa</a>
                             </div>
 
                             <div class="box_matrimonio">
@@ -246,9 +226,34 @@
                             </div>
                         </div>
 
-                        <div style="display: flex; flex-direction: column;">
+                        <div id="bot_can" style="display: flex; flex-direction: column; display: none;" >
                             <button style="height: 50%; padding: 10px; font-weight: bold; font-size: 25px;" onclick="Scroll_button_marriage('arriba','marriage_box');">↑</button>
                             <button style="height: 50%; padding: 10px; font-weight: bold; font-size: 25px;" onclick="Scroll_button_marriage('abajo','marriage_box');">↓</button>
+                        </div>
+                    </div>
+                </details>
+
+                <details> <!-- Lista de candidatos especiales a matrimonio -->
+                    <summary class="summary_general">Lista de candidatos especiales a matrimonio</summary>
+                    <div id="marriage_box" style="display: flex; justify-content: space-around; margin-top: 20px;">
+                        <div class="box_matrimonio">
+                            <a href="/Guia-de-SOS-FOMT/Paginas/Personajes/Candidatos/bonviviant.html"><img src="/Guia-de-SOS-FOMT/IMG/Personajes/Candidatos/Chibi/chibi_von.png" title="Bon Vivant" style="border:none;" width="350" height="180"></a>
+                            <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Personajes/Candidatos/bonviviant.html">Bon Viviant</a>
+                        </div>
+
+                        <div class="box_matrimonio">
+                            <a href="/Guia-de-SOS-FOMT/Paginas/Personajes/Candidatos/goddess.html"><img src="/Guia-de-SOS-FOMT/IMG/Personajes/Candidatos/Chibi/chibi_goddess.png" title="Mother Nature" style="border:none;" width="350" height="180"></a>
+                            <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Personajes/Candidatos/goddess.html">Diosa de la cosecha</a>
+                        </div>
+
+                        <div class="box_matrimonio">
+                            <a href="/Guia-de-SOS-FOMT/Paginas/Personajes/Candidatos/huang.html"><img src="/Guia-de-SOS-FOMT/IMG/Personajes/Candidatos/Chibi/chibi_huang.png" title="Huang" style="border:none;" width="350" height="180"></a>
+                            <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Personajes/Candidatos/huang.html">Huang</a>
+                        </div>
+
+                        <div class="box_matrimonio">
+                            <a href="/Guia-de-SOS-FOMT/Paginas/Personajes/Candidatos/kappa.html"><img src="/Guia-de-SOS-FOMT/IMG/Personajes/Candidatos/Chibi/chibi_kappa.png" title="Kappa" style="border:none;" width="350" height="180"></a>
+                            <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Personajes/Candidatos/kappa.html">Kappa</a>
                         </div>
                     </div>
                 </details>
