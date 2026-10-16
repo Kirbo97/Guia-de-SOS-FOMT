@@ -177,6 +177,17 @@ details > .summary_h2_fin:first-of-type { margin-bottom: 20px; }
 
 .scroll-container-candidatos { height: 38.5em; /* Alto del contenedor */ }
 
+/* Estas clase es para crear un Scroll en la tabla de regalos */
+.scroll-container_reg {
+    width: auto;           /* Ancho del contenedor */
+    height: 21.74em;          /* Alto del contenedor */
+    overflow: auto;         /* Activa la barra de desplazamiento */
+    scroll-behavior: smooth; /* Desplazamiento suave */
+    border: 1px solid #ccc; /* Borde opcional para definir el contorno */
+    border: none; /* Borde opcional para definir el contorno */
+    padding-right: 10px; /* Espaciado interno */
+}
+
 /* ********************************* */
 /*  Diseños generales de las listas  */
 /* ********************************* */
@@ -280,3 +291,46 @@ tr:nth-child(odd) {background-color: #E8E8E8;}
 
 /* La etiqueta "tr" (fila de la tabla) con propiedad "nth-child(even)" (filas pares) tendra un color en la tabla */
 tr:nth-child(even) {background-color: #FAFAFA;}
+
+.Table_regalo{ width: 64em; }
+
+.cont_obj_regalo {
+    padding-top: 6px;
+    display: flex; 
+    row-gap: 10px;
+    justify-content: space-evenly; 
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cont_obj_regalo { 
+    column-gap: 25px; 
+    row-gap: 15px;
+}
+
+/* Defino las caracteristicas del div que estan dentro del contenedor principal */
+.cont_obj_regalo div { 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont_obj_regalo div img {
+    width: 60px;
+    height: 60px;
+}
+
+/* Defino las caracteristicas del b que estan dentro del contenedor principal */
+.cont_obj_regalo b { font-size: 13.5px; }
+
+/* Defino las caracteristicas del p que estan dentro del contenedor principal */
+.cont_obj_regalo p{
+    line-height:1.3;
+    width: auto; 
+    display: flex;
+    margin: 5px 10px 8px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}

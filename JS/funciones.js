@@ -27,6 +27,22 @@ function desplasar(tip_bot,tip_cuad,salto_movile,salto_comp) {
     }
 }   
 
+/* *********************************************************** */
+/*  Funciones para que aparesca el scrol cuando sea nesesario  */
+/* *********************************************************** */
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".cont_obj_regalo").forEach(contenedor => {
+        const objetos = contenedor.querySelectorAll(":scope > div");
+
+        if (objetos.length > 22) {
+            contenedor.classList.add("scroll-container_reg");
+        } else {
+            contenedor.classList.remove("scroll-container_reg");
+        }
+    });
+});
+
 /* ****************************************************** */
 /*  Funciones para editar la tabla acorde de la estacion  */
 /* ****************************************************** */
