@@ -55,9 +55,15 @@ ul li:before {
 }
 
 .desagrado:before  {
-    content: '\1F620'; /*(La guion sera una desagrado)*/
+    content: '\1F610'; /*(La guion sera una desagrado)*/
     font-size: 3em;
 }
+
+.odio::before {
+    content: '\1F621'; /*(La guion sera una odio)*/
+    font-size: 3em;
+}
+
 
 /* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de estaciones */
 .primavera:before  {

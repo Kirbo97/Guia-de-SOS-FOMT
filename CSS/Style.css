@@ -180,7 +180,7 @@ details > .summary_h2_fin:first-of-type { margin-bottom: 20px; }
 /* Estas clase es para crear un Scroll en la tabla de regalos */
 .scroll-container_reg {
     width: auto;           /* Ancho del contenedor */
-    height: 21.95em;          /* Alto del contenedor */
+    height: 22.15em;          /* Alto del contenedor */
     overflow: auto;         /* Activa la barra de desplazamiento */
     scroll-behavior: smooth; /* Desplazamiento suave */
     border: 1px solid #ccc; /* Borde opcional para definir el contorno */
