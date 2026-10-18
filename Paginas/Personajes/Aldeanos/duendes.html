@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="/Guia-de-SOS-FOMT/CSS/Style.css" type="text/css"/> <!-- Este CSS contiene los diseños de toda las paginas -->
         <link rel="shortcut icon" href="/Guia-de-SOS-FOMT/IMG/Iconos/Kirbo.ico"/> <!-- Esta seccion es para colocar un icono que representa a toda la pagina en general -->
         <script type="text/javascript" src="/Guia-de-SOS-FOMT/JS/include.js" defer></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene la funcion de insertar el nav y footer a la pagina-->
+        <script type="text/javascript" src="/Guia-de-SOS-FOMT/JS/funciones.js"></script> <!-- Conecta el archivo js para ser usado en la pagina y Este sj contiene la funcion de insertar el nav y footer a la pagina-->
     </head>
     
     <body>
@@ -49,156 +50,218 @@
 
                 <p>Los duendes posen solo un tipo de gusto, lo que les facina y lo que les desagrada.</p>
 
-                <table class="data">
+                <table class="data Table_regalo" style="margin: 15px auto 20px auto;">
 
-                    <tr><th style="width: 90px;">Duendes</th><th style="height: 58px;"><p class="fasina" style="text-align:center; margin: 10px 0 0 0;"></p></th> </tr>
+                    <tr>
+                        <th style="height: 90px;"><p style="text-align:center;">Duendes</p></th>
+                        <th><p class="encanta" style="text-align:center; margin: 8px 0 0;"></p><p style="text-align: center; margin: 5px 0 0;">Encanta</p></th> 
+                        <th style="width: 9em;"><p class="odio" style="text-align:center; margin: 8px 0 0;"></p><p style="text-align: center; margin: 5px 0 0;">Odia</p></th> 
+                    </tr>
     
                     <tr> <!-- Ciruela -->
-                        <td style="text-align:center;">Ciruela</td>
-                        <td style=" display: flex; justify-content: space-around;">
-                            <div><ul class="horario">
-                                <li class="gustos">Harina de trigo</li>
-                                <li class="gustos">Onigiri</li>
-                                <li class="gustos">Hierba morada</li>
-                            </ul></div>
-
-                            <div style="margin: 0 12px;"><ul class="horario">
-                                <li class="gustos">Col</li>
-                                <li class="gustos">Patatas</li>
-                            </ul></div>
-
-                            <div><ul class="horario">
-                                <li class="gustos">Oricalco</li>
-                                <li class="gustos">Miel</li> 
-                            </ul></div>
+                        <td style="text-align:center;">
+                            <div style="display: flex; flex-direction: column; align-items: center;">
+                                <img src="/Guia-de-SOS-FOMT/IMG/Personajes/Duendes/Ciruela.png" width="120px" height="120px"/>
+                                <p style="text-align:center; margin: 0 8px 5px; line-height:1.1;"><b style="font-size: 13.5px;">Ciruela</b></p>
+                            </div>
                         </td>
+
+                        <td style="text-align:center;">
+                            <div id="regalos1" class="cont_obj_regalo">
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Arina.png"/><p><b>Harina</b><b>de Trigo</b></p></div>
+                                
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Onigiri.png"/><p><b>Onigiri</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Hierba morado.png"/><p><b>Hierba</b><b>morado</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Cultivos/Col.png"/><p><b>Col</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Cultivos/Patata.png"/><p><b>Hierba</b><b>Patata</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Oricalco.png"/><p><b>Oricalco</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Miel.png"/><p><b>Miel</b></p></div>
+ 
+                            </div>
+                        </td>
+
+                        <td><p style="text-align: center; margin: 0 5px;">Todo lo demas.</p></td>
                     </tr>
                     
                     <tr> <!-- Arándano -->
-                        <td style="text-align:center;">Arándano</td>
-                        <td style=" display: flex; justify-content: space-around;">
-                            <div><ul class="horario">
-                                <li class="gustos">Harina de trigo</li>
-                                <li class="gustos">Oricalco</li>
-                            </ul></div>
-
-                            <div style="margin: 0 12px;"><ul class="horario">
-                                <li class="gustos">Miel</li>
-                                <li class="gustos">Uvas silvestres</li>
-                            </ul></div>
-
-                            <div><ul class="horario">
-                                <li class="gustos">Hierba azul marino</li>
-                                <li class="gustos">Pan</li>
-                            </ul></div>
+                        <td style="text-align:center;">
+                            <div style="display: flex; flex-direction: column; align-items: center;">
+                                <img src="/Guia-de-SOS-FOMT/IMG/Personajes/Duendes/Arándano.png" width="120px" height="120px"/>
+                                <p style="text-align:center; margin: 0 8px 5px; line-height:1.1;"><b style="font-size: 13.5px;">Arándano</b></p>
+                            </div>
                         </td>
+                        
+                        <td style="text-align:center;">
+                            <div id="regalos1" class="cont_obj_regalo">
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Arina.png"/><p><b>Harina</b><b>de Trigo</b></p></div>
+                                
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Oricalco.png"/><p><b>Oricalco</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Miel.png"/><p><b>Miel</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Uvas silvestres.png"/><p><b>Uvas</b><b>silvestres</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Hierba azul marino.png"/><p><b>Hierba</b><b>azul marino</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Pan.png"/><p><b>Pan</b></p></div>
+                            </div>
+                        </td>
+
+                        <td><p style="text-align: center; margin: 0 5px;">Todo lo demas.</p></td>
                     </tr>
 
                     <tr> <!-- Agua -->
-                        <td style="text-align:center;">Agua</td>
-                        <td style=" display: flex; justify-content: space-around;">
-                            <div><ul class="horario">
-                                <li class="gustos">Harina de trigo</li>
-                                <li class="gustos">Harina de dango</li>
-                            </ul></div>
-
-                            <div style="margin: 0 12px;"><ul class="horario">
-                                <li class="gustos">Miel</li>
-                                <li class="gustos">Uvas silvestres</li>
-                            </ul></div>
-
-                            <div><ul class="horario">
-                                <li class="gustos">Hierba azul</li>
-                                <li class="gustos">Pan</li>
-                            </ul></div>
+                        <td style="text-align:center;">
+                            <div style="display: flex; flex-direction: column; align-items: center;">
+                                <img src="/Guia-de-SOS-FOMT/IMG/Personajes/Duendes/Agua.png" width="120px" height="120px"/>
+                                <p style="text-align:center; margin: 0 8px 5px; line-height:1.1;"><b style="font-size: 13.5px;">Agua</b></p>
+                            </div>
                         </td>
+                        
+                        <td style="text-align:center;">
+                            <div id="regalos1" class="cont_obj_regalo">
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Arina.png"/><p><b>Harina</b><b>de Trigo</b></p></div>
+                                
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Arina de dango.png"/><p><b>Harina</b><b>de Dango</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Miel.png"/><p><b>Miel</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Uvas silvestres.png"/><p><b>Uvas</b><b>silvestres</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Hierba azul.png"/><p><b>Hierba</b><b>azul</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Pan.png"/><p><b>Pan</b></p></div>
+                            </div>
+                        </td>
+
+                        <td><p style="text-align: center; margin: 0 5px;">Todo lo demas.</p></td>
                     </tr>
 
                     <tr> <!-- Menta -->
-                        <td style="text-align:center;">Menta</td>
-                        <td style=" display: flex; justify-content: space-around;">
-                            <div><ul class="horario">
-                                <li class="gustos">Harina de trigo</li>
-                                <li class="gustos">Chocolate</li>
-                                <li class="gustos">Oricalco</li>
-                            </ul></div>
-
-                            <div style="margin: 0 12px;"><ul class="horario">
-                                <li class="gustos">Miel</li>
-                                <li class="gustos">Uvas silvestres</li>
-                            </ul></div>
-
-                            <div><ul class="horario">
-                                <li class="gustos">Hierba verde</li>
-                                <li class="gustos">Pan</li>
-                            </ul></div>
+                        <td style="text-align:center;">
+                            <div style="display: flex; flex-direction: column; align-items: center;">
+                                <img src="/Guia-de-SOS-FOMT/IMG/Personajes/Duendes/Menta.png" width="120px" height="120px"/>
+                                <p style="text-align:center; margin: 0 8px 5px; line-height:1.1;"><b style="font-size: 13.5px;">Menta</b></p>
+                            </div>
                         </td>
+                        
+                        <td style="text-align:center;">
+                            <div id="regalos1" class="cont_obj_regalo">
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Arina.png"/><p><b>Harina</b><b>de Trigo</b></p></div>
+                                
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Chocolate.png"/><p><b>Chocolate</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Oricalco.png"/><p><b>Oricalco</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Miel.png"/><p><b>Miel</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Uvas silvestres.png"/><p><b>Uvas</b><b>silvestres</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Hierba verde.png"/><p><b>Hierba</b><b>verde</b></p></div>
+                            
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Pan.png"/><p><b>Pan</b></p></div>
+                            </div>
+                        </td>
+
+                        <td><p style="text-align: center; margin: 0 5px;">Todo lo demas.</p></td>
                     </tr>
 
                     <tr> <!-- Sol -->
-                        <td style="text-align:center;">Sol</td>
-                        <td style=" display: flex; justify-content: space-around;">
-                            <div><ul class="horario">
-                                <li class="gustos">Harina de trigo</li>
-                                <li class="gustos">Pan</li>
-                                <li class="gustos">Hierba amarilla</li>
-                            </ul></div>
-
-                            <div style="margin: 0 12px;"><ul class="horario">
-                                <li class="gustos">Uvas silvestres</li>
-                                <li class="gustos">Huevo de las termas</li>
-                            </ul></div>
-
-                            <div><ul class="horario">
-                                <li class="gustos">Oricalco</li>
-                                <li class="gustos">Miel</li> 
-                            </ul></div>
+                        <td style="text-align:center;">
+                            <div style="display: flex; flex-direction: column; align-items: center;">
+                                <img src="/Guia-de-SOS-FOMT/IMG/Personajes/Duendes/Sol.png" width="120px" height="120px"/>
+                                <p style="text-align:center; margin: 0 8px 5px; line-height:1.1;"><b style="font-size: 13.5px;">Sol</b></p>
+                            </div>
                         </td>
+                        
+                        <td style="text-align:center;">
+                            <div id="regalos1" class="cont_obj_regalo">
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Arina.png"/><p><b>Harina</b><b>de Trigo</b></p></div>
+                                
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Pan.png"/><p><b>Pan</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Aguamarina.png"/><p><b>Aguamarina</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Uvas silvestres.png"/><p><b>Uvas</b><b>silvestres</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Plat ingre/Huevo de las termas.png"/><p><b>Huevo de</b><b>las termas</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Oricalco.png"/><p><b>Oricalco</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Miel.png"/><p><b>Miel</b></p></div>
+                            </div>
+                        </td>
+
+                        <td><p style="text-align: center; margin: 0 5px;">Todo lo demas.</p></td>
                     </tr>
 
-                    <tr> <!-- Cereza -->  
-                        <td style="text-align:center;">Cereza</td>
-                        <td style=" display: flex; justify-content: space-around;">
-                            <div><ul class="horario">
-                                <li class="gustos">Harina de trigo</li>
-                                <li class="gustos">Naranja</li>
-                                <li class="gustos">Oricalco</li>
-                            </ul></div>
-
-                            <div style="margin: 0 12px;"><ul class="horario">
-                                <li class="gustos">Miel</li>
-                                <li class="gustos">Manzana</li>
-                                <li class="gustos">Uvas silvestres</li>
-                            </ul></div>
-
-                            <div><ul class="horario">
-                                <li class="gustos">Hierba roja</li>
-                                <li class="gustos">Tomate</li>
-                                <li class="gustos">Pan</li>
-                            </ul></div>
+                    <tr> <!-- Cereza -->
+                        <td style="text-align:center;">
+                            <div style="display: flex; flex-direction: column; align-items: center;">
+                                <img src="/Guia-de-SOS-FOMT/IMG/Personajes/Duendes/Cereza.png" width="120px" height="120px"/>
+                                <p style="text-align:center; margin: 0 8px 5px; line-height:1.1;"><b style="font-size: 13.5px;">Cereza</b></p>
+                            </div>
                         </td>
+                        
+                        <td style="text-align:center;">
+                            <div id="regalos1" class="cont_obj_regalo">
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Arina.png"/><p><b>Harina</b><b>de Trigo</b></p></div>
+                                
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Naranja.png"/><p><b>Naranja</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Oricalco.png"/><p><b>Oricalco</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Miel.png"/><p><b>Miel</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Manzana.png"/><p><b>Manzana</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Uvas silvestres.png"/><p><b>Uvas</b><b>silvestres</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Hierba roja.png"/><p><b>Hierba</b><b>roja</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Cultivos/Tomate.png"/><p><b>Tomate</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Pan.png"/><p><b>Pan</b></p></div>
+                            </div>
+                        </td>
+
+                        <td><p style="text-align: center; margin: 0 5px;">Todo lo demas.</p></td>
                     </tr>
 
                     <tr> <!-- Calabaza -->
-                        <td style="text-align:center;">Calabaza</td>
-                        <td style=" display: flex; justify-content: space-around;">
-                            <div><ul class="horario">
-                                <li class="gustos">Harina de trigo</li>
-                                <li class="gustos">naranja</li>
-                                <li class="gustos">manzana</li>
-                            </ul></div>
-
-                            <div style="margin: 0 12px;"><ul class="horario">
-                                <li class="gustos">Miel</li>
-                                <li class="gustos">Oricalco</li>
-                                <li class="gustos">Uvas silvestres</li>
-                            </ul></div>
-
-                            <div><ul class="horario">
-                                <li class="gustos">Hierba naranja</li>
-                                <li class="gustos">Pan</li>
-                            </ul></div>
+                        <td style="text-align:center;">
+                            <div style="display: flex; flex-direction: column; align-items: center;">
+                                <img src="/Guia-de-SOS-FOMT/IMG/Personajes/Duendes/Calabaza.png" width="120px" height="120px"/>
+                                <p style="text-align:center; margin: 0 8px 5px; line-height:1.1;"><b style="font-size: 13.5px;">Calabaza</b></p>
+                            </div>
                         </td>
+                        
+                        <td style="text-align:center;">
+                            <div id="regalos1" class="cont_obj_regalo">
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Arina.png"/><p><b>Harina</b><b>de Trigo</b></p></div>
+                                
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Naranja.png"/><p><b>Naranja</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Manzana.png"/><p><b>Manzana</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Miel.png"/><p><b>Miel</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Oricalco.png"/><p><b>Oricalco</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Uvas silvestres.png"/><p><b>Uvas</b><b>silvestres</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Hierba naranja.png"/><p><b>Hierba</b><b>naranja</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Pan.png"/><p><b>Pan</b></p></div>
+                            </div>
+                        </td>
+
+                        <td><p style="text-align: center; margin: 0 5px;">Todo lo demas.</p></td>
                     </tr>
                 </table>
 
