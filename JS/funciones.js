@@ -59,6 +59,8 @@ function cambiar_lista(num){ cambiar_peces(num,1); }
 
 function cambiar_receta(num){ cambiar_pagina(num,1); }
 
+function cambiar_regalo(num,x){ cambiar_gustos(num,1,x); }
+
 function cambiar_mineral(num){ cambiar_pagina_mineral(num,1); }
 
 function cambiar_estacion(num,i,cant){
@@ -130,6 +132,21 @@ function cambiar_pagina(num,i){
 
     // Mostrar la seleccionada
     lista_recetas.style.display = "block";
+}
+
+function cambiar_gustos(num,i,x){
+    let lista_regalo = document.getElementById("lista_regalo" + num);
+
+    // Si ya está visible, ocultarla
+    if (lista_regalo.style.display === "block") {
+        lista_regalo.style.display = "none";
+        return;
+    }
+    // Ocultar todas las listas
+    for(i;i<=x;i++){ document.getElementById("lista_regalo"+i).style.display="none"; }
+
+    // Mostrar la seleccionada
+    lista_regalo.style.display = "block";
 }
 
 function cambiar_pagina_mineral(num,i){

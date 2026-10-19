@@ -38,12 +38,6 @@ ul li:before {
     font-size:1.2em; /* El guion tendra un tamaño*/
 }
 
-/* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de emociones */
-.fasina:before  {
-    content: '\1F60D'; /*(La guion sera una cara con corazon)*/
-    font-size: 2.8em;
-}
-
 .encanta:before  {
     content: '\1F604'; /*(La guion sera una alegre)*/
     font-size: 2.8em;
@@ -63,7 +57,6 @@ ul li:before {
     content: '\1F621'; /*(La guion sera una odio)*/
     font-size: 3em;
 }
-
 
 /* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de estaciones */
 .primavera:before  {
