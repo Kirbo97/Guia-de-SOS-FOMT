@@ -62,12 +62,22 @@
 
                 <h2>Preferencias de regalos</h2>
 
-                <p>La mejor forma de mejorar la amistad y el afecto es siempre regalar las cosas que le gusta una vez por dia.</p>
+                <p>La mejor forma de mejorar la amistad y el afecto es siempre regalar las cosas que le gusta una vez por día.</p>
 
-                <table class="data Table_regalo" style="margin: 15px auto 20px auto;">
-                    <tr><!-- Encanta -->
-                        <th><p class="encanta" style="text-align:center; margin: 0;"></p><p style="text-align: center; margin: 5px 5px 0;">Encanta</p></th> 
-                        
+                <i>Nota: Seleccione una emoción de las lista.</i>
+
+                <table class="data Table_regalo">
+                    <tr class="rec"><th>
+                        <div style="display:flex; justify-content:space-around; align-items:center; margin-top: 19px;">
+                            <div style="display:flex; flex-direction: column; align-items:center; cursor: pointer;" onclick="cambiar_regalo(1,4)"><p class="encanta" style="text-align:center; margin: 0;"></p><p style="text-align: center; margin: 2px 0 0;">Encanta</p></div>
+                            <div style="display:flex; flex-direction: column; align-items:center; cursor: pointer;" onclick="cambiar_regalo(2,4)"><p class="gusta" style="text-align:center; margin: 0;"></p><p style="text-align: center; margin: 2px 0 0;">Gusta</p></div>
+                            <div style="display:flex; flex-direction: column; align-items:center; cursor: pointer;" onclick="cambiar_regalo(3,4)"><p class="desagrado" style="text-align:center; margin: 0;"></p><p style="text-align: center; margin: 2px 0 0;">Desagrada</p></div>
+                            <div style="display:flex; flex-direction: column; align-items:center; cursor: pointer;" onclick="cambiar_regalo(4,4)"><p class="odio" style="text-align:center; margin: 0;"></p><p style="text-align: center; margin: 2px 0 0;">Odia</p></div>
+                        </div>
+                    </th></tr>
+
+                    <tbody id="lista_regalo1" style="display: none;"> <!-- Encanta -->
+                        <tr><th style="height: 2em;">Regealos que le Encantan</th></tr>
                         <td style="text-align:center;">
                             <div id="regalos1" class="cont_obj_regalo">
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Adamantita.png"/><p><b>Adamantita</b></p></div>
@@ -75,25 +85,25 @@
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Alejandrita.png"/><p><b>Alejandrita</b></p></div>
 
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Peces/Otros/Fósil antiguo.png"/><p><b>Fósil</b><b>antiguo</b></p></div>
-                                
+
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Forja/Brasalete.png"/><p><b>Brasalete</b></p></div>
-                                
+
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Forja/Broche.png"/><p><b>Broche</b></p></div>
 
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Diamante.png"/><p><b>Diamante</b></p></div>
-                                
+
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Personajes/Eventos/Objetos/Vestido.png"/><p><b>Vestido</b></p></div>
-                                
+
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Forja/Aretes.png"/><p><b>Aretes</b></p></div>
 
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Esmeralda.png"/><p><b>Esmeralda</b></p></div>
-                            
+
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Personajes/Eventos/Objetos/Mascara facial.png"/><p><b>Mascarilla</b></p></div>
 
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Oro.png"/><p><b>Oro</b></p></div>
 
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/Huevos/Huevo de oro.png"/><p><b>Huevo</b><b>dorado</b></p></div>
-                            
+
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Personajes/Eventos/Objetos/Locion.png"/><p><b>Loción</b><b>de piel</b></p></div>
 
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Mitrilo.png"/><p><b>Mithril</b></p></div>
@@ -101,11 +111,11 @@
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Piedra de luna.png"/><p><b>Piedra</b><b>de luna</b></p></div>
 
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Mineral legendario.png"/><p><b>Mineral</b><b>legendario</b></p></div>
-                                
+
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Forja/Collar.png"/><p><b>Collar</b></p></div>
 
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Oricalco.png"/><p><b>Oricalco</b></p></div>
-                                
+
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Peridoto.png"/><p><b>Peridoto</b></p></div>
 
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Diamante rosa.png"/><p><b>Diamante</b><b>rosa</b></p></div>
@@ -115,21 +125,20 @@
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Rubi.png"/><p><b>Rubí</b></p></div>
 
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Rosa del desierto.png"/><p><b>Rosa del</b><b>desierto</b></p></div>
-                            
+
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Personajes/Eventos/Objetos/Protector solar.png"/><p><b>Bloqueador</b><b>solar</b></p></div>
 
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Topacio.png"/><p><b>Topacio</b></p></div>
                             </div>
                         </td>
-                    </tr>
+                    </tbody>
 
-                    <tr><!-- Gusta -->
-                        <th><p class="gusta" style="text-align:center; margin: 0;"></p><p style="text-align: center; margin: 5px 5px 0;">Gusta</p></th> 
-
+                    <tbody id="lista_regalo2" style="display: none;"> <!-- Gustan -->
+                        <tr><th style="height: 2em;">Regealos que le Gustan</th></tr>
                         <td style="text-align:center;">
                             <div id="regalos2" class="cont_obj_regalo">
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Plat ingre/Manzana esp.png"/><p><b>Manzana</b><b>UMSE</b></p></div>
-                            
+
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Manzana.png"/><p><b>Manzana</b></p></div>
 
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Aguamarina.png"/><p><b>Aguamarina</b></p></div>
@@ -143,9 +152,9 @@
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Naranja.png"/><p><b>Naranja</b></p></div>
 
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Pastel de naranja.png"/><p><b>Pastel de</b><b>naranja</b></p></div>
-                                
+
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Orangette.png"/><p><b>Orangette</b></p></div>
-                            
+
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Personajes/Eventos/Objetos/Perfume.png"/><p><b>Perfume</b></p></div>
 
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Plat ingre/Manzana esp.png"/><p><b>Manzana</b><b>SMDF</b></p></div>
@@ -153,11 +162,10 @@
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Zafiro.png"/><p><b>Zafiro</b></p></div>
                             </div>
                         </td>
-                    </tr>
+                    </tbody>
 
-                    <tr> <!-- Desagrado -->
-                        <th><p class="desagrado" style="text-align:center; margin: 0;"></p><p style="text-align: center; margin: 5px 5px 0;">Desagrada</p></th> 
-
+                    <tbody id="lista_regalo3" style="display: none;"> <!-- Desagradan -->
+                        <tr><th style="height: 2em; width: 64em;">Regealos que le Desagradan</th></tr>
                         <td style="text-align:center;">
                             <div id="regalos3" class="cont_obj_regalo">
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Restos de mineral.png"/><p><b>Restos de</b><b>mineral</b></p></div>
@@ -167,15 +175,14 @@
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Cobre.png"/><p><b>Cobre</b></p></div>
                             </div>
                         </td>
-                    </tr>
-                    
-                    <tr> <!-- Odio -->
-                        <th><p class="odio" style="text-align:center; margin: 0;"></p><p style="text-align: center; margin: 5px 5px 0;">Odia</p></th> 
+                    </tbody>
 
+                    <tbody id="lista_regalo4" style="display: none;"> <!-- odia -->
+                        <tr><th style="height: 2em;">Regealos que Odia</th></tr>
                         <td style="text-align:center;">
                             <div id="regalos4" class="cont_obj_regalo">
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Peces/Basura/Bota de goma.png"/><p><b>Bota de</b><b>goma</b></p></div>
-                                
+
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Peces/Basura/Rama.png"/><p><b>Rama</b></p></div>
 
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda gallinas/comida para gallina.png"/><p><b>Alimento</b><b>para pollos</b></p></div>
@@ -203,8 +210,10 @@
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Plat ingre/Malesa.png"/><p><b>Hierba</b></p></div>
                             </div>
                         </td>
-                    </tr>
+                    </tbody>
                 </table>
+                
+                <i><p>Huang tiene sentimientos neutrales (+1 FP) sobre todos los regalos que no aparecen en esta lista.</p></i>
                 
                 <h2>Requisitos de matrimonio</h2>
 
