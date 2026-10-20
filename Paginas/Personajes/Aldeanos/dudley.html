@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="/Guia-de-SOS-FOMT/CSS/Style.css" type="text/css"/> <!-- Este CSS contiene los diseños de toda las paginas -->
         <link rel="shortcut icon" href="/Guia-de-SOS-FOMT/IMG/Iconos/Kirbo.ico"/> <!-- Esta seccion es para colocar un icono que representa a toda la pagina en general -->
         <script type="text/javascript" src="/Guia-de-SOS-FOMT/JS/include.js" defer></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene la funcion de insertar el nav y footer a la pagina-->
+        <script type="text/javascript" src="/Guia-de-SOS-FOMT/JS/funciones.js"></script> <!-- Conecta el archivo js para ser usado en la pagina y Este sj contiene la funcion de insertar el nav y footer a la pagina-->
     </head>
     
     <body>
@@ -53,168 +54,353 @@
 
                 <h2>Preferencias de regalos</h2>
 
-                <p>La mejor forma de mejorar la amistad con este aldeano es siempre regalar las cosas que le gusta una vez por dia.</p>
+                <p>La mejor forma de mejorar la amistad con este aldeano es siempre regalar las cosas que le gusta una vez por día.</p>
 
-                <table class="data" style="margin: 15px auto 20px auto;">
-                    <tr> <!-- Encanta -->
-                        <th><p class="encanta" style="text-align:center; margin: 0;"></p></th>
-                        <td style=" display: flex; justify-content: space-around;">
-                            <div><ul class="horario">
-                                <li class="gustos">Queso (C/T)</li>
+                <i>Nota: Seleccione una emoción de las lista.</i>
+
+                <table class="data Table_regalo">
+                    <tr class="rec"><th>
+                        <div style="display:flex; justify-content:space-around; align-items:center; margin-top: 19px;">
+                            <div style="display:flex; flex-direction: column; align-items:center; cursor: pointer;" onclick="cambiar_regalo(1,4)"><p class="encanta" style="text-align:center; margin: 0;"></p><p style="text-align: center; margin: 2px 0 0;">Encanta</p></div>
+                            <div style="display:flex; flex-direction: column; align-items:center; cursor: pointer;" onclick="cambiar_regalo(2,4)"><p class="gusta" style="text-align:center; margin: 0;"></p><p style="text-align: center; margin: 2px 0 0;">Gusta</p></div>
+                            <div style="display:flex; flex-direction: column; align-items:center; cursor: pointer;" onclick="cambiar_regalo(3,4)"><p class="desagrado" style="text-align:center; margin: 0;"></p><p style="text-align: center; margin: 2px 0 0;">Desagrada</p></div>
+                            <div style="display:flex; flex-direction: column; align-items:center; cursor: pointer;" onclick="cambiar_regalo(4,4)"><p class="odio" style="text-align:center; margin: 0;"></p><p style="text-align: center; margin: 2px 0 0;">Odia</p></div>
+                        </div>
+                    </th></tr>
+
+                    <tbody id="lista_regalo1" style="display: none;"> <!-- Encanta -->
+                        <tr><th style="height: 2em;">Regealos que le Encantan</th></tr>
+                        <td style="text-align:center;">
+                            <div id="regalos1" class="cont_obj_regalo">
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/Leche/Queso (S).png"/><p><b>Queso </b><b style="color:rgb(194, 165, 4)">(C/T)</b></p></div>
+                                
                                 <li class="gustos">Huevo (C/T)</li>
                                 <li class="gustos">Leche (C/T) (C/A)</li>
-                                <li class="gustos">Manzana UMSE</li>
-                                <li class="gustos">Manzana</li>
-                                <li class="gustos">Manzana HMMR</li>
-                                <li class="gustos">Manzana SMDF</li>
-                                <li class="gustos">Chocolate</li>
-                                <li class="gustos">Mayonesa (C/T)</li>
-                                <li class="gustos">Mantequilla</li>
-                                <li class="gustos">Quiche</li>
-                                <li class="gustos">Torta de fresa</li>
-                                <li class="gustos">Onigiri</li>
-                                <li class="gustos">Concentrado de uva premium</li>
-                                <li class="gustos">Hierba azul marino</li>
-                                <li class="gustos">Hierba verde</li>
-                                <li class="gustos">Dorayaki</li>
-                                <li class="gustos">Buñuelo de pescado</li>
-                                <li class="gustos">Sopa de pescado</li>
-                                <li class="gustos">Arroz con marisco</li>
-                            </ul></div>
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Plat ingre/Manzana esp.png"/><p><b>Manzana</b><b>UMSE</b></p></div>
 
-                            <div style="margin: 0 12px;"><ul class="horario">
-                                <li class="gustos">Kétchup</li>
-                                <li class="gustos">Pasta a la napolitana</li>
-                                <li class="gustos">Pepino</li>
-                                <li class="gustos">Judía azuki</li>
-                                <li class="gustos">Naranja</li>
-                                <li class="gustos">Aceite</li>
-                                <li class="gustos">Miel</li>
-                                <li class="gustos">Piña</li>
-                                <li class="gustos">Col</li>
-                                <li class="gustos">Pan</li>
-                                <li class="gustos">cafeína</li>
-                                <li class="gustos">súper cafeína</li>
-                                <li class="gustos">Pastel de naranja</li>
-                                <li class="gustos">zanahoria</li>
-                                <li class="gustos">Curry en polvo</li>
-                                <li class="gustos">Chute de resistencia XL</li>
-                                <li class="gustos">Chute de resistencia</li>
-                                <li class="gustos">Tomate</li>
-                                <li class="gustos">Soba con tempura</li>
-                            </ul></div>
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Manzana.png"/><p><b>Manzana</b></p></div>
 
-                            <div><ul class="horario">
-                                <li class="gustos">Pizza de verduras</li>
-                                <li class="gustos">Orangette</li>
-                                <li class="gustos">Paella</li>
-                                <li class="gustos">Uva Silvestre</li>
-                                <li class="gustos">Cebolla</li>
-                                <li class="gustos">Harina de Trigo</li>
-                                <li class="gustos">Harina de dango</li>
-                                <li class="gustos">Manzana asada</li>
-                                <li class="gustos">Cáscara confitada</li>
-                                <li class="gustos">Pescado mediano</li>
-                                <li class="gustos">Carpaccio</li>
-                                <li class="gustos">Zumo de piña</li>
-                                <li class="gustos">Huevos benedictos</li>
-                                <li class="gustos">Pescado grande</li>
-                                <li class="gustos">Agua de uvas silvestres</li>
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Plat ingre/Manzana esp.png"/><p><b>Manzana</b><b>HMMR</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Plat ingre/Manzana esp.png"/><p><b>Manzana</b><b>SMDF</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Chocolate.png"/><p><b>Chocolate</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/Huevos/Mayonesa (S).png"/><p><b>Mayonesa</b><b style="color:rgb(194, 165, 4)">(C/T)</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Plat ingre/Mantequilla.png"/><p><b>Mantequilla</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Quiche.png"/><p><b>Quiche</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Torta de fresa.png"/><p><b>Torta de</b><b>fresa</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Onigiri.png"/><p><b>Onigiri</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Viñedo/Jugo de uva premium.png"/><p><b>Concentrado de</b><b>uva premium</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Hierba azul marino.png"/><p><b>Hierba</b><b>azul marino</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Hierba verde.png"/><p><b>Hierba</b><b>verde</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Dorayaki.png"/><p><b>Dorayaki</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Buñuelo de pescado.png"/><p><b>Buñuelo de</b><b>pescado</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Sopa de pescado.png"/><p><b>Sopa de</b><b>pescado</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Arroz con marisco.png"/><p><b>Arroz con</b><b>marisco</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Plat ingre/Ketchup.png"/><p><b>Kétchup</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Pasta a la napolitana.png"/><p><b>Pasta a la</b><b>napolitana</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Cultivos/Pepino.png"/><p><b>Pepino</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Cultivos/Judía azuki.png"/><p><b>Judía</b><b>azuki</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Naranja.png"/><p><b>Naranja</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Aceite.png"/><p><b>Aceite</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Miel.png"/><p><b>Miel</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Cultivos/Piña.png"/><p><b>Piña</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Cultivos/Col.png"/><p><b>Col</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Pan.png"/><p><b>Pan</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Clínica/Cafeina.png"/><p><b>Cafeína</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Clínica/Super Cafeina.png"/><p><b>Súper</b><b>cafeína</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Pastel de naranja.png"/><p><b>Pastel de</b><b>naranja</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Cultivos/Zanahoria.png"/><p><b>Zanahoria</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Curry.png"/><p><b>Curry en</b><b>polvo</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Clínica/Potenciador de resistencia XL.png"/><p><b>Chute de</b><b>resistencia XL</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Clínica/Potenciador de resistencia.png"/><p><b>Chute de</b><b>resistencia</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Cultivos/Tomate.png"/><p><b>Tomate</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Soba con tempura.png"/><p><b>Soba con</b><b>tempura</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Pizza de verduras.png"/><p><b>Pizza de</b><b>verduras</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Orangette.png"/><p><b>Orangette</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Paella.png"/><p><b>Paella</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Uvas silvestres.png"/><p><b>Uvas</b><b>silvestres</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Cultivos/Cebolla.png"/><p><b>Cebolla</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Arina.png"/><p><b>Harina</b><b>de Trigo</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Arina de dango.png"/><p><b>Harina</b><b>de Dango</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Manzana asada.png"/><p><b>Manzana</b><b>asada</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Cáscara confitada.png"/><p><b>Cáscara</b><b>confitada</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Peces/Otros/Pescado mediano.png"/><p><b>Pescado</b><b>mediano</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Carpaccio.png"/><p><b>Carpaccio</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Zumo de piña.png"/><p><b>Zumo de</b><b>piña</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Huevos benedictos.png"/><p><b>Huevos</b><b>benedictos</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Peces/Otros/Pescado grande.png"/><p><b>Pescado</b><b>grande</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Agua de uvas silvestres.png"/><p><b>Agua de uvas</b><b>silvestres</b></p></div>
+
                                 <li class="gustos">Hierba blanco</li>
-                                <li class="gustos">Ajillo</li>
-                                <li class="gustos">Acqua pazza</li>
-                                <li class="gustos">Bagna Cauda</li>
-                            </ul></div>
-                        </td>
-                    </tr>
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Ajillo.png"/><p><b>Ajillo</b></p></div>
 
-                    <tr><!-- Gusta -->
-                        <th><p class="encanta" style="text-align:center; margin: 0;"></p></th>
-                        <td style=" display: flex; justify-content: space-around;">
-                            <div><ul class="horario">
-                                <li class="gustos">Zenzai</li>
-                                <li class="gustos">Zaru Soba</li>
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Acqua pazza.png"/><p><b>Acqua</b><b>pazza</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Bagna Cauda.png"/><p><b>Bagna</b><b>cauda</b></p></div>
+                                
+                            </div>
+                        </td>
+                    </tbody>
+
+                    <tbody id="lista_regalo2" style="display: none;"> <!-- Gustan -->
+                        <tr><th style="height: 2em;">Regealos que le Gustan</th></tr>
+                        <td style="text-align:center;">
+                            <div id="regalos2" class="cont_obj_regalo">
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Zenzai.png"/><p><b>Zenzai</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Plat ingre/Zaru soba.png"/><p><b>Zaru</b><b>soba</b></p></div>
+                                
                                 <li class="gustos">Udon</li>
-                                <li class="gustos">Brotes de bambú</li>
-                                <li class="gustos">Hierba negra</li>
-                                <li class="gustos">Harina de trigo sarraceno</li>
-                                <li class="gustos">Maíz</li>
-                                <li class="gustos">Huevo de las termas</li>
-                                <li class="gustos">Hongo pino</li>
-                                <li class="gustos">Tofu de almendra</li>
-                                <li class="gustos">Pizza margarita</li>
-                            </ul></div>
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Brote de bambú.png"/><p><b>Brote de</b><b>bambú</b></p></div>
 
-                            <div style="margin: 0 12px;"><ul class="horario">
-                                <li class="gustos">Sushi</li>
-                                <li class="gustos">Sashimi</li>
-                                <li class="gustos">Pescado a la plancha</li>
-                                <li class="gustos">Fresa</li>
-                                <li class="gustos">Tempura</li>
-                                <li class="gustos">Mochi</li>
-                                <li class="gustos">Champiñón</li>
-                                <li class="gustos">Hierba morada</li>
-                                <li class="gustos">Daifuku</li>
-                                <li class="gustos">Helado</li>
-                                <li class="gustos">Hojas de té relajantes</li>
-                            </ul></div>
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Hierba negra.png"/><p><b>Hierba</b><b>negra</b></p></div>
 
-                            <div><ul class="horario">
-                                <li class="gustos">Té relajante</li>
-                                <li class="gustos">Empanadillas de luna</li>
-                                <li class="gustos">Gratinado de setas</li>
-                                <li class="gustos">Arroz con hongo pino</li>
-                                <li class="gustos">Arroz con setas</li>
-                                <li class="gustos">Arroz con bambú</li>
-                                <li class="gustos">Flan</li>
-                                <li class="gustos">Fondue de queso</li>
-                                <li class="gustos">Risotto de queso</li>
-                                <li class="gustos">Hojas de Elly</li>
-                            </ul></div>
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Plat ingre/Harina de trigo sarraceno.png"/><p><b>Harina de</b><b>trigo sarraceno</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Cultivos/Maíz.png"/><p><b>Maíz</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Plat ingre/Huevo de las termas.png"/><p><b>Huevo de</b><b>las termas</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Hongo pino.png"/><p><b>Hongo pino</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Tofu de almendra.png"/><p><b>Tofu de</b><b>almendra</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Pizza Margarita picante.png"/><p><b>Pizza</b><b>margarita picante</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Sushi.png"/><p><b>Sushi</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Plat ingre/Sashimi.png"/><p><b>Sashimi</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Pescado a la plancha.png"/><p><b>Pescado a</b><b>la plancha</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Cultivos/Fresas.png"/><p><b>Fresa</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Plat ingre/Tempura.png"/><p><b>Tempura</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Plat ingre/Mochi.png"/><p><b>Mochi</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Champiñón.png"/><p><b>Champiñón</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Hierba morado.png"/><p><b>Hierba</b><b>morado</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Daifuku.png"/><p><b>Daifuku</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Helado.png"/><p><b>Helado</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Plat ingre/Hojas de té relajantes.png"/><p><b>Hojas de té</b><b>relajantes</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Té relajante.png"/><p><b>Té</b><b>relajante</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Empanadillas de luna.png"/><p><b>Empanadillas</b><b>de luna</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Gratinado de setas.png"/><p><b>Gratinado</b><b>de setas</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Arroz con hongo pino.png"/><p><b>Arroz con</b><b>hongo pino</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Arroz con setas.png"/><p><b>Arroz con</b><b>setas</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Arroz con bambú.png"/><p><b>Arroz con</b><b>bambú</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Flan.png"/><p><b>Flan</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Fondue de queso.png"/><p><b>Fondue de</b><b>queso</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Risotto de queso.png"/><p><b>Risotto de</b><b>queso</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Hojas de Elly.png"/><p><b>Hojas de</b><b>Elly</b></p></div>
+                            </div>
                         </td>
-                    </tr>
+                    </tbody>
                     
-                    <tr><!-- Desagrado -->
-                        <th><p class="encanta" style="text-align:center; margin: 0;"></p></th>
-                        <td style=" display: flex; justify-content: space-around;">
-                            <div><ul class="horario">
-                                <li class="gustos">Lata vacía</li>
-                                <li class="gustos">Hierba amarilla</li>
-                                <li class="gustos">Rama</li>
-                                <li class="gustos">Hierba roja</li>
+                    <tbody id="lista_regalo3" style="display: none;"> <!-- Desagradan -->
+                        <tr><th style="height: 2em;">Regealos que le Desagradan</th></tr>
+                        <td style="text-align:center;">
+                            <div id="regalos3" class="cont_obj_regalo">
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Peces/Basura/Lata vacía.png"/><p><b>Lata vacía</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Aguamarina.png"/><p><b>Aguamarina</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Peces/Basura/Rama.png"/><p><b>Rama</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Hierba roja.png"/><p><b>Hierba</b><b>roja</b></p></div>
+
                                 <li class="gustos">Todos los minerales y gemas</li>
-                                <li class="gustos">Lanas (C/T) (C/A)</li>
-                                <li class="gustos">Hilos (C/T)</li>
-                                <li class="gustos">Bota de goma</li>
-                                <li class="gustos">Espinas de pescado</li>
-                            </ul></div>
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/Lana/Lana de conejo (S).png"/><p><b>Lana de</b><b>conejo <b style="color:rgb(194, 165, 4)">(C/T)</b></b></p></div>
 
-                            <div style="margin: 0 12px;"><ul class="horario">
-                                <li class="gustos">Flor de luna</li>
-                                <li class="gustos">Hierba</li>
-                                <li class="gustos">Fósil Antiguo</li>
-                                <li class="gustos">Roca</li>
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/Lana/Lana de alpaca (S).png"/><p><b>Lana de</b><b>alpaca <b style="color:rgb(194, 165, 4)">(C/T)</b></b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/Lana/Lana de oveja (S).png"/><p><b>Lana de</b><b>oveja <b style="color:rgb(194, 165, 4)">(C/T)</b></b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/Lana/Hilo (S).png"/><p><b>Hilo </b><b style="color:rgb(194, 165, 4)">(C/T)</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Peces/Basura/Bota de goma.png"/><p><b>Bota de</b><b>goma</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Peces/Basura/Espinas de pescado.png"/><p><b>Espina de</b><b>pescado</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Flores/Flor de luna.png"/><p><b>Flor de</b><b>luna</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Plat ingre/Malesa.png"/><p><b>Hierba</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Peces/Otros/Fósil antiguo.png"/><p><b>Fósil</b><b>antiguo</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Roca.png"/><p><b>Roca</b></p></div>
+
                                 <li class="gustos">Articuos de mujer (carrera de caballo)</li>
-                                <li class="gustos">Tesoro Pirata</li>
-                                <li class="gustos">Alimento para pollos/conejos</li>
-                                <li class="gustos">Flor mágica azul</li>
-                                <li class="gustos">Hongo Venenoso</li>
-                            </ul></div>
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Peces/Otros/Tesoro pirata.png"/><p><b>Tesoro</b><b>pirata</b></p></div>
 
-                            <div><ul class="horario">
-                                <li class="gustos">Golosina para mascotas</li>
-                                <li class="gustos">Flor mágica roja</li>
-                                <li class="gustos">Madera</li>
-                                <li class="gustos">Piedra</li>
-                                <li class="gustos">Madera Dorada</li>
-                                <li class="gustos">Flor de Gato Rosa</li>
-                                <li class="gustos">Flor de juguete</li>
-                                <li class="gustos">Flor dulce sol</li>
-                                <li class="gustos">Forraje</li>
-                            </ul></div>
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda gallinas/comida para gallina.png"/><p><b>Alimento</b><b>para pollos</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Flores/Flor mágica azul.png"/><p><b>Flor mágica</b><b>azul</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Hongo venenoso.png"/><p><b>Hongo</b><b>venenoso</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Animales/Mascota/Premio para masc.png"/><p><b>Premio para</b><b>mascotas</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Flores/Flor mágica roja.png"/><p><b>Flor mágica</b><b>roja</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Madera.png"/><p><b>Madera</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Piedra.png"/><p><b>Material</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Personajes/Eventos/Objetos/Madera dorada.png"/><p><b>Madera</b><b>dorada</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Flores/Flor de gato rosa.png"/><p><b>Flor de</b><b>gato rosa</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Flores/Flor de juguete.png"/><p><b>Flor de</b><b>juguete</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Flores/Flor dulcesol.png"/><p><b>Flor dulcesol</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Rancho/Forraje.png"/><p><b>Forraje</b></p></div>
+                            </div>
                         </td>
-                    </tr>
+                    </tbody>
+
+                    <tbody id="lista_regalo4" style="display: none;"> <!-- odia -->
+                        <tr><th style="height: 2em;">Regealos que Odia</th></tr>
+                        <td style="text-align:center;">
+                            <div id="regalos4" class="cont_obj_regalo">
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Peces/Basura/Lata vacía.png"/><p><b>Lata vacía</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Aguamarina.png"/><p><b>Aguamarina</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Adamantita.png"/><p><b>Adamantita</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Amatista.png"/><p><b>Amatista</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Alejandrita.png"/><p><b>Alejandrita</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Roca.png"/><p><b>Roca</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Peces/Basura/Rama.png"/><p><b>Rama</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Esmeralda.png"/><p><b>Esmeralda</b></p></div>
+                                
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Personajes/Eventos/Objetos/Madera dorada.png"/><p><b>Madera</b><b>dorada</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Oricalco.png"/><p><b>Oricalco</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Granate.png"/><p><b>Granate</b></p></div>
+                                
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Peces/Otros/Tesoro pirata.png"/><p><b>Tesoro</b><b>pirata</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Rancho/Forraje.png"/><p><b>Forraje</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Oro.png"/><p><b>Oro</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Plata.png"/><p><b>Plata</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Restos de mineral.png"/><p><b>Restos de</b><b>mineral</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Mineral legendario.png"/><p><b>Mineral</b><b>legendario</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Peces/Otros/Fósil antiguo.png"/><p><b>Fósil</b><b>antiguo</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Peces/Basura/Espinas de pescado.png"/><p><b>Espina de</b><b>pescado</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Plat ingre/Malesa.png"/><p><b>Hierba</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Zafiro.png"/><p><b>Zafiro</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Rosa del desierto.png"/><p><b>Rosa del</b><b>desierto</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Piedra.png"/><p><b>Material</b></p></div>
+                                
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Turquesa.png"/><p><b>Turquesa</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Diamante.png"/><p><b>Diamante</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Cobre.png"/><p><b>Cobre</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Hongo venenoso.png"/><p><b>Hongo</b><b>venenoso</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Topacio.png"/><p><b>Topacio</b></p></div>
+                                
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Peces/Basura/Bota de goma.png"/><p><b>Bota de</b><b>goma</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda gallinas/comida para gallina.png"/><p><b>Alimento</b><b>para pollos</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Jade.png"/><p><b>Jade</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Diamante rosa.png"/><p><b>Diamante</b><b>rosa</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Peridoto.png"/><p><b>Peridoto</b></p></div>
+                                
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Fluorita.png"/><p><b>Fluorita</b></p></div>
+
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Rubi.png"/><p><b>Rubí</b></p></div>
+                            </div>
+                        </td>
+                    </tbody>
                 </table>
+
+                <i><p>Dudley tiene sentimientos neutrales (+1 FP) sobre todos los regalos que no aparecen en esta lista.</p></i>
 	        </main>
 
             <div id="footer"></div>
