@@ -17,7 +17,7 @@ nav div {
     align-items: center; /* Centrado de íconos y texto */
 }
 
-/* clase "vin_tel" con propiedad de enlace y le modifico la apariencia de hipervinculo*/
+/* clase "vin_nav" con propiedad de enlace y le modifico la apariencia de hipervinculo*/
 .vin_nav:-webkit-any-link {
     cursor: pointer;
     font-weight: bold;

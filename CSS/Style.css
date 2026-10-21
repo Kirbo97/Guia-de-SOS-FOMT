@@ -165,7 +165,6 @@ details > .summary_h2_fin:first-of-type { margin-bottom: 20px; }
 
 .scroll-container-aldeanos,.scroll-container-eventos-aldeanos,.scroll-container-candidatos {
     width: auto;           /* Ancho del contenedor */
-    height: 32em;          /* Alto del contenedor */
     overflow: auto;         /* Activa la barra de desplazamiento */
     scroll-behavior: smooth; /* Desplazamiento suave */
     border: 1px solid #ccc; /* Borde opcional para definir el contorno */
@@ -173,7 +172,7 @@ details > .summary_h2_fin:first-of-type { margin-bottom: 20px; }
 
 .scroll-container-eventos-aldeanos { height: 21.5em; /* Alto del contenedor */ }
 
-.scroll-container-aldeanos { height: 32em; /* Alto del contenedor */ }
+.scroll-container-aldeanos { height:30em; /* Alto del contenedor */ }
 
 .scroll-container-candidatos { height: 39em; /* Alto del contenedor */ }
 

@@ -14,35 +14,26 @@
         margin: 4px 0 4px 0 !important;
         text-align: left !important;
     }
-    
-    header .pos-fin { margin: 0 0 0 2.75em !important; }
-
-    .vin_tel{ font-size: 0.97em !important; }
-
-    .men_tel{ font-size: 0.76em !important; }
-
-    #esp1 { width: 180.8px !important;}
-
-    #esp2 { width: 200.8px !important;}
-
-    #esp3 { width: 235.8px !important;}
-
-    #esp4 { width: 160.8px !important;}
-
-    .box_otro { max-width:400px !important; }
 
     .box_matrimonio { 
         max-width:188px !important; 
         margin:1em 0 !important; 
     }
 
-    .scroll-container-candidatos { height: 39em !important; }  /* Alto del contenedor */
-
     .Table_regalo{ width: 50em !important;}
 
     #bot_can { display: block !important;}
 
-    .scroll-container-candidatos { border: 1px solid #ccc !important;}  /* Borde opcional para definir el contorno */
+    .box_aldeanos { max-width:142px !important;}
+
+    .box_otro { max-width:310px !important;}
+
+    .scroll-container-aldeanos { height:25em !important;}
+
+    .scroll-container-candidatos { 
+        border: 1px solid #ccc !important; /* Borde opcional para definir el contorno */
+        height: 39em !important;   /* Alto del contenedor */
+    }
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
@@ -55,18 +46,4 @@
         margin: 4px 0 4px 0 !important;
         text-align: left !important;
     }
-    
-    header .pos-fin { margin: 0 0 0 2.75em !important; }
-
-    .vin_tel{ font-size: 0.97em !important; }
-
-    .men_tel{ font-size: 0.76em !important; }
-
-    #esp1 { width: 180.8px !important;}
-
-    #esp2 { width: 200.8px !important;}
-
-    #esp3 { width: 235.8px !important;}
-
-    #esp4 { width: 160.8px !important;}
 }
