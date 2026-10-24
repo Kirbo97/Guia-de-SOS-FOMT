@@ -24,7 +24,7 @@
 .right {
     float:right; 
     height:auto; 
-    margin: 5px 20px 0 0;
+    margin: 5px 0 0 20px ;
     max-width:100%;
     border-radius:10px;
 }
@@ -33,7 +33,7 @@
 .left {
     float:left; 
     height:auto; 
-    margin: 5px 0 0 20px;
+    margin: 5px 20px 0 0;
     max-width:100%;
     border-radius:10px;
 }

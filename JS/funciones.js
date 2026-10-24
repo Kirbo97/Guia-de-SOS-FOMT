@@ -142,8 +142,15 @@ function cambiar_gustos(num,i,x){
         lista_regalo.style.display = "none";
         return;
     }
+
     // Ocultar todas las listas
-    for(i;i<=x;i++){ document.getElementById("lista_regalo"+i).style.display="none"; }
+    for(i;i<=x;i++){ 
+        if(num>4 && num<9){
+            document.getElementById("lista_regalo"+(i+4)).style.display="none"; 
+        } else if(num<5) {
+            document.getElementById("lista_regalo"+i).style.display="none";
+        }
+    }
 
     // Mostrar la seleccionada
     lista_regalo.style.display = "block";
