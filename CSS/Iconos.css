@@ -38,23 +38,28 @@ ul li:before {
     font-size:1.2em; /* El guion tendra un tamaño*/
 }
 
+.favorito:before  {
+    content: '\1F60D'; /*(La guion sera una cara con corazon)*/
+    font-size: 2.8em;
+}
+
 .encanta:before  {
-    content: '\1F604'; /*(La guion sera una alegre)*/
+    content: '\1F604'; /*(La guion sera una cara alegre)*/
     font-size: 2.8em;
 }
 
 .gusta:before  {
-    content: '\1F642'; /*(La guion sera una feliz)*/
+    content: '\1F642'; /*(La guion sera una cara feliz)*/
     font-size: 3em;
 }
 
 .desagrado:before  {
-    content: '\1F610'; /*(La guion sera una desagrado)*/
+    content: '\1F610'; /*(La guion sera una cara seria)*/
     font-size: 3em;
 }
 
 .odio::before {
-    content: '\1F621'; /*(La guion sera una odio)*/
+    content: '\1F621'; /*(La guion sera una cara de odio)*/
     font-size: 3em;
 }
 
