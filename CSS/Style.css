@@ -163,7 +163,7 @@ details > .summary_h2_fin:first-of-type { margin-bottom: 20px; }
 /*  Diseños de la barra de desplasamiento  */
 /* *************************************** */
 
-.scroll-container-aldeanos,.scroll-container-eventos-aldeanos,.scroll-container-candidatos {
+.scroll-container-aldeanos,.scroll-container-eventos-aldeanos,.scroll-container-candidatos,.scroll-container-lugares {
     width: auto;           /* Ancho del contenedor */
     overflow: auto;         /* Activa la barra de desplazamiento */
     scroll-behavior: smooth; /* Desplazamiento suave */
@@ -173,6 +173,8 @@ details > .summary_h2_fin:first-of-type { margin-bottom: 20px; }
 .scroll-container-eventos-aldeanos { height: 21.5em; /* Alto del contenedor */ }
 
 .scroll-container-aldeanos { height:30em; /* Alto del contenedor */ }
+
+.scroll-container-lugares { height:33.5em; /* Alto del contenedor */ }
 
 .scroll-container-candidatos { height: 39em; /* Alto del contenedor */ }
 

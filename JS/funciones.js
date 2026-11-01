@@ -2,11 +2,13 @@
 /*  Funciones para desplasar el contenido de la caja por botones  */
 /* ************************************************************** */
 
-function Scroll_button_evento_villager(tip_bot,tip_cuad){ desplasar(tip_bot,tip_cuad,347,350); }
+function Scroll_button_evento_villager (tip_bot,tip_cuad){ desplasar(tip_bot,tip_cuad,347,350); }
 
-function Scroll_button_villager(tip_bot,tip_cuad){ desplasar(tip_bot,tip_cuad,410,500); }
+function Scroll_button_villager (tip_bot,tip_cuad){ desplasar(tip_bot,tip_cuad,410,500); }
 
-function Scroll_button_marriage(tip_bot,tip_cuad){ desplasar(tip_bot,tip_cuad,638,520); }
+function Scroll_button_marriage (tip_bot,tip_cuad){ desplasar(tip_bot,tip_cuad,638,520); }
+
+function Scroll_button_lugares (tip_bot,tip_cuad){ desplasar(tip_bot,tip_cuad,530,600); }
 
 function desplasar(tip_bot,tip_cuad,salto_movile,salto_comp) {
     var anchoVentana = window.innerWidth;
