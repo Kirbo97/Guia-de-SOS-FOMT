@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="/Guia-de-SOS-FOMT/CSS/Style.css" type="text/css"/> <!-- Este CSS contiene los diseños de toda las paginas -->
         <link rel="shortcut icon" href="/Guia-de-SOS-FOMT/IMG/Iconos/Kirbo.ico"/> <!-- Esta seccion es para colocar un icono que representa a toda la pagina en general -->
         <script type="text/javascript" src="/Guia-de-SOS-FOMT/JS/include.js" defer></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene la funcion de insertar el nav y footer a la pagina-->
+        <script type="text/javascript" src="/Guia-de-SOS-FOMT/JS/funciones.js"></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene la funcion que se ejecutara en la pagina-->
     </head>
     
     <body>
@@ -33,90 +34,100 @@
                 <p>Si examinas el mostrador de una tienda y aparece el mensaje "Mostrador", significa que la tienda no está abierta en ese momento. Podrás acceder a sus edificios más temprano durante el día a medida que vayas entablando amistad con los comerciantes, pero el horario de atención no cambiará.</p>
 
                 <h2>Tiendas y servicios del lado Norte de la ciudad</h2>
-                
-                <div id="boxshort" style="display: flex; flex-wrap: wrap; justify-content: space-evenly; margin-top: 12px;">
-                    <div class="box_menu_lugares" >
-                        <a href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Biblioteca.html" style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Iconos/sub-iconos-lugares/biblioteca.png" title="Biblioteca" style="border:none;" width="260" height="250"></a>
-                        <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Biblioteca.html" style="margin: 0  0 auto 0; font-size: 1.18em;">1) Biblioteca</a>
-                    </div>
+
+                    <div style="display: flex; margin-top: 20px; margin-bottom: 20px;">
+                        <div id="lugares_box" style="overflow: hidden;" class="scroll-container-lugares">
+                            <div class="box_menu_lugares" >
+                                <a href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Biblioteca.html" style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Iconos/sub-iconos-lugares/biblioteca.png" title="Biblioteca" style="border:none;" width="260" height="250"></a>
+                                <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Biblioteca.html" style="margin: 0  0 auto 0; font-size: 1.18em;">1) Biblioteca</a>
+                            </div>
                     
-                    <div class="box_menu_lugares">
-                        <a href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Bazar.html" style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Iconos/sub-iconos-lugares/bazar.png" title="Bazar" style="border:none;" width="260" height="250"></a>
-                        <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Bazar.html" style="margin: 0  0 auto 0; font-size: 1.18em;">2) Tienda general</a>
-                    </div>
+                            <div class="box_menu_lugares">
+                                <a href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Bazar.html" style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Iconos/sub-iconos-lugares/bazar.png" title="Bazar" style="border:none;" width="260" height="250"></a>
+                                <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Bazar.html" style="margin: 0  0 auto 0; font-size: 1.18em;">2) Tienda general</a>
+                            </div>
         
-                    <div class="box_menu_lugares">
-                        <a href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Clinica.html" style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Iconos/sub-iconos-lugares/clinica.png" title="Clinica" style="border:none;" width="260" height="250"></a>
-                        <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/clinica.html" style="margin: 0  0 auto 0; font-size: 1.18em;">3) Clinica</a>
-                    </div>
+                            <div class="box_menu_lugares">
+                                <a href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Clinica.html" style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Iconos/sub-iconos-lugares/clinica.png" title="Clinica" style="border:none;" width="260" height="250"></a>
+                                <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/clinica.html" style="margin: 0  0 auto 0; font-size: 1.18em;">3) Clinica</a>
+                            </div>
         
-                    <div class="box_menu_lugares">
-                        <a href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Iglesia.html" style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Iconos/sub-iconos-lugares/iglesia.png" title="Iglesia" style="border:none;" width="260" height="250"></a>
-                        <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Iglesia.html" style="margin: 0  0 auto 0; font-size: 1.18em;">4) Iglesia</a>
-                    </div>
+                            <div class="box_menu_lugares">
+                                <a href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Iglesia.html" style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Iconos/sub-iconos-lugares/iglesia.png" title="Iglesia" style="border:none;" width="260" height="250"></a>
+                                <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Iglesia.html" style="margin: 0  0 auto 0; font-size: 1.18em;">4) Iglesia</a>
+                            </div>
         
-                    <div class="box_menu_lugares">
-                        <a href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Casa_duendes.html" style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Iconos/sub-iconos-lugares/casa_duendes.png" title="Hogar de los duendes de la cosecha" style="border:none;" width="260" height="250"></a>
-                        <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Casa_duendes.html" style="margin: 0  0 auto 0; font-size: 1.18em;">5) Casa de los duendes</a>
-                    </div>
+                            <div class="box_menu_lugares">
+                                <a href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Casa_duendes.html" style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Iconos/sub-iconos-lugares/casa_duendes.png" title="Hogar de los duendes de la cosecha" style="border:none;" width="260" height="250"></a>
+                                <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Casa_duendes.html" style="margin: 0  0 auto 0; font-size: 1.18em;">5) Casa de los duendes</a>
+                            </div>
         
-                    <div class="box_menu_lugares">
-                        <a href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Viñedo.html" style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Iconos/sub-iconos-lugares/viñedo.png" title="Bodega Adge" style="border:none;" width="260" height="250"></a>
-                        <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Viñedo.html" style="margin: 0  0 auto 0; font-size: 1.18em;">6) Bodega Adge</a>
-                    </div>
+                            <div class="box_menu_lugares">
+                                <a href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Viñedo.html" style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Iconos/sub-iconos-lugares/viñedo.png" title="Bodega Adge" style="border:none;" width="260" height="250"></a>
+                                <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Viñedo.html" style="margin: 0  0 auto 0; font-size: 1.18em;">6) Bodega Adge</a>
+                            </div>
         
-                    <div class="box_menu_lugares">
-                        <a href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Posada.html" style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Iconos/sub-iconos-lugares/posada.png" title="Posada" style="border:none;" width="260" height="250"></a>
-                        <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Posada.html" style="margin: 0  0 auto 0; font-size: 1.18em;">7) Posada</a>
-                    </div>
+                            <div class="box_menu_lugares">
+                                <a href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Posada.html" style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Iconos/sub-iconos-lugares/posada.png" title="Posada" style="border:none;" width="260" height="250"></a>
+                                <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Posada.html" style="margin: 0  0 auto 0; font-size: 1.18em;">7) Posada</a>
+                            </div>
         
-                    <div class="box_menu_lugares">
-                        <a href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Tienda_Van.html" style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Iconos/sub-iconos-lugares/tienda.png" title="Tienda de Van" style="border:none;" width="260" height="250"></a>
-                        <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Tienda_Van.html" style="margin: 0  0 auto 0; font-size: 1.18em;">8) Tienda de Van</a>
-                    </div>
-                </div>
-
-                <h2>Tiendas y servicios de la playa de la ciudad</h2>
+                            <div class="box_menu_lugares">
+                                <a href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Tienda_Van.html" style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Iconos/sub-iconos-lugares/tienda.png" title="Tienda de Van" style="border:none;" width="260" height="250"></a>
+                                <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Tienda_Van.html" style="margin: 0  0 auto 0; font-size: 1.18em;">8) Tienda de Van</a>
+                            </div>
                 
-                <div id="boxshort" style="display: flex; flex-wrap: wrap; justify-content: space-evenly; margin-top: 12px;">
-                    <div class="box_menu_lugares" >
-                        <a href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Restaurante.html" style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Iconos/sub-iconos-lugares/restaurante.png" title="Café de la playa" style="border:none;" width="260" height="250"></a>
-                        <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Restaurante.html" style="margin: 0  0 auto 0; font-size: 1.18em;">9) Café de la playa</a>
-                    </div>
-                    
-                    <div class="box_menu_lugares">
-                        <a href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Casa_Zack.html" style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Iconos/sub-iconos-lugares/tienda_Huang.png" title="Tienda de Huang" style="border:none;" width="260" height="250"></a>
-                        <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Casa_Zack.html" style="margin: 0  0 auto 0; font-size: 1.18em;">10) Tienda de Huang</a>
-                    </div>
-                </div>
+                            <div class="box_menu_lugares" >
+                                <a href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Restaurante.html" style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Iconos/sub-iconos-lugares/restaurante.png" title="Café de la playa" style="border:none;" width="260" height="250"></a>
+                                <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Restaurante.html" style="margin: 0  0 auto 0; font-size: 1.18em;">9) Café de la playa</a>
+                            </div>
+                            
+                            <div class="box_menu_lugares">
+                                <a href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Casa_Zack.html" style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Iconos/sub-iconos-lugares/tienda_Huang.png" title="Tienda de Huang" style="border:none;" width="260" height="250"></a>
+                                <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Casa_Zack.html" style="margin: 0  0 auto 0; font-size: 1.18em;">10) Tienda de Huang</a>
+                            </div>
+                            
+                            <div class="box_menu_lugares" >
+                                <a href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Forja.html" style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Iconos/sub-iconos-lugares/forja.png" title="Forja" style="border:none;" width="260" height="250"></a>
+                                <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Forja.html" style="margin: 0  0 auto 0; font-size: 1.18em;">11) Forja</a>
+                            </div>
 
-                <h2>Tiendas y servicios del lado Sur de la ciudad</h2>
-                
-                <div id="boxshort" style="display: flex; flex-wrap: wrap; justify-content: space-evenly; margin-top: 12px;">
-                    <div class="box_menu_lugares" >
-                        <a href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Forja.html" style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Iconos/sub-iconos-lugares/forja.png" title="Forja" style="border:none;" width="260" height="250"></a>
-                        <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Forja.html" style="margin: 0  0 auto 0; font-size: 1.18em;">11) Forja</a>
-                    </div>
+                            <div class="box_menu_lugares" >
+                                <a href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Tienda_avícola.html" style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Iconos/sub-iconos-lugares/aves_corral.png" title="Tienda avícola" style="border:none;" width="260" height="250"></a>
+                                <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Tienda_avícola.html" style="margin: 0  0 auto 0; font-size: 1.18em;">12) Tienda avícola</a>
+                            </div>
+                            
+                            <div class="box_menu_lugares">
+                                <a href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Rancho.html" style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Iconos/sub-iconos-lugares/rancho.png" title="Rancho Yodel" style="border:none;" width="260" height="250"></a>
+                                <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Rancho.html" style="margin: 0  0 auto 0; font-size: 1.18em;">13) Rancho Yodel</a>
+                            </div>
+                            
+                            <div class="box_menu_lugares" >
+                                <a href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Taller.html" style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Iconos/sub-iconos-lugares/carpintería.png" title="Taller de Gotts" style="border:none;" width="260" height="250"></a>
+                                <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Taller.html" style="margin: 0  0 auto 0; font-size: 1.18em;">14) Taller de Gotts</a>
+                            </div>
+                            
+                            <div class="box_menu_lugares" >
+                                <a href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Bosque.html" style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Iconos/sub-iconos-lugares/bosque.png" title="Bosque secreto" style="border:none;" width="260" height="250"></a>
+                                <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Bosque.html" style="margin: 0  0 auto 0; font-size: 1.18em;">15) Bosque secreto</a>
+                            </div>
 
-                    <div class="box_menu_lugares" >
-                        <a href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Tienda_avícola.html" style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Iconos/sub-iconos-lugares/aves_corral.png" title="Tienda avícola" style="border:none;" width="260" height="250"></a>
-                        <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Tienda_avícola.html" style="margin: 0  0 auto 0; font-size: 1.18em;">12) Tienda avícola</a>
-                    </div>
-                    
-                    <div class="box_menu_lugares">
-                        <a href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Rancho.html" style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Iconos/sub-iconos-lugares/rancho.png" title="Rancho Yodel" style="border:none;" width="260" height="250"></a>
-                        <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Rancho.html" style="margin: 0  0 auto 0; font-size: 1.18em;">13) Rancho Yodel</a>
-                    </div>
-                </div>
+                            <div class="box_menu_lugares" >
+                                <a href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Plaza.html" style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Iconos/sub-iconos-lugares/Plaza.png" title="Plaza rosa" style="border:none;" width="260" height="250"></a>
+                                <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Plaza.html" style="margin: 0  0 auto 0; font-size: 1.18em;">16) Plaza rosa</a>
+                            </div>
 
-                <h2>Tiendas y servicios en las afueras de la ciudad</h2>
-                
-                <div id="boxshort" style="display: flex; flex-wrap: wrap; justify-content: space-evenly; margin-top: 12px;">
-                    <div class="box_menu_lugares" >
-                        <a href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Taller.html" style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Iconos/sub-iconos-lugares/carpintería.png" title="Taller de Gotts" style="border:none;" width="260" height="250"></a>
-                        <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Taller.html" style="margin: 0  0 auto 0; font-size: 1.18em;">14) Taller de Gotts</a>
+                            <div class="box_menu_lugares" >
+                                <a href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Colina_madre.html" style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Iconos/sub-iconos-lugares/colina.png" title="Colina madre" style="border:none;" width="260" height="250"></a>
+                                <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Colina_madre.html" style="margin: 0  0 auto 0; font-size: 1.18em;">17) Colina madre</a>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; flex-direction: column;">
+                            <button style="height: 50%; padding: 10px; font-weight: bold; font-size: 25px;" onclick="Scroll_button_lugares('arriba','lugares_box');">↑</button>
+                            <button style="height: 50%; padding: 10px; font-weight: bold; font-size: 25px;" onclick="Scroll_button_lugares('abajo','lugares_box');">↓</button>
+                        </div>
                     </div>
-                </div>
             </main>
 
             <div id="footer"></div>
