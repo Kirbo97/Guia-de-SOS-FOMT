@@ -4,6 +4,7 @@
         <meta charset="UTF-8">   <!-- Para usar la escritura latina -->
         <title>Guia de Gotts de SOS-FOMT</title> 
         <meta name="origen" content="La informacion y parte de los diseños de la pagina pertenesen a Ushi No Tane, pero la representacion de la informacion traducida, funciones y diseños modificados y añadidos son de mi propio criterio"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Esta linea es para que al recargar la pagina vuelva al tamaño original -->
         <link rel="stylesheet" href="/Guia-de-SOS-FOMT/CSS/Style.css" type="text/css"/> <!-- Este CSS contiene los diseños de toda las paginas -->
         <link rel="shortcut icon" href="/Guia-de-SOS-FOMT/IMG/Iconos/Kirbo.ico"/> <!-- Esta seccion es para colocar un icono que representa a toda la pagina en general -->
         <script type="text/javascript" src="/Guia-de-SOS-FOMT/JS/include.js" defer></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene la funcion de insertar el nav y footer a la pagina-->
@@ -36,23 +37,68 @@
     
                 <p>Gotts tiene un evento importante el cual es aleatorio y se llama <b>El decaimiento de Gotts</b>, en el Gotts decide ya no trabajar porque se encuentra desanimado y la unica forma de resolverlo es elevar su amistad al menos 6 notas musicales y luego entra a su casa entre la 1:00 pm y las 10:00 pm durante la temporada de otoño para motivarlo a volver a hacer su trabajo.</p>
     
-                <p>Para saber sobre el evento <b>El decaimiento de Gotts</b> lo puedes consultar en eventos aleatorios de la seccion de <a class="sub_titulo" href="/Guia-de-SOS-FOMT/Paginas/Otros/Even_Ale.html">Eventos disponibles solo en el tercer año</a>.</p>  
+                <p>Para saber sobre el evento <b>El decaimiento de Gotts</b> lo puedes consultar en eventos aleatorios de la seccion de <a class="sub_titulo" href="/Guia-de-SOS-FOMT/Paginas/Otros/Even_Ale.html">Eventos disponibles solo en el tercer año</a>.</p> 
+                
+                <table class="data" style="margin-bottom: 1.5em;"><tr><th>Cumpleaños</th><td class="perso">2 de otoño.</td></tr></table>
 
-                <table class="data">
-                    <tr><th>Cumpleaños</th><td class="perso">2 de otoño.</td></tr>
-
-                    <tr><th>Horario</th>
-                        <td class="perso">
-                            Aunque dirige un taller de carpintería, Gotts no se queda en su taller todos los días de la semana. Por la mañana, sale de su casa para patrullar alrededor de el lago con la mina a las 8:00 am y regresa a su casa alrededor de las 11:30 am. A partir de ahí su horario cambia según el día de la semana:
-                            <ul class="horario" style="padding: 0;">
-                                <li>Los domingos va a la cumbre de la colina de la Madre a la 1:00 pm y regresa a casa a las 4:00 pm.</li>
-                                <li>Los lunes, martes y miércoles se encuentra dentro de su casa todo el día.</li>
-                                <li>Los jueves y viernes es cuando toma un descanso al mediodía en el bosque alrededor de su casa de 13:00 a 16:00 horas.</li>
-                                <li>Su tienda está cerrada los sábados, por lo que después de su patrulla matutina va a la ciudad y visita la casa del alcalde Thomas (de 10 am a 12:30 pm), luego la tienda general (de 1 pm a 4 pm) y finalmente regresa a casa.</li>
-                            </ul>
+                <table class="data tabla_horario">
+                    <tr><th colspan="2">Horario</th></tr>
+                    <tr><th>Días</th><th style="width: 54em;">Hora y lugar</th></tr>
+                    <tr>
+                        <td>De lunes a miércoles</td>
+                        <td style="text-align:center;">
+                            <div class="cont_horario">
+                                <div><p><b>06:00 - 07:00</b><b>Taller de Gotts</b></p></div>
+                                <div><p><b>07:00 - 10:00</b><b>Lago de la</b><b>Colina madre</b></p></div>
+                                <div><p><b>10:00 - 24:00</b><b>Taller de Gotts</b></p></div>
+                            </div>
                         </td>
                     </tr>
+
+                    <tr>
+                        <td>Días jueves y viernes</td>
+                        <td style="text-align:center;">
+                            <div class="cont_horario">
+                                <div><p><b>06:00 - 07:00</b><b>Taller de Gotts</b></p></div>
+                                <div><p><b>07:00 - 10:00</b><b>Lago de la</b><b>Colina madre</b></p></div>
+                                <div><p><b>10:00 - 13:00</b><b>Taller de Gotts</b></p></div>
+                                <div><p><b>13:00 - 16:00</b><b>Afuera del</b><b>Taller de Gotts</b></p></div>
+                                <div><p><b>16:00 - 24:00</b><b>Taller de Gotts</b></p></div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="width: 10em;">Días sabado</td>
+                        <td style="text-align:center;">
+                            <div class="cont_horario">
+                                <div><p><b>06:00 - 07:00</b><b>Taller de Gotts</b></p></div>
+                                <div><p><b>07:00 - 10:00</b><b>Lago de la</b><b>Colina madre</b></p></div>
+                                <div><p><b>10:00 - 13:00</b><b>Casa de Thomas</b></p></div>
+                                <div><p><b>13:00 - 16:00</b><b>Tienda general</b></p></div>
+                                <div><p><b>16:00 - 24:00</b><b>Taller de Gotts</b></p></div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="width: 10em;">Días domingos</td>
+                        <td style="text-align:center;">
+                            <div class="cont_horario">
+                                <div><p><b>06:00 - 13:00</b><b>Taller de Gotts</b></p></div>
+                                <div><p><b>13:00 - 16:00</b><b>Lago de la</b><b>Colina madre</b></p></div>
+                                <div><p><b>16:00 - 24:00</b><b>Taller de Gotts</b></p></div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="width: 10em;">Mismos días, pero con lluvia o nieve</td>
+                        <td style="text-align:center;"><div class="cont_horario"><div><p><b>06:00 - 24:00</b><b>Taller de Gotts</b></p></div></div></td>
+                    </tr>
                 </table>
+
+                <i><p>Nota: El lago de la colina madre es donde se encuentra la mina del lago accesible en invierno.</p></i>
 
                 <h2>Preferencias de regalos</h2>
 
