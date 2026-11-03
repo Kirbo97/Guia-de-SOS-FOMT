@@ -3,7 +3,6 @@ if ("scrollRestoration" in history) {
     history.scrollRestoration = "manual";
 }
 
-
 async function loadHTML(id, file) {
     const response = await fetch(file);
     if (!response.ok) { throw new Error("No se pudo cargar: " + file); }

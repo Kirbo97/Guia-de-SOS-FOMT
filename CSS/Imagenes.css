@@ -55,6 +55,14 @@
     height:auto;
     aspect-ratio: attr(width) / attr(height);
 }
+/* se crea la clase "right" para que se ocupe de posisionar la imagen a la derecha*/
+.right {
+    float:right; 
+    height:auto; 
+    margin: 5px 0 0 20px ;
+    max-width:100%;
+    border-radius:10px;
+}
 
 /* se crea la ID "boxshort,marriage_box,villager_box,event_perso_box" para que se ocupe de posisionar la imagen dentro de la caja*/
 #boxshort, #marriage_box, #villager_box, #event_perso_box, #lugares_box { text-align:center;}
