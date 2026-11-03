@@ -4,6 +4,7 @@
         <meta charset="UTF-8">   <!-- Para usar la escritura latina -->
         <title>Guia de Lillia de SOS-FOMT</title> 
         <meta name="origen" content="La informacion y parte de los diseños de la pagina pertenesen a Ushi No Tane, pero la representacion de la informacion traducida, funciones y diseños modificados y añadidos son de mi propio criterio"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Esta linea es para que al recargar la pagina vuelva al tamaño original -->
         <link rel="stylesheet" href="/Guia-de-SOS-FOMT/CSS/Style.css" type="text/css"/> <!-- Este CSS contiene los diseños de toda las paginas -->
         <link rel="shortcut icon" href="/Guia-de-SOS-FOMT/IMG/Iconos/Kirbo.ico"/> <!-- Esta seccion es para colocar un icono que representa a toda la pagina en general -->
         <script type="text/javascript" src="/Guia-de-SOS-FOMT/JS/include.js" defer></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene la funcion de insertar el nav y footer a la pagina-->
@@ -28,19 +29,57 @@
             <main>
                 <img src="/Guia-de-SOS-FOMT/IMG/Personajes/Aldeanos/Perfil/villager_lillia.jpg" class="right screenshot" width="238" height="238" style="margin: 5px 0 0 20px;"/>
     
-                <p>La madre de Popuri y Rick dirige la tienda de aves de corral en la ciudad Mineral. Aunque los hermanos pueden ser difíciles, Lillia es alegre y busca lo positivo en cualquier situación. Ella se encuentra mal de salud y está bajo el cuidado del médico. Mientras el Doc continúa investigando métodos médicos para restaurar su salud, su cónyuge Rod intenta encontrar una solución diferente.</p>
+                <p>Lillia es la madre de Popuri y Rick, dirige la tienda de aves de corral en la ciudad Mineral. Aunque los hermanos pueden ser difíciles, Lillia es alegre y busca lo positivo en cualquier situación. Ella se encuentra mal de salud y está bajo el cuidado del médico. Mientras el Doc continúa investigando métodos médicos para restaurar su salud, su cónyuge Rod intenta encontrar una solución diferente.</p>
     
-                <p>Rod se fue hace mucho tiempo en busca de una rumoreada flor del desierto que podría restaurar la salud de Lillia. Rick siente que fue una mala decisión, pero Rod tiene un historial de perseguir objetos a su manera; Cuando le propuso matrimonio a Lillia, fue en busca de su propia Pluma Azul en lugar de comprar una en la Tienda General. Lillia notó que pasó bastante tiempo antes de que él regresara. Rod escribe a casa de vez en cuando, por lo que no está completamente fuera de sus vidas. Pero hay que preguntarse...</p>
+                <p>Rod se fue hace mucho tiempo en busca de una rumoreada flor del desierto que podría restaurar la salud de Lillia, pero Rick siente que fue una mala decisión y Rod tiene un historial de perseguir objetos a su manera; Cuando le propuso matrimonio a Lillia, fue en busca de su propia Pluma Azul en lugar de comprar una en la Tienda General. Lillia notó que pasó bastante tiempo antes de que él regresara. Rod escribe a casa de vez en cuando, por lo que no está completamente fuera de sus vidas.</p>
 
-                <table class="data">
-                    <tr><th>Cumpleaños</th><td class="perso">19 de primavera.</td></tr>
+                <table class="data" style="margin-bottom: 1.5em;"><tr><th>Cumpleaños</th><td class="perso">19 de primavera.</td></tr></table>
 
-                    <tr><th>Horario</th>
-                        <td>
-                            <ul class="horario">
-                                <li class="gustos"> La mayor parte del tiempo Lillia permanece dentro de la tienda avícola, ya sea arriba en el área del dormitorio o abajo en el mostrador de su tienda.</li>
-                                <li class="gustos">Cuando la tienda avícola cierra los domingos, Lillia hace algunas compras en la tienda general aproximadamente de 11 am a 1 pm, luego pasa por la Clínica Mineral para un chequeo con el médico antes de regresar a casa alrededor de las 4 pm.</li>
-                            </ul>
+                <table class="data tabla_horario">
+                    <tr><th colspan="2">Horario</th></tr>
+                    <tr><th>Días</th><th style="width: 54em;">Hora y lugar</th></tr>
+                    <tr>
+                        <td style="width: 10em;">De lunes a sabado</td>
+                        <td style="text-align:center;">
+                            <div class="cont_horario">
+                                <div><p><b style="color: black;">06:00 - 11:00</b><b>Tienda avícola</b><b>(2F)</b><b style="color: red;">Cerrado</b></p></div>
+                                <div><p><b style="color: black;">11:00 - 19:00</b><b>Tienda avícola</b><b>(1F)</b></p></div>
+                                <div><p><b style="color: black;">19:00 - 24:00</b><b>Tienda general</b><b style="color: red;">Cerrado</b></p></div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="width: 10em;">Mismos días, pero con lluvia o nieve</td>
+                        <td style="text-align:center;">
+                            <div class="cont_horario">
+                                <div><p><b style="color: black;">06:00 - 11:00</b><b>Tienda avícola</b><b>(2F)</b><b style="color: red;">Cerrado</b></p></div>
+                                <div><p><b style="color: black;">11:00 - 19:00</b><b>Tienda avícola</b><b>(1F)</b></p></div>
+                                <div><p><b style="color: black;">19:00 - 24:00</b><b>Tienda general</b><b style="color: red;">Cerrado</b></p></div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Días domingo</td>
+                        <td style="text-align:center;">
+                            <div class="cont_horario">
+                                <div><p><b style="color: black;">06:00 - 11:00</b><b>Tienda avícola</b><b>(2F)</b><b style="color: red;">Cerrado</b></p></div>
+                                <div><p><b style="color: black;">11:00 - 13:00</b><b>Tienda avícola</b><b>(1F)</b></p></div>
+                                <div><p><b style="color: black;">13:00 - 16:00</b><b>Clinica (1F)</b></p></div>
+                                <div><p><b style="color: black;">16:00 - 24:00</b><b>Tienda general</b><b style="color: red;">Cerrado</b></p></div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="width: 10em;">Mismos días, pero con lluvia o nieve</td>
+                        <td style="text-align:center;">
+                            <div class="cont_horario">
+                                <div><p><b style="color: black;">06:00 - 11:00</b><b>Tienda avícola</b><b>(2F)</b><b style="color: red;">Cerrado</b></p></div>
+                                <div><p><b style="color: black;">11:00 - 19:00</b><b>Tienda avícola</b><b>(1F)</b></p></div>
+                                <div><p><b style="color: black;">19:00 - 24:00</b><b>Tienda general</b><b style="color: red;">Cerrado</b></p></div>
+                            </div>
                         </td>
                     </tr>
                 </table>
