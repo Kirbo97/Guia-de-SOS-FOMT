@@ -58,21 +58,34 @@
 
                 <p>La mejor forma de mejorar la amistad y el afecto es siempre regalar las cosas que le gusta una vez por día.</p>
 
-                <table class="data">
-                    <tr> <!-- Fasina -->
-                        <th><p class="fasina" style="text-align:center; margin: 10px 0 0 0;"></p></th> 
-                        <td style=" display: flex; height: 60px; justify-content: space-around;">
-                            <ul><div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Plat ingre/Huevo de las termas.png"/><p><b>Huevo de</b><b>las termas</b></p></div>
-</ul>
-                        </td>
-                    </tr>
+                <i>Nota: Seleccione una emoción de las lista.</i>
 
-                    <tr><!-- Encanta -->
-                        <th><p class="encanta" style="text-align:center; margin: 0;"></p><p style="text-align: center; margin: 5px 5px 0;">Encanta</p></th>  
-                        <td style=" display: flex; justify-content: space-around;">
-                            <div><ul class="horario">
+                <table class="data Table_regalo">
+                    <tr class="rec"><th>
+                        <div style="display:flex; justify-content:space-around; align-items:center; margin-top: 19px;">
+                            <div style="display:flex; flex-direction: column; align-items:center; cursor: pointer;" onclick="cambiar_regalo(1,5)"><p class="favorito" style="text-align:center; margin: 0;"></p><p style="text-align: center; margin: 2px 0 0;">Favorito</p></div>
+                            <div style="display:flex; flex-direction: column; align-items:center; cursor: pointer;" onclick="cambiar_regalo(2,5)"><p class="encanta" style="text-align:center; margin: 0;"></p><p style="text-align: center; margin: 2px 0 0;">Encanta</p></div>
+                            <div style="display:flex; flex-direction: column; align-items:center; cursor: pointer;" onclick="cambiar_regalo(3,5)"><p class="gusta" style="text-align:center; margin: 0;"></p><p style="text-align: center; margin: 2px 0 0;">Gusta</p></div>
+                            <div style="display:flex; flex-direction: column; align-items:center; cursor: pointer;" onclick="cambiar_regalo(4,5)"><p class="desagrado" style="text-align:center; margin: 0;"></p><p style="text-align: center; margin: 2px 0 0;">Desagrada</p></div>
+                            <div style="display:flex; flex-direction: column; align-items:center; cursor: pointer;" onclick="cambiar_regalo(5,5)"><p class="odio" style="text-align:center; margin: 0;"></p><p style="text-align: center; margin: 2px 0 0;">Odia</p></div>
+                        </div>
+                    </th></tr>
+
+                    <tbody id="lista_regalo1" style="display: none;"> <!-- Favorito -->
+                        <tr><th style="height: 2em; width: 64em;">Regealos son su favorito</th></tr>
+                        <td style="text-align:center;">
+                            <div id="regalos1" class="cont_obj_regalo">
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Plat ingre/Huevo de las termas.png"/><p><b>Huevo de</b><b>las termas</b></p></div>
+                            </div>
+                        </td>
+                    </tbody>
+
+                    <tbody id="lista_regalo2" style="display: none;"> <!-- Encanta -->
+                        <tr><th style="height: 2em; width: 64em;">Regealos que le Encantan</th></tr>
+                        <td style="text-align:center;">
+                            <div id="regalos2" class="cont_obj_regalo">
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/Leche/Queso (S).png"/><p><b>Queso </b><b style="color:rgb(194, 165, 4)">(C/T)</b></p></div>
-                                
+
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Huevo fritos.png"/><p><b>Huevo</b><b>fritos</b></p></div>
 
                                 <li class="gustos">Huevo (C/T)</li>
@@ -91,7 +104,7 @@
 
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/Huevos/Mayonesa (S).png"/><p><b>Mayonesa</b><b style="color:rgb(194, 165, 4)">(C/T)</b></p></div>
 
-                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda gallinas/comida para gallina.png"/><p><b>Alimento</b><b>para pollos</b></p></div>
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda gallinas/comida para gallina.png"/><p><b>Alimento para</b><b>pollo/conejo</b></p></div>
 
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Chocolate.png"/><p><b>Chocolate</b></p></div>
 
@@ -128,10 +141,10 @@
                         </td>
                     </tbody>
 
-                    <tbody id="lista_regalo2" style="display: none;"> <!-- Gustan -->
-                        <tr><th style="height: 2em;">Regealos que le Gustan</th></tr>
+                    <tbody id="lista_regalo3" style="display: none;"> <!-- Gustan -->
+                        <tr><th style="height: 2em; width: 64em;">Regealos que le Gustan</th></tr>
                         <td style="text-align:center;">
-                            <div id="regalos2" class="cont_obj_regalo">
+                            <div id="regalos3" class="cont_obj_regalo">
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Torta de queso.png"/><p><b>Torta de</b><b>queso</b></p></div>
 
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Tarta de queso esponjosa.png"/><p><b>Tarta de</b><b>queso esponjosa</b></p></div>
@@ -192,7 +205,7 @@
 
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Personajes/Eventos/Objetos/Mascara facial.png"/><p><b>Mascarilla</b></p></div>
 
-                                <li class="gustos">Salteado de verduras</li>
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Sofrito de verduras.png"/><p><b>Sofrito de</b><b>verduras</b></p></div>
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Udon con tempura.png"/><p><b>Udon con</b><b>tempura</b></p></div>
 
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Buñuelo de pescado.png"/><p><b>Buñuelo de</b><b>pescado</b></p></div>
@@ -218,16 +231,16 @@
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Hierba azul.png"/><p><b>Hierba</b><b>azul</b></p></div>
 
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Hierba verde.png"/><p><b>Hierba</b><b>verde</b></p></div>
-                            
-                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Hierba azul marino.png"/><p><b>Hierba</b><b>azul marino</b></p></div>
-                            </ul></div>
-                        </td>
-                    </tr>
 
-                    <tr> <!-- Desagrado -->
-                        <th><p class="desagrado" style="text-align:center; margin: 0;"></p><p style="text-align: center; margin: 5px 5px 0;">Desagrada</p></th>   
-                        <td style=" display: flex; justify-content: space-around;">
-                            <div><ul class="horario">
+                                <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Hierba azul marino.png"/><p><b>Hierba</b><b>azul marino</b></p></div>
+                            </div>
+                        </td>
+                    </tbody>
+
+                    <tbody id="lista_regalo4" style="display: none;"> <!-- Desagradan -->
+                        <tr><th style="height: 2em; width: 64em;">Regealos que le Desagradan</th></tr>
+                        <td style="text-align:center;">
+                            <div id="regalos4" class="cont_obj_regalo">
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Peces/Basura/Lata vacía.png"/><p><b>Lata vacía</b></p></div>
 
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Manzana.png"/><p><b>Manzana</b></p></div>
@@ -298,8 +311,19 @@
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Fondue de queso.png"/><p><b>Fondue de</b><b>queso</b></p></div>
                             </div>
                         </td>
-                    </tr>
+                    </tbody>
+
+                    <tbody id="lista_regalo5" style="display: none;"> <!-- odia -->
+                        <tr><th style="height: 2em; width: 64em;">Regealos que Odia</th></tr>
+                        <td style="text-align:center;">
+                            <div id="regalos5" class="cont_obj_regalo">
+                                
+                            </div>
+                        </td>
+                    </tbody>
                 </table>
+                
+                <p><i>Rick tiene sentimientos neutrales (+1 FP, +100 LP) sobre todos los regalos que no aparecen en esta lista.</i></p>
 
                 <h2>Eventos del corazón</h2>
 
