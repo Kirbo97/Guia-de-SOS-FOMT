@@ -147,9 +147,9 @@ function cambiar_gustos(num,i,x){
 
     // Ocultar todas las listas
     for(i;i<=x;i++){ 
-        if(num>4 && num<9){
+        if(num>4 && x==4){
             document.getElementById("lista_regalo"+(i+4)).style.display="none"; 
-        } else if(num<5) {
+        } else if(num<5 || (num<6  && x==5)) {
             document.getElementById("lista_regalo"+i).style.display="none";
         }
     }
