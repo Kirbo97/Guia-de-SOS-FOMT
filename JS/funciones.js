@@ -27,7 +27,7 @@ function desplasar(tip_bot,tip_cuad,salto_movile,salto_comp) {
             document.getElementById(tip_cuad).scrollTop += salto_comp;
         }   
     }
-}   
+}
 
 /* *********************************************************** */
 /*  Funciones para que aparesca el scrol cuando sea nesesario  */
