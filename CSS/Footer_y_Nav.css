@@ -56,11 +56,6 @@ section .copyright {
     margin:  14px auto 0 auto; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
 }
 
-/* defino que solo la clase "logo" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
-section .logo {
-    width: 40px; /* ajusto el tamaño que tendra esta clase */
-}
-
 /* defino que solo la clase "enlace" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
 section .enlace {
     width: 40px; /* ajusto el tamaño que tendra esta clase */

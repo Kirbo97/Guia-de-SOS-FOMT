@@ -108,7 +108,7 @@
     column-gap: 60px; 
 }
 
-/* se crea la clase "box_menu" para que se ocupe de posisionar el contenido de las opciones*/
+/* se crea la clase "box_menu_lugares" para que se ocupe de posisionar el contenido de las opciones*/
 .box_menu_lugares {
     max-width:210px;
     height:auto; 

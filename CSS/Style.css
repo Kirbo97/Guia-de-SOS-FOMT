@@ -95,7 +95,6 @@ p.FechCump{
     box-sizing:border-box;
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-size: 1em;
-    height:100%;
     line-height: 1.5em;
     margin:50px 50px; /*(arriba y abajo │ derecha y izquierda)*/
     overflow:hidden; 
@@ -272,7 +271,7 @@ tr.rec th{ background-color:#34d389;  }
 }
 
 /* Esta clase es para cuando la celda tiene una imagen de un objeto con nombre */
-td div.td_objetos{
+td div.td_objetos, th div.td_objetos{
     display: flex;
     flex-direction: column;
     align-items: center;
