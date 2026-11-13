@@ -5,30 +5,298 @@
 /*Con la linea para que se adapte a la pantalla en la que se encuentra, el tamaño para el Movil es (max-width:426px), sin es linea el tamaño para Movil es (max-width:980px)*/
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
-@media screen and (max-width:980px){
-    h1 { font-size: 2.18em !important; }
+@media screen and (max-width: 600px) {
 
-    header{ height: auto !important; }
+    /* ***************** */
+    /*  Diseños del nav  */
+    /* ***************** */
+
+    nav {
+        flex-wrap: wrap !important; 
+        justify-content: center !important;
+        gap: 8px !important;
+        padding: 8px 4px !important;
+    }
+
+    nav div { margin: 6px 12px !important; }
+
+    nav img {
+        width: 29px !important; 
+        height: 29px !important; 
+    }
+
+    .vin_nav:-webkit-any-link { font-size: 0.45em !important; }
+
+    /* ******************** */
+    /*  Diseños del footer  */
+    /* ******************** */
+
+    /* defino que solo la clase "copyright" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
+    section .copyright { 
+        margin-top: 9px !important;
+        font-size: 14px !important; /* defino el tamaño del texto*/
+    }
+
+    section .enlace {width: 25px !important; } /* ajusto el tamaño que tendra esta clase */
+
+    /* ******************************* */
+    /*  Diseños del contenido general  */
+    /* ******************************* */
+
+    #content {
+        margin: 28px 28px !important;
+        padding: 12px !important;
+        border-radius: 15px !important;
+        width: 86.8% !important;
+    }
+
+    h2 {
+        margin-top: 13px !important;
+        font-size: 0.9em !important; 
+    }
+
+    h1 { font-size: 1.1em !important; }
+
+    h3 { margin: 8px 0 0 0 !important; }
+
+    h3, summary { font-size: 0.8em !important; }
+
+    header .icono {
+        width: 20px !important; /* ajusto el ancho que tendra esta clase */
+        height: 20px !important; /* ajusto el alto que tendra esta clase */
+    }
+
+    header{ height: 24px !important; }
+
+    header div{ column-gap: 2em !important; }
+
+    p { 
+        font-size: 8.8px !important; 
+        line-height: 1.5em !important;
+    }
+
+    /* ****************** */
+    /*  Diseños general  */
+    /* ****************** */
+
+    #logo_index{ width:240px !important; }
+
+    span.dinero b{ font-size: 10px !important; }
+
+    .summary_general,.summary_h2  { margin-top: 18px !important; }
+
+    .summary_general_fin { margin-bottom: 18px !important; }
+
+    .horario { 
+        font-size: 0.55em !important;
+        line-height: 1.5em !important;
+    }
+
+    .lista_num { 
+        font-size: 0.55em !important;
+        padding-left: 15px;
+        line-height: 1.5em !important;
+    }
 
     li.gustos { 
+        font-size: 0.55em !important;
         margin: 4px 0 4px 0 !important;
         text-align: left !important;
+        line-height: 1.5em !important;
     }
 
-    .box_matrimonio { 
-        max-width:188px !important; 
-        margin:1em 0 !important; 
+    /* ************************ */
+    /*  Diseños del css Imagen  */
+    /* ************************ */
+
+    .box_aldeanos img,.box_matrimonio img,.box_animales img, .box_menu img{ max-width:100% !important; }
+    
+    .box_menu { max-width:80px !important; }
+    
+    .box_menu a.hiper { font-size: 0.7em !important; }
+    
+    .box_otros_matrimonio { 
+        max-width:135px !important;
+        margin: 12px 15px 0 !important;
+    }
+    
+    .box_otros_matrimonio a.hiper { font-size: 0.523em !important; }
+    
+    .box_menu_lugares { 
+        max-width:92.99px !important;
+        margin: 12px 23px !important;
+    }
+    
+    .box_menu_lugares a.hiper { font-size: 0.523em !important; }
+
+    .box_marriage_esp { 
+        max-width: 80px !important; 
+        margin: 0 2px !important;
     }
 
-    .box_menu_lugares a{ font-size: 1.10em !important; }
+    .box_marriage_esp a.hiper { font-size: 0.49em !important; }
 
-    .Table_regalo{ width: 50em !important;}
+    .box_evento_aldeanos, .box_evento_otro { margin: 10px 10px !important; }
+
+    .box_evento_aldeanos,.diosa_eventos { max-width:46px !important; }
+
+    .diosa_eventos img { max-width:45px !important; }
+
+    .box_evento_otro img { 
+        width: 130px !important; 
+        height: 100px !important; 
+    }
+
+    .diosa_eventos .hiper_click{ 
+        width: 109px !important; 
+        text-align: center !important; 
+        line-height: 1.2em !important;
+    }
+
+    #bot_scr { padding: 0 5px !important; }
+
+    .box_evento_aldeanos .hiper_click , .box_evento_otro .hiper_click { font-size: 0.69em !important; }
+
+    .scroll-container-eventos-aldeanos { height: 10em !important; } /* Alto del contenedor */
+
+    .scroll-container-lugares { height: 19em !important; } /* Alto del contenedor */
 
     #bot_can { display: block !important;}
 
     .box_aldeanos { max-width:142px !important;}
 
     .box_otro { max-width:360px !important;}
+
+    .img_herramientas01 {
+        width: 120px !important; 
+        height: 120px !important; 
+        margin-top: 8.8px !important; 
+    }
+
+    .lug_img1, .lug_img2, .lug_img3, .lug_img4,.lug_img5, .lug_img6, .lug_img7, .lug_img8, .lug_img9 {
+        width: 80% !important; 
+        margin: 0 10% 15px !important; 
+    }
+
+    .mina_img01{ width: 80% !important; }
+
+    .mina_img02 {
+        width: 157px !important;  
+        height: 105px !important; 
+        margin: 8.8px 0 0 20px !important;  
+    }
+
+    .mina_img03 {
+        width: 147px !important;  
+        height: 120px !important; 
+        margin: 8.8px 0 0 20px !important;  
+    }
+
+    /* ************************ */
+    /*  Diseños del css Modales  */
+    /* ************************ */
+
+    .btn{ font-size: 10px !important; }
+
+    .modal_calendario div { padding: 0 36px 20px 28px !important; }
+
+    .modal_calendario h3 { margin: 13px 0 !important; }
+
+    .modal_calendario p b { font-size: 8px !important; }
+
+
+    /* ************************ */
+    /*  Diseños del css Tabla  */
+    /* ************************ */
+
+    td h3{ font-size: 0.60em !important; }
+
+    td p { font-size: 0.5em !important; }
+
+    .ballas_condicion{ width: 75px !important; }
+
+    .ballas th { font-size: 0.6em !important; }
+
+    .orbes td { font-size: 0.55em !important; }
+
+    .orbes th { font-size: 0.6em !important; }
+
+    #estacion p { font-size: 0.7em !important; }
+    
+    #cont_est{ 
+        height: 2em !important;
+        margin-top: 10px !important;
+    }
+
+    .td_calenda b, .td_calenda_simple b, .FechEv {font-size: 16px !important; }
+
+    #div_FechEv {
+        margin-top: 8px !important; 
+        margin-bottom: 8px !important; 
+    }
+
+    .td_calenda p {
+        line-height: 1.5em !important;
+    }
+
+    #calendario0 td { height: 75px !important;}
+    
+    .herra_gene .td_objetos img, .mineral_herramienta .td_objetos img, .herra_malditas .td_objetos img, .herra_bende .td_objetos img, .herra_mitica .td_objetos img, .Joyas .td_objetos img, #obj_min_cas .td_objetos img, #obj_min_lag .td_objetos img {
+        width: 29px !important; 
+        height: 29px !important; 
+    }
+    
+    .herra_gene .td_objetos b, .mineral_herramienta .td_objetos b, .herra_malditas .td_objetos b, .herra_bende .td_objetos b, .herra_mitica .td_objetos b, .Joyas .td_objetos b, #obj_min_cas .td_objetos b, #obj_min_lag .td_objetos b {
+        font-size: 7px !important; 
+    }
+    #obj_min_cas .td_dinero, #obj_min_lag .td_dinero { font-size: 0.6em !important; }
+    
+    #obj_min_cas .td_dinero b, #obj_min_lag .td_dinero b { font-size: 1em !important; }
+
+    .tab01_min_cas .enc_01,.tab01_min_lag .enc_01 { width: 40px !important; }
+
+    .tab02_min_cas p,.tab02_min_lag p {font-size: 8.8px !important;  }
+
+    .tab02_min_lag .ball_min_lag {
+        padding: 15px !important;
+    }
+
+    .tab02_min_cas img,.tab02_min_lag img {
+        margin-top: 0 !important;
+        width: 60px !important; 
+        height: 60px !important; 
+    }
+
+    .tab02_min_cas img.esta2 {
+        width: 110px !important; 
+        height: 70px !important; 
+    }
+
+    .tab02_min_lag img.herr_mal {
+        width: 120px !important; 
+        height: 90px !important; 
+    }
+
+    .tab02_min_cas img.pie_tel { margin-top: 8px !important; }
+
+    .mineral_herramienta .td_objetos p, .herra_mitica .td_objetos p{ margin: 0 !important; }
+
+    .mineral_herramienta, .herra_mitica { width: 100% !important; }
+
+    #encabesado th{ font-size: 0.6em !important; }
+
+    #SinOp,#parte { font-size: 0.55em !important; }
+
+    #encabesado ol { padding-inline-start: 1em !important; }
+
+    #exper b { font-size: 14px !important; }
+
+    #nivel b { font-size: 6px !important; }
+
+    .td_dinero, .td_dinero b { font-size: 14px !important; }
+
+    
+    .Table_regalo{ width: 50em !important;}
 
     .scroll-container-aldeanos { height:25em !important;}
 
@@ -39,13 +307,39 @@
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
-@media screen and (max-height:600px) and (orientation:landscape){    
-    h1 { font-size: 2.18em !important; }
-    
-    header{ height: 76px !important;  }
+@media screen and (min-width: 601px) and (max-width: 1024px) {
 
-    li.gustos { 
-        margin: 4px 0 4px 0 !important;
-        text-align: left !important;
+    /* ***************** */
+    /*  Diseños del nav  */
+    /* ***************** */
+
+    nav { flex-wrap: wrap !important; }
+
+    nav div { margin: 10px 8px !important; }
+
+    /* ******************************* */
+    /*  Diseños del contenido general  */
+    /* ******************************* */
+
+    #content {
+        margin: 30px 25px !important;
+        padding: 18px !important;
     }
+
+    /* ******************** */
+    /*  Diseños del footer  */
+    /* ******************** */
+
+    /* defino que solo la clase "copyright" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
+    section .copyright { 
+        margin-top: 9px !important;
+        font-size: 14px !important; /* defino el tamaño del texto*/
+    }
+
+    section .enlace {width: 25px !important; } /* ajusto el tamaño que tendra esta clase */
+
+    /* ****************** */
+    /*  Diseños general  */
+    /* ****************** */
+    
 }

@@ -4,6 +4,7 @@
         <meta charset="UTF-8">   <!-- Para usar la escritura latina -->
         <title>Guia de personajes de SOS-FOMT</title>
         <meta name="origen" content="La informacion y parte de los diseños de la pagina pertenesen a Ushi No Tane, pero la representacion de la informacion traducida, funciones y diseños modificados y añadidos son de mi propio criterio"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/Guia-de-SOS-FOMT/CSS/Style.css" type="text/css"/> <!-- Este CSS contiene los diseños de toda las paginas -->
         <link rel="shortcut icon" href="/Guia-de-SOS-FOMT/IMG/Iconos/Kirbo.ico"/> <!-- Esta seccion es para colocar un icono que representa a toda la pagina en general -->
         <script type="text/javascript" src="/Guia-de-SOS-FOMT/JS/include.js" defer></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene la funcion de insertar el nav y footer a la pagina-->
@@ -106,8 +107,8 @@
                         </div>
 
                         <div style="display: flex; flex-direction: column;">
-                            <button style="height: 50%; padding: 10px; font-weight: bold; font-size: 25px;" onclick="Scroll_button_villager('arriba','villager_box');">↑</button>
-                            <button style="height: 50%; padding: 10px; font-weight: bold; font-size: 25px;" onclick="Scroll_button_villager('abajo','villager_box');">↓</button>
+                            <button id="bot_scr" style="height: 50%; padding: 10px; font-weight: bold; font-size: 25px;" onclick="Scroll_button_villager('arriba','villager_box');">↑</button>
+                            <button id="bot_scr" style="height: 50%; padding: 10px; font-weight: bold; font-size: 25px;" onclick="Scroll_button_villager('abajo','villager_box');">↓</button>
                         </div>
                     </div>
 
@@ -228,8 +229,8 @@
                         </div>
 
                         <div id="bot_can" style="display: flex; flex-direction: column; display: none;" >
-                            <button style="height: 50%; padding: 10px; font-weight: bold; font-size: 25px;" onclick="Scroll_button_marriage('arriba','marriage_box');">↑</button>
-                            <button style="height: 50%; padding: 10px; font-weight: bold; font-size: 25px;" onclick="Scroll_button_marriage('abajo','marriage_box');">↓</button>
+                            <button id="bot_scr" style="height: 50%; padding: 10px; font-weight: bold; font-size: 25px;" onclick="Scroll_button_marriage('arriba','marriage_box');">↑</button>
+                            <button id="bot_scr" style="height: 50%; padding: 10px; font-weight: bold; font-size: 25px;" onclick="Scroll_button_marriage('abajo','marriage_box');">↓</button>
                         </div>
                     </div>
                 </details>
@@ -237,22 +238,22 @@
                 <details> <!-- Lista de candidatos especiales a matrimonio -->
                     <summary class="summary_general">Lista de candidatos especiales a matrimonio</summary>
                     <div id="marriage_box" style="display: flex; justify-content: space-around; margin-top: 20px;">
-                        <div class="box_matrimonio">
+                        <div class="box_marriage_esp">
                             <a href="/Guia-de-SOS-FOMT/Paginas/Personajes/Candidatos/bonviviant.html"><img src="/Guia-de-SOS-FOMT/IMG/Personajes/Candidatos/Chibi/chibi_von.png" title="Bon Vivant" style="border:none;" width="350" height="180"></a>
                             <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Personajes/Candidatos/bonviviant.html">Bon Viviant</a>
                         </div>
 
-                        <div class="box_matrimonio">
+                        <div class="box_marriage_esp">
                             <a href="/Guia-de-SOS-FOMT/Paginas/Personajes/Candidatos/goddess.html"><img src="/Guia-de-SOS-FOMT/IMG/Personajes/Candidatos/Chibi/chibi_goddess.png" title="Mother Nature" style="border:none;" width="350" height="180"></a>
                             <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Personajes/Candidatos/goddess.html">Diosa de la cosecha</a>
                         </div>
 
-                        <div class="box_matrimonio">
+                        <div class="box_marriage_esp">
                             <a href="/Guia-de-SOS-FOMT/Paginas/Personajes/Candidatos/huang.html"><img src="/Guia-de-SOS-FOMT/IMG/Personajes/Candidatos/Chibi/chibi_huang.png" title="Huang" style="border:none;" width="350" height="180"></a>
                             <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Personajes/Candidatos/huang.html">Huang</a>
                         </div>
 
-                        <div class="box_matrimonio">
+                        <div class="box_marriage_esp">
                             <a href="/Guia-de-SOS-FOMT/Paginas/Personajes/Candidatos/kappa.html"><img src="/Guia-de-SOS-FOMT/IMG/Personajes/Candidatos/Chibi/chibi_kappa.png" title="Kappa" style="border:none;" width="350" height="180"></a>
                             <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Personajes/Candidatos/kappa.html">Kappa</a>
                         </div>

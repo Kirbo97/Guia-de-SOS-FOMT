@@ -1,4 +1,4 @@
-// Evitar que el navegador restaure la posición anterior
+// Evitar que el navegador restaure la posición anterior 
 if ("scrollRestoration" in history) {
     history.scrollRestoration = "manual";
 }
