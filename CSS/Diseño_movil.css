@@ -77,7 +77,10 @@
 
     span.dinero b{ font-size: 10px !important; }
 
-    .summary_general,.summary_h2  { margin-top: 18px !important; }
+    .summary_general, .summary_h2  { 
+        margin-top: 18px !important; 
+        font-size: 0.68em !important;
+    }
 
     .summary_general_fin { margin-bottom: 18px !important; }
 
@@ -324,9 +327,16 @@
     /* ******************** */
     /*  Diseños Personajes  */
     /* ******************** */
+
+    .box_marriage_esp { 
+        max-width: 78px !important; 
+        margin: 0 2px !important;
+    }
+
+    .box_marriage_esp a.hiper { font-size: 0.48em !important; }
     
     .box_otros_matrimonio { 
-        max-width:135px !important;
+        max-width:115px !important;
         margin: 12px 15px 0 !important;
     }
     

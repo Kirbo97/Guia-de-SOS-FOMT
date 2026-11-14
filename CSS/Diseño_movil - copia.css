@@ -13,13 +13,6 @@
     
     .box_menu_lugares a.hiper { font-size: 0.523em !important; }
 
-    .box_marriage_esp { 
-        max-width: 80px !important; 
-        margin: 0 2px !important;
-    }
-
-    .box_marriage_esp a.hiper { font-size: 0.49em !important; }
-
     .scroll-container-lugares { height: 19em !important; } /* Alto del contenedor */
 
     #bot_can { display: block !important;}
