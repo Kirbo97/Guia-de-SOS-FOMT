@@ -144,6 +144,47 @@
     /*  Diseños Cocina  */
     /* **************** */
 
+    .img_coci01 { width: 80% !important; }
+
+    .tabl_coci01  img, .tabl_coci02  img {
+        width: 29px !important; 
+        height: 29px !important; 
+    }
+    
+    .tabl_coci01 b, .tabl_coci02 b { font-size: 8.8px !important; }
+    
+    .tabl_coci01 { 
+        margin-top: 0 !important; 
+        margin-bottom: 0 !important; 
+    }
+
+    .tabl_coci01 span {  font-size: 8.8px !important;}
+
+    .cont_uten { column-gap: 1em !important; }
+
+    .cont_uten div { margin: 5px 0 !important; }
+    
+    .tabl_coci02 { 
+        margin-top: 0 !important; 
+        margin-bottom: 10.88px !important; 
+    }
+
+    .est_ing { 
+        height: 1px !important;
+        font-size: 0.8em !important;
+    }
+
+    .est_ing div { margin-top: 5px !important;}
+
+    /* ***************** */
+    /*  Diseños Recetas  */
+    /* ***************** */
+
+    .rece_img01 { 
+        margin-top: 1px !important; 
+        width: 43% !important; 
+    }
+
     /* *************** */
     /*  Diseños Pesca  */
     /* *************** */
@@ -214,7 +255,7 @@
         height: 29px !important; 
     }
 
-     .tab01_min_cas .td_objetos b, #obj_min_lag .td_objetos b { font-size: 7px !important; }
+    .tab01_min_cas .td_objetos b, #obj_min_lag .td_objetos b { font-size: 7px !important; }
 
     .tab02_min_cas img,.tab02_min_lag img {
         margin-top: 0 !important;
@@ -341,11 +382,13 @@
     }
     
     .box_menu_lugares { 
-        max-width:92.99px !important;
-        margin: 12px 23px !important;
+        max-width:80.99px !important;
+        margin: 12px 8px !important;
     }
     
-    .box_menu_lugares a.hiper { font-size: 0.523em !important; }
+    .box_menu_lugares a.hiper { font-size: 7.29px !important; }
+
+    .scroll-container-lugares { height: 17.5em !important; } /* Alto del contenedor */
 
     /* ********************** */
     /*  Diseños Herramientas  */
@@ -420,6 +463,11 @@
     .est_cal div { margin-top: 5px !important;}
 
     .td_calenda b, .td_calenda_simple b, .FechEv {font-size: 16px !important; }
+
+    #div_FechEv {
+        margin-top: 8px !important; 
+        margin-bottom: 8px !important; 
+    }
 
     /* **************************** */
     /*  Diseños Eventos Aleatorios  */

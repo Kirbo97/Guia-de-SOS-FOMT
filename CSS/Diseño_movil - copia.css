@@ -6,8 +6,6 @@
 
     .box_aldeanos img { max-width:100% !important; }
 
-    .scroll-container-lugares { height: 19em !important; } /* Alto del contenedor */
-
     #bot_can { display: block !important;}
 
     .box_aldeanos { max-width:142px !important;}
@@ -18,30 +16,6 @@
     /* ************************ */
     /*  Diseños del css Tabla  */
     /* ************************ */
-
-
-    #div_FechEv {
-        margin-top: 8px !important; 
-        margin-bottom: 8px !important; 
-    }
-
-    .td_calenda p {
-        line-height: 1.5em !important;
-    }
-
-    #calendario0 td { height: 75px !important;}
-    
-    
-
-    #obj_min_cas .td_dinero, #obj_min_lag .td_dinero { font-size: 0.6em !important; }
-    
-    #obj_min_cas .td_dinero b, #obj_min_lag .td_dinero b { font-size: 1em !important; }
-
-    #lista1 .P_est p {font-size: 8px !important;}
-
-    #encabesado ol { padding-inline-start: 1em !important; }
-
-    .td_dinero, .td_dinero b { font-size: 14px !important; }
 
     
     .Table_regalo{ width: 50em !important;}
