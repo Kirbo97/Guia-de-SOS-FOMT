@@ -44,7 +44,7 @@
     /* ******************************* */
 
     #content {
-        margin: 28px 28px !important;
+        margin: 24px !important;
         padding: 12px !important;
         border-radius: 15px !important;
         width: 86.8% !important;
@@ -358,7 +358,7 @@
     
     .herra_gene .td_objetos b, .mineral_herramienta .td_objetos b, .herra_malditas .td_objetos b, .herra_bende .td_objetos b, .herra_mitica .td_objetos b, .Joyas .td_objetos b { font-size: 6.5px !important; }
 
-    .herra_mitica #encabesado th { font-size: 4px !important; }
+    .herra_mitica #encabesado th { font-size: 5px !important; }
 
     .Joyas ol { padding-left: 15px !important; }
 
