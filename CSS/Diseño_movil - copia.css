@@ -5,13 +5,6 @@
     /* ************************ */
 
     .box_aldeanos img { max-width:100% !important; }
-    
-    .box_menu_lugares { 
-        max-width:92.99px !important;
-        margin: 12px 23px !important;
-    }
-    
-    .box_menu_lugares a.hiper { font-size: 0.523em !important; }
 
     .scroll-container-lugares { height: 19em !important; } /* Alto del contenedor */
 
@@ -20,11 +13,6 @@
     .box_aldeanos { max-width:142px !important;}
 
     .box_otro { max-width:360px !important;}
-
-    .lug_img1, .lug_img2, .lug_img3, .lug_img4,.lug_img5, .lug_img6, .lug_img7, .lug_img8, .lug_img9 {
-        width: 80% !important; 
-        margin: 0 10% 15px !important; 
-    }
 
 
     /* ************************ */

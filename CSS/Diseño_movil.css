@@ -324,6 +324,29 @@
         font-size: 7px !important; 
     }
 
+    /* ******************** */
+    /*  Diseños de Lugares  */
+    /* ******************** */
+
+    .lug_img1, .lug_img2, .lug_img3, .lug_img4,.lug_img5, .lug_img6, .lug_img9, .lug_img10 {
+        width: 80% !important; 
+        margin: 0 10% 15px !important; 
+    }
+    .lug_img2,.lug_img9, .lug_img10 { margin-bottom: 0 !important; }
+
+
+    .lug_img7, .lug_img8 {
+        width: 52% !important; 
+        margin: 8.8px 0 0 20px !important; 
+    }
+    
+    .box_menu_lugares { 
+        max-width:92.99px !important;
+        margin: 12px 23px !important;
+    }
+    
+    .box_menu_lugares a.hiper { font-size: 0.523em !important; }
+
     /* ********************** */
     /*  Diseños Herramientas  */
     /* ********************** */
