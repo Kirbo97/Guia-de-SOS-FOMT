@@ -324,16 +324,57 @@
         font-size: 7px !important; 
     }
 
+    /* ********************** */
+    /*  Diseños Herramientas  */
+    /* ********************** */
+    
+    .herra_gene .td_objetos img, .mineral_herramienta .td_objetos img, .herra_malditas .td_objetos img, .herra_bende .td_objetos img, .herra_mitica .td_objetos img, .Joyas .td_objetos img {
+        width: 29px !important; 
+        height: 29px !important; 
+    }
+    
+    .herra_gene .td_objetos b, .mineral_herramienta .td_objetos b, .herra_malditas .td_objetos b, .herra_bende .td_objetos b, .herra_mitica .td_objetos b, .Joyas .td_objetos b { font-size: 6.5px !important; }
+
+    .herra_mitica #encabesado th { font-size: 4px !important; }
+
+    .Joyas ol { padding-left: 15px !important; }
+
+    #exper b { font-size: 12px !important; }
+
+    #nivel b { font-size: 6px !important; }
+
+    .mineral_herramienta .td_objetos p, .herra_mitica .td_objetos p{ margin: 0 !important; }
+
+    .mineral_herramienta, .herra_mitica { width: 100% !important; }
+
+    .img_herramientas01 {
+        width: 120px !important; 
+        height: 120px !important; 
+        margin-top: 8.8px !important; 
+    }
+
     /* ******************** */
     /*  Diseños Personajes  */
     /* ******************** */
 
     .box_marriage_esp { 
-        max-width: 78px !important; 
+        max-width: 90px !important; 
         margin: 0 2px !important;
     }
 
-    .box_marriage_esp a.hiper { font-size: 0.48em !important; }
+    .box_marriage_esp img { 
+        max-width: 70px !important;
+    }
+
+    .box_matrimonio img { max-width:100% !important; }
+
+    .box_marriage_esp a.hiper, .box_marriage_esp a p { 
+        font-size: 7.68px !important; 
+        margin-bottom: 0 !important; 
+        text-align: center !important; 
+        line-height: 1.5em !important;
+        height: 1.5em !important;
+    }
     
     .box_otros_matrimonio { 
         max-width:115px !important;

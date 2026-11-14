@@ -4,7 +4,7 @@
     /*  Diseños del css Imagen  */
     /* ************************ */
 
-    .box_aldeanos img,.box_matrimonio img { max-width:100% !important; }
+    .box_aldeanos img { max-width:100% !important; }
     
     .box_menu_lugares { 
         max-width:92.99px !important;
@@ -20,12 +20,6 @@
     .box_aldeanos { max-width:142px !important;}
 
     .box_otro { max-width:360px !important;}
-
-    .img_herramientas01 {
-        width: 120px !important; 
-        height: 120px !important; 
-        margin-top: 8.8px !important; 
-    }
 
     .lug_img1, .lug_img2, .lug_img3, .lug_img4,.lug_img5, .lug_img6, .lug_img7, .lug_img8, .lug_img9 {
         width: 80% !important; 
@@ -49,12 +43,7 @@
 
     #calendario0 td { height: 75px !important;}
     
-    .herra_gene .td_objetos img, .mineral_herramienta .td_objetos img, .herra_malditas .td_objetos img, .herra_bende .td_objetos img, .herra_mitica .td_objetos img, .Joyas .td_objetos img {
-        width: 29px !important; 
-        height: 29px !important; 
-    }
     
-    .herra_gene .td_objetos b, .mineral_herramienta .td_objetos b, .herra_malditas .td_objetos b, .herra_bende .td_objetos b, .herra_mitica .td_objetos b, .Joyas .td_objetos b { font-size: 7px !important; }
 
     #obj_min_cas .td_dinero, #obj_min_lag .td_dinero { font-size: 0.6em !important; }
     
@@ -62,15 +51,7 @@
 
     #lista1 .P_est p {font-size: 8px !important;}
 
-    .mineral_herramienta .td_objetos p, .herra_mitica .td_objetos p{ margin: 0 !important; }
-
-    .mineral_herramienta, .herra_mitica { width: 100% !important; }
-
     #encabesado ol { padding-inline-start: 1em !important; }
-
-    #exper b { font-size: 14px !important; }
-
-    #nivel b { font-size: 6px !important; }
 
     .td_dinero, .td_dinero b { font-size: 14px !important; }
 
