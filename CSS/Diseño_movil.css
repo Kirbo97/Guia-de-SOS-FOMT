@@ -14,18 +14,18 @@
     nav {
         flex-wrap: wrap !important; 
         justify-content: center !important;
-        gap: 8px !important;
+        gap: 5px !important;
         padding: 8px 4px !important;
     }
 
-    nav div { margin: 6px 12px !important; }
+    nav div { margin: 6px 11.5px !important; }
 
     nav img {
-        width: 29px !important; 
-        height: 29px !important; 
+        width: 27px !important; 
+        height: 27px !important; 
     }
 
-    .vin_nav:-webkit-any-link { font-size: 0.45em !important; }
+    .vin_nav:-webkit-any-link { font-size: 0.43em !important; }
 
     /* ******************** */
     /*  Diseños del footer  */
@@ -75,26 +75,20 @@
         line-height: 1.5em !important;
     }
 
-    /* ****************** */
-    /*  Diseños general  */
-    /* ****************** */
-
-    #logo_index{ width:240px !important; }
-
     span.dinero b{ font-size: 10px !important; }
 
     .summary_general,.summary_h2  { margin-top: 18px !important; }
 
     .summary_general_fin { margin-bottom: 18px !important; }
 
-    .horario { 
-        font-size: 0.55em !important;
+    .horario,.horario li.gustos { 
+        font-size: 8.8px !important;
         line-height: 1.5em !important;
     }
 
     .lista_num { 
         font-size: 0.55em !important;
-        padding-left: 15px;
+        padding-left: 10px;
         line-height: 1.5em !important;
     }
 
@@ -105,80 +99,94 @@
         line-height: 1.5em !important;
     }
 
-    /* ************************ */
-    /*  Diseños del css Imagen  */
-    /* ************************ */
+    .data #encabesado th{ font-size: 0.6em !important; }
 
-    .box_aldeanos img,.box_matrimonio img,.box_animales img, .box_menu img{ max-width:100% !important; }
+    .data .td_dinero, .data .td_dinero b { font-size: 8.8px !important; }
+
+    #td_cont, .td_neutro,#parte { font-size: 0.55em !important; }
+
+    #estacion p { font-size: 0.7em !important; } /* Es el encabesado de estacione  */
+
+    #bot_scr { padding: 0 5px !important; }
+
+    /* ************************* */
+    /*  Diseños del css Modales  */
+    /* ************************* */
+
+    .btn{ font-size: 10px !important; }
+
+    .modal_calendario div { padding: 0 36px 20px 28px !important; }
+
+    .modal_calendario h3 { margin: 13px 0 !important; }
+
+    .modal_calendario p b { font-size: 8px !important; }
+
+    /* *************** */
+    /*  Diseños Index  */
+    /* *************** */
+
+    #logo_index{ width:240px !important; }
+
+    /* ********************* */
+    /*  Diseños Actividades  */
+    /* ********************* */
+
+    .box_menu img{ max-width:100% !important; }
     
     .box_menu { max-width:80px !important; }
     
     .box_menu a.hiper { font-size: 0.7em !important; }
+
+    /* **************** */
+    /*  Diseños Cocina  */
+    /* **************** */
+
+    /* *************** */
+    /*  Diseños Pesca  */
+    /* *************** */
+
+    .pesc_img01 { width: 80% !important; }
+
+    .pesc_img02 { 
+        width: 40% !important;
+        height: 108px !important; 
+        margin-top: 2px  !important;
+    }
+
+    #con_pes_bas{ flex-direction: column !important; }
+
+    .tab_bas01 .enc_02,.tab_bas02 .enc_02 { width: 40px !important; }
     
-    .box_otros_matrimonio { 
-        max-width:135px !important;
-        margin: 12px 15px 0 !important;
+    .tab_bas01 img, .tab_bas02 img, .tab_lis_pes img, .tab_lis_pes_guar img {
+        width: 29px !important; 
+        height: 29px !important; 
     }
     
-    .box_otros_matrimonio a.hiper { font-size: 0.523em !important; }
+    .tab_bas01 b, .tab_bas02 b, .tab_lis_pes b, .tab_lis_pes_guar b { font-size: 7px !important; }
+
+    .tab_bas01 .ico_esta p {font-size: 14px !important;}
+
+    .tab_lis_pes #lista1 .enc_02, .tab_lis_pes #lista2 .enc_02, .tab_lis_pes #lista3 .enc_02, .tab_lis_pes_guar .enc_02 { width: 34px !important; }
+
+    .tab_lis_pes { 
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .tab_lis_pes .horario, .tab_lis_pes_guar .horario {font-size: 1em !important;  }
     
-    .box_menu_lugares { 
-        max-width:92.99px !important;
-        margin: 12px 23px !important;
-    }
-    
-    .box_menu_lugares a.hiper { font-size: 0.523em !important; }
+    #list_hamb { height: 1em !important; }
 
-    .box_marriage_esp { 
-        max-width: 80px !important; 
-        margin: 0 2px !important;
+    .tab_bas02 {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
     }
 
-    .box_marriage_esp a.hiper { font-size: 0.49em !important; }
+    /* ***************** */
+    /*  Diseños Mineria  */
+    /* ***************** */
 
-    .box_evento_aldeanos, .box_evento_otro { margin: 10px 10px !important; }
-
-    .box_evento_aldeanos,.diosa_eventos { max-width:46px !important; }
-
-    .diosa_eventos img { max-width:45px !important; }
-
-    .box_evento_otro img { 
-        width: 130px !important; 
-        height: 100px !important; 
-    }
-
-    .diosa_eventos .hiper_click{ 
-        width: 109px !important; 
-        text-align: center !important; 
-        line-height: 1.2em !important;
-    }
-
-    #bot_scr { padding: 0 5px !important; }
-
-    .box_evento_aldeanos .hiper_click , .box_evento_otro .hiper_click { font-size: 0.69em !important; }
-
-    .scroll-container-eventos-aldeanos { height: 10em !important; } /* Alto del contenedor */
-
-    .scroll-container-lugares { height: 19em !important; } /* Alto del contenedor */
-
-    #bot_can { display: block !important;}
-
-    .box_aldeanos { max-width:142px !important;}
-
-    .box_otro { max-width:360px !important;}
-
-    .img_herramientas01 {
-        width: 120px !important; 
-        height: 120px !important; 
-        margin-top: 8.8px !important; 
-    }
-
-    .lug_img1, .lug_img2, .lug_img3, .lug_img4,.lug_img5, .lug_img6, .lug_img7, .lug_img8, .lug_img9 {
-        width: 80% !important; 
-        margin: 0 10% 15px !important; 
-    }
-
-    .mina_img01{ width: 80% !important; }
+    .mina_img01 { width: 80% !important; }
 
     .mina_img02 {
         width: 157px !important;  
@@ -192,74 +200,18 @@
         margin: 8.8px 0 0 20px !important;  
     }
 
-    /* ************************ */
-    /*  Diseños del css Modales  */
-    /* ************************ */
-
-    .btn{ font-size: 10px !important; }
-
-    .modal_calendario div { padding: 0 36px 20px 28px !important; }
-
-    .modal_calendario h3 { margin: 13px 0 !important; }
-
-    .modal_calendario p b { font-size: 8px !important; }
-
-
-    /* ************************ */
-    /*  Diseños del css Tabla  */
-    /* ************************ */
-
-    td h3{ font-size: 0.60em !important; }
-
-    td p { font-size: 0.5em !important; }
-
-    .ballas_condicion{ width: 75px !important; }
-
-    .ballas th { font-size: 0.6em !important; }
-
-    .orbes td { font-size: 0.55em !important; }
-
-    .orbes th { font-size: 0.6em !important; }
-
-    #estacion p { font-size: 0.7em !important; }
-    
-    #cont_est{ 
-        height: 2em !important;
-        margin-top: 10px !important;
-    }
-
-    .td_calenda b, .td_calenda_simple b, .FechEv {font-size: 16px !important; }
-
-    #div_FechEv {
-        margin-top: 8px !important; 
-        margin-bottom: 8px !important; 
-    }
-
-    .td_calenda p {
-        line-height: 1.5em !important;
-    }
-
-    #calendario0 td { height: 75px !important;}
-    
-    .herra_gene .td_objetos img, .mineral_herramienta .td_objetos img, .herra_malditas .td_objetos img, .herra_bende .td_objetos img, .herra_mitica .td_objetos img, .Joyas .td_objetos img, #obj_min_cas .td_objetos img, #obj_min_lag .td_objetos img {
-        width: 29px !important; 
-        height: 29px !important; 
-    }
-    
-    .herra_gene .td_objetos b, .mineral_herramienta .td_objetos b, .herra_malditas .td_objetos b, .herra_bende .td_objetos b, .herra_mitica .td_objetos b, .Joyas .td_objetos b, #obj_min_cas .td_objetos b, #obj_min_lag .td_objetos b {
-        font-size: 7px !important; 
-    }
-    #obj_min_cas .td_dinero, #obj_min_lag .td_dinero { font-size: 0.6em !important; }
-    
-    #obj_min_cas .td_dinero b, #obj_min_lag .td_dinero b { font-size: 1em !important; }
+    /* ***************************** */
+    /*  Diseños Mina cascada y Lago  */
+    /* ***************************** */
 
     .tab01_min_cas .enc_01,.tab01_min_lag .enc_01 { width: 40px !important; }
 
-    .tab02_min_cas p,.tab02_min_lag p {font-size: 8.8px !important;  }
-
-    .tab02_min_lag .ball_min_lag {
-        padding: 15px !important;
+     .tab01_min_cas .td_objetos img, #obj_min_lag .td_objetos img {
+        width: 29px !important; 
+        height: 29px !important; 
     }
+
+     .tab01_min_cas .td_objetos b, #obj_min_lag .td_objetos b { font-size: 7px !important; }
 
     .tab02_min_cas img,.tab02_min_lag img {
         margin-top: 0 !important;
@@ -272,38 +224,161 @@
         height: 70px !important; 
     }
 
+    .tab02_min_cas img.pie_tel { margin-top: 8px !important; }
+
+    .tab02_min_lag .ball_min_lag {
+        padding: 15px !important;
+    }
+
     .tab02_min_lag img.herr_mal {
         width: 120px !important; 
         height: 90px !important; 
     }
 
-    .tab02_min_cas img.pie_tel { margin-top: 8px !important; }
+    /* ****************** */
+    /*  Diseños Animales  */
+    /* ****************** */
 
-    .mineral_herramienta .td_objetos p, .herra_mitica .td_objetos p{ margin: 0 !important; }
+    .box_animales img { max-width:100% !important; }
 
-    .mineral_herramienta, .herra_mitica { width: 100% !important; }
+    .box_animales a.hiper { font-size: 0.523em !important; }
 
-    #encabesado th{ font-size: 0.6em !important; }
-
-    #SinOp,#parte { font-size: 0.55em !important; }
-
-    #encabesado ol { padding-inline-start: 1em !important; }
-
-    #exper b { font-size: 14px !important; }
-
-    #nivel b { font-size: 6px !important; }
-
-    .td_dinero, .td_dinero b { font-size: 14px !important; }
-
-    
-    .Table_regalo{ width: 50em !important;}
-
-    .scroll-container-aldeanos { height:25em !important;}
-
-    .scroll-container-candidatos { 
-        border: 1px solid #ccc !important; /* Borde opcional para definir el contorno */
-        height: 39em !important;   /* Alto del contenedor */
+    .box_animales { 
+        max-width:135px !important;
+        margin: 12px 15px 0 !important;
     }
+
+    /* ******************* */
+    /*  Diseños Gallinero  */
+    /* ******************* */
+    
+    .box_gallinero { 
+        max-width:70.99px !important;
+        margin: 0 18px !important;
+    }
+
+    .box_gallinero b, .box_gallinero span, .box_gallinero span b { font-size: 12.8px !important; }
+
+    .tbla_gall01 img, .tbla_gall02 img, .tbla_gall03 img, .tbla_gall04 img, .tbla_gall05 img, .tbla_gall06 img, .tbla_gall07 img {
+        width: 29px !important; 
+        height: 29px !important; 
+    }
+
+    .tbla_gall04 #encabesado th, .tbla_gall06 #encabesado th { font-size: 0.45em !important; }
+
+    .tbla_gall01 b, .tbla_gall02 b, .tbla_gall03 b, .tbla_gall05 b, .tbla_gall07 b { font-size: 7px !important; }
+
+    .tbla_gall04 b, .tbla_gall06 b { font-size: 6px !important; }
+
+    .tbla_gall02 p, .tbla_gall03 p, .tbla_gall05 p { margin: 0 2px !important; }
+
+    .tbla_gall04 p,.tbla_gall06 p { margin: 0 1px !important; }
+
+    .tbla_gall01 .enc_03, .tbla_gall03 .enc_01 { width: auto !important; }
+
+    /* **************** */
+    /*  Diseños Ganado  */
+    /* **************** */
+
+    /* ***************** */
+    /*  Diseños Establo  */
+    /* ***************** */
+
+    .esta_img01 {
+        width: 155px !important;
+        margin: 0 0 0 20px !important;  
+    }
+
+    .esta_img02 { width: 80% !important; }
+
+    /* ****************** */
+    /*  Diseños Mascotas  */
+    /* ****************** */
+
+    .est_masc { 
+        height: 1px !important;
+        font-size: 0.8em !important;
+    }
+
+    .box_mascota { 
+        max-width:99.99px !important;
+        margin: 12px 23px !important;
+    }
+    
+    .box_mascota b, .box_mascota span, .box_mascota span b { font-size: 10.8px !important; }
+
+    .masc_img01 {
+        width: 157px !important;
+        margin: 8.8px 0 0 18px !important;  
+    }
+    
+    .tbla_masc02 img {
+        width: 29px !important; 
+        height: 29px !important; 
+    }
+    
+    .tbla_masc02 b {
+        font-size: 7px !important; 
+    }
+
+    /* ******************** */
+    /*  Diseños Personajes  */
+    /* ******************** */
+    
+    .box_otros_matrimonio { 
+        max-width:135px !important;
+        margin: 12px 15px 0 !important;
+    }
+    
+    .box_otros_matrimonio a.hiper { font-size: 0.523em !important; }
+
+    /* ***************** */
+    /*  Diseños Eventos  */
+    /* ***************** */
+
+    .est_cal { 
+        height: 1px !important;
+        font-size: 0.8em !important;
+    }
+
+    .est_cal div { margin-top: 5px !important;}
+
+    .td_calenda b, .td_calenda_simple b, .FechEv {font-size: 16px !important; }
+
+    /* **************************** */
+    /*  Diseños Eventos Aleatorios  */
+    /* **************************** */
+
+    .scroll-container-eventos-aldeanos { height: 10em !important; } /* Alto del contenedor */
+
+    .box_evento_aldeanos, .box_evento_otro { margin: 10px 10px !important; }
+
+    .box_evento_otro img { 
+        width: 120px !important; 
+        height: 99px !important; 
+    }
+
+    .diosa_eventos img { max-width:45px !important; }
+
+    .box_evento_aldeanos, .diosa_eventos { max-width:46px !important; }
+
+    .box_evento_aldeanos .hiper_click, .box_evento_otro .hiper_click { font-size: 0.69em !important; }
+
+    .diosa_eventos .hiper_click{ 
+        width: 109px !important; 
+        text-align: center !important; 
+        line-height: 1.2em !important;
+    }
+
+    /* *************** */
+    /*  Diseños Salud  */
+    /* *************** */
+
+    .orbes b, .orbes td { font-size: 8.8px !important;  }
+
+    .ballas h3 { font-size: 8.8px !important; }
+
+    .ballas .enc_01 { width: auto !important; }
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/

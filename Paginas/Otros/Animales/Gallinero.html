@@ -4,7 +4,7 @@
         <meta charset="UTF-8">   <!-- Para usar la escritura latina -->
         <title>Guia del Gallinero de SOS-FOMT</title>
         <meta name="origen" content="La informacion y parte de los diseños de la pagina pertenesen a Ushi No Tane, pero la representacion de la informacion traducida, funciones y diseños modificados y añadidos son de mi propio criterio"/>
-        <meta name="viewport" content="width=device-width, initial-scale=0.438">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/Guia-de-SOS-FOMT/CSS/Style.css" type="text/css"/> <!-- Este CSS contiene los diseños de toda las paginas -->
         <link rel="shortcut icon" href="/Guia-de-SOS-FOMT/IMG/Iconos/Kirbo.ico"/> <!-- Esta seccion es para colocar un icono que representa a toda la pagina en general -->
         <script type="text/javascript" src="/Guia-de-SOS-FOMT/JS/include.js" defer></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene la funcion de insertar el nav y footer a la pagina-->
@@ -35,7 +35,7 @@
                     </div>
                     <div class="box_gallinero">
                         <img src="/Guia-de-SOS-FOMT/IMG/Animales/Gallinero/Cafe.jpg" class="screenshot" width="270" height="210">
-                        <br><b>Gallina Cafe</b></br>
+                        <br><b>Gallina Café</b></br>
                         <font style="vertical-align: inherit;"><span class="dinero">1.500 <b>G</b></span></font>
                     </div>
                     <div class="box_gallinero">
@@ -53,26 +53,26 @@
                 
                 <p>Puedes vender los animales que no desees tener en tu granja a Lillia. Su precio de compra se basará en la calidad de los productos que produsca el animal, pero tambien puedes vender a las crias de dichos animales aunque no produscan nada todavia.</p>
 
-                <table class="data" style="margin-bottom: 25px;"> <!-- Venta de crias --> 
-                    <tr><th>Cria de animal</th><th>Produce</th><th style="width: 130px;">Precio</th></tr>
+                <table class="data tbla_gall01" style="margin-bottom: 25px;"> <!-- Venta de crias --> 
+                    <tr id="encabesado"><th>Cria de animal</th><th>Produce</th><th style="width: 130px;" class="enc_03">Precio</th></tr>
 
                     <tr><!-- Gallinas -->
                         <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda gallinas/Pollito.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Pollito</b></p></div></td>
-                        <td style="text-align:center;">No produce huevos</td>
+                        <td style="text-align:center;" id="td_cont">No produce huevos</td>
                         <td class="td_dinero">500 <b>G</b></td>
                     </tr>
 
                     <tr><!-- Conejo -->
                         <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda gallinas/Conejo bebe.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Conejito</b></p></div></td>
-                        <td style="text-align:center;">No produce lana</td>
+                        <td style="text-align:center;" id="td_cont">No produce lana</td>
                         <td class="td_dinero">1.000 <b>G</b></td>
                     </tr>
                 </table>
 
-                <table class="data" style="margin-bottom: 25px;"> <!-- Gallinas -->
-                    <tr><th colspan="7">Gallinas maduras</th></tr>
+                <table class="data tbla_gall02" style="margin-bottom: 25px;"> <!-- Gallinas -->
+                    <tr id="encabesado"><th colspan="7">Gallinas maduras</th></tr>
 
-                    <tr>
+                    <tr id="encabesado">
                         <th style="width: 90px;">Produce</th>
 
                         <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/Huevos/Huevo normal.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Huevo Común</b></p></div></td>
@@ -83,7 +83,7 @@
                         <td style="text-align: center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/Huevos/Huevo X.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Huevos X</b></p></div></td>
                     </tr>
 
-                    <tr>
+                    <tr id="encabesado">
                         <th>Precio del animal</th>
 
                         <td class="td_dinero">500 <b>G</b></td>
@@ -95,11 +95,11 @@
                     </tr>
                 </table>
 
-                <table class="data"> <!-- Conejos -->
-                    <tr><th colspan="7">Conejos maduros</th></tr>
+                <table class="data tbla_gall03"> <!-- Conejos -->
+                    <tr id="encabesado"><th colspan="7">Conejos maduros</th></tr>
 
-                    <tr>
-                        <th style="width: 90px;">Produce</th>
+                    <tr id="encabesado">
+                        <th style="width: 90px;" class="enc_01">Produce</th>
 
                         <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/Lana/Lana de conejo (S).png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Lana de conejo (S)</b></p></div></td>
                         <td style="text-align: center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/Lana/Lana de conejo (M).png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Lana de conejo (M)</b></p></div></td>
@@ -109,7 +109,7 @@
                         <td style="text-align: center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/Lana/Lana de conejo (X).png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Lana de conejo (X)</b></p></div></td>
                     </tr>
 
-                    <tr>
+                    <tr id="encabesado">
                         <th>Precio del animal</th>
 
                         <td class="td_dinero">1.000 <b>G</b></td>
@@ -139,10 +139,10 @@
 
                 <p>En el caso de los conejos, simplemente afeite el pelaje del cuerpo con la maquinilla. Saibara venderá los Clippers en su tienda por  <span class="dinero">1.800 <b>G</b></span> al día siguiente de comprar un animal con pelaje cortable. Los conejos de angora producirán pelaje cada 5 días. Puedes utilizar la máquina Yarn Maker para convertir la piel de angora en hilo. Tanto el fabricante de hilados del gallinero como el establo del ganado pueden convertir la piel en hilo. El hilo no se clasificará como "angora" una vez procesado.</p>
 
-                <table class="data" style="margin-bottom: 25px;"> <!-- Gallinas -->
-                    <tr><th colspan="7">Gallinas</th></tr>
+                <table class="data tbla_gall04" style="margin-bottom: 25px;"> <!-- Gallinas -->
+                    <tr id="encabesado"><th colspan="7">Gallinas</th></tr>
 
-                    <tr>
+                    <tr id="encabesado">
                         <th>Producto</th>
 
                         <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/Huevos/Huevo normal.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Huevo Común</b></p></div></td>
@@ -153,7 +153,7 @@
                         <td style="text-align: center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/Huevos/Huevo X.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Huevos X</b></p></div></td>
                     </tr>
 
-                    <tr>
+                    <tr id="encabesado">
                         <th>Precio del huevo</th>
 
                         <td class="td_dinero">50 <b>G</b></td>
@@ -164,7 +164,7 @@
                         <td class="td_dinero">240 <b>G</b></td>
                     </tr>
 
-                    <tr>
+                    <tr id="encabesado">
                         <th style="width: 12em;">Producto procesado por la maquina de mayonesa</th>
 
                         <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/Huevos/Mayonesa (S).png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Mayonesa (S)</b></p></div></td>
@@ -175,7 +175,7 @@
                         <td style="text-align: center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/Huevos/Mayonesa (X).png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Mayonesa (X)</b></p></div></td>
                     </tr>
 
-                    <tr>
+                    <tr id="encabesado">
                         <th>Precio de la mayonesa</th>
 
                         <td class="td_dinero">100 <b>G</b></td>
@@ -187,10 +187,10 @@
                     </tr>
                 </table>
 
-                <table class="data"> <!-- Requerimiento para producir-->
-                    <tr><th colspan="2">Requerimiento para producir</th></tr>
+                <table class="data tbla_gall05"> <!-- Requerimiento para producir-->
+                    <tr id="encabesado"><th colspan="2">Requerimiento para producir</th></tr>
                     
-                    <tr><th>Producto</th><th>Condicion</th></tr>
+                    <tr id="encabesado"><th>Producto</th><th>Condicion</th></tr>
 
                     <tr>
                         <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/Huevos/Huevo normal.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Huevo Común</b></p></div></td>
@@ -240,10 +240,10 @@
 
                 <p>También puedes usar la cocina para hacer un Huevo X y las mayonesas pero para eso debes de haber desbloqueado las recetas del libro de cocina.</p>
 
-                <table class="data" style="margin-bottom: 25px;"> <!-- Conejos -->
-                    <tr><th colspan="7">Conejos</th></tr>
+                <table class="data tbla_gall06" style="margin-bottom: 25px;"> <!-- Conejos -->
+                    <tr id="encabesado"><th colspan="7">Conejos</th></tr>
 
-                    <tr>
+                    <tr id="encabesado">
                         <th>Producto</th>
 
                         <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/lana/Lana de conejo (S).png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Lana de conejo (S)</b></p></div></td>
@@ -254,7 +254,7 @@
                         <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/lana/Lana de conejo (X).png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Lana de conejo (X)</b></p></div></td>
                     </tr>
 
-                    <tr>
+                    <tr id="encabesado">
                         <th>Precio de la lana de conejo</th>
 
                         <td class="td_dinero">240 <b>G</b></td>
@@ -265,7 +265,7 @@
                         <td class="td_dinero">1.800 <b>G</b></td>
                     </tr>
 
-                    <tr>
+                    <tr id="encabesado">
                         <th style="width: 7em;">Lana procesado por la maquina de hilo</th>
 
                         <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/lana/Hilo (S).png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Hilo (S)</b></p></div></td>
@@ -276,7 +276,7 @@
                         <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/lana/Hilo (X).png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Hilo (X)</b></p></div></td>
                     </tr>
 
-                    <tr>
+                    <tr id="encabesado">
                         <th>Precio del hilo</th>
 
                         <td class="td_dinero">530 <b>G</b></td>
@@ -288,10 +288,10 @@
                     </tr>
                 </table>
 
-                <table class="data"> <!-- Requerimiento para producir-->
-                    <tr><th colspan="2">Requerimiento para producir</th></tr>
+                <table class="data tbla_gall07"> <!-- Requerimiento para producir-->
+                    <tr id="encabesado"><th colspan="2">Requerimiento para producir</th></tr>
                     
-                    <tr><th>Producto</th><th>Condicion</th></tr>
+                    <tr id="encabesado"><th>Producto</th><th>Condicion</th></tr>
 
                     <tr>
                         <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Animales/Producto/lana/Lana de conejo (S).png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Lana de conejo (S)</b></p></div></td>

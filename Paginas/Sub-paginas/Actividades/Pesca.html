@@ -4,7 +4,7 @@
         <meta charset="UTF-8">   <!-- Para usar la escritura latina -->
         <title>Guia de pesca de SOS-FOMT</title>
         <meta name="origen" content="La informacion y parte de los diseños de la pagina pertenesen a Ushi No Tane, pero la representacion de la informacion traducida, funciones y diseños modificados y añadidos son de mi propio criterio"/>
-        <meta name="viewport" content="width=device-width, initial-scale=0.438">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/Guia-de-SOS-FOMT/CSS/Style.css" type="text/css"/> <!-- Este CSS contiene los diseños de toda las paginas -->
         <link rel="shortcut icon" href="/Guia-de-SOS-FOMT/IMG/Iconos/Kirbo.ico"/> <!-- Esta seccion es para colocar un icono que representa a toda la pagina en general -->
         <script type="text/javascript" src="/Guia-de-SOS-FOMT/JS/include.js" defer></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene la funcion de insertar el nav y footer a la pagina-->
@@ -31,11 +31,11 @@
 
                 <p>Se puede pescar en cualquiera de los canales que rodean Mineral Town. Equipa la caña de pescar, presiona el botón Y para lanzar el anzuelo al agua y luego espera hasta que veas un "!" Aparece una burbuja sobre la cabeza del granjero. Para pescar el pescado capturado, presione el botón Y nuevamente. No es necesario presionar el botón de acción una y otra vez para la versión Switch de <i>Friends of Mineral Town</i>.</p>
     
-                <img src="/Guia-de-SOS-FOMT/IMG/mapa_pesca.jpg" class="center screenshot" title="Mapa de pesca" width="600" height="338"/>
+                <img src="/Guia-de-SOS-FOMT/IMG/mapa_pesca.jpg" class="center screenshot pesc_img01" title="Mapa de pesca" width="600" height="338"/>
 
                 <p>Hay 8 zonas de pesca alrededor de Mineral Town:</p>
                 <!-- La etiqueta ol es para una lista enumerada-->
-                <ol>
+                <ol class="lista_num">
                     <li>El <b>Lago</b> puedes pescar en primavera, verano y otoño pero no en invierno porque el lago se congela por el frio.</li>
                     <li>El <b>Lago subterráneo</b> se encuentra en la mina del lago en el piso 9 i solo puedes llegar a la mina en Invierno porque el lago se congela permitiendote accede a la mina.</li>
                     <li>El <b>Río arriba</b> se encuentra dirigiendose a la colina de la madre hay un Río arriba.</li>
@@ -51,7 +51,7 @@
                 <p>Aunque hay una variedad de peces, los peces que pesques se clasificarán en peces pequeños (24 cm o menos), peces medianos (25 cm a 49 cm) o peces grandes (50 cm o más). La misma especie de pez puede venir en uno o dos tamaños, y no sabrás lo que obtendrás hasta que lo enrolles. Las ganancias que obtengas dependerán del tamaño del pez y no del tipo de pez capturado.</p> 
             
                 <!-- La etiqueta ul es para una lista con guion-->
-                <ul>
+                <ul class="horario">
                     <li>Peces Pequeños: <span class="dinero">50 <b>G</b></span> (modo normal) o <span class="dinero">60 <b>G</b></span> (modo simple)</li>
                     <li>Pescado Mediano: <span class="dinero">120 <b>G</b></span> (modo normal) o <span class="dinero">144 <b>G</b></span> (modo simple)</li>
                     <li>Peces Grandes: <span class="dinero">200 <b>G</b></span> (modo normal) o <span class="dinero">240 <b>G</b></span> (modo simple)</li>
@@ -64,7 +64,7 @@
                 <details> <!-- pagina 1 -->
                     <summary class="summary_h2">Objetos que no son peces</summary>
 
-                    <img src="/Guia-de-SOS-FOMT/IMG/pescando.jpg" class="right screenshot" width="210" height="210" style="margin: 17px 0 0 20px;"/>
+                    <img src="/Guia-de-SOS-FOMT/IMG/pescando.jpg" class="right screenshot pesc_img02" width="210" height="210" style="margin: 5px 0 0 20px;"/>
         
                     <p>También se pueden obtener otros objetos del agua al pescar. Entre esos objetos puedes atrapar basura como botas, espinas de pescado, latas vacías y ramas. Estas basuras no se pueden arrojar nuevamente al agua, pero puedes tirarla al bote de basura que se encuentra en la Plaza Rosa o venderla a través de tu contenedor de envío por <span class="dinero">1 <b>G</b></span> cada una.</p>
 
@@ -72,90 +72,90 @@
 
                     <p>Hay otros artículos especiales que puedes capturar en el Playa después de mejorar tu caña de pescar (consulta los niveles mínimos requeridos a continuación) y cargar tu herramienta al nivel de potencia apropiado antes de lanzarla al agua:</p>
 
-                    <div style="display: flex;">
-                        <table class="data">
-                            <tr><th style="width: 28px;">Nº</th><th style="width: 100px;">Objetos</th><th style="width: 5em;">Estaciones</th><th>Ubicación</th><th>Nivel de carga</th></tr>
+                    <div id="con_pes_bas" style="display: flex;">
+                        <table class="data tab_bas01">
+                            <tr id="encabesado"><th style="width: 28px;">Nº</th><th style="width: 100px;" class="enc_02">Objetos</th><th style="width: 5em;">Estaciones</th><th>Ubicación</th><th>Nivel de carga</th></tr>
     
                             <tr>
-                                <td style="text-align: center;">01</td>
+                                <td id="td_cont" style="text-align: center;">01</td>
                                 <td style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Balla de poder.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Balla de energia</b></p></td>
-                                <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;"><p class="in" title="Invierno" style="margin: 0;"></p></div></td>
-                                <td style="text-align: center;">Playa</td><td>5 o superior</td>
+                                <td class="ico_esta"><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;"><p class="in" title="Invierno" style="margin: 0;"></p></div></td>
+                                <td id="td_cont" style="text-align: center;">Playa</td><td id="td_cont">5 o superior</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">02</td>
+                                <td id="td_cont" style="text-align: center;">02</td>
                                 <td style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Otros/Fósil antiguo.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Fósil antiguo</b></p></td>
-                                <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;"><p class="ot" title="Otoño" style="margin: 0;"></p></div></td>
-                                <td style="text-align: center;">Playa</td><td>6 o superior</td>
+                                <td class="ico_esta"><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;"><p class="ot" title="Otoño" style="margin: 0;"></p></div></td>
+                                <td id="td_cont" style="text-align: center;">Playa</td><td id="td_cont">6 o superior</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">03</td>
+                                <td id="td_cont" style="text-align: center;">03</td>
                                 <td style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Otros/Tesoro pirata.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Tesoro pirata</b></p></td>
-                                <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;"><p class="pri" title="Primavera" style="margin: 0;"></p></div></td>
-                                <td style="text-align: center;">Playa</td><td>5 o superior</td>
+                                <td class="ico_esta"><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;"><p class="pri" title="Primavera" style="margin: 0;"></p></div></td>
+                                <td id="td_cont" style="text-align: center;">Playa</td><td id="td_cont">5 o superior</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">04</td>
+                                <td id="td_cont" style="text-align: center;">04</td>
                                 <td style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Otros/Mensaje embotellado.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Mensaje embotellado</b></p></td>
-                                <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;"><p class="pri" title="Primavera" style="margin: 0;"></p></div></td>
-                                <td style="text-align: center;">Playa</td><td>5 o superior</td>
+                                <td class="ico_esta"><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;"><p class="pri" title="Primavera" style="margin: 0;"></p></div></td>
+                                <td id="td_cont" style="text-align: center;">Playa</td><td id="td_cont">5 o superior</td>
                             </tr>
                         </table>
     
-                        <table class="data">
-                            <tr><th style="width: 28px;  text-align: center;">Nº</th><th style="width: 100px;">Basuras</th><th style="width: 120px;">Ubicacion y nivel de carga</th></tr>
+                        <table class="data tab_bas02">
+                            <tr id="encabesado"><th style="width: 28px;  text-align: center;">Nº</th><th style="width: 100px;" class="enc_02">Basuras</th><th style="width: 120px;">Ubicacion y nivel de carga</th></tr>
     
                             <tr>
-                                <td style="text-align: center;">01</td>
+                                <td id="td_cont" style="text-align: center;">01</td>
                                 <td style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Basura/Rama.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Rama</b></p></td>
-                                <td style="text-align: center;">Cualquiera</td>
+                                <td id="td_cont" style="text-align: center;">Cualquiera</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">02</td>
+                                <td id="td_cont" style="text-align: center;">02</td>
                                 <td style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Basura/Lata vacía.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Lata vacía</b></p></td>
-                                <td style="text-align: center;">Cualquiera</td>
+                                <td id="td_cont" style="text-align: center;">Cualquiera</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">03</td>
+                                <td id="td_cont" style="text-align: center;">03</td>
                                 <td style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Basura/Bota de goma.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Bota de goma</b></p></td>
-                                <td style="text-align: center;">Cualquiera</td>
+                                <td id="td_cont" style="text-align: center;">Cualquiera</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">04</td>
+                                <td id="td_cont" style="text-align: center;">04</td>
                                 <td style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Basura/Espinas de pescado.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Espinas de pescado</b></p></td>
-                                <td style="text-align: center;">Cualquiera</td>
+                                <td id="td_cont" style="text-align: center;">Cualquiera</td>
                             </tr>
                         </table>
                     </div>
                 </details>
 
-                <details> <!-- pagina 2 -->
+                <details> <!-- pagina 2 --> 
                     <summary class="summary_h2">Lista de peces normales</summary>
 
                     <p>Hay 50 peces normales que puedes pescar; El juego original de GBA tenía 45 peces.</p>
 
-                    <table class="data" style="margin-bottom: 1.5em; margin-top: 1.8em;">
+                    <table class="data tab_lis_pes" style="margin-bottom: 1.5em; margin-top: 1.8em;">
                         <tr>
-                            <th id="estacion" style="font-size: 1.2em; background-color:#00AA88; height: 4em; width: 33em;">
+                            <th id="list_hamb" style="font-size: 1.2em; background-color:#00AA88; height: 4em; width: 33em;">
                                 <div style="display:flex;justify-content:space-around;align-items:center;">
-                                    <p onclick="cambiar_lista(1,3)" style="cursor: pointer;">Lista del 1 al 20</p>
-                                    <p onclick="cambiar_lista(2,3)" style="cursor: pointer;">Lista del 21 al 40</p>
-                                    <p onclick="cambiar_lista(3,3)" style="cursor: pointer;">Lista del 41 al 50</p>
+                                    <p onclick="cambiar_lista(1,3)" style="cursor: pointer;">Lista 1</p>
+                                    <p onclick="cambiar_lista(2,3)" style="cursor: pointer;">Lista 2</p>
+                                    <p onclick="cambiar_lista(3,3)" style="cursor: pointer;">Lista 3</p>
                                 </div>
                             </th>
                         </tr>
 
                         <tbody id="lista1" style="display: none;"> <!-- Lista de peces del 1 al 20 -->
-                            <tr><th style="width: 30px;">Nº</th><th style="width: 100px;">Peces</th><th style="width: 5em;">Estaciones</th><th style="width: 11em;">Ubicación</th><th>Nivel de carga</th><th>Tamaño maximo</th></tr>
-                        
+                            <tr id="encabesado"><th style="width: 30px;">Nº</th><th style="width: 100px;" class="enc_02">Peces</th><th style="width: 5em;">Estaciones</th><th style="width: 11em;">Ubicación</th><th>Nivel de carga</th><th>Tamaño maximo</th></tr>
+
                             <tr>
-                                <td style="text-align: center;">01</td>
+                                <td id="td_cont" style="text-align: center;">01</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Bacalao japones.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Bacalao Japones</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -164,24 +164,11 @@
                                     <p class="in" title="Invierno" style="margin: 0;"></p>
                                 </div></td>
                                 <td><ul class="horario"><li class="gustos">Playa</li></ul></td>
-                                <td style="text-align: center;">3</td><td style="text-align: center;">40 cm</td>
+                                <td id="td_cont" style="text-align: center;">3</td><td id="td_cont" style="text-align: center;">40 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">01</td>
-                                <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Bacalao japones.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Bacalao Japones</b></p></div></td>
-                                <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
-                                    <p class="pri" title="Primavera" style="margin: 0;"></p>
-                                    <p class="ve" title="Verano" style="margin: 0"></p>
-                                    <p class="ot" title="Otoño" style="margin: 0;"></p>
-                                    <p class="in" title="Invierno" style="margin: 0;"></p>
-                                </div></td>
-                                <td><ul class="horario"><li class="gustos">Playa</li></ul></td>
-                                <td style="text-align: center;">3</td><td style="text-align: center;">40 cm</td>
-                            </tr>
-
-                            <tr>
-                                <td style="text-align: center;">02</td>
+                                <td id="td_cont" style="text-align: center;">02</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Jurel.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Jurel</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -190,11 +177,11 @@
                                     <p class="in" title="Invierno" style="margin: 0;"></p>
                                 </div></td>
                                 <td><ul class="horario"><li class="gustos">Playa</li></ul></td>
-                                <td style="text-align: center;">3</td><td style="text-align: center;">40 cm</td>
+                                <td id="td_cont" style="text-align: center;">3</td><td id="td_cont" style="text-align: center;">40 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">03</td>
+                                <td id="td_cont" style="text-align: center;">03</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Piscardo.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Piscardo</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -207,11 +194,11 @@
                                     <li class="gustos">Río arriba</li>
                                     <li class="gustos">Estanque</li>
                                 </ul></td>
-                                <td style="text-align: center;">1</td><td style="text-align: center;">15 cm</td>
+                                <td id="td_cont" style="text-align: center;">1</td><td id="td_cont" style="text-align: center;">15 cm</td>
                             </tr>
                         
                             <tr>
-                                <td style="text-align: center;">04</td>
+                                <td id="td_cont" style="text-align: center;">04</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Trucha.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Trucha</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -224,11 +211,11 @@
                                     <li class="gustos">Río arriba</li>
                                     <li class="gustos">Estanque</li>
                                 </ul></td>
-                                <td style="text-align: center;">1</td><td style="text-align: center;">25 cm</td>
+                                <td id="td_cont" style="text-align: center;">1</td><td id="td_cont" style="text-align: center;">25 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">05</td>
+                                <td id="td_cont" style="text-align: center;">05</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Ronco.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Ronco</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -237,11 +224,11 @@
                                     <p class="in" title="Invierno" style="margin: 0;"></p>
                                 </div></td>
                                 <td><ul class="horario"><li class="gustos">Playa</li></ul></td>
-                                <td style="text-align: center;">3</td><td style="text-align: center;">40 cm</td>
+                                <td id="td_cont" style="text-align: center;">3</td><td id="td_cont" style="text-align: center;">40 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">06</td>
+                                <td id="td_cont" style="text-align: center;">06</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Sardina.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Sardina</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -250,11 +237,11 @@
                                     <p class="in" title="Invierno" style="margin: 0;"></p>
                                 </div></td>
                                 <td><ul class="horario"><li class="gustos">Playa</li></ul></td>
-                                <td style="text-align: center;">1</td><td style="text-align: center;">25 cm</td>
+                                <td id="td_cont" style="text-align: center;">1</td><td id="td_cont" style="text-align: center;">25 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">07</td>
+                                <td id="td_cont" style="text-align: center;">07</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Salmón japonés.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Salmón japonés</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -265,11 +252,11 @@
                                     <li class="gustos">Río arriba</li>
                                     <li class="gustos">Estanque</li>
                                 </ul></td>
-                                <td style="text-align: center;">4</td><td style="text-align: center;">50 cm</td>
+                                <td id="td_cont" style="text-align: center;">4</td><td id="td_cont" style="text-align: center;">50 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">08</td>
+                                <td id="td_cont" style="text-align: center;">08</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Leucisco.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Leucisco</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -282,11 +269,11 @@
                                     <li class="gustos">Río abajo</li>
                                     <li class="gustos">Estanque</li>
                                 </ul></td>
-                                <td style="text-align: center;">2</td><td style="text-align: center;">35 cm</td>
+                                <td id="td_cont" style="text-align: center;">2</td><td id="td_cont" style="text-align: center;">35 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">09</td>
+                                <td id="td_cont" style="text-align: center;">09</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Anguila.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Anguila</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -295,11 +282,11 @@
                                     <p class="in" title="Invierno" style="margin: 0;"></p>
                                 </div></td>
                                 <td><ul class="horario"><li class="gustos">Río abajo</li></ul></td>
-                                <td style="text-align: center;">5</td><td style="text-align: center;">100 cm</td>
+                                <td id="td_cont" style="text-align: center;">5</td><td id="td_cont" style="text-align: center;">100 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">10</td>
+                                <td id="td_cont" style="text-align: center;">10</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Cacho.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Cacho</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -308,11 +295,11 @@
                                     <p class="in" title="Invierno" style="margin: 0;"></p>
                                 </div></td>
                                 <td><ul class="horario"><li class="gustos">Río abajo</li></ul></td>
-                                <td style="text-align: center;">1</td><td style="text-align: center;">15 cm</td>
+                                <td id="td_cont" style="text-align: center;">1</td><td id="td_cont" style="text-align: center;">15 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">11</td>
+                                <td id="td_cont" style="text-align: center;">11</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Bonito.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Bonito</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -320,11 +307,11 @@
                                     <p class="ot" title="Otoño" style="margin: 0;"></p>
                                 </div></td>
                                 <td><ul class="horario"><li class="gustos">Playa</li></ul></td>
-                                <td style="text-align: center;">5</td><td style="text-align: center;">90 cm</td>
+                                <td id="td_cont" style="text-align: center;">5</td><td id="td_cont" style="text-align: center;">90 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">12</td>
+                                <td id="td_cont" style="text-align: center;">12</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Platija.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Platija</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -333,11 +320,11 @@
                                     <p class="in" title="Invierno" style="margin: 0;"></p>
                                 </div></td>
                                 <td><ul class="horario"><li class="gustos">Playa</li></ul></td>
-                                <td style="text-align: center;">4</td><td style="text-align: center;">60 cm</td>
+                                <td id="td_cont" style="text-align: center;">4</td><td id="td_cont" style="text-align: center;">60 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">13</td>
+                                <td id="td_cont" style="text-align: center;">13</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Pez ballesta.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Pez ballesta</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -345,11 +332,11 @@
                                     <p class="in" title="Invierno" style="margin: 0;"></p>
                                 </div></td>
                                 <td><ul class="horario"><li class="gustos">Playa</li></ul></td>
-                                <td style="text-align: center;">2</td><td style="text-align: center;">30 cm</td>
+                                <td id="td_cont" style="text-align: center;">2</td><td id="td_cont" style="text-align: center;">30 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">14</td>
+                                <td id="td_cont" style="text-align: center;">14</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Carpa dorada.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Carpa dorada</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -361,11 +348,11 @@
                                     <li class="gustos">Cascada</li>
                                     <li class="gustos">Río abajo</li>
                                 </ul></td>
-                                <td style="text-align: center;">1</td><td style="text-align: center;">20 cm</td>
+                                <td id="td_cont" style="text-align: center;">1</td><td id="td_cont" style="text-align: center;">20 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">15</td>
+                                <td id="td_cont" style="text-align: center;">15</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Carpa cruciana.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Carpín</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -377,11 +364,11 @@
                                     <li class="gustos">Cascada</li>
                                     <li class="gustos">Río abajo</li>
                                 </ul></td>
-                                <td style="text-align: center;">2</td><td style="text-align: center;">30 cm</td>
+                                <td id="td_cont" style="text-align: center;">2</td><td id="td_cont" style="text-align: center;">30 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">16</td>
+                                <td id="td_cont" style="text-align: center;">16</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Mero de diente largo.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Mero de diente largo</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -389,11 +376,11 @@
                                     <p class="in" title="Invierno" style="margin: 0;"></p>
                                 </div></td>
                                 <td><ul class="horario"><li class="gustos">Playa</li></ul></td>
-                                <td style="text-align: center;">4</td><td style="text-align: center;">70 cm</td>
+                                <td id="td_cont" style="text-align: center;">4</td><td id="td_cont" style="text-align: center;">70 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">17</td>
+                                <td id="td_cont" style="text-align: center;">17</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Carpa cabezona.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Carpa cabezona</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -405,22 +392,22 @@
                                     <li class="gustos">Lago</li>
                                     <li class="gustos">Río abajo</li>
                                 </ul></td>
-                                <td style="text-align: center;">5</td><td style="text-align: center;">100 cm</td>
+                                <td id="td_cont" style="text-align: center;">5</td><td id="td_cont" style="text-align: center;">100 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">18</td>
+                                <td id="td_cont" style="text-align: center;">18</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Salmón.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Salmón</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="ve" title="Verano" style="margin: 0"></p>
                                     <p class="ot" title="Otoño" style="margin: 0;"></p>
                                 </div></td>
                                 <td><ul class="horario"><li class="gustos">Río abajo</li></ul></td>
-                                <td style="text-align: center;">4</td><td style="text-align: center;">70 cm</td>
+                                <td id="td_cont" style="text-align: center;">4</td><td id="td_cont" style="text-align: center;">70 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">19</td>
+                                <td id="td_cont" style="text-align: center;">19</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Caballa.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Caballa</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -429,11 +416,11 @@
                                     <p class="in" title="Invierno" style="margin: 0;"></p>
                                 </div></td>
                                 <td><ul class="horario"><li class="gustos">Playa</li></ul></td>
-                                <td style="text-align: center;">4</td><td style="text-align: center;">50 cm</td>
+                                <td id="td_cont" style="text-align: center;">4</td><td id="td_cont" style="text-align: center;">50 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">20</td>
+                                <td id="td_cont" style="text-align: center;">20</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Agujones.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Agujones</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -441,15 +428,15 @@
                                     <p class="ot" title="Otoño" style="margin: 0;"></p>
                                 </div></td>
                                 <td><ul class="horario"><li class="gustos">Playa</li></ul></td>
-                                <td style="text-align: center;">3</td><td style="text-align: center;">40 cm</td>
+                                <td id="td_cont" style="text-align: center;">3</td><td id="td_cont" style="text-align: center;">40 cm</td>
                             </tr>
                         </tbody>
 
                         <tbody id="lista2" style="display: none;"> <!-- Lista de peces del 1 al 20 -->
-                            <tr><th style="width: 30px;">Nº</th><th style="width: 100px;">Peces</th><th style="width: 5em;">Estaciones</th><th style="width: 11em;">Ubicación</th><th>Nivel de carga</th><th>Tamaño maximo</th></tr>
+                            <tr id="encabesado"><th style="width: 30px;">Nº</th><th style="width: 100px;" class="enc_02">Peces</th><th style="width: 5em;">Estaciones</th><th style="width: 11em;">Ubicación</th><th>Nivel de carga</th><th>Tamaño maximo</th></tr>
 
                             <tr>
-                                <td style="text-align: center;">21</td>
+                                <td id="td_cont" style="text-align: center;">21</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Palometón.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Palometón</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -457,19 +444,19 @@
                                     <p class="in" title="Invierno" style="margin: 0;"></p>
                                 </div></td>
                                 <td><ul class="horario"><li class="gustos">Playa</li></ul></td>
-                                <td style="text-align: center;">5</td><td style="text-align: center;">100 cm</td>
+                                <td id="td_cont" style="text-align: center;">5</td><td id="td_cont" style="text-align: center;">100 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">22</td>
+                                <td id="td_cont" style="text-align: center;">22</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Lucio.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Lucio</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;"><p class="ot" title="Otoño" style="margin: 0;"></p></div></td>
                                 <td><ul class="horario"><li class="gustos">Playa</li></ul></td>
-                                <td style="text-align: center;">3</td><td style="text-align: center;">40 cm</td>
+                                <td id="td_cont" style="text-align: center;">3</td><td id="td_cont" style="text-align: center;">40 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">23</td>
+                                <td id="td_cont" style="text-align: center;">23</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Dorado.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Dorado</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -477,11 +464,11 @@
                                     <p class="ot" title="Otoño" style="margin: 0;"></p>
                                 </div></td>
                                 <td><ul class="horario"><li class="gustos">Playa</li></ul></td>
-                                <td style="text-align: center;">5</td><td style="text-align: center;">180 cm</td>
+                                <td id="td_cont" style="text-align: center;">5</td><td id="td_cont" style="text-align: center;">180 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">24</td>
+                                <td id="td_cont" style="text-align: center;">24</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Besugo.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Besugo</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -490,22 +477,22 @@
                                     <p class="in" title="Invierno" style="margin: 0;"></p>
                                 </div></td>
                                 <td><ul class="horario"><li class="gustos">Playa</li></ul></td>
-                                <td style="text-align: center;">5</td><td style="text-align: center;">100 cm</td>
+                                <td id="td_cont" style="text-align: center;">5</td><td id="td_cont" style="text-align: center;">100 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">25</td>
+                                <td id="td_cont" style="text-align: center;">25</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Bacalao.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Bacalao</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
                                     <p class="in" title="Invierno" style="margin: 0;"></p>
                                 </div></td>
                                 <td><ul class="horario"><li class="gustos">Playa</li></ul></td>
-                                <td style="text-align: center;">4</td><td style="text-align: center;">50 cm</td>
+                                <td id="td_cont" style="text-align: center;">4</td><td id="td_cont" style="text-align: center;">50 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">26</td>
+                                <td id="td_cont" style="text-align: center;">26</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Locha.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Locha</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -516,11 +503,11 @@
                                     <li class="gustos">Río abajo</li>
                                     <li class="gustos">Estanque</li>
                                 </ul></td>
-                                <td style="text-align: center;">1</td><td style="text-align: center;">12 cm</td>
+                                <td id="td_cont" style="text-align: center;">1</td><td id="td_cont" style="text-align: center;">12 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">27</td>
+                                <td id="td_cont" style="text-align: center;">27</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Donko.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Donko</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -532,11 +519,11 @@
                                     <li class="gustos">Río abajo</li>
                                     <li class="gustos">Estanque</li>
                                 </ul></td>
-                                <td style="text-align: center;">1</td><td style="text-align: center;">25 cm</td>
+                                <td id="td_cont" style="text-align: center;">1</td><td id="td_cont" style="text-align: center;">25 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">28</td>
+                                <td id="td_cont" style="text-align: center;">28</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Trucha arcoiris.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Trucha arcoiris</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -549,11 +536,11 @@
                                     <li class="gustos">Río arriba</li>
                                     <li class="gustos">Cascada</li>
                                 </ul></td>
-                                <td style="text-align: center;">5</td><td style="text-align: center;">100 cm</td>
+                                <td id="td_cont" style="text-align: center;">5</td><td id="td_cont" style="text-align: center;">100 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">29</td>
+                                <td id="td_cont" style="text-align: center;">29</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Arenque.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Arenque</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -562,11 +549,11 @@
                                     <p class="in" title="Invierno" style="margin: 0;"></p>
                                 </div></td>
                                 <td><ul class="horario"><li class="gustos">Playa</li></ul></td>
-                                <td style="text-align: center;">1</td><td style="text-align: center;">30 cm</td>
+                                <td id="td_cont" style="text-align: center;">1</td><td id="td_cont" style="text-align: center;">30 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">30</td>
+                                <td id="td_cont" style="text-align: center;">30</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Carpa plateada.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Carpa plateada</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -578,11 +565,11 @@
                                     <li class="gustos">Río abajo</li>
                                     <li class="gustos">Estanque</li>
                                 </ul></td>
-                                <td style="text-align: center;">5</td><td style="text-align: center;">100 cm</td>
+                                <td id="td_cont" style="text-align: center;">5</td><td id="td_cont" style="text-align: center;">100 cm</td>
                             </tr>
                         
                             <tr>
-                                <td style="text-align: center;">31</td>
+                                <td id="td_cont" style="text-align: center;">31</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Pez de arena.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Pez de arena</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -590,11 +577,11 @@
                                     <p class="in" title="Invierno" style="margin: 0;"></p>
                                 </div></td>
                                 <td><ul class="horario"><li class="gustos">Playa</li></ul></td>
-                                <td style="text-align: center;">1</td><td style="text-align: center;">20 cm</td>
+                                <td id="td_cont" style="text-align: center;">1</td><td id="td_cont" style="text-align: center;">20 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">32</td>
+                                <td id="td_cont" style="text-align: center;">32</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Fletán.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Fletán</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -603,22 +590,22 @@
                                     <p class="in" title="Invierno" style="margin: 0;"></p>
                                 </div></td>
                                 <td><ul class="horario"><li class="gustos">Playa</li></ul></td>
-                                <td style="text-align: center;">5</td><td style="text-align: center;">80 cm</td>
+                                <td id="td_cont" style="text-align: center;">5</td><td id="td_cont" style="text-align: center;">80 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">33</td>
+                                <td id="td_cont" style="text-align: center;">33</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Pez globo.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Pez globo</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
                                     <p class="in" title="Invierno" style="margin: 0;"></p>
                                 </div></td>
                                 <td><ul class="horario"><li class="gustos">Playa</li></ul></td>
-                                <td style="text-align: center;">4</td><td style="text-align: center;">50 cm</td>
+                                <td id="td_cont" style="text-align: center;">4</td><td id="td_cont" style="text-align: center;">50 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">34</td>
+                                <td id="td_cont" style="text-align: center;">34</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Lubina negra.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Lubina negra</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -635,22 +622,22 @@
                                     <li class="gustos">Río abajo</li>
                                     <li class="gustos">Cascada</li>
                                 </ul></td>
-                                <td style="text-align: center;">4</td><td style="text-align: center;">50 cm</td>
+                                <td id="td_cont" style="text-align: center;">4</td><td id="td_cont" style="text-align: center;">50 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">35</td>
+                                <td id="td_cont" style="text-align: center;">35</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Cola amarilla.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Cola amarilla</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
                                     <p class="in" title="Invierno" style="margin: 0;"></p>
                                 </div></td>
                                 <td><ul class="horario"><li class="gustos">Playa</li></ul></td>
-                                <td style="text-align: center;">5</td><td style="text-align: center;">100 cm</td>
+                                <td id="td_cont" style="text-align: center;">5</td><td id="td_cont" style="text-align: center;">100 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">36</td>
+                                <td id="td_cont" style="text-align: center;">36</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Pez agalla azul.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Pez agalla azul</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -667,11 +654,11 @@
                                     <li class="gustos">Río abajo</li>
                                     <li class="gustos">Cascada</li>
                                 </ul></td>
-                                <td style="text-align: center;">1</td><td style="text-align: center;">25 cm</td>
+                                <td id="td_cont" style="text-align: center;">1</td><td id="td_cont" style="text-align: center;">25 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">37</td>
+                                <td id="td_cont" style="text-align: center;">37</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Carpín.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Carpín</b></p></div></td></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -683,11 +670,11 @@
                                     <li class="gustos">Lago</li>
                                     <li class="gustos">Cascada</li>
                                 </ul></td>
-                                <td style="text-align: center;">4</td><td style="text-align: center;">50 cm</td>
+                                <td id="td_cont" style="text-align: center;">4</td><td id="td_cont" style="text-align: center;">50 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">38</td>
+                                <td id="td_cont" style="text-align: center;">38</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Caballa de Ojotsk.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Caballa de Ojotsk</b></p></div></td></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -695,11 +682,11 @@
                                     <p class="in" title="Invierno" style="margin: 0;"></p>
                                 </div></td>
                                 <td><ul class="horario"><li class="gustos">Playa</li></ul></td>
-                                <td style="text-align: center;">3</td><td style="text-align: center;">40 cm</td>
+                                <td id="td_cont" style="text-align: center;">3</td><td id="td_cont" style="text-align: center;">40 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">39</td>
+                                <td id="td_cont" style="text-align: center;">39</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Atún.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Atún</b></p></div></td></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -708,11 +695,11 @@
                                     <p class="in" title="Invierno" style="margin: 0;"></p>
                                 </div></td>
                                 <td><ul class="horario"><li class="gustos">Playa</li></ul></td>
-                                <td style="text-align: center;">5</td><td style="text-align: center;">250 cm</td>
+                                <td id="td_cont" style="text-align: center;">5</td><td id="td_cont" style="text-align: center;">250 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">40</td>
+                                <td id="td_cont" style="text-align: center;">40</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Pez luna.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Pez luna</b></p></div></td></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -720,15 +707,15 @@
                                     <p class="ot" title="Otoño" style="margin: 0;"></p>
                                 </div></td>
                                 <td><ul class="horario"><li class="gustos">Playa</li></ul></td>
-                                <td style="text-align: center;">5</td><td style="text-align: center;">250 cm</td>
+                                <td id="td_cont" style="text-align: center;">5</td><td id="td_cont" style="text-align: center;">250 cm</td>
                             </tr>                   
                         </tbody>
 
                         <tbody id="lista3" style="display: none;"> <!-- Lista de peces del 41 al 50 -->
-                            <tr><th style="width: 30px;">Nº</th><th style="width: 100px;">Peces</th><th style="width: 5em;">Estaciones</th><th style="width: 11em;">Ubicación</th><th>Nivel de carga</th><th>Tamaño maximo</th></tr>
+                            <tr id="encabesado"><th style="width: 30px;">Nº</th><th style="width: 100px;" class="enc_02">Peces</th><th style="width: 5em;">Estaciones</th><th style="width: 11em;">Ubicación</th><th>Nivel de carga</th><th>Tamaño maximo</th></tr>
 
                             <tr>
-                                <td style="text-align: center;">41</td>
+                                <td id="td_cont" style="text-align: center;">41</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Pez leon.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Pez leon</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -737,11 +724,11 @@
                                     <p class="in" title="Invierno" style="margin: 0;"></p>
                                 </div></td>
                                 <td><ul class="horario"><li class="gustos">Playa</li></ul></td>
-                                <td style="text-align: center;">2</td><td style="text-align: center;">30 cm</td>
+                                <td id="td_cont" style="text-align: center;">2</td><td id="td_cont" style="text-align: center;">30 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">42</td>
+                                <td id="td_cont" style="text-align: center;">42</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Gallineta.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Gallineta</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -749,11 +736,11 @@
                                     <p class="ot" title="Otoño" style="margin: 0;"></p>
                                 </div></td>
                                 <td><ul class="horario"><li class="gustos">Playa</li></ul></td>
-                                <td style="text-align: center;">2</td><td style="text-align: center;">30 cm</td>
+                                <td id="td_cont" style="text-align: center;">2</td><td id="td_cont" style="text-align: center;">30 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">43</td>
+                                <td id="td_cont" style="text-align: center;">43</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Salmón cereza.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Salmón cereza</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -762,11 +749,11 @@
                                     <p class="in" title="Invierno" style="margin: 0;"></p>
                                 </div></td>
                                 <td><ul class="horario"><li class="gustos">Río arriba</li></ul></td>
-                                <td style="text-align: center;">2</td><td style="text-align: center;">30 cm</td>
+                                <td id="td_cont" style="text-align: center;">2</td><td id="td_cont" style="text-align: center;">30 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">44</td>
+                                <td id="td_cont" style="text-align: center;">44</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Cabeza de serpiente manchada.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Cabeza de serpiente manchada</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -778,11 +765,11 @@
                                     <li class="gustos">Río abajo</li>
                                     <li class="gustos">Estanque</li>
                                 </ul></td>
-                                <td style="text-align: center;">5</td><td style="text-align: center;">80 cm</td>
+                                <td id="td_cont" style="text-align: center;">5</td><td id="td_cont" style="text-align: center;">80 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">45</td>
+                                <td id="td_cont" style="text-align: center;">45</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Esperlano.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Esperlano</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -795,22 +782,22 @@
                                     <li class="gustos">Río abajo</li>
                                     <li class="gustos">Estanque</li>
                                 </ul></td>
-                                <td style="text-align: center;">1</td><td style="text-align: center;">15 cm</td>
+                                <td id="td_cont" style="text-align: center;">1</td><td id="td_cont" style="text-align: center;">15 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">46</td>
+                                <td id="td_cont" style="text-align: center;">46</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Pez cinturón.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Pez cinturón</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="ve" title="Verano" style="margin: 0"></p>
                                     <p class="ot" title="Otoño" style="margin: 0;"></p>
                                 </div></td>
                                 <td><ul class="horario"><li class="gustos">Playa</li></ul></td>
-                                <td style="text-align: center;">5</td><td style="text-align: center;">200 cm</td>
+                                <td id="td_cont" style="text-align: center;">5</td><td id="td_cont" style="text-align: center;">200 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">47</td>
+                                <td id="td_cont" style="text-align: center;">47</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Pez dulce.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Pez dulce</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="ve" title="Verano" style="margin: 0"></p>
@@ -820,11 +807,11 @@
                                     <li class="gustos">Río arriba</li>
                                     <li class="gustos">Río abajo</li>
                                 </ul></td>
-                                <td style="text-align: center;">3</td><td style="text-align: center;">30 cm</td>
+                                <td id="td_cont" style="text-align: center;">3</td><td id="td_cont" style="text-align: center;">30 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">48</td>
+                                <td id="td_cont" style="text-align: center;">48</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Olor a arena.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Olor a arena</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="pri" title="Primavera" style="margin: 0;"></p>
@@ -834,29 +821,29 @@
                                     <li class="gustos">Río abajo</li>
                                     <li class="gustos">Playa</li>
                                 </ul></td>
-                                <td style="text-align: center;">3</td><td style="text-align: center;">30 cm</td>
+                                <td id="td_cont" style="text-align: center;">3</td><td id="td_cont" style="text-align: center;">30 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">49</td>
+                                <td id="td_cont" style="text-align: center;">49</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Morenocio dentón.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Morenocio dentón</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="ve" title="Verano" style="margin: 0"></p>
                                     <p class="ot" title="Otoño" style="margin: 0;"></p>
                                 </div></td>
                                 <td><ul class="horario"><li class="gustos">Playa</li></ul></td>
-                                <td style="text-align: center;">5</td><td style="text-align: center;">150 cm</td>
+                                <td id="td_cont" style="text-align: center;">5</td><td id="td_cont" style="text-align: center;">150 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="text-align: center;">50</td>
+                                <td id="td_cont" style="text-align: center;">50</td>
                                 <td><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Pez volador.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Pez volador</b></p></div></td>
                                 <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                     <p class="ve" title="Verano" style="margin: 0"></p>
                                     <p class="ot" title="Otoño" style="margin: 0;"></p>
                                 </div></td>
                                 <td><ul class="horario"><li class="gustos">Playa</li></ul></td>
-                                <td style="text-align: center;">2</td><td style="text-align: center;">30 cm</td>
+                                <td id="td_cont" style="text-align: center;">2</td><td id="td_cont" style="text-align: center;">30 cm</td>
                             </tr>
                         </tbody>
                     </table>
@@ -871,84 +858,84 @@
 
                     <p>Una vez que atrapes un pez guardián, lo arrojarás nuevamente al agua. No puedes conservar ni vender a los reyes del río, pero sus retratos se anotarán en registro de pesca y dicho registro lo encontraras dentro de la estantería de la granja.</p>
     
-                    <table class="data">
-                        <tr><th style="width: 28px;">Nº</th><th style="width: 110px;">Pez</th><th style="width: 5em;">Estaciones</th><th>Ubicación</th><th>Requisitos</th></tr>
+                    <table class="data tab_lis_pes_guar">
+                        <tr id="encabesado"><th style="width: 28px;">Nº</th><th style="width: 110px;" class="enc_02">Pez</th><th style="width: 5em;">Estaciones</th><th>Ubicación</th><th>Requisitos</th></tr>
 
                         <tr>
-                            <td style="text-align: center;">51</td>
+                            <td id="td_cont" style="text-align: center;">51</td>
                             <td style="text-align: center;"><div style="display: flex;flex-direction: column;align-items: center;">
                                 <img src="/Guia-de-SOS-FOMT/IMG/Peces/Reyes/Huchen.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Huchen</b></p>
                             </div></td>
-                            <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
+                            <td><div style="display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                 <p class="pri" title="Primavera" style="margin: 0;"></p>
                                 <p class="ve" title="Verano" style="margin: 0"></p>
                                 <p class="ot" title="Otoño" style="margin: 0;"></p>
                             </div></td>
                             <td><ul class="horario"><li class="gustos">Río abajo</li></ul></td>
-                            <td>Conoce las recetas de cocina de "Pescado a la Plancha", "Sashimi" y "Sushi".</td>
+                            <td id="td_cont">Conoce las recetas de cocina de "Pescado a la Plancha", "Sashimi" y "Sushi".</td>
                         </tr>
 
                         <tr>
-                            <td style="text-align: center;">52</td>
+                            <td id="td_cont" style="text-align: center;">52</td>
                             <td style="text-align: center;"><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Reyes/Rape abisal.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Rape abisal</b></p></div></td>
-                            <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
+                            <td><div style="display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                 <p class="pri" title="Primavera" style="margin: 0;"></p>
                                 <p class="in" title="Invierno" style="margin: 0;"></p>
                             </div></td>
                             <td><ul class="horario"><li class="gustos">Playa</li></ul></td>
-                            <td>Ir a pescar entre las 8:00 pm y las 8:00 am.</td>
+                            <td id="td_cont">Ir a pescar entre las 8:00 pm y las 8:00 am.</td>
                         </tr>
 
                         <tr>
-                            <td style="text-align: center;">53</td>
+                            <td id="td_cont" style="text-align: center;">53</td>
                             <td style="text-align: center;"><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Reyes/Pez gato del manantial.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Pez gato del manantial</b></p></div></td>
-                            <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;"><p class="in" title="Invierno" style="margin: 0;"></p></div></td>
+                            <td><div style="display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;"><p class="in" title="Invierno" style="margin: 0;"></p></div></td>
                             <td><ul class="horario"><li class="gustos">Fuente termal</li></ul></td>
                             <td class="td_neutro">—</td>
                         </tr>
 
                         <tr>
-                            <td style="text-align: center;">54</td>
+                            <td id="td_cont" style="text-align: center;">54</td>
                             <td style="text-align: center;"><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Reyes/Carpa.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Carpa</b></p></div></td>
-                            <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
+                            <td><div style="display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                 <p class="pri" title="Primavera" style="margin: 0;"></p>
                                 <p class="ve" title="Verano" style="margin: 0"></p>
                                 <p class="ot" title="Otoño" style="margin: 0;"></p>
                             </div></td>
                             <td><ul class="horario"><li class="gustos">Lago</li></ul></td>
-                            <td>Enviar al menos 200 peces.</td>
+                            <td id="td_cont">Enviar al menos 200 peces.</td>
                         </tr>
 
                         <tr>
-                            <td style="text-align: center;">55</td>
+                            <td id="td_cont" style="text-align: center;">55</td>
                             <td style="text-align: center;"><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Reyes/Celacanto.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Celacanto</b></p></div></td>
-                            <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
+                            <td><div style="display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                 <p class="pri" title="Primavera" style="margin: 0;"></p>
                                 <p class="ve" title="Verano" style="margin: 0"></p>
                                 <p class="ot" title="Otoño" style="margin: 0;"></p>
                                 <p class="in" title="Invierno" style="margin: 0;"></p>
                             </div></td>
                             <td><ul class="horario"><li class="gustos">Lago subterráneo</li></ul></td>
-                            <td>Captura 5 o más peces guardianes.</td>
+                            <td id="td_cont">Captura 5 o más peces guardianes.</td>
                         </tr>
 
                         <tr>
-                            <td style="text-align: center;">56</td>
+                            <td id="td_cont" style="text-align: center;">56</td>
                             <td style="text-align: center;"><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Reyes/Calamar.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Calamar</b></p></div></td>
-                            <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
+                            <td><div style="display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;">
                                 <p class="pri" title="Primavera" style="margin: 0;"></p>
                                 <p class="in" title="Invierno" style="margin: 0;"></p>
                             </div></td>
                             <td><ul class="horario"><li class="gustos">Playa</li></ul></td>
-                            <td>Ir a pescar entre las 9:00 am y las 12:00 am (medianoche).</td>
+                            <td id="td_cont">Ir a pescar entre las 9:00 am y las 12:00 am (medianoche).</td>
                         </tr>
 
                         <tr>
-                            <td style="text-align: center;">57</td>
+                            <td id="td_cont" style="text-align: center;">57</td>
                             <td style="text-align: center;"><div style="display: flex;flex-direction: column;align-items: center;"><img src="/Guia-de-SOS-FOMT/IMG/Peces/Reyes/Arapaima gigante.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Arapaima gigante</b></p></div></td>
-                            <td><div style=" display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;"><p class="ve" title="Verano" style="margin: 0"></p></div></td>
+                            <td><div style="display: flex; flex-wrap: wrap; justify-content: space-evenly; row-gap: 14px; column-gap: 6px;"><p class="ve" title="Verano" style="margin: 0"></p></div></td>
                             <td><ul class="horario"><li class="gustos">Estanque</li></ul></td>
-                            <td>Captura al menos 50 especies de peces.</td>
+                            <td id="td_cont">Captura al menos 50 especies de peces.</td>
                         </tr>
                     </table>
 

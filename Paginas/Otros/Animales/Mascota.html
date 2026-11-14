@@ -4,7 +4,7 @@
         <meta charset="UTF-8">   <!-- Para usar la escritura latina -->
         <title>Guia de mascotas de SOS-FOMT</title>
         <meta name="origen" content="La informacion y parte de los diseños de la pagina pertenesen a Ushi No Tane, pero la representacion de la informacion traducida, funciones y diseños modificados y añadidos son de mi propio criterio"/>
-        <meta name="viewport" content="width=device-width, initial-scale=0.438">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/Guia-de-SOS-FOMT/CSS/Style.css" type="text/css"/> <!-- Este CSS contiene los diseños de toda las paginas -->
         <link rel="shortcut icon" href="/Guia-de-SOS-FOMT/IMG/Iconos/Kirbo.ico"/> <!-- Esta seccion es para colocar un icono que representa a toda la pagina en general -->
         <script type="text/javascript" src="/Guia-de-SOS-FOMT/JS/include.js" defer></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene la funcion de insertar el nav y footer a la pagina-->
@@ -45,12 +45,12 @@
 
                 <p><b>Las opciones de mascotas de Van se basan en la temporada actual</b>. Venderá gatos durante la temporada de primavera, pingüinos durante la temporada de verano, perros durante la temporada de otoño y carpinchos durante la temporada de invierno. Si está intentando comprar una mascota específica, es posible que tenga que esperar varias temporadas hasta que la mascota que desea aparezca en su tienda.</p>
 
-                <i>Nota: Seleccione una estación.</i>
+                <p><i>Nota: Seleccione una estación.</i></p>
 
-                <table class="data" style="margin-bottom: 1.5em; margin-top: 1.8em;">
+                <table class="data" style="margin-bottom: 1.5em; margin-top: 1.5em;">
                     <tr>
-                        <th colspan="2" id="estacion" style="font-size: 1.2em; background-color: #757a74; height: 4em; width: 28em;">
-                            <div style="display:flex;justify-content:space-around;align-items:center;">
+                        <th colspan="2" id="estacion" class="est_masc" style="font-size: 1.2em; background-color: #757a74; height: 4em; width: 28em;">
+                            <div style="display:flex; justify-content:space-around; align-items:center;">
                                 <p class="primavera" onclick="cambiarTemporada_mascota(1)" title="Primavera" style="cursor: pointer;"></p>
                                 <p class="verano" onclick="cambiarTemporada_mascota(2)" title="Verano" style="cursor: pointer;"></p>
                                 <p class="otoño" onclick="cambiarTemporada_mascota(3)" title="Otoño" style="cursor: pointer;"></p>
@@ -67,7 +67,7 @@
                                 </div>
                             </td>
                             <td>
-                                <div id="boxshort">	 <!-- Caja de los gatos -->
+                                <div id="boxshort"> <!-- Caja de los gatos -->
                                     <div class="box_mascota">
                                         <img src="/Guia-de-SOS-FOMT/IMG/Animales/Mascota/g1.jpg" class="screenshot" width="270" height="210">
                                         <br><b>American Shorthair</b></br>
@@ -172,10 +172,10 @@
 
                 <p>Tambien podras comprar la golosina para mascota que sirve para mejorar rapidamente la amistad con tu mascota y se lo puedes dar a cualquiera de las cuatro mascotas que le compres a Van.</p>
 
-                <table class="data">
-                    <tr><th>Temporada</th><th style="width: 8em;">Producto</th><th style="width: 80px;">Costo</th></tr>
+                <table class="data tbla_masc02">
+                    <tr id="encabesado"><th>Temporada</th><th style="width: 8em;">Producto</th><th style="width: 80px;">Costo</th></tr>
                     <tr>
-                        <td style="padding: 4px;" rowspan="2" >
+                        <td style="padding: 4px;" rowspan="2" id="estacion_masc">
                             <div style=" display: flex;">
                                 <p class="primavera" style="margin: 0; font-size: 0.7em;"></p>
                                 <p class="verano" style="margin: 0 0 0 6px; font-size: 0.7em;"></p>
@@ -212,16 +212,17 @@
                 <p>Huang vende una pelota para mascotas en su tienda por 100 G a partir del otoño del año 1. Puedes lanzar esta pelota cuando estés cerca de una mascota en tu granja (o dentro de tu casa) y ella te perseguirá y te la devolverá. La mascota puede hacer esto tantas veces como quiera, pero solo el primer lanzamiento por día cuenta para entrenar su barra de búsqueda verde. Puedes jugar a la pelota tanto con mascotas bebés como adultas.</p>
 
                 <h3>Jugar al disco volador</h3>
+                <div style="display: flow-root">
+                    <img src="/Guia-de-SOS-FOMT/IMG/Animales/Mascota/disco.jpg" class="right screenshot masc_img01" width="500" height="600" style="margin: 18px 0 0 20px;"/>
 
-                <img src="/Guia-de-SOS-FOMT/IMG/Animales/Mascota/disco.jpg" class="right screenshot" width="500" height="600" style="margin: 5px 0 0 20px;"/>
+                    <p>El frisbee sólo se puede jugar con mascotas adultas. Huang vende un Pet Frisbee en su tienda por <span class="dinero"> 5.000 <b>G</b> </span> a partir del otoño del año 1. Mantén el disco en la sección de artículos de tu mochila y dirígete al letrero al lado del banco en Mineral Beach. Presione A cuando esté junto al letrero para iniciar el juego del disco volador con la mascota que seleccione en el menú del letrero. Todas las mascotas pueden jugar con el disco volador durante las temporadas de primavera, verano y otoño.</p>
 
-                <p>El frisbee sólo se puede jugar con mascotas adultas. Huang vende un Pet Frisbee en su tienda por <span class="dinero"> 5.000 <b>G</b> </span> a partir del otoño del año 1. Mantén el disco en la sección de artículos de tu mochila y dirígete al letrero al lado del banco en Mineral Beach. Presione A cuando esté junto al letrero para iniciar el juego del disco volador con la mascota que seleccione en el menú del letrero. Todas las mascotas pueden jugar con el disco volador durante las temporadas de primavera, verano y otoño.</p>
+                    <p>No es necesario traer físicamente a la mascota a la playa para jugar al lanzamiento de discos.</p>
 
-                <p>No es necesario traer físicamente a la mascota a la playa para jugar al lanzamiento de discos.</p>
+                    <p>En el lado izquierdo de la pantalla hay una barra de energía. El área verde representa qué tan lejos puedes lanzar tu Frisbee y hacer que tu mascota lo atrape. También habrá un indicador de potencia en forma de flecha que se desplaza hacia arriba en la barra de potencia. Si presionas el botón A cuando el indicador de potencia está dentro del área verde, lanzarás tu Frisbee y tu mascota lo perseguirá. Puedes lanzar el Frisbee más lejos presionando A cuando el indicador de potencia esté fuera de la barra verde, pero tu mascota no siempre podrá atraparlo. Mientras permanezca dentro del área verde, su mascota tiene muchas posibilidades de atrapar el disco. Las capturas exitosas ayudarán a aumentar la barra verde de búsqueda y las capturas fallidas no mejorarán el entrenamiento de búsqueda.</p>
 
-                <p>En el lado izquierdo de la pantalla hay una barra de energía. El área verde representa qué tan lejos puedes lanzar tu Frisbee y hacer que tu mascota lo atrape. También habrá un indicador de potencia en forma de flecha que se desplaza hacia arriba en la barra de potencia. Si presionas el botón A cuando el indicador de potencia está dentro del área verde, lanzarás tu Frisbee y tu mascota lo perseguirá. Puedes lanzar el Frisbee más lejos presionando A cuando el indicador de potencia esté fuera de la barra verde, pero tu mascota no siempre podrá atraparlo. Mientras permanezca dentro del área verde, su mascota tiene muchas posibilidades de atrapar el disco. Las capturas exitosas ayudarán a aumentar la barra verde de búsqueda y las capturas fallidas no mejorarán el entrenamiento de búsqueda.</p>
-
-                <p>Cuando empieces a jugar con tu mascota por primera vez, el área verde de la barra de energía será muy pequeña. Sólo podrás lanzar el disco unos 10 metros aproximadamente y aún así tu mascota lo atrapará. Mientras más capturas exitosas haga tu amiguito, más área verde ganarás. Su captura más lejana se mostrará en la pantalla en la esquina superior derecha.</p>
+                    <p>Cuando empieces a jugar con tu mascota por primera vez, el área verde de la barra de energía será muy pequeña. Sólo podrás lanzar el disco unos 10 metros aproximadamente y aún así tu mascota lo atrapará. Mientras más capturas exitosas haga tu amiguito, más área verde ganarás. Su captura más lejana se mostrará en la pantalla en la esquina superior derecha.</p>
+                </div>
 
                 <p>La cantidad de veces que tu mascota esté dispuesta a perseguir el disco volador dependerá de su nivel de amistad:</p>
 

@@ -1,0 +1,93 @@
+@media screen and (max-width: 600px) {
+
+    /* ************************ */
+    /*  Diseños del css Imagen  */
+    /* ************************ */
+
+    .box_aldeanos img,.box_matrimonio img { max-width:100% !important; }
+    
+    .box_menu_lugares { 
+        max-width:92.99px !important;
+        margin: 12px 23px !important;
+    }
+    
+    .box_menu_lugares a.hiper { font-size: 0.523em !important; }
+
+    .box_marriage_esp { 
+        max-width: 80px !important; 
+        margin: 0 2px !important;
+    }
+
+    .box_marriage_esp a.hiper { font-size: 0.49em !important; }
+
+    .scroll-container-lugares { height: 19em !important; } /* Alto del contenedor */
+
+    #bot_can { display: block !important;}
+
+    .box_aldeanos { max-width:142px !important;}
+
+    .box_otro { max-width:360px !important;}
+
+    .img_herramientas01 {
+        width: 120px !important; 
+        height: 120px !important; 
+        margin-top: 8.8px !important; 
+    }
+
+    .lug_img1, .lug_img2, .lug_img3, .lug_img4,.lug_img5, .lug_img6, .lug_img7, .lug_img8, .lug_img9 {
+        width: 80% !important; 
+        margin: 0 10% 15px !important; 
+    }
+
+
+    /* ************************ */
+    /*  Diseños del css Tabla  */
+    /* ************************ */
+
+
+    #div_FechEv {
+        margin-top: 8px !important; 
+        margin-bottom: 8px !important; 
+    }
+
+    .td_calenda p {
+        line-height: 1.5em !important;
+    }
+
+    #calendario0 td { height: 75px !important;}
+    
+    .herra_gene .td_objetos img, .mineral_herramienta .td_objetos img, .herra_malditas .td_objetos img, .herra_bende .td_objetos img, .herra_mitica .td_objetos img, .Joyas .td_objetos img {
+        width: 29px !important; 
+        height: 29px !important; 
+    }
+    
+    .herra_gene .td_objetos b, .mineral_herramienta .td_objetos b, .herra_malditas .td_objetos b, .herra_bende .td_objetos b, .herra_mitica .td_objetos b, .Joyas .td_objetos b { font-size: 7px !important; }
+
+    #obj_min_cas .td_dinero, #obj_min_lag .td_dinero { font-size: 0.6em !important; }
+    
+    #obj_min_cas .td_dinero b, #obj_min_lag .td_dinero b { font-size: 1em !important; }
+
+    #lista1 .P_est p {font-size: 8px !important;}
+
+    .mineral_herramienta .td_objetos p, .herra_mitica .td_objetos p{ margin: 0 !important; }
+
+    .mineral_herramienta, .herra_mitica { width: 100% !important; }
+
+    #encabesado ol { padding-inline-start: 1em !important; }
+
+    #exper b { font-size: 14px !important; }
+
+    #nivel b { font-size: 6px !important; }
+
+    .td_dinero, .td_dinero b { font-size: 14px !important; }
+
+    
+    .Table_regalo{ width: 50em !important;}
+
+    .scroll-container-aldeanos { height:25em !important;}
+
+    .scroll-container-candidatos { 
+        border: 1px solid #ccc !important; /* Borde opcional para definir el contorno */
+        height: 39em !important;   /* Alto del contenedor */
+    }
+}
