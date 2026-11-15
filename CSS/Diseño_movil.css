@@ -315,10 +315,6 @@
     /*  Diseños Animales  */
     /* ****************** */
 
-    .cont_ani{
-        margin: 0 13px !important; 
-    }
-
     .box_animales img { 
         width: 100px !important;
         height: 70px !important;
@@ -328,7 +324,7 @@
     .box_animales a.hiper { font-size: 9px !important; }
 
     .box_animales { 
-        max-width:135px !important;
+        max-width: 120px !important;
         margin: 0 10px 8px !important;
         line-height: 0.9em !important;
     }
