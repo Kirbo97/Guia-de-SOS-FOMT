@@ -315,7 +315,11 @@
     /*  Diseños Animales  */
     /* ****************** */
 
-    .box_animales img { max-width:100% !important; }
+    .box_animales img { 
+        width: 110px !important;
+        height: 60px !important;
+        max-width:100% !important; 
+    }
 
     .box_animales a.hiper { font-size: 0.523em !important; }
 
@@ -327,13 +331,20 @@
     /* ******************* */
     /*  Diseños Gallinero  */
     /* ******************* */
+
+    .cont_galli { 
+        margin: 0 18px !important; 
+        display: flex;
+        justify-content: space-between;
+    }
     
     .box_gallinero { 
         max-width:70.99px !important;
-        margin: 0 18px !important;
+        margin: 0 0px !important;
+        line-height: 0.9em !important;
     }
 
-    .box_gallinero b, .box_gallinero span, .box_gallinero span b { font-size: 12.8px !important; }
+    .box_gallinero b, .box_gallinero span, .box_gallinero span b { font-size: 11px !important; }
 
     .tbla_gall01 img, .tbla_gall02 img, .tbla_gall03 img, .tbla_gall04 img, .tbla_gall05 img, .tbla_gall06 img, .tbla_gall07 img {
         width: 29px !important; 
