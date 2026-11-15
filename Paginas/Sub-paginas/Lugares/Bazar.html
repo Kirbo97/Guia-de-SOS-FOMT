@@ -4,7 +4,7 @@
         <meta charset="UTF-8">   <!-- Para usar la escritura latina -->
         <title>Guia de la Tienda general de SOS-FOMT</title>
         <meta name="origen" content="La informacion y parte de los diseños de la pagina pertenesen a Ushi No Tane, pero la representacion de la informacion traducida, funciones y diseños modificados y añadidos son de mi propio criterio"/>
-        <meta name="viewport" content="width=device-width, initial-scale=0.438">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/Guia-de-SOS-FOMT/CSS/Style.css" type="text/css"/> <!-- Este CSS contiene los diseños de toda las paginas -->
         <link rel="shortcut icon" href="/Guia-de-SOS-FOMT/IMG/Iconos/Kirbo.ico"/> <!-- Esta seccion es para colocar un icono que representa a toda la pagina en general -->
         <script type="text/javascript" src="/Guia-de-SOS-FOMT/JS/include.js" defer></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene la funcion de insertar el nav y footer a la pagina-->
@@ -27,16 +27,16 @@
 
             <main>
 
-                <img src="/Guia-de-SOS-FOMT/IMG/Lugares/tienda_general.jpg" class="right screenshot" width="350" height="350" style="margin: 4px 0 0 20px; cursor: pointer;"/>
+                <img src="/Guia-de-SOS-FOMT/IMG/Lugares/tienda_general.jpg" class="right screenshot img_right" width="350" height="350" style="margin: 4px 0 0 20px; cursor: pointer;"/>
 
                 <p>La tienda general es el lugar al que irás para comprar semillas, ingredientes para cocinar y diversos suministros que usarás en tu granja. Jeff se encarga de la tienda general desde detrás del mostrador, mientras que Sasha y Karen supervisan desde la trastienda. La tienda está abierta de 9:00 a 17:00 y cierra los martes y domingos.</p>
 
                 <p>El inventario de semillas de Jeff cambiará de una temporada a otra. Venderá las semillas de la temporada actual el primer día de la temporada. No hay semillas a la venta durante el invierno.</p>
                 
-                <table class="data">
-                    <tr><th>Horas</th><td class="perso">9:00 am - 5:00 pm.</td></tr>
-                    <tr><th>Cerrado</th><td class="perso">Domingo, Martes y dias festivos.</td></tr>
-                    <tr><th>Dirigido por</th>
+                <table class="data horario_tienda">
+                    <tr id="encabesado"><th>Horas</th><td class="perso">9:00 am - 5:00 pm.</td></tr>
+                    <tr id="encabesado"><th>Cerrado</th><td class="perso">Domingo, Martes y dias festivos.</td></tr>
+                    <tr id="encabesado"><th>Dirigido por</th>
                         <td><ul class="horario">
                             <li class="gustos">Jeff.</li>
                         </ul></td>
@@ -48,11 +48,11 @@
                 <details> <!-- Semillas de temporada -->
                     <summary class=" summary_general">Semillas de temporada</summary>
 
-                    <i>Nota: Seleccione una estación.</i>
+                    <p><i>Nota: Seleccione una estación.</i></p>
 
-                    <table class="data" style="margin-bottom: 1.5em; margin-top: 1.8em;">
+                    <table class="data tab_tien" style="margin-bottom: 1.5em;">
                         <tr>
-                            <th colspan="2" id="estacion" style="font-size: 1.2em; background-color: #757a74; height: 4em; width: 28em;">
+                            <th colspan="2" id="estacion" class="est_tien" style="font-size: 1.2em; background-color: #757a74; height: 4em; width: 28em;">
                                 <div style="display:flex;justify-content:space-around;align-items:center;">
                                     <p class="primavera" onclick="cambiarTemporada_tienda(1)" title="Primavera" style="cursor: pointer;"></p>
                                     <p class="verano" onclick="cambiarTemporada_tienda(2)" title="Verano" style="cursor: pointer;"></p>
@@ -62,7 +62,7 @@
                         </tr>
 
                         <tbody id="calendario1" style="display: none;"> <!-- Primavera -->
-                            <tr><th>Temporada</th><th>Productos</th><th>Requisito</th><th style="width: 80px;">Costo</th></tr>
+                            <tr id="encabesado"><th>Temporada</th><th>Productos</th><th>Requisito</th><th style="width: 80px;">Costo</th></tr>
                             <tr>
                                 <td style="font-size: 1.2em; background-color: #84f16e; height: 4em;" rowspan="5">
                                     <div style="display:flex;justify-content:space-around;align-items:center;"><p class="primavera" title="Primavera"></p></div>
@@ -89,7 +89,7 @@
                         </tbody>
 
                         <tbody id="calendario2" style="display: none;"> <!-- Verano -->
-                            <tr><th>Temporada</th><th>Productos</th><th>Requisito</th><th style="width: 80px;">Costo</th></tr>
+                            <tr id="encabesado"><th>Temporada</th><th>Productos</th><th>Requisito</th><th style="width: 80px;">Costo</th></tr>
                             <tr>
                                 <td style="font-size: 1.2em; background-color: #f2e88c; height: 4em;" rowspan="5">
                                     <div style="display:flex;justify-content:space-around;align-items:center;"><p class="verano" title="Verano"></p></div>
@@ -116,7 +116,7 @@
                     </tbody>
 
                     <tbody id="calendario3" style="display: none;"> <!-- Otoño -->
-                            <tr><th>Temporada</th><th>Productos</th><th>Requisito</th><th style="width: 80px;">Costo</th></tr>
+                            <tr id="encabesado"><th>Temporada</th><th>Productos</th><th>Requisito</th><th style="width: 80px;">Costo</th></tr>
                             <tr>
                                 <td style="font-size: 1.2em; background-color: #f4a74f; height: 4em;" rowspan="9">
                                     <div style="display:flex;justify-content:space-around;align-items:center;"><p class="otoño" title="Otoño"></p></div>
@@ -163,8 +163,8 @@
                 <details> <!-- Ingredientes de cocina -->
                     <summary class=" summary_general">Ingredientes de cocina</summary>
 
-                    <table class="data">
-                        <tr><th>Temporada</th><th style="width: 120px;">Nombre</th><th style="width: 80px;">Requisitos</th><th style="width: 80px;">Costo</th></tr>
+                    <table class="data tab_tien">
+                        <tr id="encabesado"><th>Temporada</th><th style="width: 120px;" class="obje">Nombre</th><th style="width: 80px;">Requisitos</th><th style="width: 80px;">Costo</th></tr>
 
                         <tr>
                             <td style="padding: 4px;" rowspan="7" >
@@ -192,8 +192,8 @@
 
                     <p><b>Nota: </b>los objetos de esta lista solo se podran conseguir una vez, cuando se alla comprado ya no volveran a aparecer a esepcion de la pluma azul ya que para que vuelva salir la pluma azull primero deve divorciarse para poder casarse con otro candidato a matrimonio y cumplir con las condicione de dicho objeto.</p>
 
-                    <table class="data">
-                        <tr><th style="width: 120px;">Nombre</th><th style="width: 518px;">Requisitos</th><th style="width: 80px;">Costo</th></tr>
+                    <table class="data tab_tien">
+                        <tr id="encabesado"><th style="width: 120px;">Nombre</th><th style="width: 518px;">Requisitos</th><th style="width: 80px;">Costo</th></tr>
 
                         <tr>
                             <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Tienda general/Pluma azul.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Pluma azul</b></p></div></td>
@@ -259,7 +259,7 @@
                 
                 <h2>Envoltura de regalo</h2>
 
-                <p>Junto al mostrador de Jeff se encuentra la estación de envoltura de regalos. Al examinar esta área, tendrá la opción de envolver un regalo por 100 <b style="color:rgb(225, 192, 4); font-size: 20px;">G</b> cada uno o desenvolver un regalo gratis. También puede desenvolver regalos gratis usted mismo colocando el regalo en el armario o refrigerador de su casa de campo.</p>
+                <p>Junto al mostrador de Jeff se encuentra la estación de envoltura de regalos. Al examinar esta área, tendrá la opción de envolver un regalo por <span class="dinero">100 <b>G</b></span> cada uno o desenvolver un regalo gratis. También puede desenvolver regalos gratis usted mismo colocando el regalo en el armario o refrigerador de su casa de campo.</p>
 
                 <p>Si envuelves tus regalos para regalo, obtendrás un bono del 25% en los puntos de amistad y los puntos de amor que recibirías al entregar el regalo. Por ejemplo, si le das a un candidato a matrimonio su regalo favorito, normalmente ganarás 800 LP y 9 FP, pero si le das ese mismo regalo envuelto, eso aumentará a 1000 LP y 11 FP.</p>
                 

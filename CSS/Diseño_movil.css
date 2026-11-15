@@ -55,7 +55,7 @@
         font-size: 0.9em !important; 
     }
 
-    h1 { font-size: 1.1em !important; }
+    h1 { font-size: 13px !important; }
 
     h3 { margin: 8px 0 0 0 !important; }
 
@@ -68,7 +68,10 @@
 
     header{ height: 24px !important; }
 
-    header div{ column-gap: 2em !important; }
+    header div{ 
+        column-gap: 1.3em !important; 
+        margin-left: 0;
+    }
 
     p { 
         font-size: 8.8px !important; 
@@ -90,13 +93,13 @@
     }
 
     .lista_num { 
-        font-size: 0.55em !important;
+        font-size: 8.8px !important;
         padding-left: 10px;
         line-height: 1.5em !important;
     }
 
     li.gustos { 
-        font-size: 0.55em !important;
+        font-size: 8.8px !important;
         margin: 4px 0 4px 0 !important;
         text-align: left !important;
         line-height: 1.5em !important;
@@ -418,6 +421,32 @@
     .box_menu_lugares a.hiper { font-size: 7px !important; }
 
     .scroll-container-lugares { height: 17.5em !important; } /* Alto del contenedor */
+
+    /* *************************** */
+    /*  Diseños de Lugares Tienda  */
+    /* *************************** */
+
+    .img_right{  width: 50% !important; }
+
+    .horario_tienda td, .tab_tien td, .tab_tien a.hiper { font-size: 8.8px !important; }
+    
+    .tab_tien img {
+        margin-top: 0 !important;
+        width: 29px !important; 
+        height: 29px !important; 
+    }
+
+    .tab_tien b { font-size: 7px !important; }
+
+    .horario_tienda .perso { padding-left: 12px !important; }
+
+    .tab_tien th.obje { width: 70px !important; }
+
+    .est_tien { 
+        height: 1px !important;
+        font-size: 0.8em !important;
+    }
+       
 
     /* ********************** */
     /*  Diseños Herramientas  */
