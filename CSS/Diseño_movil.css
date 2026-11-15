@@ -390,6 +390,10 @@
 
     .box_ganado b, .box_ganado span, .box_ganado span b { font-size: 9px !important; }
 
+    .tab_gan01 td { font-size: 8.8px !important; }
+
+    .tab_gan01 .enc03 { width: 40px !important; }
+
     /* ***************** */
     /*  Diseños Establo  */
     /* ***************** */
