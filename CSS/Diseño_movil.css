@@ -98,7 +98,7 @@
         line-height: 1.5em !important;
     }
 
-    li.gustos { 
+    li.gustos, li.gustos b { 
         font-size: 8.8px !important;
         margin: 4px 0 4px 0 !important;
         text-align: left !important;
@@ -521,6 +521,27 @@
     .est_cal div { margin-top: 5px !important;}
 
     .td_calenda b, .td_calenda_simple b, .FechEv {font-size: 16px !important; }
+
+    .td_calenda_simple { height: 50px !important; }
+
+    .tab_cal_ev img { 
+        width: 29px !important; 
+        height: 29px !important; 
+    }
+
+     .img_cal01 { 
+        width: 25% !important;
+        margin-top: 0 !important;
+    }
+
+    .tab_cal_ev p  { margin-bottom: 2px !important; }
+
+    .tab_cal_ev td { font-size: 8.8px !important; }
+
+    .tab_cal_ev .enc01 { width: 10px !important; }
+
+    .tab_cal_ev .enc02 { width: 150px !important; }
+    
 
     #div_FechEv {
         margin-top: 8px !important; 
