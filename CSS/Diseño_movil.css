@@ -334,17 +334,17 @@
 
     .cont_galli { 
         margin: 0 18px !important; 
-        display: flex;
-        justify-content: space-between;
+        display: flex !important; 
+        justify-content: space-between !important;
     }
     
     .box_gallinero { 
         max-width:70.99px !important;
-        margin: 0 0px !important;
+        margin: 0 0 !important;
         line-height: 0.9em !important;
     }
 
-    .box_gallinero b, .box_gallinero span, .box_gallinero span b { font-size: 11px !important; }
+    .box_gallinero b, .box_gallinero span, .box_gallinero span b { font-size: 9px !important; }
 
     .tbla_gall01 img, .tbla_gall02 img, .tbla_gall03 img, .tbla_gall04 img, .tbla_gall05 img, .tbla_gall06 img, .tbla_gall07 img {
         width: 29px !important; 
@@ -366,6 +366,21 @@
     /* **************** */
     /*  Diseños Ganado  */
     /* **************** */
+
+    .cont_gana { 
+        margin: 0 15px !important; 
+        display: flex;
+        justify-content: space-between !important; 
+        flex-wrap: wrap !important; 
+    }
+    
+    .box_ganado { 
+        max-width:70.99px !important;
+        margin: 0 5px 8px !important;
+        line-height: 0.9em !important;
+    }
+
+    .box_ganado b, .box_ganado span, .box_ganado span b { font-size: 9px !important; }
 
     /* ***************** */
     /*  Diseños Establo  */
