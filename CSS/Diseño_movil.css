@@ -457,9 +457,7 @@
         height: 29px !important; 
     }
     
-    .herra_gene .td_objetos b, .mineral_herramienta .td_objetos b, .herra_malditas .td_objetos b, .herra_bende .td_objetos b, .herra_mitica .td_objetos b, .Joyas .td_objetos b { font-size: 6.5px !important; }
-
-    .herra_mitica #encabesado th { font-size: 7.8px !important; }
+    .herra_gene .td_objetos b, .mineral_herramienta .td_objetos b, .herra_malditas .td_objetos b, .herra_bende .td_objetos b, .herra_mitica .td_objetos b, .Joyas .td_objetos b { font-size: 7px !important; }
 
     .Joyas ol { padding-left: 15px !important; }
 
@@ -467,7 +465,7 @@
 
     #nivel b { font-size: 6px !important; }
 
-    .mineral_herramienta .td_objetos p, .herra_mitica .td_objetos p{ margin: 0 !important; }
+    .mineral_herramienta .td_objetos p, .herra_mitica .td_objetos p { margin: 0 !important; }
 
     .mineral_herramienta { width: 100% !important; }
 
@@ -476,8 +474,6 @@
         height: 120px !important; 
         margin-top: 8.8px !important; 
     }
-
-    .mineral_herramienta #encabesado th { font-size: 8px !important; }
 
     /* ******************** */
     /*  Diseños Personajes  */
