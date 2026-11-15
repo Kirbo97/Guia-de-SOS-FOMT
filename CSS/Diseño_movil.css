@@ -315,6 +315,13 @@
     /*  Diseños Animales  */
     /* ****************** */
 
+    .cont_ani { 
+        margin: 0 10px !important; 
+        display: flex;
+        justify-content: space-between !important; 
+        flex-wrap: wrap !important; 
+    }
+
     .box_animales img { 
         width: 100px !important;
         height: 70px !important;
