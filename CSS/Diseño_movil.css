@@ -44,7 +44,7 @@
     /* ******************************* */
 
     #content {
-        margin: 22px !important;
+        margin: 20px !important;
         padding: 12px !important;
         border-radius: 15px !important;
         width: 89.22% !important;
@@ -414,11 +414,12 @@
     }
     
     .box_menu_lugares { 
-        max-width:80px !important;
+        max-width: 77px !important;
         margin: 12px 7px !important;
+        line-height: 0.8em !important;
     }
     
-    .box_menu_lugares a.hiper { font-size: 7px !important; }
+    .box_menu_lugares a.hiper { font-size: 6.9px !important; }
 
     .scroll-container-lugares { height: 17.5em !important; } /* Alto del contenedor */
 
