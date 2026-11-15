@@ -52,7 +52,7 @@
 
     h2 {
         margin-top: 13px !important;
-        font-size: 0.9em !important; 
+        font-size: 0.87em !important; 
     }
 
     h1 { font-size: 13px !important; }
@@ -459,7 +459,7 @@
     
     .herra_gene .td_objetos b, .mineral_herramienta .td_objetos b, .herra_malditas .td_objetos b, .herra_bende .td_objetos b, .herra_mitica .td_objetos b, .Joyas .td_objetos b { font-size: 6.5px !important; }
 
-    .herra_mitica #encabesado th { font-size: 8px !important; }
+    .herra_mitica #encabesado th { font-size: 7.8px !important; }
 
     .Joyas ol { padding-left: 15px !important; }
 
@@ -469,7 +469,7 @@
 
     .mineral_herramienta .td_objetos p, .herra_mitica .td_objetos p{ margin: 0 !important; }
 
-    .mineral_herramienta, .herra_mitica { width: 100% !important; }
+    .mineral_herramienta { width: 100% !important; }
 
     .img_herramientas01 {
         width: 120px !important; 
