@@ -398,23 +398,26 @@
 
     .tab_gan01 b { font-size: 8.8px !important; }
 
-    .tab_gan02 { margin: 15px 0 !important;  }
+    .tab_gan02 { 
+        margin: 15px 0 !important;
+        line-height: 0.8em !important;
+    }
 
-    .tab_gan02 .enc01 { width: 72.98px !important;  }
+    .tab_gan02 .enc01 { width: 72.8px !important;  }
 
     .tab_gan02 .enc02 { width: 46px !important;  }
     
     .tab_gan02 td, .tab_gan02 b, .tab_gan03 td, .tab_gan03 b { font-size: 7px !important; }
+
+    .tab_gan03 { line-height: 0.8em !important; }
 
     .tab_gan03 img {
         width: 29px !important; 
         height: 29px !important; 
     }
 
-    
-
     .tab_gan03 p {
-        margin: 0 6px !important;
+        margin: 0 1px !important;
     }
 
     /* ***************** */
