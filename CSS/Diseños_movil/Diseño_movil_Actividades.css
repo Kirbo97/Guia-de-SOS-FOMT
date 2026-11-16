@@ -168,7 +168,7 @@
 
     .tab01_min_cas .enc_01,.tab01_min_lag .enc_01 { width: 40px !important; }
 
-    .tab01_min_cas tr td:nth-child(1), .tab01_min_cas tr td:nth-child(1) p, .tab01_min_cas tr td:nth-child(2) { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
+    .tab01_min_cas tr td:nth-child(1), .tab01_min_cas tr td:nth-child(1) p { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
 
     .tab02_min_cas td img, .tab02_min_lag td img {
         margin-top: 0 !important;
@@ -177,8 +177,8 @@
     }
 
     .tab02_min_cas img.esta2 {
-        width: 110px !important; 
-        height: 70px !important; 
+        width: 100px !important; 
+        height: 50px !important; 
     }
     
 
@@ -193,7 +193,9 @@
         height: 60px !important; 
     }
 
-    .tab01_min_lag tr td:nth-child(1), .tab01_min_lag tr td:nth-child(1) p, .tab01_min_lag tr td:nth-child(2) { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
+    .tab02_min_lag ul { padding-left: 0 !important; }
+
+    .tab01_min_lag tr td:nth-child(1), .tab01_min_lag tr td:nth-child(1) p { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
 
     /* ***************************** */
     /*  Diseños Secundario Animales  */
@@ -240,7 +242,7 @@
 
     .box_gallinero span b { font-size: 10px !important; }
 
-    .tbla_gall01 tr td:nth-child(1), .tbla_gall01 tr td:nth-child(1) p, .tbla_gall02 tr td:nth-child(2), .tbla_gall01 tr td:nth-child(3) { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
+    .tbla_gall01 tr td:nth-child(1), .tbla_gall01 tr td:nth-child(1) p { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
 
     .tbla_gall01 { 
         margin-top: 0 !important; 
@@ -291,7 +293,7 @@
 
     .tab_gan01 { margin:  0 auto !important; }
 
-    .tab_gan01 tr td:nth-child(1), .tab_gan01 tr td:nth-child(1) p, .tab_gan01 tr td:nth-child(3) { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
+    .tab_gan01 tr td:nth-child(1), .tab_gan01 tr td:nth-child(1) p { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
 
     .tab_gan01 tr td:nth-child(1) b { font-size: 9px !important;  } /* espesifico que columnas tendra un diseño a la tabla */
 
@@ -302,15 +304,16 @@
 
     .tab_gan01 .cont_cria { height: 73px !important;  }
 
-    .tab_gan02 { margin: 15px 0 !important; }
+    .tab_gan02 { 
+        margin: 15px auto !important;
+        margin-bottom: 0 !important;
+     }
 
-    .tab_gan02 .enc01 { width: 70px !important;  }
+    .tab_gan02 .enc01 { width: 72px !important;  }
 
     .tab_gan02 .enc02 { width: 46px !important;  }
-
-    .tab_gan02 tr td:nth-child(2), .tab_gan02 tr td:nth-child(2) p { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
     
-    .tab_gan03 tr:nth-child(2) td, .tab_gan03 tr:nth-child(2) p, .tab_gan03 tr:nth-child(4) td, .tab_gan03 tr:nth-child(4) p { text-align: center !important; } /* espesifico que filas tendra un diseño a la tabla */
+    .tab_gan03 tr:nth-child(2) td, .tab_gan03 tr:nth-child(2) p, .tab_gan03 tr:nth-child(4) td, .tab_gan03 tr:nth-child(4) p, .tab_gan03 tr:nth-child(6) td, .tab_gan03 tr:nth-child(6) p { text-align: center !important; } /* espesifico que filas tendra un diseño a la tabla */
 
     .tab_gan03 p { margin: 0 1px !important; }
 
@@ -321,7 +324,7 @@
 
     .tab_gan04 tr td:nth-child(1), .tab_gan04 tr td:nth-child(1) p, .tab_gan04 tr td:nth-child(2), .tab_gan04 tr td:nth-child(2) p, .tab_gan04 tr td:nth-child(3), .tab_gan04 tr td:nth-child(3) p, .tab_gan04 tr td:nth-child(4), .tab_gan04 tr td:nth-child(4) p { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
 
-    
+    .tab_gan05 tr td:nth-child(1), .tab_gan05 tr td:nth-child(1) p, .tab_gan05 tr td:nth-child(2), .tab_gan05 tr td:nth-child(2) p { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
 
     /* ***************** */
     /*  Diseños Establo  */
@@ -338,29 +341,44 @@
     /*  Diseños Mascotas  */
     /* ****************** */
 
-    .est_masc { 
-        height: 1px !important;
-        font-size: 0.8em !important;
-    }
-
     .box_mascota { 
         max-width:99.99px !important;
-        margin: 12px 23px !important;
+        margin: 12px 16px !important;
     }
+
+    .dos_masc img {
+        width: 80px !important;
+        height: 80px !important;
+    }
+
+    .tbla_masc01 .box_mascota img {
+        width: 80px !important;
+        height: 80px !important;
+    }
+
+    .tbla_masc01 .dos_masc tr td:nth-child(2) { width: 100% !important; } /* espesifico que columnas tendra un diseño a la tabla */
     
-    .box_mascota b, .box_mascota span, .box_mascota span b { font-size: 10.8px !important; }
+    .box_mascota b, .box_mascota span, .box_mascota span b { font-size: 9px !important; }
 
     .masc_img01 {
         width: 157px !important;
         margin: 8.8px 0 0 18px !important;  
     }
     
-    .tbla_masc02 img {
-        width: 29px !important; 
-        height: 29px !important; 
-    }
-    
     .tbla_masc02 b { font-size: 7px !important; }
+
+    .tbla_masc02 #estacion_masc p { 
+        font-size: 0.7em !important;
+    }
+
+    .tbla_masc02 tr th:nth-child(3) { width: 50px !important; } /* espesifico que columna tendra un diseño a la tabla */
+
+    .tbla_masc02 tr td:nth-child(2), .tbla_masc02 tr td:nth-child(2) p { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
+
+    .est_masc { 
+        height: 1px !important;
+        font-size: 0.8em !important;
+    }
     
 }
 

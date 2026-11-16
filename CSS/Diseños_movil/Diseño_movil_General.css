@@ -82,24 +82,28 @@
         line-height: 1.5em !important;
     }
 
-    p span.dinero b, td span.dinero b, .data .td_dinero b, ul span.dinero b  { font-size: 10px !important; }
+    p span.dinero b, .data span.dinero b, .data .td_dinero b, ul span.dinero b  { font-size: 10px !important; }
 
     ul, ol, ul a { font-size: 8px !important; }
 
     .lista_num { padding-left: 10px; }
 
-    li.gustos, li.gustos b {
+    li.gustos {
         margin: 4px 0 4px 0 !important;
         text-align: left !important;
+        line-height: 12px !important;
     }
 
     .data #encabesado th{ font-size: 9.6px !important; }
 
-    .data .td_dinero { font-size: 8px !important; }
-
     .data td, .data td p b, .data td p { 
         font-size: 8px !important; 
         text-align: justify !important; 
+    }
+
+    .data .td_dinero { 
+        font-size: 8px !important; 
+        text-align: center !important; 
     }
 
     .data td, .data td p { line-height: 1.2em !important;}
