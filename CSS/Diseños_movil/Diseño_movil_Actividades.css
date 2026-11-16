@@ -242,22 +242,27 @@
 
     .tbla_gall01 tr td:nth-child(1), .tbla_gall01 tr td:nth-child(1) p, .tbla_gall02 tr td:nth-child(2), .tbla_gall01 tr td:nth-child(3) { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
 
+    .tbla_gall01 { 
+        margin-top: 0 !important; 
+        margin-bottom: 0 !important; 
+    }
+
     .tbla_gall01 .enc_03 { width: auto !important; }
 
     .tbla_gall02 .enc01 { width: 70px !important;  }
 
     .tbla_gall02 .enc02 { width: 46px !important;  }
 
-    .tbla_gall02 { margin: 15px 0 !important; }
+    .tbla_gall02 { margin: 15px 0 0 !important; }
 
     .tbla_gall03 td p { 
         margin: 0 1px !important;
-         font-size: 10px !important;
-         line-height: 1em !important;
+        line-height: 1em !important;
     }
     
+    .tbla_gall03 tr:nth-child(2) td, .tbla_gall03 tr:nth-child(2) p, .tbla_gall03 tr:nth-child(4) td, .tbla_gall03 tr:nth-child(4) p { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
 
-    .tbla_gall03 tr:nth-child(2) td, .tbla_gall03 tr:nth-child(2) p,.tbla_gall03 tr:nth-child(4) td, .tbla_gall03 tr:nth-child(4) p { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
+    .tbla_gall04 tr td:nth-child(1), .tbla_gall04 tr td:nth-child(1) p { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
 
     
 
