@@ -259,13 +259,109 @@
         margin: 0 1px !important;
         line-height: 1em !important;
     }
+
+    .tbla_gall03 td p b { font-size: 7px !important; }
     
-    .tbla_gall03 tr:nth-child(2) td, .tbla_gall03 tr:nth-child(2) p, .tbla_gall03 tr:nth-child(4) td, .tbla_gall03 tr:nth-child(4) p { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
+    .tbla_gall03 tr:nth-child(2) td, .tbla_gall03 tr:nth-child(2) p, .tbla_gall03 tr:nth-child(4) td, .tbla_gall03 tr:nth-child(4) p { text-align: center !important; } /* espesifico que filas tendra un diseño a la tabla */
 
     .tbla_gall04 tr td:nth-child(1), .tbla_gall04 tr td:nth-child(1) p { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
 
+    /* **************** */
+    /*  Diseños Ganado  */
+    /* **************** */
+
+    .cont_gana { 
+        margin: 0 15px !important; 
+        display: flex;
+        justify-content: space-between !important; 
+        flex-wrap: wrap !important; 
+    }
+    
+    .box_ganado { 
+        max-width:70.99px !important;
+        margin: 0 5px 8px !important;
+        line-height: 0.9em !important;
+    }
+
+    .box_ganado b, .box_ganado span { font-size: 8.5px !important; }
+
+    .box_ganado span b { font-size: 10px !important; }
+
+    .tab_gan01 .enc03 { width: 40px !important; }
+
+    .tab_gan01 { margin:  0 auto !important; }
+
+    .tab_gan01 tr td:nth-child(1), .tab_gan01 tr td:nth-child(1) p, .tab_gan01 tr td:nth-child(3) { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
+
+    .tab_gan01 tr td:nth-child(1) b { font-size: 9px !important;  } /* espesifico que columnas tendra un diseño a la tabla */
+
+    .tab_gan01 td img {
+        width: 60px !important; 
+        height: 60px !important; 
+    }
+
+    .tab_gan01 .cont_cria { height: 73px !important;  }
+
+    .tab_gan02 { margin: 15px 0 !important; }
+
+    .tab_gan02 .enc01 { width: 70px !important;  }
+
+    .tab_gan02 .enc02 { width: 46px !important;  }
+
+    .tab_gan02 tr td:nth-child(2), .tab_gan02 tr td:nth-child(2) p { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
+    
+    .tab_gan03 tr:nth-child(2) td, .tab_gan03 tr:nth-child(2) p, .tab_gan03 tr:nth-child(4) td, .tab_gan03 tr:nth-child(4) p { text-align: center !important; } /* espesifico que filas tendra un diseño a la tabla */
+
+    .tab_gan03 p { margin: 0 1px !important; }
+
+    .tab_gan03 { 
+        margin: 15px auto !important; 
+        margin-bottom: 0 !important; 
+    }
+
+    .tab_gan04 tr td:nth-child(1), .tab_gan04 tr td:nth-child(1) p, .tab_gan04 tr td:nth-child(2), .tab_gan04 tr td:nth-child(2) p, .tab_gan04 tr td:nth-child(3), .tab_gan04 tr td:nth-child(3) p, .tab_gan04 tr td:nth-child(4), .tab_gan04 tr td:nth-child(4) p { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
+
     
 
+    /* ***************** */
+    /*  Diseños Establo  */
+    /* ***************** */
+
+    .esta_img01 {
+        width: 155px !important;
+        margin: 0 0 0 20px !important;  
+    }
+
+    .esta_img02 { width: 80% !important; }
+
+    /* ****************** */
+    /*  Diseños Mascotas  */
+    /* ****************** */
+
+    .est_masc { 
+        height: 1px !important;
+        font-size: 0.8em !important;
+    }
+
+    .box_mascota { 
+        max-width:99.99px !important;
+        margin: 12px 23px !important;
+    }
+    
+    .box_mascota b, .box_mascota span, .box_mascota span b { font-size: 10.8px !important; }
+
+    .masc_img01 {
+        width: 157px !important;
+        margin: 8.8px 0 0 18px !important;  
+    }
+    
+    .tbla_masc02 img {
+        width: 29px !important; 
+        height: 29px !important; 
+    }
+    
+    .tbla_masc02 b { font-size: 7px !important; }
+    
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
