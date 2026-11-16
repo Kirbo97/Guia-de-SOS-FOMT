@@ -114,7 +114,7 @@ h1 {
 } 
 
 /* evitar que los titulos se expandan fuera del contenido */
-h2,.summary_h2 {
+h2, .summary_h2 {
     border-bottom: 2px solid #09F;
     color: #09F;
     font-family: 'Ranchers';
@@ -195,7 +195,6 @@ details > .summary_h2_fin:first-of-type { margin-bottom: 20px; }
 /* se crea caracteristicas para la etiqueta "ul" para controlar la lista*/
 ul {	
     list-style:none;
-    line-height: 1.5em;
     margin-left: -.5em;
 }
 

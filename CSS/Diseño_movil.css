@@ -82,7 +82,7 @@
         line-height: 1.5em !important;
     }
 
-    p span.dinero b, td span.dinero b,.data .td_dinero b { font-size: 11px !important; }
+    p span.dinero b, td span.dinero b, .data .td_dinero b, ul span.dinero b  { font-size: 11px !important; }
 
     .horario, .horario li.gustos, li.gustos, li.gustos b, .lista_num { font-size: 8.8px !important; }
 
@@ -101,13 +101,17 @@
         font-size: 8.8px !important; 
         text-align: justify !important; 
     }
+
+    .data .td_neutro { text-align: center !important; }
+
+    .data td li.gustos::before { padding-right: 2px !important; }
     
     .data td img {
         width: 29px !important; 
         height: 29px !important;
     }
 
-    #td_cont, .td_neutro, #parte { font-size: 0.55em !important; }
+    #td_cont, #parte { font-size: 0.55em !important; }  /* ******************************  */
 
     #estacion p { font-size: 0.7em !important; } /* Es el encabesado de estacione  */
 
@@ -231,6 +235,45 @@
     .tab_mod_rec .mod_ing, .tab_mod_rec .mod_ing_uni { width: 7em !important; }
 
     .tab_mod_rec .mod_uten, .tab_mod_rec .mod_uten_uni { width: 5.5em !important; }
+
+    /* *************** */
+    /*  Diseños Pesca  */
+    /* *************** */
+
+    .pesc_img01 { width: 80% !important; }
+
+    .pesc_img02 { 
+        width: 40% !important;
+        height: 108px !important; 
+        margin-top: 2px  !important;
+    }
+
+    #con_pes_bas{ flex-direction: column !important; }
+
+    .tab_bas01 .enc_02,.tab_bas02 .enc_02 { width: 40px !important; }
+
+    .tab_bas01 tr td:nth-child(1), .tab_bas01 tr td:nth-child(2), .tab_bas01 tr td:nth-child(2) p, .tab_bas01 tr td:nth-child(4) { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
+
+    .tab_bas01 .ico_esta p {font-size: 14px !important;}
+
+    .tab_bas02 tr td:nth-child(1), .tab_bas02 tr td:nth-child(2), .tab_bas02 tr td:nth-child(2) p, .tab_bas02 tr td:nth-child(3) { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
+
+    .tab_bas02 {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .tab_lis_pes { 
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .tab_lis_pes tr td:nth-child(1), .tab_lis_pes tr td:nth-child(2), .tab_lis_pes tr td:nth-child(2) p, .tab_lis_pes tr td:nth-child(5), .tab_lis_pes tr td:nth-child(6) { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
+
+    .tab_lis_pes #lista1 .enc_02, .tab_lis_pes #lista2 .enc_02, .tab_lis_pes #lista3 .enc_02, .tab_lis_pes_guar .enc_02 { width: 34px !important; }
+
+    .tab_lis_pes_guar tr td:nth-child(1), .tab_lis_pes_guar tr td:nth-child(2), .tab_lis_pes_guar tr td:nth-child(2) p, .tab_lis_pes tr td:nth-child(5), .tab_lis_pes tr td:nth-child(6) { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
+
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
