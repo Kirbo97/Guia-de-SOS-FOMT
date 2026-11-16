@@ -220,6 +220,47 @@
 
     .box_animales a.hiper { font-size: 9px !important; }
 
+    /* ******************* */
+    /*  Diseños Gallinero  */
+    /* ******************* */
+
+    .cont_galli { 
+        margin: 0 18px !important; 
+        display: flex !important; 
+        justify-content: space-between !important;
+    }
+    
+    .box_gallinero { 
+        max-width:70.99px !important;
+        margin: 0 0 !important;
+        line-height: 0.9em !important;
+    }
+
+    .box_gallinero b, .box_gallinero span { font-size: 8.5px !important; }
+
+    .box_gallinero span b { font-size: 10px !important; }
+
+    .tbla_gall01 tr td:nth-child(1), .tbla_gall01 tr td:nth-child(1) p, .tbla_gall02 tr td:nth-child(2), .tbla_gall01 tr td:nth-child(3) { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
+
+    .tbla_gall01 .enc_03 { width: auto !important; }
+
+    .tbla_gall02 .enc01 { width: 70px !important;  }
+
+    .tbla_gall02 .enc02 { width: 46px !important;  }
+
+    .tbla_gall02 { margin: 15px 0 !important; }
+
+    .tbla_gall03 td p { 
+        margin: 0 1px !important;
+         font-size: 10px !important;
+         line-height: 1em !important;
+    }
+    
+
+    .tbla_gall03 tr:nth-child(2) td, .tbla_gall03 tr:nth-child(2) p,.tbla_gall03 tr:nth-child(4) td, .tbla_gall03 tr:nth-child(4) p { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
+
+    
+
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/

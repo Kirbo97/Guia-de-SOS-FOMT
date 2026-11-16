@@ -102,6 +102,8 @@
         text-align: justify !important; 
     }
 
+    .data td, .data td p { line-height: 1.2em !important;}
+
     .data .td_neutro { text-align: center !important; }
 
     .data td li.gustos::before { padding-right: 2px !important; }
