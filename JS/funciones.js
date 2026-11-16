@@ -8,7 +8,7 @@ function Scroll_button_villager (tip_bot,tip_cuad){ desplasar(tip_bot,tip_cuad,4
 
 function Scroll_button_marriage (tip_bot,tip_cuad){ desplasar(tip_bot,tip_cuad,638,520); }
 
-function Scroll_button_lugares (tip_bot,tip_cuad){ desplasar(tip_bot,tip_cuad,270,600); }
+function Scroll_button_lugares (tip_bot,tip_cuad){ desplasar(tip_bot,tip_cuad,260,600); }
 
 function desplasar(tip_bot,tip_cuad,salto_movile,salto_comp) {
     var anchoVentana = window.innerWidth;
