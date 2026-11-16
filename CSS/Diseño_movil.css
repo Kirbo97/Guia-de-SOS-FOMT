@@ -394,6 +394,21 @@
 
     .tab_gan01 .enc03 { width: 40px !important; }
 
+    .tab_gan01 b { font-size: 8.8px !important; }
+
+    .tab_gan02 img {
+        width: 29px !important; 
+        height: 29px !important; 
+    }
+
+    .tab_gan02 { margin: 15px 0 !important;  }
+
+    .tab_gan02 .enc01 { width: 75px !important;  }
+
+    .tab_gan02 .enc02 { width: 50px !important;  }
+    
+    .tab_gan02 td,.tab_gan02 b,.tab_gan03 td,.tab_gan03 b { font-size: 7px !important; }
+
     /* ***************** */
     /*  Diseños Establo  */
     /* ***************** */
@@ -431,9 +446,7 @@
         height: 29px !important; 
     }
     
-    .tbla_masc02 b {
-        font-size: 7px !important; 
-    }
+    .tbla_masc02 b { font-size: 7px !important; }
 
     /* ******************** */
     /*  Diseños de Lugares  */
