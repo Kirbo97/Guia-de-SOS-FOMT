@@ -42,9 +42,14 @@
         margin-left: 10px !important;
     }
 
-    .horario_tienda td, .tab_tien td, .tab_tien a.hiper { font-size: 8.8px !important; }
+    .img_left{  
+        width: 50% !important; 
+        margin-right: 10px !important;
+    }
 
-    .horario_tienda .perso { padding-left: 12px !important; }
+    .horario_lugar td, .tab_tien td, .tab_tien a.hiper { font-size: 8.8px !important; }
+
+    .horario_lugar .perso { padding-left: 12px !important; }
 
     .est_tien { 
         height: 1px !important;
@@ -69,6 +74,50 @@
         text-align: center !important;
         margin: 0 5px !important;
     } /* espesifico que columnas tendra un diseño a la tabla */
+
+    .tab_cas_duen tr td:nth-child(1), .tab_cas_duen tr td:nth-child(2), .tab_cas_duen tr td:nth-child(3) { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
+
+    .tab_viñ tr td:nth-child(1), .tab_viñ tr td:nth-child(1) p  { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
+
+    .tab_pos tr td:nth-child(1), .tab_pos tr td:nth-child(1) p  { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
+
+    .tab_tien_van01 tr td:nth-child(1), .tab_tien_van01 tr td:nth-child(1) p  { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
+
+    .tab_tien_van02 tr:nth-child(2) td:nth-child(2), .tab_tien_van02 tr:nth-child(2) td:nth-child(2) p { 
+        text-align: center !important; 
+        margin: 0 !important;
+    } /* espesifico que fila y columna tendra un diseño a la tabla */
+
+    .tab_tien_van02 tr:nth-child(3) td:nth-child(2), .tab_tien_van02 tr:nth-child(3) td:nth-child(2) p { 
+        text-align: center !important; 
+        margin: 0 !important;
+    } /* espesifico que fila y columna tendra un diseño a la tabla */
+
+    .tab_tien_van02 tr:nth-child(4) td:nth-child(2), .tab_tien_van02 tr:nth-child(4) td:nth-child(2) p { 
+        text-align: center !important; 
+        margin: 0 !important;
+    } /* espesifico que fila y columna tendra un diseño a la tabla */
+
+    .tab_tien_van02 tr:nth-child(6) td:nth-child(2), .tab_tien_van02 tr:nth-child(6) td:nth-child(2) p { 
+        text-align: center !important; 
+        margin: 0 !important;
+    } /* espesifico que fila y columna tendra un diseño a la tabla */
+
+    .tab_tien_van03 tr td:nth-child(1), .tab_tien_van03 tr td:nth-child(1) p  { 
+        text-align: center !important; 
+        margin: 0 !important;
+    } /* espesifico que fila y columna tendra un diseño a la tabla */
+
+    .tab_caf_play tr td:nth-child(1), .tab_caf_play tr td:nth-child(1) p  { 
+        text-align: center !important; 
+        margin: 0 !important;
+    } /* espesifico que fila y columna tendra un diseño a la tabla */
+
+    .tab_tien_huang tr td:nth-child(1), .tab_tien_huang tr td:nth-child(2), .tab_tien_huang tr td:nth-child(2) p  { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
+
+    .tab_tien_huang tr:nth-child(1) th:nth-child(2) { width: 90px !important; } /* espesifico que columnas de la primera fila tendra un diseño a la tabla */
+
+    .tab_tien_huang tr:nth-child(1) th:nth-child(1) { width: 20px !important; } /* espesifico que columnas de la primera fila tendra un diseño a la tabla */
 
 }
 

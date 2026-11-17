@@ -56,6 +56,8 @@
         margin-bottom: 0 !important; 
     }
 
+    h1::before{ margin-right: 5px !important; }
+
     h2, .summary_general, .summary_h2 {
         margin-top: 13px !important;
         font-size:  11px !important;
@@ -68,8 +70,8 @@
     h3, summary { font-size:  11px !important; }
 
     header .icono {
-        width: 19px !important; /* ajusto el ancho que tendra esta clase */
-        height: 19px !important; /* ajusto el alto que tendra esta clase */
+        width: 16px !important; /* ajusto el ancho que tendra esta clase */
+        height: 16px !important; /* ajusto el alto que tendra esta clase */
     }
 
     header{ height: 17px !important; }
@@ -80,7 +82,7 @@
         line-height: 1.4em !important;
     }
 
-    p { 
+    p, p a { 
         font-size: 8px !important; 
         line-height: 1.5em !important;
     }
