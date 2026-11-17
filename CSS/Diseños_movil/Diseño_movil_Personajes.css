@@ -10,6 +10,37 @@
     /*  Diseños Personajes  */
     /* ******************** */
 
+    .box_aldeanos img { width: 64px !important; }
+
+    .box_otro img { 
+        width: 170px !important;
+        height: 68px !important;
+    }
+
+    .box_aldeanos, .box_otro { margin: 14px 10px !important; }
+
+    .scroll-container-aldeanos { height:300px !important;}
+
+    .img_per01  { width: 250px !important; }
+
+    .img_per02 {
+        width: 155px !important;
+        margin: 0 0 0 10px !important;  
+    }
+
+    .box_matrimonio { width: 70px !important; }
+
+    .box_matrimonio a.hiper{  font-size: 8px !important; }
+    
+    .box_matrimonio { margin: 4px 8px 10px !important; }
+
+    .scroll-container-candidatos { 
+        border: 1px solid #ccc !important; /* Borde opcional para definir el contorno */
+        height: 260px !important;   /* Alto del contenedor */
+    }
+
+    .cont_cand_mat #bot_can { display: block !important; }
+
     .box_marriage_esp { 
         max-width: 90px !important; 
         margin: 0 2px !important;
@@ -18,8 +49,6 @@
     .box_marriage_esp img { 
         max-width: 70px !important;
     }
-
-    .box_matrimonio img { max-width:100% !important; }
 
     .box_marriage_esp a.hiper, .box_marriage_esp a p { 
         font-size: 7.68px !important; 
@@ -35,27 +64,22 @@
     }
     
     .box_otros_matrimonio a.hiper { font-size: 0.523em !important; }
-
-    .box_aldeanos img { max-width:100% !important; }
-
-    #bot_can { display: block !important;}
-
-    .box_aldeanos { max-width:142px !important;}
-
-    .box_otro { max-width:360px !important;}
-
-    .scroll-container-aldeanos { height:25em !important;}
-
-    .scroll-container-candidatos { 
-        border: 1px solid #ccc !important; /* Borde opcional para definir el contorno */
-        height: 39em !important;   /* Alto del contenedor */
-    }
-
+    
     /* ********************************** */
     /*  Diseños de Aldeanos y Candidatos  */
     /* ********************************** */
     
     .Table_regalo{ width: 50em !important;}
+
+    /* **************************** */
+    /*  Diseños de Eventos RIvales  */
+    /* **************************** */
+
+    .tab_eve_riv td img {
+        width: 130px !important; 
+        height: 130px !important; 
+        padding: 5px !important; 
+    }
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/

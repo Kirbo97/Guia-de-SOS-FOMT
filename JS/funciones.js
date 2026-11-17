@@ -4,7 +4,7 @@
 
 function Scroll_button_evento_villager (tip_bot,tip_cuad){ desplasar(tip_bot,tip_cuad,144.5,358); }
 
-function Scroll_button_villager (tip_bot,tip_cuad){ desplasar(tip_bot,tip_cuad,410,500); }
+function Scroll_button_villager (tip_bot,tip_cuad){ desplasar(tip_bot,tip_cuad,400,500); }
 
 function Scroll_button_marriage (tip_bot,tip_cuad){ desplasar(tip_bot,tip_cuad,638,520); }
 
