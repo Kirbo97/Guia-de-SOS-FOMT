@@ -117,7 +117,7 @@
 
     .data td li.gustos::before { padding-right: 2px !important; }
     
-    .data td img {
+    .data td img,.data th img {
         width: 29px !important; 
         height: 29px !important;
     }
@@ -141,12 +141,6 @@
     .modal_calendario h3 { margin: 13px 0 !important; }
 
     .modal_calendario p b { font-size: 8px !important; }
-
-    /* ************************* */
-    /*  Diseños Principal Index  */
-    /* ************************* */
-
-    #logo_index{ width:240px !important; }
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/

@@ -1,0 +1,97 @@
+/* ********************************* */
+/*  Diseños para Moviles (426 x 790) */
+/* ********************************* */
+
+/*Con la linea para que se adapte a la pantalla en la que se encuentra, el tamaño para el Movil es (max-width:426px), sin es linea el tamaño para Movil es (max-width:980px)*/
+
+/* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
+@media screen and (max-width: 600px) {
+    /* ******************** */
+    /*  Diseños Personajes  */
+    /* ******************** */
+
+    .box_marriage_esp { 
+        max-width: 90px !important; 
+        margin: 0 2px !important;
+    }
+
+    .box_marriage_esp img { 
+        max-width: 70px !important;
+    }
+
+    .box_matrimonio img { max-width:100% !important; }
+
+    .box_marriage_esp a.hiper, .box_marriage_esp a p { 
+        font-size: 7.68px !important; 
+        margin-bottom: 0 !important; 
+        text-align: center !important; 
+        line-height: 1.5em !important;
+        height: 1.5em !important;
+    }
+    
+    .box_otros_matrimonio { 
+        max-width:115px !important;
+        margin: 12px 15px 0 !important;
+    }
+    
+    .box_otros_matrimonio a.hiper { font-size: 0.523em !important; }
+
+    .box_aldeanos img { max-width:100% !important; }
+
+    #bot_can { display: block !important;}
+
+    .box_aldeanos { max-width:142px !important;}
+
+    .box_otro { max-width:360px !important;}
+
+    .scroll-container-aldeanos { height:25em !important;}
+
+    .scroll-container-candidatos { 
+        border: 1px solid #ccc !important; /* Borde opcional para definir el contorno */
+        height: 39em !important;   /* Alto del contenedor */
+    }
+
+    /* ********************************** */
+    /*  Diseños de Aldeanos y Candidatos  */
+    /* ********************************** */
+    
+    .Table_regalo{ width: 50em !important;}
+}
+
+/* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+    /* ***************** */
+    /*  Diseños del nav  */
+    /* ***************** */
+
+    nav { flex-wrap: wrap !important; }
+
+    nav div { margin: 10px 8px !important; }
+
+    /* ******************************* */
+    /*  Diseños del contenido general  */
+    /* ******************************* */
+
+    #content {
+        margin: 30px 25px !important;
+        padding: 18px !important;
+    }
+
+    /* ******************** */
+    /*  Diseños del footer  */
+    /* ******************** */
+
+    /* defino que solo la clase "copyright" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
+    section .copyright { 
+        margin-top: 9px !important;
+        font-size: 14px !important; /* defino el tamaño del texto*/
+    }
+
+    section .enlace {width: 25px !important; } /* ajusto el tamaño que tendra esta clase */
+
+    /* ****************** */
+    /*  Diseños general  */
+    /* ****************** */
+    
+}

@@ -51,6 +51,8 @@
 
     .horario_lugar .perso { padding-left: 12px !important; }
 
+    /* Bazar */
+
     .est_tien { 
         height: 1px !important;
         font-size: 0.8em !important;
@@ -70,16 +72,26 @@
         margin: 0 5px !important;
     } /* espesifico que columnas tendra un diseño a la tabla */
 
+    /* Clinica */
+
     .tab_clin01 tr td:nth-child(1), .tab_clin01 tr td:nth-child(1) p, .tab_clin01 tr td:nth-child(4) { 
         text-align: center !important;
         margin: 0 5px !important;
     } /* espesifico que columnas tendra un diseño a la tabla */
 
+    /* Casa de los duendes */
+
     .tab_cas_duen tr td:nth-child(1), .tab_cas_duen tr td:nth-child(2), .tab_cas_duen tr td:nth-child(3) { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
+
+    /* Viñedo */
 
     .tab_viñ tr td:nth-child(1), .tab_viñ tr td:nth-child(1) p  { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
 
+    /* Posada */
+
     .tab_pos tr td:nth-child(1), .tab_pos tr td:nth-child(1) p  { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
+
+    /* Tienda de Van */
 
     .tab_tien_van01 tr td:nth-child(1), .tab_tien_van01 tr td:nth-child(1) p  { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
 
@@ -108,17 +120,74 @@
         margin: 0 !important;
     } /* espesifico que fila y columna tendra un diseño a la tabla */
 
+    /* Café en la playa */
+
     .tab_caf_play tr td:nth-child(1), .tab_caf_play tr td:nth-child(1) p  { 
         text-align: center !important; 
         margin: 0 !important;
     } /* espesifico que fila y columna tendra un diseño a la tabla */
 
+    /* Tienda de Huang */
+
     .tab_tien_huang tr td:nth-child(1), .tab_tien_huang tr td:nth-child(2), .tab_tien_huang tr td:nth-child(2) p  { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
 
     .tab_tien_huang tr:nth-child(1) th:nth-child(2) { width: 90px !important; } /* espesifico que columnas de la primera fila tendra un diseño a la tabla */
 
-    .tab_tien_huang tr:nth-child(1) th:nth-child(1) { width: 20px !important; } /* espesifico que columnas de la primera fila tendra un diseño a la tabla */
+    /* Forja */
 
+    .tab_forja01 tr td:nth-child(1), .tab_forja01 tr td:nth-child(1) p { 
+        text-align: center !important; 
+        margin: 0 !important;
+    } /* espesifico que fila y columna tendra un diseño a la tabla */
+
+    .tab_forja01 tr:nth-child(1) th:nth-child(1) { width: 65px !important; } /* espesifico que columna de la primera fila tendra un diseño a la tabla */
+
+    .tab_forja01 tr:nth-child(1) th:nth-child(3) { width: 40px !important; } /* espesifico que columna de la primera fila tendra un diseño a la tabla */
+
+    .tab_forja02 tr td:nth-child(1), .tab_forja02 tr td:nth-child(1) p, .tab_forja02 tr td:nth-child(3), .tab_forja02 tr td:nth-child(3) p {
+        text-align: center !important; 
+        margin: 0 !important; 
+    }  /* espesifico que la primera y tercera columna de los td de la tabla */
+
+    /* Tienda Avicola */
+
+    .tab_tien_avi02 tr:nth-child(1) th:nth-child(1) { width: 20px !important; } /* espesifico que columnas de la primera fila tendra un diseño a la tabla */
+
+    .tab_tien_avi01 tr td:nth-child(1), .tab_tien_avi01 tr td:nth-child(1) p, .tab_tien_avi02 tr td:nth-child(1), .tab_tien_avi02 tr td:nth-child(1) p   { 
+        text-align: center !important; 
+        margin: 0 !important;
+    } /* espesifico que fila y columna tendra un diseño a la tabla */
+
+    /* Rancho Yodel */
+
+    .tab_ranch01 tr td:nth-child(1), .tab_ranch01 tr td:nth-child(1) p, .tab_ranch02 tr td:nth-child(1), .tab_ranch02 tr td:nth-child(1) p   { 
+        text-align: center !important; 
+        margin: 0 !important;
+    } /* espesifico que fila y columna tendra un diseño a la tabla */
+
+    .tab_ranch01 tr:nth-child(1) th:nth-child(3), .tab_ranch02 tr:nth-child(1) th:nth-child(3) { width: 50px !important; } /* espesifico que columnas de la primera fila tendra un diseño a la tabla */
+
+     /* Taller de gost */
+
+    .tab_taller01 tr td:nth-child(1), .tab_taller01 tr td:nth-child(1) p, .tab_taller02 tr td:nth-child(1), .tab_taller02 tr td:nth-child(1) p   { 
+        text-align: center !important; 
+        margin: 0 !important;
+    } /* espesifico que fila y columna tendra un diseño a la tabla */
+
+    .tab_taller01 tr td:nth-child(2) li, .tab_taller02 tr td:nth-child(3) li { 
+        margin-left: 0 !important;
+    } /* espesifico que fila y columna tendra un diseño a la tabla */
+
+
+    .tab_taller01 tr:nth-child(1) th:nth-child(3), .tab_taller02 tr:nth-child(1) th:nth-child(4) { width: 50px !important; } /* espesifico que columnas de la primera fila tendra un diseño a la tabla */
+
+    .tab_taller02 tr:nth-child(14) td:first-child b, .tab_taller02 tr:nth-child(15) td:first-child b, .tab_taller02 tr:nth-child(16) td:first-child b, .tab_taller02 tr:nth-child(17) td:first-child b { font-size: 9px !important; }
+
+    .tab_taller02 tr:nth-child(14) td:first-child div b, .tab_taller02 tr:nth-child(15) td:first-child div b, .tab_taller02 tr:nth-child(16) td:first-child div b, .tab_taller02 tr:nth-child(17) td:first-child div b { font-size: 7.2px !important; }
+
+    .tab_taller02 .cont_obj_tall { height: 50px !important;  }
+
+    .tab_taller02 .cont_obj_tall div{ margin-top: 8.5px !important; }
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/

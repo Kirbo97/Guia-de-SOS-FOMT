@@ -45,8 +45,8 @@
 
                 <h2>Productos</h2>
 
-                <table class="data">
-                    <tr><th style="width: 100px;">Nombre</th><th>Disponibilidad</th><th style="width: 150px;">Costo</th></tr>
+                <table class="data tab_forja01">
+                    <tr id="encabesado"><th style="width: 100px;">Nombre</th><th>Disponibilidad</th><th style="width: 150px;">Costo</th></tr>
                     <tr>
                         <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Forja/Cepillo.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px; line-height:1.1;"><b style="font-size: 13.5px;">Cepillo</b></p></div></td>
                         <td>Después de conseguir un caballo de Mugi</td><td class="td_dinero">800 <b>G</b></td>
@@ -67,12 +67,12 @@
 
                 <p>Puedes mejorar tus herramienta en su establecimiento pero solo podras mejorar tus 6 herramientas basicas hasta el nivel de mithril, cada mejora tiene su presio predefinido dependiendo del nivel y tambien requiere que cuando vallas a mejorar tu herramienta nesesitas llevar el mineral para que el lo use en la mejora, eso minerales los puedes conseguir en la mina que esta alado de la cascada y puedes ver con mas detalle en la tabla de minerales que esta a continuación.</p>
 
-                <i>Nota: Seleccione un mineral.</i>
+                <p><i>Nota: Seleccione un mineral.</i></p>
 
-                <table class="data" style="width: 50%">
+                <table class="data mineral_herramienta" style="width: 52.03%">
                     <tr>
                         <th colspan="6">
-                            <div style="display:flex;justify-content:space-around;align-items:center;"> 
+                            <div style="display:flex; justify-content:space-around; align-items:center;"> 
                                 <div class="td_objetos" style="cursor: pointer;" onclick="cambiar_mineral(1)"><img src="/Guia-de-SOS-FOMT/IMG/Mina/Cobre.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px; color: white;">Cobre</b></p></div>
 
                                 <div class="td_objetos" style="cursor: pointer;" onclick="cambiar_mineral(2)"><img src="/Guia-de-SOS-FOMT/IMG/Mina/Plata.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px; color: white">Plata</b></p></div>
@@ -85,46 +85,94 @@
                     </tr>
 
                     <tbody id="lista_1" style="display: none;"> <!-- pagina 1 -->
-                        <tr><th>Mineral</th><td colspan="6"><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Mina/Cobre.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Cobre</b></p></div></td></tr>
+                        <tr id="encabesado"><th colspan="6" style=" width: 52.03%">Requerimiento para mejorarlas</th></tr>
+
+                        <tr id="encabesado">
+                            <th>Mineral</th><td colspan="2"><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Mina/Cobre.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Cobre</b></p></div></td>
+
+                            <th>Precio</th><td colspan="2" class="td_dinero">1.000 <b>G</b></td>
+                        </tr>
+
+                        <tr id="encabesado"><th>Experiencia</th><td id="exper" colspan="5" style="text-align:center;"><b>10%</b></td></tr>
                     
-                        <tr><th>Precio</th><td class="td_dinero" colspan="6">1.000 <b>G</b></td></tr>
-                        <tr><th>Experiencia minima</th><td style="text-align: center;" colspan="6"><b>10%</b></tr>
-                    
+                        <tr id="encabesado"><th colspan="6">Herramientas mejorada a cobre</th></tr>
+
                         <tr>
-                            <th>Herramienta mejorada</th><td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Martillo de cobre.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Martillo</b></p></div></td><td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Azada de cobre.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Azada</b></p></div></td><td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Hoz de cobre.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Hoz</b></p></div></td><td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Hacha de cobre.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Hacha</b></p></div></td><td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Regadera de cobre.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Regadera</b></p></div></td><td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Caña de cobre.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Caña de pescar</b></p></div></td>
+                            <td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Caña de cobre.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Caña de pescar</b></p></div></td>
+                            <td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Azada de cobre.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Azada</b></p></div></td>
+                            <td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Hacha de cobre.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Hacha</b></p></div></td>
+                            <td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Martillo de cobre.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Martillo</b></p></div></td>
+                            <td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Regadera de cobre.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Regadera</b></p></div></td>
+                            <td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Hoz de cobre.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Hoz</b></p></div></td>
                         </tr>
                     </tbody>
 
                     <tbody id="lista_2" style="display: none;"> <!-- pagina 2 -->
-                        <tr><th>Mineral</th><td colspan="6"><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Mina/Plata.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Plata</b></p></div></td></tr>
+                        <tr id="encabesado"><th colspan="6" style=" width: 52.03%">Requerimiento para mejorarlas</th></tr>
+
+                        <tr id="encabesado">
+                            <th>Mineral</th><td colspan="2"><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Mina/Plata.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Plata</b></p></div></td>
+
+                            <th>Precio</th><td colspan="2" class="td_dinero">2.000 <b>G</b></td>
+                        </tr>
+
+                        <tr id="encabesado"><th>Experiencia</th><td id="exper" colspan="5" style="text-align:center;"><b>28%</b></td></tr>
                     
-                        <tr><th>Precio</th><td class="td_dinero" colspan="6">2.000 <b>G</b></td></tr>
-                        <tr><th>Experiencia minima</th><td style="text-align: center;" colspan="6"><b>28%</b></tr>
-                    
+                        <tr id="encabesado"><th colspan="6">Herramientas mejorada a cobre</th></tr>
+
                         <tr>
-                            <th>Herramienta mejorada</th><td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Martillo de plata.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Martillo</b></p></div></td><td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Azada de plata.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Azada</b></p></div></td><td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Hoz de plata.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Hoz</b></p></div></td><td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Hacha de plata.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Hacha</b></p></div></td><td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Regadera de plata.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Regadera</b></p></div></td><td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Caña de plata.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Caña de pescar</b></p></div></td>
+                            <td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Caña de plata.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Caña de pescar</b></p></div></td>
+                            <td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Azada de plata.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Azada</b></p></div></td>
+                            <td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Hacha de plata.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Hacha</b></p></div></td>
+                            <td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Martillo de plata.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Martillo</b></p></div></td>
+                            <td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Regadera de plata.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Regadera</b></p></div></td>
+                            <td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Hoz de plata.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Hoz</b></p></div></td>
                         </tr>
                     </tbody>
 
                     <tbody id="lista_3" style="display: none;"> <!-- pagina 3 -->
-                        <tr><th>Mineral</th><td colspan="6"><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Mina/Oro.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Oro</b></p></div></td></tr>
+                        <tr id="encabesado"><th colspan="6" style=" width: 52.03%">Requerimiento para mejorarlas</th></tr>
+
+                        <tr id="encabesado">
+                            <th>Mineral</th><td colspan="2"><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Mina/Oro.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Oro</b></p></div></td>
+
+                            <th>Precio</th><td colspan="2" class="td_dinero">3.000 <b>G</b></td>
+                        </tr>
+
+                        <tr id="encabesado"><th>Experiencia</th><td id="exper" colspan="5" style="text-align:center;"><b>55%</b></td></tr>
                     
-                        <tr><th>Precio</th><td class="td_dinero" colspan="6">3.000 <b>G</b></td></tr>
-                        <tr><th>Experiencia minima</th><td style="text-align: center;" colspan="6"><b>55%</b></tr>
-                    
+                        <tr id="encabesado"><th colspan="6">Herramientas mejorada a cobre</th></tr>
+
                         <tr>
-                            <th>Herramienta mejorada</th><td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Martillo de oro.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Martillo</b></p></div></td><td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Azada de oro.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Azada</b></p></div></td><td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Hoz de oro.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Hoz</b></p></div></td><td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Hacha de oro.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Hacha</b></p></div></td><td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Regadera de oro.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Regadera</b></p></div></td><td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Caña de oro.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Caña de pescar</b></p></div></td>
+                            <td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Caña de oro.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Caña de pescar</b></p></div></td>
+                            <td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Azada de oro.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Azada</b></p></div></td>
+                            <td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Hacha de oro.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Hacha</b></p></div></td>
+                            <td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Martillo de oro.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Martillo</b></p></div></td>
+                            <td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Regadera de oro.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Regadera</b></p></div></td>
+                            <td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Hoz de oro.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Hoz</b></p></div></td>
                         </tr>
                     </tbody>
 
                     <tbody id="lista_4" style="display: none;"> <!-- pagina 4 -->
-                        <tr><th>Mineral</th><td colspan="6"><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Mina/Mitrilo.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Mitrilo</b></p></div></td></tr>
+                        <tr id="encabesado"><th colspan="6" style=" width: 52.03%">Requerimiento para mejorarlas</th></tr>
+
+                        <tr id="encabesado">
+                            <th>Mineral</th><td colspan="2"><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Mina/Mitrilo.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Mithril</b></p></div></td>
+
+                            <th>Precio</th><td colspan="2" class="td_dinero">5.000 <b>G</b></td>
+                        </tr>
+
+                        <tr id="encabesado"><th>Experiencia</th><td id="exper" colspan="5" style="text-align:center;"><b>100%</b></td></tr>
                     
-                        <tr><th>Precio</th><td class="td_dinero" colspan="6">5.000 <b>G</b></td></tr>
-                        <tr><th>Experiencia minima</th><td style="text-align: center;" colspan="6"><b>100%</b></tr>
-                    
+                        <tr id="encabesado"><th colspan="6">Herramientas mejorada a cobre</th></tr>
+
                         <tr>
-                            <th>Herramienta mejorada</th><td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Martillo de mithril.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Martillo</b></p></div></td><td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Azada de mithril.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Azada</b></p></div></td><td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Hoz de mithril.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Hoz</b></p></div></td><td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Hacha de mithril.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Hacha</b></p></div></td><td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Regadera de mithril.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Regadera</b></p></div></td><td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Caña de mithril.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Caña de pescar</b></p></div></td>
+                            <td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Caña de mithril.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Caña de pescar</b></p></div></td>
+                            <td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Azada de mithril.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Azada</b></p></div></td>
+                            <td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Hacha de mithril.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Hacha</b></p></div></td>
+                            <td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Martillo de mithril.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Martillo</b></p></div></td>
+                            <td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Regadera de mithril.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Regadera</b></p></div></td>
+                            <td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Hoz de mithril.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Hoz</b></p></div></td>
                         </tr>
                     </tbody>
                 </table>
@@ -133,16 +181,30 @@
 
                 <p>Despues de obtener la herramienta maldita deberas hacer que se convierta en una herramienta bendita y con eso se desbloqueara el mineral legendario que a su vez lo podras usar para mejorar la herramienta bendita en una herramienta mitica.</p>
 
-                <table class="data"> 
+                <table class="data herra_mitica">
+                    <tr id="encabesado"><th colspan="6">Herramientas bendecidas</th></tr>
+                    <tr>
+                        <td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Caña de pescar bendecido.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Caña de pescar</b></p></div></td>
+                        <td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Azada bendecido.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Azada</b></p></div></td>
+                        <td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Hacha bendecido.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Hacha</b></p></div></td>
+                        <td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Martillo bendecido.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Martillo</b></p></div></td>
+                        <td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Regadera bendecido.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Regadera</b></p></div></td>
+                        <td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Hoz bendecido.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Hoz</b></p></div></td>
+                    </tr>
+                    
+                    <tr id="encabesado"><th colspan="6">Requerimiento para mejorarlas</th></tr>
 
-                    <tr><th>Mineral</th><td colspan="6"><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Mina/Mineral legendario.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Mineral legendario</b></p></div></td></tr>
+                    <tr id="encabesado">
+                        <th>Mineral</th><td colspan="2"><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Mina/Mineral legendario.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Mineral legendario</b></p></div></td>
 
-                    <tr><th>Precio</th><td colspan="6" class="td_dinero">50.000 <b>G</b></td></tr>
+                        <th>Precio</th><td colspan="2" class="td_dinero">50.000 <b>G</b></td>
+                    </tr>
 
-                    <tr><th>Experiencia minima</th><td colspan="6" style="text-align:center;"><b>100%</b></td></tr>
+                    <tr id="encabesado"><th>Experiencia</th><td id="exper" colspan="5" style="text-align:center;"><b>100%</b></td></tr>
+                    
+                    <tr id="encabesado"><th colspan="6">Herramientas mejoradas a miticas</th></tr>
 
                     <tr>
-                        <th>Herramientas miticas</th>
                         <td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Caña de pescar mitico.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Caña de pescar</b></p></div></td>
                         <td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Azada mitico.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Azada</b></p></div></td>
                         <td><div class="td_objetos"><img src="/Guia-de-SOS-FOMT/IMG/Herramientas/Hacha mitico.png" width="70" height="70"/><p style="text-align:center; margin: 0 5px;"><b style="font-size: 13.5px;">Hacha</b></p></div></td>
@@ -158,8 +220,8 @@
 
                 <p>A parte de las mejoras de tus herramientas y la compra de los otros articulos, tambien puedes realizar peticiones en la cual Saibara se pondra a crear el objeto, estos accesorios a esepcion de los creadores de hilo, queso y mayones se pueden regalar o vender a través del contenedor de envío de tu granja por <span class="dinero">1.800 <b>G</b></span> cada uno. Un Oricalcum normalmente se envía por <span class="dinero">50 <b>G</b></span>, por lo que obtienes una ganancia de <span class="dinero">750 <b>G</b></span> por encargar estos artículos. La desventaja es que solo puede trabajar en uno a la vez.</p>
 
-                <table class="data" style="margin-bottom: 16px;">
-                    <tr><th style="width: 200px;">Nombre</th><th style="width: 240px;">Disponibilidad</th><th>Requerimiento</th><th style="width: 130px;">Costo</th></tr>
+                <table class="data tab_forja02" style="margin-bottom: 16px;">
+                    <tr id="encabesado"><th style="width: 200px;">Nombre</th><th style="width: 240px;">Disponibilidad</th><th>Requerimiento</th><th style="width: 130px;">Costo</th></tr>
 
                     <tr>
                         <td style="text-align:center;"><div><img src="/Guia-de-SOS-FOMT/IMG/Lugares/Forja/Collar.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Collar</b></p></div></td>
