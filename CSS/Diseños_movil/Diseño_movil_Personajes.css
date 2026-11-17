@@ -68,8 +68,69 @@
     /* ********************************** */
     /*  Diseños de Aldeanos y Candidatos  */
     /* ********************************** */
+
+    .img_perfil {
+        width: 100px !important;
+        margin: 0 0 0 10px !important;  
+    }
+
+    .tab_hor_alde p {  margin: 0 !important;  }
+
+    .cont_horario {
+        column-gap: 10px !important;
+        justify-content: space-around !important;
+    }
     
-    .Table_regalo{ width: 50em !important;}
+    .Table_regalo{ 
+        width: 100% !important; 
+        margin: 0 auto !important; 
+    }
+
+    .Table_regalo .emociones { margin-top: 10px !important; }
+
+    .Table_regalo .cont_obj_regalo { 
+        column-gap: 0 !important;
+        row-gap: 8px !important;
+    }
+
+    .scroll-container_reg { height: 200px !important; }
+
+    .img_duen_right { 
+        width: 50% !important; 
+        margin-top: 8px !important;
+        margin-left: 10px !important;
+    }
+
+    .img_duen_left { 
+        width: 50% !important; 
+        margin-top: 8px !important;
+        margin-right: 10px !important;
+    }
+
+    .tab_duen01 .cump_duen01 { display: none !important; }
+    .tab_duen01 .cump_duen02 { display: block !important; }
+
+    .tab_duen01 .cump_duen02 tr td:first-child  { text-align: center !important; } /* Toda la primera columna de la tabla */ 
+
+    .tab_duen02 tr:nth-child(1) th:nth-child(3) { width: 70px !important; } /* Toda la primera tr y la tercera th de la tabla */ 
+
+    .tab_duen02 tr:nth-child(1) th { height: 30px !important;  }   /* Toda la TH de la primera columnafila de la tabla */ 
+
+    .tab_duen02 tr td:first-child p,.tab_duen01 .cump_duen02 tr td:first-child p { margin-top: 6px !important; }  /* Toda la P de la primera columna de la tabla */ 
+
+    .tab_duen02 tr td:first-child  { text-align: center !important; } /* Toda la primera columna de la tabla */ 
+
+    .tab_duen02 tr td:first-child img, .tab_duen01 .cump_duen02 tr td:first-child img { 
+        width: 50px !important; 
+        height: 50px !important;
+    }   /* Toda la img de la primera columna de la tabla */ 
+
+    .tab_duen02 .cont_obj_regalo { 
+        column-gap: 0 !important;
+        row-gap: 8px !important;
+    }
+
+    .tab_duen03 td { text-align: center !important; }
 
     /* **************************** */
     /*  Diseños de Eventos RIvales  */

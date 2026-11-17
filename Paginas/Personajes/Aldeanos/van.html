@@ -26,18 +26,18 @@
             </header>
 
             <main>
-                <img src="/Guia-de-SOS-FOMT/IMG/Personajes/Aldeanos/Perfil/villager_van.jpg" class="right screenshot" width="238" height="238" style="margin: 5px 0 0 20px;"/>
+                <img src="/Guia-de-SOS-FOMT/IMG/Personajes/Aldeanos/Perfil/villager_van.jpg" class="right screenshot img_perfil" width="238" height="238" style="margin: 5px 0 0 20px;"/>
     
                 <p>Este comerciante ambulante ofrece productos inusuales y animales simpáticos. Comenzará a visitar la ciudad Mineral los miércoles después de que hayas arrojado al menos <b>30 regalos</b> al estanque de la Diosa de la Cosecha. Van no participa en ningún festival ni evento aleatorio; él está allí solo para abrir su tienda y no mucho más.</p>
     
                 <p>En el juego original de GBA, Van solo parecía vender sus productos de los miércoles cuando los jugadores usaban el cable de enlace de GBA a Gamecube para comunicarse con su copia de <b>Harvest Moon: A Wonderful Life</b> para Gamecube. FoMT se conectaría a AWL para niños y MFoMT se conectaría a AWL para niñas. Después de conectar los dos juegos, Van aparecería en los juegos de GBA para vender el tocadiscos y los discos de música. En el juego de Gamecube, vendía música con temática de FoMT para el tocadiscos del juego.</p>
 
-                <table class="data" style="margin-bottom: 1.5em;"><tr><th style="padding: 0 15px;">Cumpleaños</th><td class="perso" style="padding-right: 15px;">(Ninguno)</td></tr></table>
+                <table class="data" style="margin-bottom: 1.5em;"><tr id="encabesado"><th style="padding: 0 15px;">Cumpleaños</th><td class="perso" style="padding-right: 15px;">(Ninguno)</td></tr></table>
 
-                <table class="data tabla_horario">
-                    <tr><th colspan="2">Horario</th></tr>
-                    <tr><th>Días</th><th style="width: 54em;">Hora y lugar</th></tr>
-                    <tr>
+                <table class="data tab_hor_alde">
+                    <tr id="encabesado"><th colspan="2">Horario</th></tr>
+                    <tr id="encabesado"><th>Días</th><th style="width: 54em;">Hora y lugar</th></tr>
+                    <tr id="encabesado">
                         <td>Días miércoles</td>
                         <td style="text-align:center;"><div class="cont_horario"><div><p><b style="color: black;">06:00 - 24:00</b><b>Posada (2F)</b></p></div></div></td>
                     </tr>
@@ -96,11 +96,11 @@
 
                 <p>La mejor forma de mejorar la amistad con este aldeano es siempre regalar las cosas que le gusta una vez por día.</p>
 
-                <i>Nota: Seleccione una emoción de las lista.</i>
+                <p><i>Nota: Seleccione una emoción de las lista.</i></p>
 
                 <table class="data Table_regalo">
                     <tr class="rec"><th>
-                        <div style="display:flex; justify-content:space-around; align-items:center; margin-top: 19px;">
+                        <div style="display:flex; justify-content:space-around; align-items:center; margin-top: 19px;" class="emociones">
                             <div style="display:flex; flex-direction: column; align-items:center; cursor: pointer;" onclick="cambiar_regalo(1,4)"><p class="encanta" style="text-align:center; margin: 0;"></p><p style="text-align: center; margin: 2px 0 0;">Encanta</p></div>
                             <div style="display:flex; flex-direction: column; align-items:center; cursor: pointer;" onclick="cambiar_regalo(2,4)"><p class="gusta" style="text-align:center; margin: 0;"></p><p style="text-align: center; margin: 2px 0 0;">Gusta</p></div>
                             <div style="display:flex; flex-direction: column; align-items:center; cursor: pointer;" onclick="cambiar_regalo(3,4)"><p class="desagrado" style="text-align:center; margin: 0;"></p><p style="text-align: center; margin: 2px 0 0;">Desagrada</p></div>

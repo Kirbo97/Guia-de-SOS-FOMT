@@ -79,8 +79,9 @@
 
     .td_calenda_simple { height: 50px !important; }
 
-    .tab_cal_tot tr:nth-child(1) td, .tab_cal_tot tr:nth-child(2) td, .tab_cal_tot tr:nth-child(3) td,
-    .tab_cal_tot tr:nth-child(4) td, .tab_cal_tot tr:nth-child(5) td { text-align: center !important; }
+    .tab_cal_tot td { text-align: center !important; }
+
+    .tab_cal_tot { margin: 0 auto 15px !important; }
 
     .tab_cal_ev img { 
         width: 29px !important; 

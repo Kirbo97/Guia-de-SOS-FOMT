@@ -26,18 +26,18 @@
             </header>
 
             <main>
-                <img src="/Guia-de-SOS-FOMT/IMG/Personajes/Aldeanos/Perfil/villager_mei.jpg" class="right screenshot" width="238" height="238" style="margin: 5px 0 0 20px;"/>
+                <img src="/Guia-de-SOS-FOMT/IMG/Personajes/Aldeanos/Perfil/villager_mei.jpg" class="right screenshot img_perfil" width="238" height="238" style="margin: 5px 0 0 20px;"/>
     
                 <p>Mei es una pequeña niña que vive solo con su abuelo Mugi en en rancho Yodel perteneciente a su abuelo. A ella le gusta pasar el tiempo con su abuelo, aunque lamentablemente él está demasiado ocupado cuidando de su ganado como para jugar con ella todo el tiempo. En cambio, pasa su tiempo jugando con Yu otro niño que vive en la ciudad. También pasa tiempo con Carter en la iglesia. El abuelo Mugi intenta criar a la pequeña Mei lo mejor que puede a pesar de estar solo en el rancho Yodel.</p>
     
                 <p>A Mei le gusta hablar mucho con su mamá por teléfono debido a que su madre no esta en la ciudad. Mei espera que algún día su madre regrese a la ciudad Mineral, aunque sea para una visita breve, pero parece que su deseo no se va a poder cumplir. Incluso Mugi ha intentado convencer a Joanna (madre de Mei) para que regrese de vez en cuando para que visite a Mei, pero Joanna aún no ha regresado a la ciudad.</p>
                 
-                <table class="data" style="margin-bottom: 1.5em;"><tr><th style="padding: 0 15px;">Cumpleaños</th><td class="perso" style="padding-right: 15px;">26 de invierno.</td></tr></table>
+                <table class="data" style="margin-bottom: 1.5em;"><tr id="encabesado"><th style="padding: 0 15px;">Cumpleaños</th><td class="perso" style="padding-right: 15px;">26 de invierno.</td></tr></table>
 
-                <table class="data tabla_horario">
-                    <tr><th colspan="2">Horario</th></tr>
-                    <tr><th>Días</th><th style="width: 54em;">Hora y lugar</th></tr>
-                    <tr>
+                <table class="data tab_hor_alde">
+                    <tr id="encabesado"><th colspan="2">Horario</th></tr>
+                    <tr id="encabesado"><th>Días</th><th style="width: 54em;">Hora y lugar</th></tr>
+                    <tr id="encabesado">
                         <td>Días lunes</td>
                         <td style="text-align:center;">
                             <div class="cont_horario">
@@ -94,11 +94,11 @@
 
                 <p>La mejor forma de mejorar la amistad con esta aldeana es siempre regalar las cosas que le gusta una vez por día.</p>
 
-                <i>Nota: Seleccione una emoción de las lista.</i>
+                <p><i>Nota: Seleccione una emoción de las lista.</i></p>
 
                 <table class="data Table_regalo">
                     <tr class="rec"><th>
-                        <div style="display:flex; justify-content:space-around; align-items:center; margin-top: 19px;">
+                        <div style="display:flex; justify-content:space-around; align-items:center; margin-top: 19px;" class="emociones">
                             <div style="display:flex; flex-direction: column; align-items:center; cursor: pointer;" onclick="cambiar_regalo(1,4)"><p class="encanta" style="text-align:center; margin: 0;"></p><p style="text-align: center; margin: 2px 0 0;">Encanta</p></div>
                             <div style="display:flex; flex-direction: column; align-items:center; cursor: pointer;" onclick="cambiar_regalo(2,4)"><p class="gusta" style="text-align:center; margin: 0;"></p><p style="text-align: center; margin: 2px 0 0;">Gusta</p></div>
                             <div style="display:flex; flex-direction: column; align-items:center; cursor: pointer;" onclick="cambiar_regalo(3,4)"><p class="desagrado" style="text-align:center; margin: 0;"></p><p style="text-align: center; margin: 2px 0 0;">Desagrada</p></div>
@@ -107,7 +107,7 @@
                     </th></tr>
 
                     <tbody id="lista_regalo1" style="display: none;"> <!-- Encanta -->
-                        <tr><th style="height: 2em;">Regealos que le Encantan</th></tr>
+                        <tr id="encabesado"><th style="height: 2em;">Regealos que le Encantan</th></tr>
                         <td style="text-align:center;">
                             <div id="regalos1" class="cont_obj_regalo">
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Helado.png"/><p><b>Helado</b></p></div>
@@ -222,7 +222,7 @@
                     </tbody>
 
                     <tbody id="lista_regalo2" style="display: none;"> <!-- Gustan -->
-                        <tr><th style="height: 2em;">Regealos que le Gustan</th></tr>
+                        <tr id="encabesado"><th style="height: 2em;">Regealos que le Gustan</th></tr>
                         <td style="text-align:center;">
                             <div id="regalos2" class="cont_obj_regalo">
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Peces/Basura/Lata vacía.png"/><p><b>Lata vacía</b></p></div>
@@ -327,7 +327,7 @@
                     </tbody>
 
                     <tbody id="lista_regalo3" style="display: none;"> <!-- Desagradan -->
-                        <tr><th style="height: 2em;">Regealos que le Desagradan</th></tr>
+                        <tr id="encabesado"><th style="height: 2em;">Regealos que le Desagradan</th></tr>
                         <td style="text-align:center;">
                             <div id="regalos3" class="cont_obj_regalo">
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Hierba azul.png"/><p><b>Hierba</b><b>azul</b></p></div>
@@ -394,7 +394,7 @@
                     </tbody>
 
                     <tbody id="lista_regalo4" style="display: none;"> <!-- Odia -->
-                        <tr><th style="height: 2em;">Regealos que Odia</th></tr>
+                        <tr id="encabesado"><th style="height: 2em;">Regealos que Odia</th></tr>
                         <td style="text-align:center;">
                             <div id="regalos4" class="cont_obj_regalo">
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Alejandrita.png"/><p><b>Alejandrita</b></p></div>

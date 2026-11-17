@@ -26,18 +26,18 @@
             </header>
 
             <main>
-                <img src="/Guia-de-SOS-FOMT/IMG/Personajes/Aldeanos/Perfil/villager_thomas.jpg" class="right screenshot" width="238" height="238" style="margin: 5px 0 0 20px;"/>
+                <img src="/Guia-de-SOS-FOMT/IMG/Personajes/Aldeanos/Perfil/villager_thomas.jpg" class="right screenshot img_perfil" width="238" height="238" style="margin: 5px 0 0 20px;"/>
 
                 <p>Thomas vive con su hijo, Harris, al lado de la Tienda General. Thomas ha sido alcalde de Mineral Town durante mucho tiempo; ¡Su familia ha servido a la ciudad durante generaciones! Conocía al abuelo del protagonista y se alegra al ver que alguien cercano al viejo granjero aceptó hacerse cargo de la granja familiar. Sin la granja, a Thomas le preocupa que el pueblo se seque y la gente se mude.</p>
 
                 <p>Además de garantizar el buen funcionamiento de la ciudad, Thomas es responsable de preparar las fiestas locales. A menudo estará en Rose Plaza, atendiendo el tablón de anuncios públicos.</p>
 
-                <table class="data" style="margin-bottom: 1.5em;"><tr><th style="padding: 0 15px;">Cumpleaños</th><td class="perso" style="padding-right: 15px;">25 de verano.</td></tr></table>
+                <table class="data" style="margin-bottom: 1.5em;"><tr id="encabesado"><th style="padding: 0 15px;">Cumpleaños</th><td class="perso" style="padding-right: 15px;">25 de verano.</td></tr></table>
 
-                <table class="data tabla_horario">
-                    <tr><th colspan="2">Horario</th></tr>
-                    <tr><th>Días</th><th style="width: 54em;">Hora y lugar</th></tr>
-                    <tr>
+                <table class="data tab_hor_alde">
+                    <tr id="encabesado"><th colspan="2">Horario</th></tr>
+                    <tr id="encabesado"><th>Días</th><th style="width: 54em;">Hora y lugar</th></tr>
+                    <tr id="encabesado">
                         <td style="width: 10em;">De lunes a viernes</td>
                         <td style="text-align:center;"><div class="cont_horario"><div><p><b style="color: black;">06:00 - 24:00</b><b>Casa de Thomas</b></p></div></div></td>
                     </tr>
@@ -111,11 +111,11 @@
 
                 <p>La mejor forma de mejorar la amistad con este aldeano es siempre regalar las cosas que le gusta una vez por día.</p>
 
-                <i>Nota: Seleccione una emoción de las lista.</i>
+                <p><i>Nota: Seleccione una emoción de las lista.</i></p>
 
                 <table class="data Table_regalo">
                     <tr class="rec"><th>
-                        <div style="display:flex; justify-content:space-around; align-items:center; margin-top: 19px;">
+                        <div style="display:flex; justify-content:space-around; align-items:center; margin-top: 19px;" class="emociones">
                             <div style="display:flex; flex-direction: column; align-items:center; cursor: pointer;" onclick="cambiar_regalo(1,4)"><p class="encanta" style="text-align:center; margin: 0;"></p><p style="text-align: center; margin: 2px 0 0;">Encanta</p></div>
                             <div style="display:flex; flex-direction: column; align-items:center; cursor: pointer;" onclick="cambiar_regalo(2,4)"><p class="gusta" style="text-align:center; margin: 0;"></p><p style="text-align: center; margin: 2px 0 0;">Gusta</p></div>
                             <div style="display:flex; flex-direction: column; align-items:center; cursor: pointer;" onclick="cambiar_regalo(3,4)"><p class="desagrado" style="text-align:center; margin: 0;"></p><p style="text-align: center; margin: 2px 0 0;">Desagrada</p></div>
@@ -124,7 +124,7 @@
                     </th></tr>
 
                     <tbody id="lista_regalo1" style="display: none;"> <!-- Encanta -->
-                        <tr><th style="height: 2em;">Regealos que le Encantan</th></tr>
+                        <tr id="encabesado"><th style="height: 2em;">Regealos que le Encantan</th></tr>
                         <td style="text-align:center;">
                             <div id="regalos1" class="cont_obj_regalo">
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Pastel de manzana.png"/><p><b>Pastel de</b><b>manzana</b></p></div>
@@ -177,7 +177,7 @@
                     </tbody>
 
                     <tbody id="lista_regalo2" style="display: none;"> <!-- Gustan -->
-                        <tr><th style="height: 2em;">Regealos que le Gustan</th></tr>
+                        <tr id="encabesado"><th style="height: 2em;">Regealos que le Gustan</th></tr>
                         <td style="text-align:center;">
                             <div id="regalos2" class="cont_obj_regalo">
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Tofu de almendra.png"/><p><b>Tofu de</b><b>almendra</b></p></div>
@@ -266,7 +266,7 @@
                     </tbody>
 
                     <tbody id="lista_regalo3" style="display: none;"> <!-- Desagradan -->
-                        <tr><th style="height: 2em;">Regealos que le Desagradan</th></tr>
+                        <tr id="encabesado"><th style="height: 2em;">Regealos que le Desagradan</th></tr>
                         <td style="text-align:center;">
                             <div id="regalos3" class="cont_obj_regalo">
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Silvestres/Hierba azul marino.png"/><p><b>Hierba</b><b>azul marino</b></p></div>
@@ -349,7 +349,7 @@
                     </tbody>
 
                     <tbody id="lista_regalo4" style="display: none;"> <!-- Odia -->
-                        <tr><th style="height: 2em;">Regealos que Odia</th></tr>
+                        <tr id="encabesado"><th style="height: 2em;">Regealos que Odia</th></tr>
                         <td style="text-align:center;">
                             <div id="regalos4" class="cont_obj_regalo">
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Peces/Basura/Lata vacía.png"/><p><b>Lata vacía</b></p></div>
