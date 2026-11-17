@@ -2,7 +2,7 @@
 /*  Funciones para desplasar el contenido de la caja por botones  */
 /* ************************************************************** */
 
-function Scroll_button_evento_villager (tip_bot,tip_cuad){ desplasar(tip_bot,tip_cuad,165,358); }
+function Scroll_button_evento_villager (tip_bot,tip_cuad){ desplasar(tip_bot,tip_cuad,144.5,358); }
 
 function Scroll_button_villager (tip_bot,tip_cuad){ desplasar(tip_bot,tip_cuad,410,500); }
 
