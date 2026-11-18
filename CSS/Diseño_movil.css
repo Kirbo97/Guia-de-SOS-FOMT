@@ -1,0 +1,47 @@
+/* ********************************* */
+/*  Diseños para Moviles (426 x 790) */
+/* ********************************* */
+
+/*Con la linea para que se adapte a la pantalla en la que se encuentra, el tamaño para el Movil es (max-width:426px), sin es linea el tamaño para Movil es (max-width:980px)*/
+
+/* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
+@media screen and (max-width: 600px) {
+    form { width: 85% !important; } /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
+    
+    .movil{
+        align-items: center !important; /* le indico que los elemento del bloque flexible se organinse en columna*/
+        margin:7vh 0 !important;
+    }
+
+    #cuadro_dos{ margin-top: 5em !important; } /* le doy un margen superior*/
+   
+    section .enlace { width: 30px !important; } /* ajusto el tamaño que tendra esta clase */
+
+    #busqueda {  width: 280px !important; }
+
+    #mensaje, h1 { font-size: 22px !important; }
+
+    section .copyright { font-size:  4.7vw !important;  } /* defino el tamaño del texto*/
+  
+    #cop{ margin-top: 15px !important; } /* le doy un margen superior*/
+
+    #cop, #desen, #enc { font-size: 18px; }
+   
+}
+
+/* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
+@media screen and (max-height:600px) and (orientation:landscape){    
+    #cuadro_dos{ margin-top: 5em !important;  } /* le doy un margen superior*/
+  
+    .movil{
+        align-items: center !important; /* le indico que los elemento del bloque flexible se organinse en columna*/
+        row-gap: 12vh !important;
+        margin:7vh 0 !important;
+    } 
+
+    .inicio textarea, .codificar textarea { width: 96.6% !important; } /* defino el ancho del cuadro de texto */
+   
+    #cop{  margin-top: 15px !important; } /* le doy un margen superior*/
+   
+    section .copyright { font-size: 21.5px !important; } /* defino el tamaño del texto*/
+}
