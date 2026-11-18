@@ -86,9 +86,7 @@
         line-height: 1.5em !important;
     }
 
-    p span.dinero b, .data span.dinero b, .data .td_dinero b, ul span.dinero b  { font-size: 10px !important; }
-
-    ul, ol, ul a { font-size: 8px !important; }
+    ul, ol, ul a ,p span.dinero b, .data span.dinero b, .data .td_dinero b, ul span.dinero b { font-size: 8px !important; }
 
     .lista_num { padding-left: 10px; }
 
@@ -120,8 +118,6 @@
         width: 29px !important; 
         height: 29px !important;
     }
-
-    #td_cont, #parte { font-size: 0.55em !important; }  /* ******************************  */
 
     #estacion p { font-size: 0.7em !important; } /* Es el encabesado de estacione  */
 
@@ -191,30 +187,25 @@
         line-height: 1em !important;
     }
 
-    h1 { 
-        font-size: 12px !important; 
-        margin-bottom: 0 !important; 
-    }
-
-    h1::before{ margin-right: 5px !important; }
+    h1 { font-size: 18px !important; }
 
     h2, .summary_general, .summary_h2 {
         margin-top: 13px !important;
-        font-size:  14px !important;
+        font-size:  15px !important;
     }
 
     .summary_general_fin, .summary_h2_fin { margin-bottom: 15px !important; }
 
     h3 { margin: 8px 0 0 0 !important; }
 
-    h3, summary { font-size:  14px !important; }
+    h3, summary { font-size:  15px !important; }
 
     header .icono {
-        width: 16px !important; /* ajusto el ancho que tendra esta clase */
-        height: 16px !important; /* ajusto el alto que tendra esta clase */
+        width: 19px !important; /* ajusto el ancho que tendra esta clase */
+        height: 19px !important; /* ajusto el alto que tendra esta clase */
     }
 
-    header{ height: 17px !important; }
+    header{ height: 21px !important; }
 
     header div{ 
         column-gap: 1.2em !important; 
@@ -227,9 +218,7 @@
         line-height: 1.5em !important;
     }
 
-    p span.dinero b, .data span.dinero b, .data .td_dinero b, ul span.dinero b  { font-size: 10px !important; }
-
-    ul, ol, ul a { font-size: 8px !important; }
+    ul, ol, ul a ,p span.dinero b, .data span.dinero b, .data .td_dinero b, ul span.dinero b  { font-size: 10px !important; }
 
     .lista_num { padding-left: 10px; }
 
@@ -242,12 +231,12 @@
     .data #encabesado th{ font-size: 9.6px !important; }
 
     .data td, .data td p b, .data td p, .data a{ 
-        font-size: 8px !important; 
+        font-size: 10px !important; 
         text-align: justify !important; 
     }
 
     .data .td_dinero { 
-        font-size: 8px !important; 
+        font-size: 10px !important; 
         text-align: center !important; 
     }
 
@@ -258,11 +247,9 @@
     .data td li.gustos::before { padding-right: 2px !important; }
     
     .data td img,.data th img {
-        width: 29px !important; 
-        height: 29px !important;
+        width: 60px !important; 
+        height: 60px !important;
     }
-
-    #td_cont, #parte { font-size: 0.55em !important; }  /* ******************************  */
 
     #estacion p { font-size: 0.7em !important; } /* Es el encabesado de estacione  */
 
