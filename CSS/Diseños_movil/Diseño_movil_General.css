@@ -42,6 +42,9 @@
     /* ******************************* */
     /*  Diseños del contenido general  */
     /* ******************************* */
+    :root {
+        --tamano-texto: 8px;
+    }
 
     #content {
         margin: 20px !important;
@@ -51,7 +54,7 @@
     }
 
     h1 { 
-        font-size: 12px !important; 
+        font-size: calc(var(--tamano-texto) + 4px) !important;
         margin-bottom: 0 !important; 
     }
 
@@ -59,14 +62,14 @@
 
     h2, .summary_general, .summary_h2 {
         margin-top: 13px !important;
-        font-size:  11px !important;
+        font-size:  calc(var(--tamano-texto) + 3px) !important;
     }
 
     .summary_general_fin, .summary_h2_fin { margin-bottom: 15px !important; }
 
     h3 { margin: 8px 0 0 0 !important; }
 
-    h3, summary { font-size:  11px !important; }
+    h3, summary { font-size: calc(var(--tamano-texto) + 3px) !important; }
 
     header .icono {
         width: 16px !important; /* ajusto el ancho que tendra esta clase */
@@ -86,7 +89,9 @@
         line-height: 1.5em !important;
     }
 
-    ul, ol, ul a ,p span.dinero b, .data span.dinero b, .data .td_dinero b, ul span.dinero b { font-size: 8px !important; }
+    ul, ol, ul a { font-size: var(--tamano-texto) !important; }
+
+    p span.dinero b, .data span.dinero b, .data .td_dinero b, ul span.dinero b { font-size: calc(var(--tamano-texto) + 2px) !important; }
 
     .lista_num { padding-left: 10px; }
 
@@ -179,6 +184,9 @@
     /* ******************************* */
     /*  Diseños del contenido general  */
     /* ******************************* */
+    :root {
+        --tamano-texto: 10px;
+    }
 
     #content {
         margin: 20px !important;
@@ -187,18 +195,18 @@
         line-height: 1em !important;
     }
 
-    h1 { font-size: 18px !important; }
+    h1 { font-size: calc(var(--tamano-texto) + 8px) !important; }
 
     h2, .summary_general, .summary_h2 {
         margin-top: 13px !important;
-        font-size:  15px !important;
+        font-size: calc(var(--tamano-texto) + 5px) !important;
     }
 
     .summary_general_fin, .summary_h2_fin { margin-bottom: 15px !important; }
 
     h3 { margin: 8px 0 0 0 !important; }
 
-    h3, summary { font-size:  15px !important; }
+    h3, summary { font-size: calc(var(--tamano-texto) + 5px) !important; }
 
     header .icono {
         width: 19px !important; /* ajusto el ancho que tendra esta clase */
@@ -214,11 +222,13 @@
     }
 
     main p, main p a { 
-        font-size: 10px !important; 
+        font-size: var(--tamano-texto) !important; 
         line-height: 1.5em !important;
     }
 
-    ul, ol, ul a ,p span.dinero b, .data span.dinero b, .data .td_dinero b, ul span.dinero b  { font-size: 10px !important; }
+    ul, ol, ul a { font-size: calc(var(--tamano-texto) + 2px) !important; }
+
+    p span.dinero b, .data span.dinero b, .data .td_dinero b, ul span.dinero b  { font-size: 12px !important; }
 
     .lista_num { padding-left: 10px; }
 
@@ -259,4 +269,16 @@
 
     .right { margin-left: 10px !important ;} 
     .left { margin-right: 10px !important ;}
+
+    /* ************************* */
+    /*  Diseños del css Modales  */
+    /* ************************* */
+
+    .btn{ font-size: 10px !important; }
+
+    .modal_calendario div { padding: 0 36px 20px 28px !important; }
+
+    .modal_calendario h3 { margin: 13px 0 !important; }
+
+    .modal_calendario p b { font-size: 8px !important; }
 }

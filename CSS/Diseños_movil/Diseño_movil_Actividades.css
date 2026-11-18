@@ -17,9 +17,7 @@
         justify-content: space-between !important;
     }
 
-    .box_menu img{ max-width:80% !important; }
-    
-    .box_menu { max-width:70px !important; }
+    .box_menu { max-width:50px !important; }
     
     div .box_menu { margin:0 !important; }
     
@@ -379,10 +377,25 @@
         height: 1px !important;
         font-size: 0.8em !important;
     }
-    
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
 @media screen and (max-height:600px) and (orientation:landscape) {
+
+    /* ******************************* */
+    /*  Diseños Principal Actividades  */
+    /* ******************************* */
+
+    .cont_box_menu { 
+        align-items: center !important;
+        column-gap: 0 !important;
+        justify-content: space-between !important;
+        padding: 0 5px !important;
+    }
+
+    .box_menu { max-width:100px !important; }
     
+    div .box_menu { margin:0 !important; }
+    
+    .box_menu a.hiper { font-size: 12px !important; }
 }
