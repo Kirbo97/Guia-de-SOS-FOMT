@@ -11,7 +11,10 @@
     /*  Diseños Principal Index  */
     /* ************************* */
 
-    #logo_index{ width:240px !important; }
+    #logo_index{ 
+        width:240px !important; 
+        margin-top: 0 !important; 
+    }
 
     /* ********************** */
     /*  Diseños Herramientas  */
@@ -152,6 +155,9 @@
     /*  Diseños Principal Index  */
     /* ************************* */
 
-    #logo_index{ width:380px !important; }
+    #logo_index{
+        width:380px !important;
+        margin-top: 0 !important; 
+    }
     
 }

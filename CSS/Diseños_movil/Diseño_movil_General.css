@@ -11,7 +11,7 @@
     /*  Diseños del nav  */
     /* ***************** */
 
-    nav { padding: 8px 5px !important; }
+    nav { padding: 0 5px !important; }
 
     nav div { margin: 6px 11.5px !important; }
 
@@ -32,7 +32,7 @@
         font-size: 14px !important; /* defino el tamaño del texto*/
     }
 
-    section.cont_links { margin-top: 9px !important; }
+    section.cont_links { margin-top: 8px !important; }
 
     section .enlace {
         width: 25px !important; 
@@ -152,7 +152,7 @@
     /*  Diseños del nav  */
     /* ***************** */
 
-    nav { padding: 8px 5px !important; }
+    nav { padding: 5px 5px 0 !important; }
 
     nav div { margin: 6px 11.5px !important; }
 
