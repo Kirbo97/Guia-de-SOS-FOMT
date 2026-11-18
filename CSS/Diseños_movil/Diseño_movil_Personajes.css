@@ -89,22 +89,22 @@
     .Table_regalo .emociones { margin-top: 10px !important; }
 
     .Table_regalo .cont_obj_regalo { 
-        column-gap: 0 !important;
+        column-gap: 15px !important;
         row-gap: 8px !important;
     }
 
     .scroll-container_reg { height: 200px !important; }
 
-    .img_duen_right { 
-        width: 50% !important; 
-        margin-top: 8px !important;
-        margin-left: 10px !important;
+    .tab_lou tr td:first-child, .tab_lou tr td:nth-child(2) img, .tab_lou tr td:nth-child(4) img { text-align: center !important; } /* Toda la primera columna de la tabla */ 
+
+    .tab_lou tr td:nth-child(2) p, .tab_lou tr td:nth-child(4) p { 
+        margin-top: 4px !important; 
+        text-align: center !important;
     }
 
-    .img_duen_left { 
+    .img_duen_right,.img_duen_left { 
         width: 50% !important; 
         margin-top: 8px !important;
-        margin-right: 10px !important;
     }
 
     .tab_duen01 .cump_duen01 { display: none !important; }
@@ -131,6 +131,18 @@
     }
 
     .tab_duen03 td { text-align: center !important; }
+
+    .even_cora tr th:first-child  { width: 50px !important; } /* Toda la primera columna de la tabla */ 
+
+    .even_cora tr:nth-child(1) th:nth-child(4) { width: 50px !important; } /* El ultimo TH del primer TR de la tabla */
+
+    .even_cora tr td:nth-child(1) p { text-align: center !important; } /* Todos los P que estan en el primer TD de cada TH de la tabla */
+
+    .even_cora tr:nth-child(2) td:nth-child(3) { text-align: left !important; }
+
+    .even_cora tr:nth-child(2) td:nth-child(4) div p { margin-top: 4px !important; }
+
+    .even_cora_fin { margin-bottom: 15px !important; }
 
     /* **************************** */
     /*  Diseños de Eventos RIvales  */

@@ -4,7 +4,7 @@
         <meta charset="UTF-8">   <!-- Para usar la escritura latina -->
         <title>Guia de tu Hij@ de SOS-FOMT</title>
         <meta name="origen" content="La informacion y parte de los diseños de la pagina pertenesen a Ushi No Tane, pero la representacion de la informacion traducida, funciones y diseños modificados y añadidos son de mi propio criterio"/>
-        <meta name="viewport" content="width=device-width, initial-scale=0.438">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/Guia-de-SOS-FOMT/CSS/Style.css" type="text/css"/> <!-- Este CSS contiene los diseños de toda las paginas -->
         <link rel="shortcut icon" href="/Guia-de-SOS-FOMT/IMG/Iconos/Kirbo.ico"/> <!-- Esta seccion es para colocar un icono que representa a toda la pagina en general -->
         <script type="text/javascript" src="/Guia-de-SOS-FOMT/JS/include.js" defer></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene la funcion de insertar el nav y footer a la pagina-->
@@ -32,10 +32,10 @@
     
                 <p>Siempre vas a tener un niño pero uno de los eventos de los duendes es que ellos apareceran y podras decidir si quieres tener una niña o un niño.</p>
 
-                <table class="data">
-                    <tr><th style="padding: 0 15px;">Cumpleaños</th><td class="perso" style="padding-right: 15px;">Día de su nacimiento.</td></tr>
+                <table class="data tab_hor_alde">
+                    <tr id="encabesado"><th style="padding: 0 15px;">Cumpleaños</th><td class="perso" style="padding-right: 15px;">Día de su nacimiento.</td></tr>
 
-                    <tr><th>Horario</th>
+                    <tr id="encabesado"><th>Horario</th>
                         <td>
                             <ul class="horario">
                                 <li class="gustos">Estara todo el día en la casa de tu granja ya sea soleado, lluvia o nevando.</li>
@@ -51,7 +51,7 @@
                 <details>
                     <summary class="summary_general">Embarazo de la perja del genero opuesto</summary>
 
-                    <img src="/Guia-de-SOS-FOMT/IMG/pareja op.jpg" class="left screenshot" width="376" height="376"/>
+                    <img src="/Guia-de-SOS-FOMT/IMG/pareja op.jpg" class="left screenshot img_left" width="376" height="376"/>
 
                     <p>La mañana del trigésimo día después de la boda, y no es día festivo, la mujer de la pareja comenzará a sentirse mal. Ambos irán a la clínica, donde el médico diagnosticará y anunciará el embarazo. El diagnóstico se realizará incluso después de que estén casados.</p>
 
@@ -65,7 +65,7 @@
                 <details>
                     <summary class="summary_general">Embarazo de la perja del mismo genero</summary>
 
-                    <img src="/Guia-de-SOS-FOMT/IMG/pareja mis.jpg" class="right screenshot" width="380" height="380"/>
+                    <img src="/Guia-de-SOS-FOMT/IMG/pareja mis.jpg" class="right screenshot img_right" width="380" height="380"/>
 
                     <p>No hay evento de embarazo para parejas del mismo sexo, aunque pueden tener un hijo. En la mañana del día 90 desde la ceremonia de boda, cuando tu cónyuge tenga 65 000 LP (es decir, el afecto máximo), la Diosa de la Cosecha visitará tu granja. Te preguntará si puedes hacer algo por ella, ya que desea que críes un hijo. Entonces, podrás elegir si deseas criar un niño, una niña o dejar que el juego elija el género al azar.</p>
 
@@ -78,7 +78,7 @@
 
                 <h2>Cuidado de los niños</h2>
 
-                <img src="/Guia-de-SOS-FOMT/IMG/cuidados.jpg" class="left screenshot" width="240" height="240" style="margin-top: 20px;"/>
+                <img src="/Guia-de-SOS-FOMT/IMG/cuidados.jpg" class="left screenshot img_left" width="240" height="240" style="margin-top: 20px;"/>
 
                 <p>Si tu cónyuge es mujer, por la mañana llevará al bebé en brazos. Al salir de la casa, lo volverá a acostar en la cama, pero si tu cónyuge es hombre, el bebé se quedará en la cama todo el día.</p>
 
@@ -92,7 +92,7 @@
 
                 <p>El bebé estará gateando a la mañana siguiente. Ya no lo cargarás ni lo dejarás en la cama todo el día. Ahora puedes hablar con él y darle regalos mientras gatea por el suelo de la casa. Tanto a la niña como al niño les gustan los mismos regalos. Solo ganarás Puntos de Amistad (PA) con tu hijo. El bebé no tiene Puntos de Amor (PA).</p>
 
-                <h3>Preferencias de regalos para bebés en etapa de gateo</h3>
+                <h3>Regalos para el bebé cuando gatea</h3>
 
                 <p>La mejor forma de mejorar la amistad con este aldeano es siempre regalar las cosas que le gusta una vez por día.</p>
 
@@ -109,7 +109,7 @@
                     </th></tr>
 
                     <tbody id="lista_regalo1" style="display: none;"> <!-- Encanta -->
-                        <tr><th style="height: 2em; width: 64em;">Regealos que le Encantan</th></tr>
+                        <tr id="encabesado"><th style="height: 2em; width: 64em;">Regealos que le Encantan</th></tr>
                         <td style="text-align:center;">
                             <div id="regalos1" class="cont_obj_regalo">
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Helado.png"/><p><b>Helado</b></p></div>
@@ -514,7 +514,7 @@
 
                 <h2>Creciendo</h2>
 
-                <img src="/Guia-de-SOS-FOMT/IMG/crecimiento.jpg" class="right screenshot" width="380" height="380" style="margin-top: 20px;"/>
+                <img src="/Guia-de-SOS-FOMT/IMG/crecimiento.jpg" class="right screenshot img_right" width="380" height="380" style="margin-top: 20px;"/>
     
                 <p>Tras otros 60 días (un total de 120 días desde el nacimiento), por la mañana tu cónyuge te mostrará que el niño ha aprendido a caminar. Ganarás otros 3000 puntos de amistad con tu cónyuge y 20 puntos de amistad con tu hijo.</p>
     
@@ -539,7 +539,7 @@
                     </th></tr>
 
                     <tbody id="lista_regalo5" style="display: none;"> <!-- Encanta -->
-                        <tr><th style="height: 2em; width: 64em;">Regealos que le Encantan</th></tr>
+                        <tr id="encabesado"><th style="height: 2em; width: 64em;">Regealos que le Encantan</th></tr>
                         <td style="text-align:center;">
                             <div id="regalos1" class="cont_obj_regalo">
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Helado.png"/><p><b>Helado</b></p></div>

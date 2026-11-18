@@ -37,14 +37,9 @@
     /*  Diseños de Lugares Tienda  */
     /* *************************** */
 
-    .img_right{  
+    .img_right, .img_left{  
         width: 50% !important; 
-        margin-left: 10px !important;
-    }
-
-    .img_left{  
-        width: 50% !important; 
-        margin-right: 10px !important;
+        margin-top: 8px !important;
     }
 
     .horario_lugar td, .tab_tien td, .tab_tien a.hiper { font-size: 8.8px !important; }
@@ -174,9 +169,7 @@
         margin: 0 !important;
     } /* espesifico que fila y columna tendra un diseño a la tabla */
 
-    .tab_taller01 tr td:nth-child(2) li, .tab_taller02 tr td:nth-child(3) li { 
-        margin-left: 0 !important;
-    } /* espesifico que fila y columna tendra un diseño a la tabla */
+    .tab_taller01 tr td:nth-child(2) li, .tab_taller02 tr td:nth-child(3) li { margin-left: 0 !important; } /* espesifico que fila y columna tendra un diseño a la tabla */
 
 
     .tab_taller01 tr:nth-child(1) th:nth-child(3), .tab_taller02 tr:nth-child(1) th:nth-child(4) { width: 50px !important; } /* espesifico que columnas de la primera fila tendra un diseño a la tabla */

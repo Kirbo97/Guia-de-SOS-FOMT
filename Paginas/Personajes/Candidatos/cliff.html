@@ -4,7 +4,7 @@
         <meta charset="UTF-8">   <!-- Para usar la escritura latina -->
         <title>Guia de Cliff de SOS-FOMT</title>
         <meta name="origen" content="La informacion y parte de los diseños de la pagina pertenesen a Ushi No Tane, pero la representacion de la informacion traducida, funciones y diseños modificados y añadidos son de mi propio criterio"/>
-        <meta name="viewport" content="width=device-width, initial-scale=0.438">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/Guia-de-SOS-FOMT/CSS/Style.css" type="text/css"/> <!-- Este CSS contiene los diseños de toda las paginas -->
         <link rel="shortcut icon" href="/Guia-de-SOS-FOMT/IMG/Iconos/Kirbo.ico"/> <!-- Esta seccion es para colocar un icono que representa a toda la pagina en general -->
         <script type="text/javascript" src="/Guia-de-SOS-FOMT/JS/include.js" defer></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene la funcion de insertar el nav y footer a la pagina-->
@@ -27,7 +27,7 @@
 
             <main>
 
-                <img src="/Guia-de-SOS-FOMT/IMG/Personajes/Candidatos/Perfil/marriage_cliff.jpg" class="right screenshot" width="238" height="238" style="margin: 0 0 0 20px;"/>
+                <img src="/Guia-de-SOS-FOMT/IMG/Personajes/Candidatos/Perfil/marriage_cliff.jpg" class="right screenshot img_perfil" width="238" height="238" style="margin: 0 0 0 20px;"/>
     
                 <p>Cliff, un vagabundo nato, se movía de un lugar a otro en busca de un lugar al que pertenecer. Cuando te mudas por primera vez a Mineral Town, Cliff vive en la posada por la noche y se esconde en la iglesia durante el día, evitando la interacción social con los residentes de la ciudad. Carter está preocupado por el tímido ermitaño y espera que tal vez puedas hacerte amigo de Cliff. Al principio no hablará mucho, pero a medida que aumente su amistad con Cliff, se volverá más hablador.</p>
     
@@ -38,16 +38,16 @@
                 <p>Si te casas con Cliff, sus visitas a la posada se trasladarán a tu casa de campo.</p>
 
                 <table class="data">
-                    <tr><th style="padding: 0 15px;">Cumpleaños</th><td class="perso" style="padding-right: 15px;">6 de verano.</td>
+                    <tr id="encabesado"><th style="padding: 0 15px;">Cumpleaños</th><td class="perso" style="padding-right: 15px;">6 de verano.</td>
                     </tr>
 
-                    <tr><th>Rival</th> <td class="perso">Ran</td>
+                    <tr id="encabesado"><th>Rival</th> <td class="perso">Ran</td>
                 </table>
 
                 <details> <!-- Horario de soltero -->
-                    <summary class=" summary_general">Horario de soltero</summary>
-                    <table class="data tabla_horario" style="margin-top: 16px;">
-                        <tr><th>Días</th><th style="width: 54em;">Hora y lugar</th></tr>
+                    <summary class="summary_general">Horario de soltero</summary>
+                    <table class="data tab_hor_alde" style="margin-top: 16px;">
+                        <tr id="encabesado"><th>Días</th><th style="width: 54em;">Hora y lugar</th></tr>
                         <tr>
                             <td>De lunes a domingo</td>
                             <td style="text-align:center;">
@@ -87,9 +87,9 @@
                 </details>
 
                 <details> <!-- Horario de casado -->
-                    <summary class=" summary_general">Horario de casado</summary>
-                    <table class="data tabla_horario" style="margin-top: 16px;">
-                        <tr><th>Días</th><th style="width: 54em;">Hora y lugar</th></tr>
+                    <summary class="summary_general">Horario de casado</summary>
+                    <table class="data tab_hor_alde" style="margin-top: 16px;">
+                        <tr id="encabesado"><th>Días</th><th style="width: 54em;">Hora y lugar</th></tr>
                         <tr>
                             <td>De lunes a viernes y domingo</td>
                             <td style="text-align:center;">
@@ -150,11 +150,11 @@
 
                 <p>La mejor forma de mejorar la amistad y el afecto es siempre regalar las cosas que le gusta una vez por día.</p>
 
-                <i>Nota: Seleccione una emoción de las lista.</i>
+                <p><i>Nota: Seleccione una emoción de las lista.</i></p>
 
                 <table class="data Table_regalo">
                     <tr class="rec"><th>
-                        <div style="display:flex; justify-content:space-around; align-items:center; margin-top: 19px;">
+                        <div style="display:flex; justify-content:space-around; align-items:center; margin-top: 19px;" class="emociones">
                             <div style="display:flex; flex-direction: column; align-items:center; cursor: pointer;" onclick="cambiar_regalo(1,5)"><p class="favorito" style="text-align:center; margin: 0;"></p><p style="text-align: center; margin: 2px 0 0;">Favorito</p></div>
                             <div style="display:flex; flex-direction: column; align-items:center; cursor: pointer;" onclick="cambiar_regalo(2,5)"><p class="encanta" style="text-align:center; margin: 0;"></p><p style="text-align: center; margin: 2px 0 0;">Encanta</p></div>
                             <div style="display:flex; flex-direction: column; align-items:center; cursor: pointer;" onclick="cambiar_regalo(3,5)"><p class="gusta" style="text-align:center; margin: 0;"></p><p style="text-align: center; margin: 2px 0 0;">Gusta</p></div>
@@ -164,7 +164,7 @@
                     </th></tr>
 
                     <tbody id="lista_regalo1" style="display: none;"> <!-- Favorito -->
-                        <tr><th style="height: 2em; width: 64em;">Regealos son su favorito</th></tr>
+                        <tr id="encabesado"><th style="height: 2em; width: 64em;">Regealos son su favorito</th></tr>
                         <td style="text-align:center;">
                             <div id="regalos1" class="cont_obj_regalo">
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Arroz con curry.png"/><p><b>Arroz con</b><b>curry</b></p></div>
@@ -173,7 +173,7 @@
                     </tbody>
 
                     <tbody id="lista_regalo2" style="display: none;"> <!-- Encanta -->
-                        <tr><th style="height: 2em; width: 64em;">Regealos que le Encantan</th></tr>
+                        <tr id="encabesado"><th style="height: 2em; width: 64em;">Regealos que le Encantan</th></tr>
                         <td style="text-align:center;">
                             <div id="regalos2" class="cont_obj_regalo">
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Regalos/Arroz con bambú.png"/><p><b>Arroz con</b><b>bambú</b></p></div>
@@ -234,7 +234,7 @@
                     </tbody>
 
                     <tbody id="lista_regalo3" style="display: none;"> <!-- Gustan -->
-                        <tr><th style="height: 2em; width: 64em;">Regealos que le Gustan</th></tr>
+                        <tr id="encabesado"><th style="height: 2em; width: 64em;">Regealos que le Gustan</th></tr>
                         <td style="text-align:center;">
                             <div id="regalos3" class="cont_obj_regalo">
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Platos/Plat ingre/Manzana esp.png"/><p><b>Manzana</b><b>SMDF</b></p></div>
@@ -357,7 +357,7 @@
                     </tbody>
 
                     <tbody id="lista_regalo4" style="display: none;"> <!-- Desagradan -->
-                        <tr><th style="height: 2em; width: 64em;">Regealos que le Desagradan</th></tr>
+                        <tr id="encabesado"><th style="height: 2em; width: 64em;">Regealos que le Desagradan</th></tr>
                         <td style="text-align:center;">
                             <div id="regalos4" class="cont_obj_regalo">
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Mina/Adamantita.png"/><p><b>Adamantita</b></p></div>
@@ -468,7 +468,7 @@
                     </tbody>
 
                     <tbody id="lista_regalo5" style="display: none;"> <!-- odia -->
-                        <tr><th style="height: 2em; width: 64em;">Regealos que Odia</th></tr>
+                        <tr id="encabesado"><th style="height: 2em; width: 64em;">Regealos que Odia</th></tr>
                         <td style="text-align:center;">
                             <div id="regalos5" class="cont_obj_regalo">
                                 <div><img src="/Guia-de-SOS-FOMT/IMG/Peces/Otros/Fósil antiguo.png"/><p><b>Fósil</b><b>antiguo</b></p></div>
@@ -510,10 +510,10 @@
                 <p>Cuando el candidato tenga corazón naranja puedes proponerle matrimonio con la pluma azul y despues de la boda tendra un corazón rojo.</p>
 
                 <details> <!-- Introduccion -->
-                    <summary class=" summary_general">Evento de introducción</summary>
+                    <summary class="summary_general">Evento de introducción</summary>
 
-                    <table class="data"> <!-- Introduccion -->
-                        <tr><th style="width: 80px;">Corazón</th><th>Requisitos</th><th>Mejor espuesta</th></tr>
+                    <table class="data even_cora"> <!-- Introduccion -->
+                        <tr id="encabesado"><th style="width: 80px;">Corazón</th><th>Requisitos</th><th>Mejor respuesta</th></tr>
     
                         <tr>
                             <td><p class="cbla" style="text-align:center; margin: 0;"></p></td>
@@ -533,10 +533,10 @@
                 </details>
 
                 <details> <!-- Negro -->
-                    <summary class=" summary_general">Evento del corazón Negro</summary>
+                    <summary class="summary_general">Evento del corazón Negro</summary>
 
-                    <table class="data"> <!-- Negro -->
-                        <tr><th style="width: 80px;">Corazón</th><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                    <table class="data even_cora"><!-- Negro -->
+                        <tr id="encabesado"><th style="width: 80px;">Corazón</th><th>Requisitos</th><th>Mejor respuesta</th></tr>
     
                         <tr>
                             <td><p class="cne" style="text-align:center; margin: 0;"></p></td>
@@ -561,10 +561,10 @@
                 </details>
 
                 <details> <!-- Morado -->
-                   <summary class=" summary_general">Evento del Corazón Púrpura</summary>
+                   <summary class="summary_general">Evento del Corazón Púrpura</summary>
 
-                    <table class="data"> 
-                        <tr><th style="width: 80px;">Corazón</th><th>Requisitos</th><th>Mejor respuesta</th><th style="width: 9em;">Obsequio del evento</th></tr>
+                    <table class="data even_cora">
+                        <tr id="encabesado"><th style="width: 80px;">Corazón</th><th>Requisitos</th><th>Mejor respuesta</th><th style="width: 9em;">Obsequio del evento</th></tr>
     
                         <tr>
                             <td><p class="cmo" style="text-align:center; margin: 0;"></p></td>
@@ -580,16 +580,16 @@
                                 </ul>
                             </td>
                             <td style=" padding: 0 10px"><b>Opción 1:</b> "¡Oye, la vida de un granjero para mí!" o "Creo que es mi vocación"</td>
-                            <td style="text-align:center;"><img src="/Guia-de-SOS-FOMT/IMG/Personajes/Candidatos/Regalos/Adorno floral de clif.png" width="90px" height="90px"/><p style="text-align:center; margin: 0 10px 8px; line-height:1.1;"><b style="font-size: 13.5px;">Adorno floral</b></p></td>
+                            <td style="text-align:center;"><div style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Personajes/Candidatos/Regalos/Adorno floral de clif.png" width="90px" height="90px"/><p style="text-align:center; margin: 0 10px 8px; line-height:1.1;"><b style="font-size: 13.5px;">Adorno floral</b></p></div></td>
                         </tr>
                     </table>
                 </details>
 
                 <details> <!-- Azul -->
-                    <summary class=" summary_general">Evento del Corazón Azul</summary>
+                    <summary class="summary_general summary_general_fin">Evento del Corazón Naranja</summary>
 
-                    <table class="data"> <!-- Azul -->
-                        <tr><th style="width: 80px;">Corazón</th><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                    <table class="data even_cora"> <!-- Azul -->
+                        <tr id="encabesado"><th style="width: 80px;">Corazón</th><th>Requisitos</th><th>Mejor respuesta</th></tr>
     
                         <tr>
                             <td><p class="caz" style="text-align:center; margin: 0;"></p></td>
@@ -612,10 +612,10 @@
                 </details>
 
                 <details> <!-- Amarillo -->
-                    <summary class=" summary_general">Evento del Corazón Amarillo</summary>
+                    <summary class="summary_general">Evento del Corazón Amarillo</summary>
 
-                    <table class="data"> <!-- Amarillo -->
-                        <tr><th style="width: 80px;">Corazón</th><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                    <table class="data even_cora"> <!-- Amarillo -->
+                        <tr id="encabesado"><th style="width: 80px;">Corazón</th><th>Requisitos</th><th>Mejor respuesta</th></tr>
     
                         <tr>
                             <td><p class="cam" style="text-align:center; margin: 0;"></p></td>
@@ -640,8 +640,8 @@
                 <details> <!-- Naranja -->
                     <summary class="summary_general summary_general_fin">Evento del Corazón Naranja</summary>
 
-                    <table class="data" style="margin-bottom: 35px;">
-                        <tr><th style="width: 80px;">Corazón</th><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                    <table class="data even_cora even_cora_fin" style="margin-bottom: 35px;">
+                        <tr id="encabesado"><th style="width: 80px;">Corazón</th><th>Requisitos</th><th>Mejor respuesta</th></tr>
     
                         <tr>
                             <td><p class="cna" style="text-align:center; margin: 0;"></p></td>
