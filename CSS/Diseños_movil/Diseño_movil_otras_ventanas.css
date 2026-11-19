@@ -7,18 +7,20 @@
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
 @media screen and (max-width: 600px) and (orientation: portrait) {
 
-    /* ************************* */
-    /*  Diseños Principal Index  */
-    /* ************************* */
+    /* ********************* */
+    /* #region Diseño Index  */
+    /* ********************* */
 
     #logo_index{ 
         width:240px !important; 
         margin-top: 0 !important; 
     }
+    /* #endregion */
+    /* ********************* */
 
-    /* ********************** */
-    /*  Diseños Herramientas  */
-    /* ********************** */
+    /* **************************** */
+    /* #region Diseño Herramientas  */
+    /* **************************** */
     
     .mineral_herramienta .td_objetos b { font-size: 7px !important; }
 
@@ -66,10 +68,12 @@
         height: 120px !important; 
         margin: 8.8px 0 0 10px !important; 
     }
+    /* #endregion */
+    /* **************************** */
 
-    /* ***************** */
-    /*  Diseños Eventos  */
-    /* ***************** */
+    /* *********************** */
+    /* #region Diseño Eventos  */
+    /* *********************** */
 
     .est_cal { 
         height: 1px !important;
@@ -108,10 +112,12 @@
         margin-top: 8px !important; 
         margin-bottom: 8px !important; 
     }
+    /* #endregion */
+    /* *********************** */
 
-    /* **************************** */
-    /*  Diseños Eventos Aleatorios  */
-    /* **************************** */
+    /* ********************************** */
+    /* #region Diseño Eventos Aleatorios  */
+    /* ********************************** */
 
     .scroll-container-eventos-aldeanos { height: 140px !important; } /* Alto del contenedor */
 
@@ -136,28 +142,34 @@
         text-align: center !important; 
         line-height: 1.2em !important;
     }
+    /* #endregion */
+    /* ********************************** */
 
-    /* *************** */
-    /*  Diseños Salud  */
-    /* *************** */
+    /* ********************* */
+    /* #region Diseño Salud  */
+    /* ********************* */
 
     .ballas h3 { font-size: 8.8px !important; }
 
     .ballas .enc_01 { width: auto !important; }
 
     .ballas tr td:first-child {  text-align: left !important; } /* espesifico que todo los td de la primera columna la tabla */
+    /* #endregion */
+    /* ********************* */
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
 @media screen and (max-width: 900px) and (orientation: landscape){
 
-    /* ************************* */
-    /*  Diseños Principal Index  */
-    /* ************************* */
+    /* ********************* */
+    /* #region Diseño Index  */
+    /* ********************* */
 
     #logo_index{
         width:380px !important;
         margin-top: 0 !important; 
     }
+    /* #endregion */
+    /* ********************* */
     
 }

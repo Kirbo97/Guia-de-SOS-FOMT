@@ -7,9 +7,9 @@
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
 @media screen and (max-width: 600px) and (orientation: portrait), screen and (max-width: 900px) and (orientation: landscape) {
 
-    /* ******************************* */
-    /*  Diseños Principal Actividades  */
-    /* ******************************* */
+    /* **************************** */
+    /* #region Diseños Actividades  */
+    /* **************************** */
 
     .cont_box_menu { 
         align-items: center !important;
@@ -22,10 +22,12 @@
     div .box_menu { margin:0 !important; }
     
     .box_menu a.hiper { font-size: 10px !important; }
+    /* #endregion */
+    /* **************************** */
 
-    /* *************************** */
-    /*  Diseños Secundario Cocina  */
-    /* *************************** */
+    /* *********************** */
+    /* #region Diseños Cocina  */
+    /* *********************** */
 
     .img_coci01 { width: 80% !important; }
     
@@ -49,10 +51,12 @@
     }
 
     .est_ing div { margin-top: 5px !important;}
+    /* #endregion */
+    /* *********************** */
 
-    /* ***************** */
-    /*  Diseños Recetas  */
-    /* ***************** */
+    /* ************************ */
+    /* #region Diseños Recetas  */
+    /* ************************ */
 
     .rece_img01 { 
         margin-top: 1px !important; 
@@ -130,10 +134,12 @@
     }
 
     .tab_mod_rec .mod_uten_uni p { text-align: center !important; }
+    /* #endregion */
+    /* ************************ */
 
-    /* ************************** */
-    /*  Diseños Secundario Pesca  */
-    /* ************************** */
+    /* ********************** */
+    /* #region Diseños Pesca  */
+    /* ********************** */
 
     .pesc_img01 { width: 80% !important; }
 
@@ -168,10 +174,12 @@
     .tab_lis_pes #lista1 .enc_02, .tab_lis_pes #lista2 .enc_02, .tab_lis_pes #lista3 .enc_02, .tab_lis_pes_guar .enc_02 { width: 34px !important; }
 
     .tab_lis_pes_guar tr td:nth-child(1), .tab_lis_pes_guar tr td:nth-child(2), .tab_lis_pes_guar tr td:nth-child(2) p, .tab_lis_pes tr td:nth-child(5), .tab_lis_pes tr td:nth-child(6) { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
+    /* #endregion */
+    /* ********************** */
 
-    /* **************************** */
-    /*  Diseños Secundario Mineria  */
-    /* **************************** */
+    /* ************************ */
+    /* #region Diseños Mineria  */
+    /* ************************ */
 
     .mina_img01 { width: 80% !important; }
 
@@ -186,10 +194,12 @@
         height: 120px !important; 
         margin: 8.8px 0 0 10px !important;  
     }
+    /* #endregion */
+    /* ************************ */
 
-    /* ***************************** */
-    /*  Diseños Mina cascada y Lago  */
-    /* ***************************** */
+    /* *********************************** */
+    /* #region Diseños Mina cascada y Lago */
+    /* *********************************** */
 
     .tab01_min_cas .enc_01,.tab01_min_lag .enc_01 { width: 40px !important; }
 
@@ -221,10 +231,12 @@
     .tab02_min_lag ul { padding-left: 0 !important; }
 
     .tab01_min_lag tr td:nth-child(1), .tab01_min_lag tr td:nth-child(1) p { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
+    /* #endregion */
+    /* *********************************** */
 
-    /* ***************************** */
-    /*  Diseños Secundario Animales  */
-    /* ***************************** */
+    /* ************************* */
+    /* #region Diseños Animales  */
+    /* ************************* */
 
     .cont_ani { 
         margin: 0 10px !important; 
@@ -246,10 +258,12 @@
     }
 
     .box_animales a.hiper { font-size: 9px !important; }
+    /* #endregion */
+    /* ************************* */
 
-    /* ******************* */
-    /*  Diseños Gallinero  */
-    /* ******************* */
+    /* ************************** */
+    /* #region Diseños Gallinero  */
+    /* ************************** */
 
     .cont_galli { 
         margin: 0 18px !important; 
@@ -292,10 +306,12 @@
     .tbla_gall03 tr:nth-child(2) td, .tbla_gall03 tr:nth-child(2) p, .tbla_gall03 tr:nth-child(4) td, .tbla_gall03 tr:nth-child(4) p { text-align: center !important; } /* espesifico que filas tendra un diseño a la tabla */
 
     .tbla_gall04 tr td:nth-child(1), .tbla_gall04 tr td:nth-child(1) p { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
+    /* #endregion */
+    /* ************************** */
 
-    /* **************** */
-    /*  Diseños Ganado  */
-    /* **************** */
+    /* *********************** */
+    /* #region Diseños Ganado  */
+    /* *********************** */
 
     .cont_gana { 
         margin: 0 15px !important; 
@@ -310,9 +326,9 @@
         line-height: 0.9em !important;
     }
 
-    .box_ganado b, .box_ganado span { font-size: 8.5px !important; }
+    .box_ganado b, .box_ganado span { font-size: var(--tamano-texto) !important; }
 
-    .box_ganado span b { font-size: 10px !important; }
+    .box_ganado span b { font-size: calc(var(--tamano-texto) + 2px) !important; }
 
     .tab_gan01 .enc03 { width: 40px !important; }
 
@@ -350,10 +366,12 @@
     .tab_gan04 tr td:nth-child(1), .tab_gan04 tr td:nth-child(1) p, .tab_gan04 tr td:nth-child(2), .tab_gan04 tr td:nth-child(2) p, .tab_gan04 tr td:nth-child(3), .tab_gan04 tr td:nth-child(3) p, .tab_gan04 tr td:nth-child(4), .tab_gan04 tr td:nth-child(4) p { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
 
     .tab_gan05 tr td:nth-child(1), .tab_gan05 tr td:nth-child(1) p, .tab_gan05 tr td:nth-child(2), .tab_gan05 tr td:nth-child(2) p { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
+    /* #endregion */
+    /* *********************** */
 
-    /* ***************** */
-    /*  Diseños Establo  */
-    /* ***************** */
+    /* ************************ */
+    /* #region Diseños Establo  */
+    /* ************************ */
 
     .esta_img01 {
         width: 154px !important;
@@ -361,10 +379,12 @@
     }
 
     .esta_img02 { width: 80% !important; }
+    /* #endregion */
+    /* ************************ */
 
-    /* ****************** */
-    /*  Diseños Mascotas  */
-    /* ****************** */
+    /* ************************* */
+    /* #region Diseños Mascotas  */
+    /* ************************* */
 
     .box_mascota { 
         max-width:99.99px !important;
@@ -404,24 +424,28 @@
         height: 1px !important;
         font-size: 0.8em !important;
     }
+    /* #endregion */
+    /* ************************** */
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
 @media screen and (max-height:600px) and (orientation:landscape) {
 
-    /* ******************************* */
-    /*  Diseños Principal Actividades  */
-    /* ******************************* */
+    /* **************************** */
+    /* #region Diseños Actividades  */
+    /* ************************************** */
 
     .cont_box_menu { padding: 0 5px !important; }
 
     .box_menu { max-width:100px !important; }
     
     .box_menu a.hiper { font-size: 12px !important; }
+    /* #endregion */
+    /* **************************** */
 
-    /* *************************** */
-    /*  Diseños Secundario Cocina  */
-    /* *************************** */
+    /* *********************** */
+    /* #region Diseños Cocina  */
+    /* *********************** */
 
     .img_coci01 { width: 70% !important; }
     
@@ -437,10 +461,12 @@
     .tabl_coci02 tbody tr th:nth-child(3) { width: 75% !important;  }
 
     .est_ing { font-size: 19px !important; }
+    /* #endregion */
+    /* *********************** */
 
-    /* ***************** */
-    /*  Diseños Recetas  */
-    /* ***************** */
+    /* ************************ */
+    /* #region Diseños Recetas  */
+    /* ************************ */
 
     .rece_img01 { width: 42% !important; }
 
@@ -466,10 +492,12 @@
     .tab_mod_rec .mod_ing_right { margin-right: 15px !important; }
 
     .tab_mod_rec .mod_ing_left { margin-left: 15px !important; }
+    /* #endregion */
+    /* ************************ */
 
-    /* ************************** */
-    /*  Diseños Secundario Pesca  */
-    /* ************************** */
+    /* ********************** */
+    /* #region Diseños Pesca  */
+    /* ********************** */
 
     .pesc_img01 { width: 70% !important; }
 
@@ -495,10 +523,12 @@
     .tab_lis_pes_guar tr th:nth-child(3) { width: 80px !important; }
 
     .tab_lis_pes_guar tr td:nth-child(3) p { font-size: 14px !important; }
+    /* #endregion */
+    /* ********************** */
 
-    /* **************************** */
-    /*  Diseños Secundario Mineria  */
-    /* **************************** */
+    /* ************************ */
+    /* #region Diseños Mineria  */
+    /* ************************ */
 
     .mina_img01 { width: 70% !important; }
 
@@ -511,10 +541,12 @@
         width: 150px !important;  
         height: 150px !important; 
     }
+    /* #endregion */
+    /* ************************ */
 
-    /* ***************************** */
-    /*  Diseños Mina cascada y Lago  */
-    /* ***************************** */
+    /* ************************************ */
+    /* #region Diseños Mina cascada y Lago  */
+    /* ************************************ */
 
     .tab02_min_cas img.esta2 {
         width: 120px !important; 
@@ -525,19 +557,91 @@
         width: 110px !important; 
         height: 90px !important; 
     }
+    /* #endregion */
+    /* ************************************ */
 
-    /* ***************************** */
-    /*  Diseños Secundario Animales  */
-    /* ***************************** */
+    /* ************************* */
+    /* #region Diseños Animales  */
+    /* ************************* */
 
     .box_animales img { 
-        width: 110px !important;
-        height: 80px !important;
+        width: 150px !important;
+        height: 90px !important;
     }
 
     .box_animales {margin: 0 0 8px !important; }
 
     .box_animales a.hiper { font-size: 10px !important; }
+    /* #endregion */
+    /* ************************* */
+
+    /* ************************** */
+    /* #region Diseños Gallinero  */
+    /* ************************** */
+
+    .box_gallinero { max-width: 80px !important; }
+
+    .box_gallinero b, .box_gallinero span { font-size: var(--tamano-texto) !important; }
+
+    .box_gallinero span b { font-size: calc(var(--tamano-texto) + 2px) !important; }
+
+    .tbla_gall02 .enc01 { width: 155px !important;  }
+
+    .tbla_gall02 .enc02 { width: 60px !important;  }
+
+    .cont_tbla_gall { justify-content: space-around !important; }
+
+    .tbla_gall03 td p b { font-size: var(--tamano-texto) !important; }
+
+    .tbla_gall03 td div { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 4px;
+    }
+    /* #endregion */
+    /* ************************** */
+
+    /* *********************** */
+    /* #region Diseños Ganado  */
+    /* *********************** */
+
+    .cont_gana { margin: 0 !important; }
+    
+    .box_ganado { 
+        max-width:78px !important;
+        line-height: 0.9em !important;
+    }
+
+    .tab_gan01 .enc03 { width: 40px !important; }
+
+    .tab_gan01 { margin:  0 auto !important; }
+
+    .tab_gan01 tr td:nth-child(1) b {font-size: var(--tamano-texto) !important;  } /* espesifico que columnas tendra un diseño a la tabla */
+
+    .tab_gan02 { 
+        margin: 15px auto !important;
+        margin-bottom: 0 !important;
+     }
+
+    .tab_gan02 .enc01 { width: 72px !important;  }
+
+    .tab_gan02 .enc02 { width: 46px !important;  }
+    
+    .tab_gan03 tr:nth-child(2) td, .tab_gan03 tr:nth-child(2) p, .tab_gan03 tr:nth-child(4) td, .tab_gan03 tr:nth-child(4) p, .tab_gan03 tr:nth-child(6) td, .tab_gan03 tr:nth-child(6) p { text-align: center !important; } /* espesifico que filas tendra un diseño a la tabla */
+
+    .tab_gan03 p { margin: 0 1px !important; }
+
+    .tab_gan03 { 
+        margin: 15px auto !important; 
+        margin-bottom: 0 !important; 
+    }
+
+    .tab_gan04 tr td:nth-child(1), .tab_gan04 tr td:nth-child(1) p, .tab_gan04 tr td:nth-child(2), .tab_gan04 tr td:nth-child(2) p, .tab_gan04 tr td:nth-child(3), .tab_gan04 tr td:nth-child(3) p, .tab_gan04 tr td:nth-child(4), .tab_gan04 tr td:nth-child(4) p { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
+
+    .tab_gan05 tr td:nth-child(1), .tab_gan05 tr td:nth-child(1) p, .tab_gan05 tr td:nth-child(2), .tab_gan05 tr td:nth-child(2) p { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
+    /* #endregion */
+    /* *********************** */
 
     
 

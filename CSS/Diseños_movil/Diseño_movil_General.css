@@ -7,9 +7,9 @@
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
 @media screen and (max-width: 600px) and (orientation: portrait), screen and (max-width: 900px) and (orientation: landscape) {
 
-    /* ***************** */
-    /*  Diseños del nav  */
-    /* ***************** */
+    /* ************************ */
+    /* #region Diseños del nav  */
+    /* ************************ */
 
     nav { padding: 0 5px !important; }
 
@@ -21,10 +21,12 @@
     }
 
     .vin_nav:-webkit-any-link { font-size: 6.88px !important; }
+    /* #endregion */
+    /* ************************ */
 
-    /* ******************** */
-    /*  Diseños del footer  */
-    /* ******************** */
+    /* *********************** */
+    /* #region Diseños footer  */
+    /* *********************** */
 
     /* defino que solo la clase "copyright" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
     section .copyright { 
@@ -38,13 +40,14 @@
         width: 25px !important; 
         height: 25px !important; 
     } /* ajusto el tamaño que tendra esta clase */
+    /* #endregion */
+    /* *********************** */
 
-    /* ******************************* */
-    /*  Diseños del contenido general  */
-    /* ******************************* */
-    :root {
-        --tamano-texto: 8px;
-    }
+    /* ************************** */
+    /* #region Diseños generales  */
+    /* ************************** */
+
+    :root { --tamano-texto: 8px; }
 
     #content {
         margin: 20px !important;
@@ -128,12 +131,14 @@
 
     #list_hamb { height: 1em !important; }
 
-    .right { margin-left: 10px !important ;} 
-    .left { margin-right: 10px !important ;}
+    .right { margin-left: 10px !important ; } 
+    .left { margin-right: 10px !important ; }
+    /* #endregion */
+    /* ************************** */
 
-    /* ************************* */
-    /*  Diseños del css Modales  */
-    /* ************************* */
+    /* *************************** */
+    /* #region Diseños de Modales  */
+    /* *************************** */
 
     .btn{ font-size: 10px !important; }
 
@@ -142,14 +147,16 @@
     .modal_calendario h3 { margin: 13px 0 !important; }
 
     .modal_calendario p b { font-size: 8px !important; }
+    /* #endregion */
+    /* *************************** */
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
 @media screen and (max-width: 900px) and (orientation: landscape) {
 
-    /* ***************** */
-    /*  Diseños del nav  */
-    /* ***************** */
+    /* ************************ */
+    /* #region Diseños del nav  */
+    /* ************************ */
 
     nav { padding: 5px 5px 0 !important; }
 
@@ -159,10 +166,12 @@
     }
 
     .vin_nav:-webkit-any-link { font-size: 10px !important; }
+    /* #endregion */
+    /* ************************ */
 
-    /* ******************** */
-    /*  Diseños del footer  */
-    /* ******************** */
+    /* *********************** */
+    /* #region Diseños footer  */
+    /* *********************** */
 
     /* defino que solo la clase "copyright" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
     section .copyright { 
@@ -176,13 +185,14 @@
         width: 36px !important;
         height: 36px !important;
     }
+    /* #endregion */
+    /* *********************** */
 
-    /* ******************************* */
-    /*  Diseños del contenido general  */
-    /* ******************************* */
-    :root {
-        --tamano-texto: 10px;
-    }
+    /* ************************** */
+    /* #region Diseños generales  */
+    /* ************************** */
+
+    :root { --tamano-texto: 10px; }
 
     h1 { font-size: calc(var(--tamano-texto) + 8px) !important; }
 
@@ -220,10 +230,12 @@
 
     .right { margin-left: 10px !important ;} 
     .left { margin-right: 10px !important ;}
+    /* #endregion */
+    /* ************************** */
 
-    /* ************************* */
-    /*  Diseños del css Modales  */
-    /* ************************* */
+    /* *************************** */
+    /* #region Diseños de Modales  */
+    /* *************************** */
 
     .btn{ font-size: 10px !important; }
 
@@ -232,4 +244,6 @@
     .modal_calendario h3 { margin: 13px 0 !important; }
 
     .modal_calendario p b { font-size: 8px !important; }
+    /* #endregion */
+    /* *************************** */
 }

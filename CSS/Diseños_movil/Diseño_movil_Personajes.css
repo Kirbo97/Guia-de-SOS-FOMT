@@ -6,9 +6,10 @@
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
 @media screen and (max-width: 600px) {
-    /* ******************** */
-    /*  Diseños Personajes  */
-    /* ******************** */
+
+    /* ************************** */
+    /* #region Diseño Personajes  */
+    /* ************************** */
 
     .box_aldeanos img { width: 64px !important; }
 
@@ -64,10 +65,12 @@
     }
     
     .box_otros_matrimonio a.hiper { font-size: 0.523em !important; }
+    /* #endregion */
+    /* ************************** */
     
-    /* ********************************** */
-    /*  Diseños de Aldeanos y Candidatos  */
-    /* ********************************** */
+    /* **************************************** */
+    /* #region Diseño de Aldeanos y Candidatos  */
+    /* **************************************** */
 
     .img_perfil {
         width: 100px !important;
@@ -143,16 +146,20 @@
     .even_cora tr:nth-child(2) td:nth-child(4) div p { margin-top: 4px !important; }
 
     .even_cora_fin { margin-bottom: 15px !important; }
+    /* #endregion */
+    /* **************************************** */
 
-    /* **************************** */
-    /*  Diseños de Eventos RIvales  */
-    /* **************************** */
+    /* ********************************** */
+    /* #region Diseño de Eventos RIvales  */
+    /* ********************************** */
 
     .tab_eve_riv td img {
         width: 130px !important; 
         height: 130px !important; 
         padding: 5px !important; 
     }
+    /* #endregion */
+    /* ********************************** */
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
