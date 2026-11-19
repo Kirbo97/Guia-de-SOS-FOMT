@@ -5,7 +5,7 @@
 /*Con la linea para que se adapte a la pantalla en la que se encuentra, el tamaño para el Movil es (max-width:426px), sin es linea el tamaño para Movil es (max-width:980px)*/
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
-@media screen and (max-width: 600px) and (orientation: portrait) {
+@media screen and (max-width: 600px) and (orientation: portrait), screen and (max-width: 900px) and (orientation: landscape) {
 
     /* ***************** */
     /*  Diseños del nav  */
@@ -60,16 +60,17 @@
 
     h1::before{ margin-right: 5px !important; }
 
-    h2, .summary_general, .summary_h2 {
-        margin-top: 13px !important;
-        font-size:  calc(var(--tamano-texto) + 3px) !important;
-    }
+    
+
+    h2, .summary_general, .summary_h2 { margin-top: 13px !important; }
 
     .summary_general_fin, .summary_h2_fin { margin-bottom: 15px !important; }
 
+    h2, .summary_h2 { font-size:  calc(var(--tamano-texto) + 5px) !important; }
+
     h3 { margin: 8px 0 0 0 !important; }
 
-    h3, summary { font-size: calc(var(--tamano-texto) + 3px) !important; }
+    h3, .summary_general { font-size: calc(var(--tamano-texto) + 3px) !important; }
 
     header .icono {
         width: 16px !important; /* ajusto el ancho que tendra esta clase */
@@ -85,7 +86,7 @@
     }
 
     main p, main p a { 
-        font-size: 8px !important; 
+        font-size: var(--tamano-texto) !important;
         line-height: 1.5em !important;
     }
 
@@ -104,14 +105,11 @@
     .data #encabesado th{ font-size: 9.6px !important; }
 
     .data td, .data td p b, .data td p, .data a{ 
-        font-size: 8px !important; 
+        font-size: var(--tamano-texto) !important; 
         text-align: justify !important; 
     }
 
-    .data .td_dinero { 
-        font-size: 8px !important; 
-        text-align: center !important; 
-    }
+    .data .td_dinero { text-align: center !important; }
 
     .data td, .data td p { line-height: 1.2em !important;}
 
@@ -155,8 +153,6 @@
 
     nav { padding: 5px 5px 0 !important; }
 
-    nav div { margin: 6px 11.5px !important; }
-
     nav img {
         width: 37px !important; 
         height: 37px !important; 
@@ -188,25 +184,13 @@
         --tamano-texto: 10px;
     }
 
-    #content {
-        margin: 20px !important;
-        padding: 12px !important;
-        width: auto !important;
-        line-height: 1em !important;
-    }
-
     h1 { font-size: calc(var(--tamano-texto) + 8px) !important; }
-
-    h2, .summary_general, .summary_h2 {
-        margin-top: 13px !important;
-        font-size: calc(var(--tamano-texto) + 5px) !important;
-    }
 
     .summary_general_fin, .summary_h2_fin { margin-bottom: 15px !important; }
 
-    h3 { margin: 8px 0 0 0 !important; }
+    h2, .summary_h2 { font-size: calc(var(--tamano-texto) + 5px) !important;  }
 
-    h3, summary { font-size: calc(var(--tamano-texto) + 5px) !important; }
+    h3, .summary_general { font-size: calc(var(--tamano-texto) + 3px) !important; }
 
     header .icono {
         width: 19px !important; /* ajusto el ancho que tendra esta clase */
@@ -215,46 +199,13 @@
 
     header{ height: 21px !important; }
 
-    header div{ 
-        column-gap: 1.2em !important; 
-        margin-left: 0;
-        line-height: 1.4em !important;
-    }
-
-    main p, main p a { 
-        font-size: var(--tamano-texto) !important; 
-        line-height: 1.5em !important;
-    }
-
-    ul, ol, ul a { font-size: calc(var(--tamano-texto) + 2px) !important; }
-
-    p span.dinero b, .data span.dinero b, .data .td_dinero b, ul span.dinero b  { font-size: 12px !important; }
+    header div{ column-gap: 21px !important; }
 
     .lista_num { padding-left: 10px; }
 
-    li.gustos {
-        margin: 4px 0 4px 0 !important;
-        text-align: justify !important; 
-        line-height: 12px !important;
-    }
+    li.gustos { line-height: 15px !important; }
 
-    .data #encabesado th{ font-size: 9.6px !important; }
-
-    .data td, .data td p b, .data td p, .data a{ 
-        font-size: 10px !important; 
-        text-align: justify !important; 
-    }
-
-    .data .td_dinero { 
-        font-size: 10px !important; 
-        text-align: center !important; 
-    }
-
-    .data td, .data td p { line-height: 1.2em !important;}
-
-    .data .td_neutro { text-align: center !important; }
-
-    .data td li.gustos::before { padding-right: 2px !important; }
+    .data #encabesado th{ font-size: 11px !important; }
     
     .data td img,.data th img {
         width: 60px !important; 

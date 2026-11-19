@@ -5,7 +5,7 @@
 /*Con la linea para que se adapte a la pantalla en la que se encuentra, el tamaño para el Movil es (max-width:426px), sin es linea el tamaño para Movil es (max-width:980px)*/
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) and (orientation: portrait), screen and (max-width: 900px) and (orientation: landscape) {
 
     /* ******************************* */
     /*  Diseños Principal Actividades  */
@@ -45,7 +45,7 @@
 
     .est_ing { 
         height: 1px !important;
-        font-size: 0.8em !important;
+        font-size: 10.24px !important;
     }
 
     .est_ing div { margin-top: 5px !important;}
@@ -386,16 +386,28 @@
     /*  Diseños Principal Actividades  */
     /* ******************************* */
 
-    .cont_box_menu { 
-        align-items: center !important;
-        column-gap: 0 !important;
-        justify-content: space-between !important;
-        padding: 0 5px !important;
-    }
+    .cont_box_menu { padding: 0 5px !important; }
 
     .box_menu { max-width:100px !important; }
     
-    div .box_menu { margin:0 !important; }
-    
     .box_menu a.hiper { font-size: 12px !important; }
+
+    /* *************************** */
+    /*  Diseños Secundario Cocina  */
+    /* *************************** */
+
+    .img_coci01 { width: 70% !important; }
+    
+    .tabl_coci02 { 
+        margin-bottom: 12px !important; 
+        width: 100% !important; 
+    }
+
+    .tabl_coci02 tbody tr th:nth-child(2) { width: 25% !important;  }
+
+    .tabl_coci02 tbody tr td:nth-child(1) div { row-gap: 4px !important; }
+
+    .tabl_coci02 tbody tr th:nth-child(3) { width: 75% !important;  }
+
+    .est_ing { font-size: 19px !important; }
 }
