@@ -617,12 +617,42 @@
 
     .tab_gan01 tr td:nth-child(1) b {font-size: var(--tamano-texto) !important;  } /* espesifico que columnas tendra un diseño a la tabla */
 
-
     .tab_gan02 .enc01 { width: 153px !important;  }
 
     .tab_gan02 .enc02 { width: 60px !important;  }
     /* #endregion */
     /* *********************** */
+
+    /* ************************ */
+    /* #region Diseños Establo  */
+    /* ************************ */
+
+    .esta_img01 {
+        width: 180px !important;
+        height: 138px !important;
+    }
+
+    .esta_img02 { width: 70% !important; }
+    /* #endregion */
+    /* ************************ */
+
+    /* ************************* */
+    /* #region Diseños Mascotas  */
+    /* ************************* */
+
+    .tbla_masc01 th{ font-size: 13px !important; }
+
+    .box_mascota { max-width:1019px !important; }
+    
+    .box_mascota b, .box_mascota span, .box_mascota span b { font-size: var(--tamano-texto) !important; }
+
+    .masc_img01 {
+        width: 191px !important;
+        margin: 10px 0 0 10px !important;  
+    }
+
+    /* #endregion */
+    /* ************************** */
 
     
 

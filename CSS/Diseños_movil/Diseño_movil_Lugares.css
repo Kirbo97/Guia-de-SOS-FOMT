@@ -5,11 +5,11 @@
 /*Con la linea para que se adapte a la pantalla en la que se encuentra, el tamaño para el Movil es (max-width:426px), sin es linea el tamaño para Movil es (max-width:980px)*/
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) and (orientation: portrait), screen and (max-width: 900px) and (orientation: landscape) {
 
-    /* *************************** */
-    /*  Diseños Principal Lugares  */
-    /* *************************** */
+    /* *********************** */
+    /* #region Diseño Lugares  */
+    /* *********************** */
 
     .lug_img1, .lug_img2, .lug_img3, .lug_img4,.lug_img5, .lug_img6, .lug_img9, .lug_img10 {
         width: 80% !important; 
@@ -32,10 +32,12 @@
     .box_menu_lugares a.hiper { font-size: 6.7px !important; }
 
     .scroll-container-lugares { height: 14.5em !important; } /* Alto del contenedor */
+    /* #endregion */
+    /* *********************** */
 
-    /* *************************** */
-    /*  Diseños de Lugares Tienda  */
-    /* *************************** */
+    /* ************************ */
+    /* #region Diseño de Tienda */
+    /* ************************ */
 
     .img_right, .img_left{  
         width: 50% !important; 
@@ -45,8 +47,12 @@
     .horario_lugar td, .tab_tien td, .tab_tien a.hiper { font-size: 8.8px !important; }
 
     .horario_lugar .perso { padding-left: 12px !important; }
+    /* #endregion */
+    /* ************************ */
 
-    /* Bazar */
+    /* *********************** */
+    /* #region Diseño de Bazar */
+    /* *********************** */
 
     .est_tien { 
         height: 1px !important;
@@ -66,27 +72,47 @@
         text-align: center !important;
         margin: 0 5px !important;
     } /* espesifico que columnas tendra un diseño a la tabla */
+    /* #endregion */
+    /* *********************** */
 
-    /* Clinica */
+    /* ************************* */
+    /* #region Diseño de Clinica */
+    /* ************************* */
 
     .tab_clin01 tr td:nth-child(1), .tab_clin01 tr td:nth-child(1) p, .tab_clin01 tr td:nth-child(4) { 
         text-align: center !important;
         margin: 0 5px !important;
     } /* espesifico que columnas tendra un diseño a la tabla */
+    /* #endregion */
+    /* ************************* */
 
-    /* Casa de los duendes */
+    /* *************************** */
+    /* #region Casa de los duendes */
+    /* *************************** */
 
     .tab_cas_duen tr td:nth-child(1), .tab_cas_duen tr td:nth-child(2), .tab_cas_duen tr td:nth-child(3) { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
+    /* #endregion */
+    /* *************************** */
 
-    /* Viñedo */
+    /* ************************ */
+    /* #region Diseño de Viñedo */
+    /* ************************ */
 
     .tab_viñ tr td:nth-child(1), .tab_viñ tr td:nth-child(1) p  { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
+    /* #endregion */
+    /* ************************ */
 
-    /* Posada */
+    /* ************************ */
+    /* #region Diseño de Posada */
+    /* ************************ */
 
     .tab_pos tr td:nth-child(1), .tab_pos tr td:nth-child(1) p  { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
+    /* #endregion */
+    /* ************************ */
 
-    /* Tienda de Van */
+    /* ******************************* */
+    /* #region Diseño de Tienda de Van */
+    /* ******************************* */
 
     .tab_tien_van01 tr td:nth-child(1), .tab_tien_van01 tr td:nth-child(1) p  { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
 
@@ -114,21 +140,33 @@
         text-align: center !important; 
         margin: 0 !important;
     } /* espesifico que fila y columna tendra un diseño a la tabla */
+    /* #endregion */
+    /* ******************************* */
 
-    /* Café en la playa */
+    /* ********************************** */
+    /* #region Diseño de Café en la playa */
+    /* ********************************** */
 
     .tab_caf_play tr td:nth-child(1), .tab_caf_play tr td:nth-child(1) p  { 
         text-align: center !important; 
         margin: 0 !important;
     } /* espesifico que fila y columna tendra un diseño a la tabla */
+    /* #endregion */
+    /* ********************************** */
 
-    /* Tienda de Huang */
+    /* ********************************* */
+    /* #region Diseño de Tienda de Huang */
+    /* ********************************** */
 
     .tab_tien_huang tr td:nth-child(1), .tab_tien_huang tr td:nth-child(2), .tab_tien_huang tr td:nth-child(2) p  { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
 
     .tab_tien_huang tr:nth-child(1) th:nth-child(2) { width: 90px !important; } /* espesifico que columnas de la primera fila tendra un diseño a la tabla */
+    /* #endregion */
+    /* ********************************* */
 
-    /* Forja */
+    /* *********************** */
+    /* #region Diseño de Forja */
+    /* *********************** */
 
     .tab_forja01 tr td:nth-child(1), .tab_forja01 tr td:nth-child(1) p { 
         text-align: center !important; 
@@ -143,8 +181,12 @@
         text-align: center !important; 
         margin: 0 !important; 
     }  /* espesifico que la primera y tercera columna de los td de la tabla */
+    /* #endregion */
+    /* *********************** */
 
-    /* Tienda Avicola */
+    /* ******************************** */
+    /* #region Diseño de Tienda Avicola */
+    /* ******************************** */
 
     .tab_tien_avi02 tr:nth-child(1) th:nth-child(1) { width: 20px !important; } /* espesifico que columnas de la primera fila tendra un diseño a la tabla */
 
@@ -152,8 +194,12 @@
         text-align: center !important; 
         margin: 0 !important;
     } /* espesifico que fila y columna tendra un diseño a la tabla */
+    /* #endregion */
+    /* ******************************** */
 
-    /* Rancho Yodel */
+    /* ****************************** */
+    /* #region Diseño de Rancho Yodel */
+    /* ****************************** */
 
     .tab_ranch01 tr td:nth-child(1), .tab_ranch01 tr td:nth-child(1) p, .tab_ranch02 tr td:nth-child(1), .tab_ranch02 tr td:nth-child(1) p   { 
         text-align: center !important; 
@@ -161,8 +207,12 @@
     } /* espesifico que fila y columna tendra un diseño a la tabla */
 
     .tab_ranch01 tr:nth-child(1) th:nth-child(3), .tab_ranch02 tr:nth-child(1) th:nth-child(3) { width: 50px !important; } /* espesifico que columnas de la primera fila tendra un diseño a la tabla */
+    /* #endregion */
+    /* ******************************* */
 
-     /* Taller de gost */
+    /* ******************************** */
+    /* #region Diseño de Taller de gost */
+    /* ******************************** */
 
     .tab_taller01 tr td:nth-child(1), .tab_taller01 tr td:nth-child(1) p, .tab_taller02 tr td:nth-child(1), .tab_taller02 tr td:nth-child(1) p   { 
         text-align: center !important; 
@@ -181,9 +231,35 @@
     .tab_taller02 .cont_obj_tall { height: 50px !important;  }
 
     .tab_taller02 .cont_obj_tall div{ margin-top: 8.5px !important; }
+    /* #endregion */
+    /* ******************************** */
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
 @media screen and (min-width: 601px) and (max-width: 1024px) {
+
+    /* *********************** */
+    /* #region Diseño Lugares  */
+    /* *********************** */
+
+    .lug_img1 {
+        width: 40% !important;
+        margin: 0 0 0 10px !important;
+    }
+
+    .lug_img3, .lug_img4, .lug_img9, .lug_img10, .lug_img11 {
+        width: 70% !important; 
+        margin: 0 auto !important; 
+    }
+
+    .lug_img5, .lug_img6 {
+        width: 45% !important;
+        margin: 0 0 0 10px !important;
+    }
     
+    .box_menu_lugares { margin: 12px !important; }
+    
+    .box_menu_lugares a.hiper { font-size: 6.92px !important; }
+    /* #endregion */
+    /* *********************** */
 }

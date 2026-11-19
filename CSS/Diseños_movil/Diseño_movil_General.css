@@ -7,6 +7,8 @@
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
 @media screen and (max-width: 600px) and (orientation: portrait), screen and (max-width: 900px) and (orientation: landscape) {
 
+    :root { --tamano-texto: 8px; }
+
     /* ************************ */
     /* #region Diseños del nav  */
     /* ************************ */
@@ -46,8 +48,6 @@
     /* ************************** */
     /* #region Diseños generales  */
     /* ************************** */
-
-    :root { --tamano-texto: 8px; }
 
     #content {
         margin: 20px !important;
@@ -146,7 +146,7 @@
 
     .modal_calendario h3 { margin: 13px 0 !important; }
 
-    .modal_calendario p b { font-size: 8px !important; }
+    .modal_calendario p b { font-size: var(--tamano-texto) !important; }
     /* #endregion */
     /* *************************** */
 }
@@ -242,8 +242,7 @@
     .modal_calendario div { padding: 0 36px 20px 28px !important; }
 
     .modal_calendario h3 { margin: 13px 0 !important; }
-
-    .modal_calendario p b { font-size: 8px !important; }
+    
     /* #endregion */
     /* *************************** */
 }
