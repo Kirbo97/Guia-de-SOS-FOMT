@@ -257,9 +257,14 @@
         margin: 0 0 0 10px !important;
     }
     
-    .box_menu_lugares { margin: 12px !important; }
+    .box_menu_lugares { margin: 10px !important; }
     
-    .box_menu_lugares a.hiper { font-size: 6.92px !important; }
+    .box_menu_lugares img { 
+        width: 80px !important; 
+        height: 80px !important; 
+    }
+    
+    .box_menu_lugares a.hiper { font-size: 6.90px !important; }
     /* #endregion */
     /* *********************** */
 }
