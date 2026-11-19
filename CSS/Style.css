@@ -255,7 +255,8 @@ td.perso{ padding: 8px 4px 8px 18px; }
 /* La etiqueta "th" (columna de la tabla como encabesado) tendran caracteristicas para el diseño del encabesado de la tabla */
 th { 
     background-color:#00AA88; 
-    color: #FAFAFA
+    color: #FAFAFA;
+    text-align: center;
 }
 
 tr.rec th{ background-color:#34d389;  }

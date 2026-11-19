@@ -102,7 +102,7 @@
         line-height: 12px !important;
     }
 
-    .data #encabesado th{ font-size: 9.6px !important; }
+    .data #encabesado th, .data th, #list_hamb p { font-size: 9.6px !important; }
 
     .data td, .data td p b, .data td p, .data a{ 
         font-size: var(--tamano-texto) !important; 
@@ -170,7 +170,7 @@
         font-size: 20px !important; /* defino el tamaño del texto*/
     }
 
-    section .cont_links { margin-top: 14px !important; }
+    section .cont_links { margin-top: 16px !important; }
 
     section .enlace { 
         width: 36px !important;
@@ -205,7 +205,7 @@
 
     li.gustos { line-height: 15px !important; }
 
-    .data #encabesado th{ font-size: 11px !important; }
+    .data #encabesado th, .data th, #list_hamb p { font-size: 11px !important; }
     
     .data td img,.data th img {
         width: 60px !important; 
