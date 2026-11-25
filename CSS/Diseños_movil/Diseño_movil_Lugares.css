@@ -24,18 +24,18 @@
     }
     
     .box_menu_lugares { 
-        max-width: 77px !important;
+        max-width: 79px !important;
         margin: 12px 7px !important;
         line-height: 0.8em !important;
     }
     
-    .box_menu_lugares a.hiper { font-size: 6.6px !important; }
+    .box_menu_lugares a.hiper { font-size: 6.4px !important; }
 
     .scroll-container-lugares { height: 14.5em !important; } /* Alto del contenedor */
 
     .ini_lugar { display: flow-root !important; }
 
-    .ini_lugar img { width: 38% !important; }
+    .ini_lugar img { width: 36% !important; }
     /* #endregion */
     /* *********************** */
 
