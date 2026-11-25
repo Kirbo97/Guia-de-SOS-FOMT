@@ -34,8 +34,6 @@
     .scroll-container-lugares { height: 14.5em !important; } /* Alto del contenedor */
 
     .ini_lugar { display: flow-root !important; }
-
-    .ini_lugar img { width: 36% !important; }
     /* #endregion */
     /* *********************** */
 
@@ -274,6 +272,8 @@
     }
     
     .box_menu_lugares a.hiper { font-size: 6.90px !important; }
+
+    .ini_lugar img { width: 34% !important; }
     /* #endregion */
     /* *********************** */
 
