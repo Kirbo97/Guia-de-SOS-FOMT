@@ -23,8 +23,8 @@
         margin: 8.8px 0 0 10px !important; 
     }
     
-    .box_menu_lugares { 
-        max-width: 79px !important;
+    .box_menu_lugares {
+        max-width: 77px !important;
         margin: 12px 7px !important;
         line-height: 0.8em !important;
     }
@@ -263,7 +263,10 @@
         margin: 0 0 0 10px !important;
     }
     
-    .box_menu_lugares { margin: 10px !important; }
+    .box_menu_lugares { 
+        margin: 10px !important;
+        max-width: 79px !important;
+    }
     
     .box_menu_lugares img { 
         width: 80px !important; 
