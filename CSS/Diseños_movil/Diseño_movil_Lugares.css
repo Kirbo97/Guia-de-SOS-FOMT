@@ -29,9 +29,13 @@
         line-height: 0.8em !important;
     }
     
-    .box_menu_lugares a.hiper { font-size: 6.7px !important; }
+    .box_menu_lugares a.hiper { font-size: 6.6px !important; }
 
     .scroll-container-lugares { height: 14.5em !important; } /* Alto del contenedor */
+
+    .ini_lugar { display: flow-root !important; }
+
+    .ini_lugar img { width: 38% !important; }
     /* #endregion */
     /* *********************** */
 
@@ -44,7 +48,9 @@
         margin-top: 8px !important;
     }
 
-    .horario_lugar td, .tab_tien td, .tab_tien a.hiper { font-size: 8.8px !important; }
+    .horario_lugar { margin: 0 auto !important; }
+
+    .horario_lugar td, .tab_tien td, .tab_tien a.hiper { font-size: var(--tamano-texto) !important; }
 
     .horario_lugar .perso { padding-left: 12px !important; }
     /* #endregion */
@@ -267,4 +273,32 @@
     .box_menu_lugares a.hiper { font-size: 6.90px !important; }
     /* #endregion */
     /* *********************** */
+
+    /* ************************ */
+    /* #region Diseño de Tienda */
+    /* ************************ */
+
+    .img_right, .img_left{  
+        width: 40% !important; 
+        margin-top: 10px !important;
+    }
+
+    .horario_lugar td, .tab_tien td, .tab_tien a.hiper { font-size: var(--tamano-texto) !important; }
+    /* #endregion */
+    /* ************************ */
+
+    /* *********************** */
+    /* #region Diseño de Bazar */
+    /* *********************** */
+
+    .tab_tien01 th { font-size: 15px !important; }
+    
+    /* #endregion */
+    /* *********************** */
+
+    /* *************************** */
+    /* #region Casa de los duendes */
+    /* *************************** */
+
+    .horario_lugar { margin: 0 auto !important; }
 }
