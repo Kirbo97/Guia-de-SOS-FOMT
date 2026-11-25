@@ -41,10 +41,9 @@
     /* #region Diseño de Tienda */
     /* ************************ */
 
-    .img_right, .img_left{  
-        width: 50% !important; 
-        margin-top: 8px !important;
-    }
+    .img_right, .img_left{ margin-top: 8px !important; }
+
+    .ini_lugar img { width: 52% !important; }
 
     .horario_lugar { margin: 0 auto !important; }
 
@@ -272,8 +271,6 @@
     }
     
     .box_menu_lugares a.hiper { font-size: 6.90px !important; }
-
-    .ini_lugar img { width: 34% !important; }
     /* #endregion */
     /* *********************** */
 
@@ -281,10 +278,9 @@
     /* #region Diseño de Tienda */
     /* ************************ */
 
-    .img_right, .img_left{  
-        width: 40% !important; 
-        margin-top: 10px !important;
-    }
+    .img_right, .img_left { margin-top: 10px !important; }
+
+    .ini_lugar img { width: 34% !important; }
 
     .horario_lugar td, .tab_tien td, .tab_tien a.hiper { font-size: var(--tamano-texto) !important; }
     /* #endregion */
