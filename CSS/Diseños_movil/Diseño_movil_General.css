@@ -63,13 +63,11 @@
 
     h1::before{ margin-right: 5px !important; }
 
-    
-
     h2, .summary_general, .summary_h2 { margin-top: 13px !important; }
 
     .summary_general_fin, .summary_h2_fin { margin-bottom: 15px !important; }
 
-    h2, .summary_h2 { font-size:  calc(var(--tamano-texto) + 5px) !important; }
+    h2, .summary_h2 { font-size: calc(var(--tamano-texto) + 5px) !important; }
 
     h3 { margin: 8px 0 0 0 !important; }
 
@@ -154,6 +152,8 @@
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
 @media screen and (max-width: 900px) and (orientation: landscape) {
 
+    :root { --tamano-texto: 10px; }
+
     /* ************************ */
     /* #region Diseños del nav  */
     /* ************************ */
@@ -192,15 +192,7 @@
     /* #region Diseños generales  */
     /* ************************** */
 
-    :root { --tamano-texto: 10px; }
-
     h1 { font-size: calc(var(--tamano-texto) + 8px) !important; }
-
-    .summary_general_fin, .summary_h2_fin { margin-bottom: 15px !important; }
-
-    h2, .summary_h2 { font-size: calc(var(--tamano-texto) + 5px) !important;  }
-
-    h3, .summary_general { font-size: calc(var(--tamano-texto) + 3px) !important; }
 
     header .icono {
         width: 19px !important; /* ajusto el ancho que tendra esta clase */
@@ -211,8 +203,6 @@
 
     header div{ column-gap: 21px !important; }
 
-    .lista_num { padding-left: 10px; }
-
     li.gustos { line-height: 15px !important; }
 
     .data #encabesado th, .data th, #list_hamb p { font-size: 11px !important; }
@@ -222,27 +212,8 @@
         height: 60px !important;
     }
 
-    #estacion p { font-size: 0.7em !important; } /* Es el encabesado de estacione  */
-
-    #bot_scr { padding: 0 5px !important; }
-
-    #list_hamb { height: 1em !important; }
-
-    .right { margin-left: 10px !important ;} 
-    .left { margin-right: 10px !important ;}
+    .right { margin-left: 15px !important ; } 
+    .left { margin-right: 15px !important ; }
     /* #endregion */
     /* ************************** */
-
-    /* *************************** */
-    /* #region Diseños de Modales  */
-    /* *************************** */
-
-    .btn{ font-size: 10px !important; }
-
-    .modal_calendario div { padding: 0 36px 20px 28px !important; }
-
-    .modal_calendario h3 { margin: 13px 0 !important; }
-    
-    /* #endregion */
-    /* *************************** */
 }
