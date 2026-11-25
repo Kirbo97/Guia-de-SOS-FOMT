@@ -29,7 +29,7 @@
         line-height: 0.8em !important;
     }
     
-    .box_menu_lugares a.hiper { font-size: 6.4px !important; }
+    .box_menu_lugares a.hiper { font-size: 6.7px !important; }
 
     .scroll-container-lugares { height: 14.5em !important; } /* Alto del contenedor */
 
@@ -263,7 +263,7 @@
         margin: 0 0 0 10px !important;
     }
     
-    .box_menu_lugares { 
+    .box_menu_lugares {
         margin: 10px !important;
         max-width: 79px !important;
     }
