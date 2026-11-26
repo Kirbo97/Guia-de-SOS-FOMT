@@ -30,7 +30,7 @@
     }
 
     .cont_cand_mat .box_matrimonio {
-         width: 70px !important;
+        width: 70px !important;
         margin: 4px 8px 10px !important;
     }
 
@@ -184,19 +184,22 @@
         margin: 10px 0 0 20px !important;  
     }
 
+
+
+
+
+
+
     .cont_cand_mat .box_matrimonio {
-         width: 70px !important;
+        width: 75px !important;
         margin: 4px 8px 10px !important;
     }
 
     .cont_cand_mat .box_matrimonio a.hiper{  font-size: 10px !important; }
 
-    .cont_cand_mat .scroll-container-candidatos { 
-        border: 1px solid #ccc !important; /* Borde opcional para definir el contorno */
-        height: 260px !important;   /* Alto del contenedor */
-    }
+    .cont_cand_mat .scroll-container-candidatos { border: none !important; } /* Borde opcional para definir el contorno */
 
-    .cont_cand_mat #bot_can { display: block !important; }
+    .cont_cand_mat #bot_can { display: none !important; }
 
     .box_marriage_esp a.hiper, .box_marriage_esp a p { font-size: 10px !important; }
     
