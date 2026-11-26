@@ -148,8 +148,8 @@
 
                 <p>Si examinas el mostrador de una tienda y aparece el mensaje "Mostrador", significa que la tienda no está abierta en ese momento. Podrás acceder a sus edificios más temprano durante el día a medida que vayas entablando amistad con los comerciantes, pero el horario de atención no cambiará.</p>
 
-                <div style="display: flex; margin-top: 20px; margin-bottom: 20px;">
-                    <div id="lugares_box" style="overflow: hidden;" class="scroll-container-lugares">
+                <div style="display: flex; margin-top: 20px; margin-bottom: 20px;" class="cont_lug">
+                    <div id="lugares_box" style="overflow: hidden; border: none;" class="scroll-container-lugares">
                         <div class="box_menu_lugares">
                             <a href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Biblioteca.html" style="text-align: center;"><img src="/Guia-de-SOS-FOMT/IMG/Iconos/sub-iconos-lugares/biblioteca.png" title="Biblioteca" style="border:none;" width="260" height="250"></a>
                             <a class="hiper" href="/Guia-de-SOS-FOMT/Paginas/Sub-paginas/Lugares/Biblioteca.html" style="margin: 0  0 auto 0; font-size: 1.18em;">1) Biblioteca</a>
@@ -221,7 +221,7 @@
                         </div>
                     </div>
 
-                    <div style="display: flex; flex-direction: column;">
+                    <div id="bot_can" style="display: flex; flex-direction: column; display: none;">
                         <button id="bot_scr" style="height: 50%; padding: 10px; font-weight: bold; font-size: 25px;" onclick="Scroll_button_lugares('arriba','lugares_box');">↑</button>
                         <button id="bot_scr"  style="height: 50%; padding: 10px; font-weight: bold; font-size: 25px;" onclick="Scroll_button_lugares('abajo','lugares_box');">↓</button>
                     </div>
