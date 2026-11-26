@@ -182,7 +182,7 @@ details > .summary_h2_fin:first-of-type { margin-bottom: 40px; } /* el ultimo cu
 
 .scroll-container-aldeanos { height:30em; /* Alto del contenedor */ }
 
-.scroll-container-lugares { height:33.5em; /* Alto del contenedor */ }
+.scroll-container-lugares { height:25em; /* Alto del contenedor */ }
 
 .scroll-container-candidatos { height: 39em; /* Alto del contenedor */ }
 

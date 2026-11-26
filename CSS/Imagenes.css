@@ -125,11 +125,13 @@
 
 /* se crea la clase "box_menu_lugares" para que se ocupe de posisionar el contenido de las opciones*/
 .box_menu_lugares {
-    max-width:210px;
+    max-width:147px;
     height:auto; 
     display:inline-block; 
     margin:12px 25px;
 }
+    
+.box_menu_lugares a.hiper { font-size: 13.23px !important; }
 
 /* se crea la clase "box_mascota" para que se ocupe de posisionar el contenido para las mascotas*/
 .box_mascota {

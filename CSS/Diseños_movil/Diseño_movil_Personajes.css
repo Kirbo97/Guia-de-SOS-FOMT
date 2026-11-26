@@ -29,13 +29,14 @@
         margin: 0 0 0 10px !important;  
     }
 
-    .box_matrimonio { width: 70px !important; }
+    .cont_cand_mat .box_matrimonio {
+         width: 70px !important;
+        margin: 4px 8px 10px !important;
+    }
 
-    .box_matrimonio a.hiper{  font-size: 8px !important; }
-    
-    .box_matrimonio { margin: 4px 8px 10px !important; }
+    .cont_cand_mat .box_matrimonio a.hiper{  font-size: 8px !important; }
 
-    .scroll-container-candidatos { 
+    .cont_cand_mat .scroll-container-candidatos { 
         border: 1px solid #ccc !important; /* Borde opcional para definir el contorno */
         height: 260px !important;   /* Alto del contenedor */
     }

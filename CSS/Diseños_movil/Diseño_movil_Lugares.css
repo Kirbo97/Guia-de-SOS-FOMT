@@ -15,25 +15,31 @@
         width: 80% !important; 
         margin: 0 10% 15px !important; 
     }
-    .lug_img2,.lug_img9, .lug_img10 { margin-bottom: 0 !important; }
 
+    .lug_img2,.lug_img9, .lug_img10 { margin-bottom: 0 !important; }
 
     .lug_img7, .lug_img8 {
         width: 52% !important; 
         margin: 8.8px 0 0 10px !important; 
     }
     
-    .box_menu_lugares {
+    .cont_lug .box_menu_lugares {
         max-width: 77px !important;
         margin: 12px 7px !important;
         line-height: 0.8em !important;
     }
     
-    .box_menu_lugares a.hiper { font-size: 6.7px !important; }
+    .cont_lug .box_menu_lugares a.hiper { font-size: 6.7px !important; }
 
-    .scroll-container-lugares { height: 14.5em !important; } /* Alto del contenedor */
+    .cont_lug .scroll-container-lugares { 
+        border: 1px solid #ccc !important;  /* Borde opcional para definir el contorno */
+        height: 14.5em !important; 
+    } /* Alto del contenedor */
+
+    .cont_lug #bot_can { display: block !important; }
 
     .ini_lugar { display: flow-root !important; }
+
     /* #endregion */
     /* *********************** */
 
@@ -211,6 +217,8 @@
 
     .tab_ranch01 tr th:nth-child(1) { width: 150px !important; } /* espesifico que las filas Tr y la columna Th tendra un diseño a la tabla */
 
+    .tab_ranch01 .crias_leche { column-gap: 1.5em !important; }
+
     .tab_ranch01 tr:nth-child(1) th:nth-child(3), .tab_ranch02 tr:nth-child(1) th:nth-child(3) { width: 50px !important; } /* espesifico que columnas de la primera fila tendra un diseño a la tabla */
     /* #endregion */
     /* ******************************* */
@@ -262,17 +270,17 @@
         margin: 0 0 0 10px !important;
     }
     
-    .box_menu_lugares {
+    .cont_lug .box_menu_lugares {
         margin: 10px 15px !important;
         max-width: 79px !important;
     }
     
-    .box_menu_lugares img { 
+    .cont_lug .box_menu_lugares img { 
         width: 80px !important; 
         height: 80px !important; 
     }
     
-    .box_menu_lugares a.hiper { font-size: 6.90px !important; }
+    .cont_lug .box_menu_lugares a.hiper { font-size: 6.90px !important; }
     /* #endregion */
     /* *********************** */
 
@@ -311,6 +319,8 @@
     /* ****************************** */
 
     .tab_ranch01 tr th:nth-child(1) { width: 190px !important; } /* espesifico que las filas Tr y la columna Th tendra un diseño a la tabla */
+
+    .tab_ranch01 .crias_leche { column-gap: 1.7em !important; }
     
     /* #endregion */
     /* ******************************* */
