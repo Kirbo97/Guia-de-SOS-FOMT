@@ -149,11 +149,18 @@
     /* #region Diseño Salud  */
     /* ********************* */
 
-    .ballas h3 { font-size: 8.8px !important; }
+    .ballas h3 { 
+        font-size: 8.8px !important; 
+        margin-top: 0 !important; 
+    }
 
     .ballas .enc_01 { width: auto !important; }
 
     .ballas tr td:first-child {  text-align: left !important; } /* espesifico que todo los td de la primera columna la tabla */
+
+    table.orbes:nth-of-type(1) tr:nth-child(3) td:nth-child(1) { width: 120px !important; } /* espesifico que columnas tendra un diseño a la tabla */
+
+    .orbes tr:nth-child(3) td  { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
     /* #endregion */
     /* ********************* */
 }
