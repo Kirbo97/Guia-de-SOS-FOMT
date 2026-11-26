@@ -184,12 +184,6 @@
         margin: 10px 0 0 20px !important;  
     }
 
-
-
-
-
-
-
     .cont_cand_mat .box_matrimonio {
         width: 75px !important;
         margin: 4px 8px 10px !important;
@@ -203,12 +197,7 @@
 
     .box_marriage_esp a.hiper, .box_marriage_esp a p { font-size: 10px !important; }
     
-    .box_otros_matrimonio { 
-        max-width:110px !important;
-        margin: 12px 15px 0 !important;
-    }
-    
-    .box_otros_matrimonio a.hiper { font-size: 0.523em !important; }
+    .box_otros_matrimonio a.hiper { font-size: 10px !important; }
     /* #endregion */
     /* ************************** */
     
