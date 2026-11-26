@@ -5,7 +5,7 @@
 /*Con la linea para que se adapte a la pantalla en la que se encuentra, el tamaño para el Movil es (max-width:426px), sin es linea el tamaño para Movil es (max-width:980px)*/
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) and (orientation: portrait), screen and (max-width: 900px) and (orientation: landscape) {
 
     /* ************************** */
     /* #region Diseño Personajes  */
