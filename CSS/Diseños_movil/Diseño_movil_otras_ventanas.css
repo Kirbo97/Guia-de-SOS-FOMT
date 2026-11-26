@@ -119,7 +119,12 @@
     /* #region Diseño Eventos Aleatorios  */
     /* ********************************** */
 
-    .scroll-container-eventos-aldeanos { height: 140px !important; } /* Alto del contenedor */
+    .scroll-container-eventos-aldeanos { height: 141px !important; } /* Alto del contenedor */
+
+    .box_evento_aldeanos { 
+        display: flex !important;
+        flex-direction: column !important;
+    }
 
     .box_evento_aldeanos, .box_evento_otro { margin: 10px 10px !important; }
 
@@ -200,29 +205,8 @@
     /* #region Diseño Eventos Aleatorios  */
     /* ********************************** */
 
-    .scroll-container-eventos-aldeanos { height: 140px !important; } /* Alto del contenedor */
+    .box_evento_aldeanos, .box_evento_otro { margin: 10px 15px !important; }
 
-    .box_evento_aldeanos, .box_evento_otro { margin: 10px 10px !important; }
-
-    .box_evento_otro img { 
-        width: 110px !important; 
-        height: 99px !important; 
-    }
-
-    .box_evento_aldeanos img, .diosa_eventos img { 
-        width: 50px !important; 
-        height: 100px !important; 
-    }
-
-    .box_evento_aldeanos, .diosa_eventos { max-width:46px !important; }
-
-    .box_evento_aldeanos .hiper_click, .box_evento_otro .hiper_click { font-size: 9px !important; }
-
-    .diosa_eventos .hiper_click{ 
-        width: 109px !important; 
-        text-align: center !important; 
-        line-height: 1.2em !important;
-    }
     /* #endregion */
     /* ********************************** */
     
