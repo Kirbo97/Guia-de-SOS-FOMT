@@ -75,7 +75,7 @@
     /* #region Diseño Eventos  */
     /* *********************** */
 
-    .est_cal { 
+    .tab_cal_tot .est_cal { 
         height: 1px !important;
         font-size: 0.8em !important;
     }
@@ -158,7 +158,7 @@
 
     .ballas tr td:first-child {  text-align: left !important; } /* espesifico que todo los td de la primera columna la tabla */
 
-    table.orbes:nth-of-type(1) tr:nth-child(3) td:nth-child(1) { width: 120px !important; } /* espesifico que columnas tendra un diseño a la tabla */
+    table.orbes:nth-of-type(1) tr:nth-child(3) td:nth-child(1) { width: auto !important; } /* espesifico que columnas tendra un diseño a la tabla */
 
     .orbes tr:nth-child(3) td  { text-align: center !important; } /* espesifico que columnas tendra un diseño a la tabla */
     /* #endregion */
@@ -178,5 +178,52 @@
     }
     /* #endregion */
     /* ********************* */
+
+    /* *********************** */
+    /* #region Diseño Eventos  */
+    /* *********************** */
+
+    .tab_cal_tot .est_cal { 
+        height: 1.5px !important;
+        font-size: 1em !important;
+    }
+
+    .td_calenda_simple, .td_calenda { 
+        height: 80px !important; 
+        width: 80px !important; 
+    }
+
+    /* #endregion */
+    /* *********************** */
+
+    /* ********************************** */
+    /* #region Diseño Eventos Aleatorios  */
+    /* ********************************** */
+
+    .scroll-container-eventos-aldeanos { height: 140px !important; } /* Alto del contenedor */
+
+    .box_evento_aldeanos, .box_evento_otro { margin: 10px 10px !important; }
+
+    .box_evento_otro img { 
+        width: 110px !important; 
+        height: 99px !important; 
+    }
+
+    .box_evento_aldeanos img, .diosa_eventos img { 
+        width: 50px !important; 
+        height: 100px !important; 
+    }
+
+    .box_evento_aldeanos, .diosa_eventos { max-width:46px !important; }
+
+    .box_evento_aldeanos .hiper_click, .box_evento_otro .hiper_click { font-size: 9px !important; }
+
+    .diosa_eventos .hiper_click{ 
+        width: 109px !important; 
+        text-align: center !important; 
+        line-height: 1.2em !important;
+    }
+    /* #endregion */
+    /* ********************************** */
     
 }
