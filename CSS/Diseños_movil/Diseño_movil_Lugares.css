@@ -323,5 +323,18 @@
     .tab_ranch01 .crias_leche { column-gap: 1.7em !important; }
     
     /* #endregion */
-    /* ******************************* */
+    /* ****************************** */
+
+    /* ******************************** */
+    /* #region Diseño de Taller de gost */
+    /* ******************************** */
+
+    .tab_taller02 tr:nth-child(14) td:first-child b, .tab_taller02 tr:nth-child(15) td:first-child b, .tab_taller02 tr:nth-child(16) td:first-child b, .tab_taller02 tr:nth-child(17) td:first-child b { font-size: 11.5px !important; }
+
+    .tab_taller02 tr:nth-child(14) td:first-child div b, .tab_taller02 tr:nth-child(15) td:first-child div b, .tab_taller02 tr:nth-child(16) td:first-child div b, .tab_taller02 tr:nth-child(17) td:first-child div b { font-size: 10px !important; }
+
+    .tab_taller02 .cont_obj_tall { height: 84px !important;  }
+    
+    /* #endregion */
+    /* ******************************** */
 }
