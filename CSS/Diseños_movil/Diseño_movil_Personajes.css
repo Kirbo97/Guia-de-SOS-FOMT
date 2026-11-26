@@ -43,21 +43,19 @@
 
     .cont_cand_mat #bot_can { display: block !important; }
 
-    .box_marriage_esp { 
-        max-width: 90px !important; 
+    .box_marriage_esp {
+        display: flex !important; 
+        flex-direction: column !important; 
         margin: 0 2px !important;
     }
 
-    .box_marriage_esp img { 
-        max-width: 70px !important;
-    }
+    .box_marriage_esp img { max-width: 70px !important; }
 
     .box_marriage_esp a.hiper, .box_marriage_esp a p { 
         font-size: 7.68px !important; 
         margin-bottom: 0 !important; 
         text-align: center !important; 
         line-height: 1.5em !important;
-        height: 1.5em !important;
     }
     
     .box_otros_matrimonio { 
@@ -191,7 +189,7 @@
         margin: 4px 8px 10px !important;
     }
 
-    .cont_cand_mat .box_matrimonio a.hiper{  font-size: 8px !important; }
+    .cont_cand_mat .box_matrimonio a.hiper{  font-size: 10px !important; }
 
     .cont_cand_mat .scroll-container-candidatos { 
         border: 1px solid #ccc !important; /* Borde opcional para definir el contorno */
@@ -200,25 +198,10 @@
 
     .cont_cand_mat #bot_can { display: block !important; }
 
-    .box_marriage_esp { 
-        max-width: 90px !important; 
-        margin: 0 2px !important;
-    }
-
-    .box_marriage_esp img { 
-        max-width: 70px !important;
-    }
-
-    .box_marriage_esp a.hiper, .box_marriage_esp a p { 
-        font-size: 7.68px !important; 
-        margin-bottom: 0 !important; 
-        text-align: center !important; 
-        line-height: 1.5em !important;
-        height: 1.5em !important;
-    }
+    .box_marriage_esp a.hiper, .box_marriage_esp a p { font-size: 10px !important; }
     
     .box_otros_matrimonio { 
-        max-width:115px !important;
+        max-width:110px !important;
         margin: 12px 15px 0 !important;
     }
     
