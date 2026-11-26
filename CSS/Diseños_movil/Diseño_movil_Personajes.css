@@ -165,5 +165,67 @@
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
 @media screen and (max-height:600px) and (orientation:landscape) {
+
+    /* ************************** */
+    /* #region Diseño Personajes  */
+    /* ************************** */
+
+    .box_aldeanos img { width: 75px !important; }
+
+    .box_otro img { 
+        width: 180px !important;
+        height: 78px !important;
+    }
+
+    .box_aldeanos, .box_otro { margin: 14px 10px !important; }
+
+    .scroll-container-aldeanos { height:300px !important;}
+
+    .img_per01  { width: 250px !important; }
+
+    .img_per02 {
+        width: 155px !important;
+        margin: 0 0 0 10px !important;  
+    }
+
+    .cont_cand_mat .box_matrimonio {
+         width: 70px !important;
+        margin: 4px 8px 10px !important;
+    }
+
+    .cont_cand_mat .box_matrimonio a.hiper{  font-size: 8px !important; }
+
+    .cont_cand_mat .scroll-container-candidatos { 
+        border: 1px solid #ccc !important; /* Borde opcional para definir el contorno */
+        height: 260px !important;   /* Alto del contenedor */
+    }
+
+    .cont_cand_mat #bot_can { display: block !important; }
+
+    .box_marriage_esp { 
+        max-width: 90px !important; 
+        margin: 0 2px !important;
+    }
+
+    .box_marriage_esp img { 
+        max-width: 70px !important;
+    }
+
+    .box_marriage_esp a.hiper, .box_marriage_esp a p { 
+        font-size: 7.68px !important; 
+        margin-bottom: 0 !important; 
+        text-align: center !important; 
+        line-height: 1.5em !important;
+        height: 1.5em !important;
+    }
+    
+    .box_otros_matrimonio { 
+        max-width:115px !important;
+        margin: 12px 15px 0 !important;
+    }
+    
+    .box_otros_matrimonio a.hiper { font-size: 0.523em !important; }
+    /* #endregion */
+    /* ************************** */
     
 }
