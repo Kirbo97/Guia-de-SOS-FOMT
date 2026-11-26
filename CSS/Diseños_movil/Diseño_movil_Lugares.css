@@ -209,6 +209,8 @@
         margin: 0 !important;
     } /* espesifico que fila y columna tendra un diseño a la tabla */
 
+    .tab_ranch01 tr th:nth-child(1) { width: 150px !important; } /* espesifico que las filas Tr y la columna Th tendra un diseño a la tabla */
+
     .tab_ranch01 tr:nth-child(1) th:nth-child(3), .tab_ranch02 tr:nth-child(1) th:nth-child(3) { width: 50px !important; } /* espesifico que columnas de la primera fila tendra un diseño a la tabla */
     /* #endregion */
     /* ******************************* */
@@ -300,4 +302,16 @@
     /* *************************** */
 
     .horario_lugar { margin: 0 auto !important; }
+
+    /* #endregion */
+    /* *************************** */
+
+    /* ****************************** */
+    /* #region Diseño de Rancho Yodel */
+    /* ****************************** */
+
+    .tab_ranch01 tr th:nth-child(1) { width: 190px !important; } /* espesifico que las filas Tr y la columna Th tendra un diseño a la tabla */
+    
+    /* #endregion */
+    /* ******************************* */
 }
